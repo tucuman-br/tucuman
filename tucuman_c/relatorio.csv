@@ -1,43 +1,11 @@
 # Tucuma — Relatorio de Verificacao de Alinhamento
-# Arquivo analisado : test_input.c
-# Data              : 2026-06-14 15:33:40
-# Total de casos    : 33
-# Violacoes         : 27
-# OK                : 3
-# Possivel Violacao : 3
+# Arquivo analisado : /home/wesley/tucuman/benchmark/J3_arrow_uint64.c
+# Data              : 2026-06-15 00:08:52
+# Total de casos    : 1
+# Violacoes         : 1
+# OK                : 0
+# Possivel Violacao : 0
 # Unknown           : 0
 #
 ID,Grupo,Tipo,Alinhamento,Resultado,Mensagem,Contra-exemplo,Linha
-A1,"A - Offset Constante",uint16_t,2,VIOLACAO,"VIOLACAO: offset 1 nao satisfaz alinhamento de 2 bytes",-,4
-A2,"A - Offset Constante",uint32_t,4,VIOLACAO,"VIOLACAO: offset 1 nao satisfaz alinhamento de 4 bytes",-,5
-A3,"A - Offset Constante",uint64_t,8,VIOLACAO,"VIOLACAO: offset 1 nao satisfaz alinhamento de 8 bytes",-,6
-B1,"B - Padding",uint16_t,2,VIOLACAO,"VIOLACAO: offset 1 nao satisfaz alinhamento de 2 bytes",-,9
-B2,"B - Padding",uint32_t,4,VIOLACAO,"VIOLACAO: offset 1 nao satisfaz alinhamento de 4 bytes",-,10
-B3,"B - Padding",uint64_t,8,VIOLACAO,"VIOLACAO: offset 1 nao satisfaz alinhamento de 8 bytes",-,11
-C1,"C - Vetor",uint16_t,2,VIOLACAO,"VIOLACAO: offset 1 nao satisfaz alinhamento de 2 bytes",-,14
-C2,"C - Vetor",uint32_t,4,VIOLACAO,"VIOLACAO: offset 1 nao satisfaz alinhamento de 4 bytes",-,15
-C3,"C - Vetor",uint64_t,8,VIOLACAO,"VIOLACAO: offset 1 nao satisfaz alinhamento de 8 bytes",-,16
-D1,"D - offsetof",uint16_t,2,OK,"OK: offset 0 satisfaz alinhamento de 2 bytes",-,19
-D2,"D - offsetof",uint32_t,4,OK,"OK: offset 0 satisfaz alinhamento de 4 bytes",-,20
-D3,"D - offsetof",uint64_t,8,OK,"OK: offset 0 satisfaz alinhamento de 8 bytes",-,21
-E1,"E - Simbolico",uint16_t,2,POSSIVEL VIOLACAO,"POSSIVEL VIOLACAO: i=1 viola alinhamento de 2 bytes",1,24
-E2,"E - Simbolico",uint32_t,4,POSSIVEL VIOLACAO,"POSSIVEL VIOLACAO: i=1 viola alinhamento de 4 bytes",1,25
-E3,"E - Simbolico",uint64_t,8,POSSIVEL VIOLACAO,"POSSIVEL VIOLACAO: i=4 viola alinhamento de 8 bytes",4,26
-F1,"F - sizeof(char)",uint16_t,2,VIOLACAO,"VIOLACAO: offset 1 nao satisfaz alinhamento de 2 bytes",-,29
-F2,"F - sizeof(char)",uint32_t,4,VIOLACAO,"VIOLACAO: offset 1 nao satisfaz alinhamento de 4 bytes",-,30
-F3,"F - sizeof(char)",uint64_t,8,VIOLACAO,"VIOLACAO: offset 1 nao satisfaz alinhamento de 8 bytes",-,31
-G1,"G - Offset Impar",uint16_t,2,VIOLACAO,"VIOLACAO: offset 3 nao satisfaz alinhamento de 2 bytes",-,34
-G2,"G - Offset Impar",uint32_t,4,VIOLACAO,"VIOLACAO: offset 5 nao satisfaz alinhamento de 4 bytes",-,35
-G3,"G - Offset Impar",uint64_t,8,VIOLACAO,"VIOLACAO: offset 7 nao satisfaz alinhamento de 8 bytes",-,36
-H1,"H - Campo Struct",uint16_t,2,VIOLACAO,"VIOLACAO: offset 1 nao satisfaz alinhamento de 2 bytes",-,39
-H2,"H - Campo Struct",uint32_t,4,VIOLACAO,"VIOLACAO: offset 1 nao satisfaz alinhamento de 4 bytes",-,40
-H3,"H - Campo Struct",uint64_t,8,VIOLACAO,"VIOLACAO: offset 1 nao satisfaz alinhamento de 8 bytes",-,41
-H4,"H - Campo Struct",uint16_t,2,VIOLACAO,"VIOLACAO: offset 1 nao satisfaz alinhamento de 2 bytes",-,44
-H5,"H - Campo Struct",uint32_t,4,VIOLACAO,"VIOLACAO: offset 1 nao satisfaz alinhamento de 4 bytes",-,45
-H6,"H - Campo Struct",uint64_t,8,VIOLACAO,"VIOLACAO: offset 1 nao satisfaz alinhamento de 8 bytes",-,46
-I1,"I - void*",uint16_t,2,VIOLACAO,"VIOLACAO: offset 1 nao satisfaz alinhamento de 2 bytes",-,49
-I2,"I - void*",uint32_t,4,VIOLACAO,"VIOLACAO: offset 1 nao satisfaz alinhamento de 4 bytes",-,50
-I3,"I - void*",uint64_t,8,VIOLACAO,"VIOLACAO: offset 1 nao satisfaz alinhamento de 8 bytes",-,51
-J1,"J - Struct Packed",uint16_t,2,VIOLACAO,"VIOLACAO: offset 1 nao satisfaz alinhamento de 2 bytes",-,54
-J2,"J - Struct Packed",uint32_t,4,VIOLACAO,"VIOLACAO: offset 1 nao satisfaz alinhamento de 4 bytes",-,55
-J3,"J - Struct Packed",uint64_t,8,VIOLACAO,"VIOLACAO: offset 1 nao satisfaz alinhamento de 8 bytes",-,56
+J1,"J - Struct Packed",uint64_t,8,VIOLACAO,"VIOLACAO: offset 1 nao satisfaz alinhamento de 8 bytes",-,20

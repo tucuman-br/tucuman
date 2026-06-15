@@ -37,7 +37,7 @@ int main(int argc, char *argv[]) {
         return 1;
     }
 
-    printf("=== Tucuma Parser ===\n");
+    printf("=== Tucuman Parser ===\n");
     printf("Arquivo  : %s\n", argv[1]);
     printf("Casos    : %d\n\n", count);
 

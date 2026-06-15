@@ -1,0 +1,41 @@
+# Tucuman — Benchmark Runner
+# Data           : 2026-06-15 00:27:24
+# Total arquivos : 31
+# Total casos    : 31
+# Violacoes      : 27
+# OK             : 2
+# Poss. Violacao : 2
+# Unknown        : 0
+#
+Arquivo,ID,Grupo,Tipo,Alinhamento,Resultado,Mensagem,Contra-exemplo,Linha
+A1_uint16_offset1.c,A1,"A - Offset Constante",uint16_t,2,VIOLACAO,"VIOLACAO: offset 1 nao satisfaz alinhamento de 2 bytes",-,6
+A2_uint32_offset1.c,A1,"A - Offset Constante",uint32_t,4,VIOLACAO,"VIOLACAO: offset 1 nao satisfaz alinhamento de 4 bytes",-,6
+A3_uint64_offset1.c,A1,"A - Offset Constante",uint64_t,8,VIOLACAO,"VIOLACAO: offset 1 nao satisfaz alinhamento de 8 bytes",-,6
+B1_struct_padding.c,A1,"A - Offset Constante",uint16_t,2,VIOLACAO,"VIOLACAO: offset 1 nao satisfaz alinhamento de 2 bytes",-,9
+B1_struct_padding_uint32.c,A1,"A - Offset Constante",uint32_t,4,VIOLACAO,"VIOLACAO: offset 1 nao satisfaz alinhamento de 4 bytes",-,9
+B2_struct_offsetof.c,D1,"D - offsetof",uint16_t,2,OK,"OK: offset 0 satisfaz alinhamento de 2 bytes",-,10
+B2_struct_offsetof_uint32.c,D1,"D - offsetof",uint32_t,4,OK,"OK: offset 0 satisfaz alinhamento de 4 bytes",-,10
+C1_cast_uint16.c,B1,"B - Padding",uint16_t,2,VIOLACAO,"VIOLACAO: offset 1 nao satisfaz alinhamento de 2 bytes",-,6
+C1_cast_uint32.c,B1,"B - Padding",uint16_t,2,VIOLACAO,"VIOLACAO: offset 1 nao satisfaz alinhamento de 2 bytes",-,6
+D1_byte_array.c,C1,"C - Vetor",uint32_t,4,VIOLACAO,"VIOLACAO: offset 1 nao satisfaz alinhamento de 4 bytes",-,6
+E1_symbolic_offset.c,E1,"E - Simbolico",uint32_t,4,POSSIVEL VIOLACAO,"POSSIVEL VIOLACAO: i=1 viola alinhamento de 4 bytes",1,9
+E2_align_assert.c,E1,"E - Simbolico",uint32_t,4,POSSIVEL VIOLACAO,"POSSIVEL VIOLACAO: i=1 viola alinhamento de 4 bytes",1,9
+F1_sizeof_char_uint16.c,F1,"F - sizeof(char)",uint16_t,2,VIOLACAO,"VIOLACAO: offset 1 nao satisfaz alinhamento de 2 bytes",-,6
+F1_sizeof_char_uint32.c,F1,"F - sizeof(char)",uint32_t,4,VIOLACAO,"VIOLACAO: offset 1 nao satisfaz alinhamento de 4 bytes",-,6
+F1_sizeof_char_uint64.c,F1,"F - sizeof(char)",uint64_t,8,VIOLACAO,"VIOLACAO: offset 1 nao satisfaz alinhamento de 8 bytes",-,6
+G1_offset_uint16.c,G1,"G - Offset Impar",uint16_t,2,VIOLACAO,"VIOLACAO: offset 3 nao satisfaz alinhamento de 2 bytes",-,6
+G1_offset_uint32.c,G1,"G - Offset Impar",uint32_t,4,VIOLACAO,"VIOLACAO: offset 5 nao satisfaz alinhamento de 4 bytes",-,6
+G1_offset_uint64.c,G1,"G - Offset Impar",uint64_t,8,VIOLACAO,"VIOLACAO: offset 7 nao satisfaz alinhamento de 8 bytes",-,6
+H1_struct_field_uint16.c,H1,"H - Campo Struct",uint16_t,2,VIOLACAO,"VIOLACAO: offset 1 nao satisfaz alinhamento de 2 bytes",-,8
+H2_struct_field_uint32.c,H1,"H - Campo Struct",uint32_t,4,VIOLACAO,"VIOLACAO: offset 1 nao satisfaz alinhamento de 4 bytes",-,8
+H3_struct_field_uint64.c,H1,"H - Campo Struct",uint64_t,8,VIOLACAO,"VIOLACAO: offset 1 nao satisfaz alinhamento de 8 bytes",-,8
+H4_packed_field_uint16.c,H1,"H - Campo Struct",uint16_t,2,VIOLACAO,"VIOLACAO: offset 1 nao satisfaz alinhamento de 2 bytes",-,8
+H5_packed_field_uint32.c,H1,"H - Campo Struct",uint32_t,4,VIOLACAO,"VIOLACAO: offset 1 nao satisfaz alinhamento de 4 bytes",-,8
+H6_packed_field_uint64.c,H1,"H - Campo Struct",uint64_t,8,VIOLACAO,"VIOLACAO: offset 1 nao satisfaz alinhamento de 8 bytes",-,8
+I1_void_uint16.c,I1,"I - void*",uint16_t,2,VIOLACAO,"VIOLACAO: offset 1 nao satisfaz alinhamento de 2 bytes",-,6
+I2_void_uint32.c,I1,"I - void*",uint32_t,4,VIOLACAO,"VIOLACAO: offset 1 nao satisfaz alinhamento de 4 bytes",-,6
+I3_void_uint64.c,I1,"I - void*",uint64_t,8,VIOLACAO,"VIOLACAO: offset 1 nao satisfaz alinhamento de 8 bytes",-,6
+J1_arrow_uint16.c,J1,"J - Struct Packed",uint16_t,2,VIOLACAO,"VIOLACAO: offset 1 nao satisfaz alinhamento de 2 bytes",-,13
+J1_arrow_uint16.c,J2,"J - Struct Packed",uint16_t,2,VIOLACAO,"VIOLACAO: offset 1 nao satisfaz alinhamento de 2 bytes",-,26
+J2_arrow_uint32.c,J1,"J - Struct Packed",uint32_t,4,VIOLACAO,"VIOLACAO: offset 1 nao satisfaz alinhamento de 4 bytes",-,19
+J3_arrow_uint64.c,J1,"J - Struct Packed",uint64_t,8,VIOLACAO,"VIOLACAO: offset 1 nao satisfaz alinhamento de 8 bytes",-,20
