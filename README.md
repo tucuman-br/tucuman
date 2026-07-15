@@ -13,3 +13,8 @@ O projeto foi desenvolvido no contexto da disciplina **PGENE549 – Verificaçã
 Nesta versão, o parser foi implementado como um reconhecedor sintático orientado aos padrões presentes no benchmark desenvolvido neste trabalho. Consequentemente, ele não cobre toda a gramática da linguagem C nem realiza análise semântica completa. Essa escolha reduz a complexidade da implementação e é suficiente para validar a hipótese de pesquisa proposta. Como trabalho futuro, pretende-se substituir esse componente por um front-end baseado na AST do Clang, ampliando a cobertura da linguagem e a robustez da extração das informações necessárias à geração das fórmulas SMT.
 
 A versão em C está em desenvolvimento.
+
+### Benchmark
+
+Durante o levantamento bibliográfico e a análise das principais suítes públicas de benchmarks para verificação formal, incluindo o conjunto de tarefas do SV-COMP/SV-Benchmarks, não foi identificado um benchmark especificamente projetado para avaliar a detecção de violações de alinhamento de memória. 
+As categorias de memory safety concentram se em propriedades como valid-deref, valid-freee valid-memtrack, abrangendo erros de desreferenciamento, liberação e rastreamento de memória, mas não contemplam explicitamente restrições de alinhamento impostas pelo hardware.
