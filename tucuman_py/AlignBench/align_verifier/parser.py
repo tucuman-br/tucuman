@@ -233,12 +233,14 @@ def parse_file(filename):
     if m:
 
         result["kind"] = "offset"
-
+  
         result["offset"] = int(
             m.group(1)
         )
 
-        return result
+      return result
+
+    
 
     # ==================================================
     # (void*)buf + N

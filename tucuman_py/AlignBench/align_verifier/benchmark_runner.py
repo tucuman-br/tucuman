@@ -8,7 +8,8 @@ from pathlib import Path
 # CONFIGURAÇÃO
 # =====================================================
 
-BENCHMARK_DIR = "../benchmarks"
+#BENCHMARK_DIR = "~/tucuman/benchmark/"
+BENCHMARK_DIR = Path("~/tucuman/benchmark").expanduser()
 
 OUTPUT_CSV = "results.csv"
 
@@ -51,9 +52,7 @@ def run_benchmark(filename):
 
 def main():
 
-    benchmark_path = Path(
-        BENCHMARK_DIR
-    )
+    benchmark_path = BENCHMARK_DIR
 
     files = sorted(
         benchmark_path.glob("*.c")
@@ -102,6 +101,8 @@ def main():
         f"CSV gerado: {OUTPUT_CSV}"
     )
 
+    print(benchmark_path)
+    print(benchmark_path.exists())
 
 if __name__ == "__main__":
     main()

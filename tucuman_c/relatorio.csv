@@ -1,6 +1,6 @@
 # Tucuma — Relatorio de Verificacao de Alinhamento
-# Arquivo analisado : /home/wesley/tucuman/benchmark/J3_arrow_uint64.c
-# Data              : 2026-06-15 00:08:52
+# Arquivo analisado : /home/wesley/tucuman/benchmark/H_uint16_t_aligned.c
+# Data              : 2026-07-13 20:44:25
 # Total de casos    : 1
 # Violacoes         : 1
 # OK                : 0
@@ -8,4 +8,4 @@
 # Unknown           : 0
 #
 ID,Grupo,Tipo,Alinhamento,Resultado,Mensagem,Contra-exemplo,Linha
-J1,"J - Struct Packed",uint64_t,8,VIOLACAO,"VIOLACAO: offset 1 nao satisfaz alinhamento de 8 bytes",-,20
+H1,"H - Campo Struct",uint16_t,2,VIOLACAO,"VIOLACAO: offset 1 nao satisfaz alinhamento de 2 bytes",-,6

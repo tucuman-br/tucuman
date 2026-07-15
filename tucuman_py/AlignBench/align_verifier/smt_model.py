@@ -19,6 +19,8 @@ def build_model(info):
         ADDR_BITS
     )
 
+#    base = BitVecVal(align * 100, ADDR_BITS)
+
     # ==================================================
     # CASO SIMBÓLICO
     # ==================================================
