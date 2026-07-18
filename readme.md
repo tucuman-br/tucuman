@@ -1,8 +1,10 @@
 # Tucuman
 
-**Tucuman** é uma ferramenta especializada de **Verificação Formal** para detectar **violações de alinhamento de memória em programas escritos em C**, por meio da **inferência automática** de propriedades de alinhamento e da verificação baseada em SMT utilizando o solver **Z3**.
+**Tucuman** é um protótipo especializado de **Verificação Formal** para detectar **violações de alinhamento de memória em programas escritos em C**, por meio da **inferência automática** de propriedades de alinhamento e da verificação baseada em SMT utilizando o solver **Z3**.
 
 Diferentemente dos verificadores de propósito geral, o Tucuman infere automaticamente as restrições de alinhamento diretamente da estrutura sintática do programa, eliminando a necessidade de inserir *assertions* ou outras anotações manuais.
+
+O Tucuman deve ser entendido como uma ferramenta complementar aos verificadores de propósito geral.
 
 Este projeto acompanha a pesquisa desenvolvida no Programa de Pós-Graduação em Engenharia Elétrica da Universidade Federal do Amazonas (UFAM).
 
@@ -217,7 +219,7 @@ Caso utilize este projeto em trabalhos acadêmicos, cite:
 
 A versão arquivada deste projeto encontra-se disponível no Zenodo.
 
-> **DOI:** *(https://doi.org/10.5281/zenodo.21385206)*
+> **DOI:** *(https://doi.org/10.5281/zenodo.21424718)*
 
 ---
 
