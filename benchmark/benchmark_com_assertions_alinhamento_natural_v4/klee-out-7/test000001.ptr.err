@@ -1,0 +1,11 @@
+Error: memory error: out of bound pointer
+File: /work/benchmark_com_assertions_alinhamento_natural_v4/B_uint16_t_misaligned.c
+Line: 8
+assembly.ll line: 24
+State: 1
+Stack: 
+	#000000024 in main() at /work/benchmark_com_assertions_alinhamento_natural_v4/B_uint16_t_misaligned.c:8
+Info: 
+	address: 124972531314689
+	next: object at 124972531314688 of size 2
+		MO14[2] allocated at main():  %x = alloca i16, align 2

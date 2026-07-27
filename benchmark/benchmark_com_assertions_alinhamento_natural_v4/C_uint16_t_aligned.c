@@ -1,0 +1,12 @@
+#include <stdint.h>
+#include <stddef.h>
+#include "verifier.h"
+/* Grupo C — vetor alinhado | esperado: OK */
+int main(void) {
+    uint16_t vec[8];
+    uint16_t *p = (uint16_t*)&vec[0];
+    uint16_t z = *p;
+    (void)z;
+    ALIGN_ASSERT(p);
+    return 0;
+}

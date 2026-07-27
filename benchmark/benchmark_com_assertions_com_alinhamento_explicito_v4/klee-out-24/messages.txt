@@ -1,0 +1,9 @@
+KLEE: Using STP solver backend
+KLEE: SAT solver: MiniSat
+KLEE: Deterministic allocator: Using quarantine queue size 8
+KLEE: Deterministic allocator: globals (start-address=0x71315f972000 size=10 GiB)
+KLEE: Deterministic allocator: constants (start-address=0x712edf972000 size=10 GiB)
+KLEE: Deterministic allocator: heap (start-address=0x702edf972000 size=1024 GiB)
+KLEE: Deterministic allocator: stack (start-address=0x700edf972000 size=128 GiB)
+KLEE: ERROR: /work/benchmark_com_assertions_com_alinhamento_explicito_v4/E_uint16_t_misaligned.c:12: ASSERTION FAIL: ((uintptr_t)(p) % sizeof(*(p))) == 0
+KLEE: NOTE: now ignoring this error at this location

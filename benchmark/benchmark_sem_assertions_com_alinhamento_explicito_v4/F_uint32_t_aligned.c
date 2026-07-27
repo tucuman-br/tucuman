@@ -1,0 +1,11 @@
+#include <stdint.h>
+#include <stddef.h>
+#include "verifier.h"
+/* Grupo F — offset zero alinhado | esperado: OK */
+int main(void) {
+    _Alignas(uint32_t) char buf[16];
+    uint32_t *p = (uint32_t*)((char*)buf + 0);
+    uint32_t z = *p;
+    (void)z; 
+    return 0;
+}

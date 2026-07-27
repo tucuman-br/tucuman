@@ -1,0 +1,9 @@
+KLEE: Using STP solver backend
+KLEE: SAT solver: MiniSat
+KLEE: Deterministic allocator: Using quarantine queue size 8
+KLEE: Deterministic allocator: globals (start-address=0x7fb4d2a29000 size=10 GiB)
+KLEE: Deterministic allocator: constants (start-address=0x7fb252a29000 size=10 GiB)
+KLEE: Deterministic allocator: heap (start-address=0x7eb252a29000 size=1024 GiB)
+KLEE: Deterministic allocator: stack (start-address=0x7e9252a29000 size=128 GiB)
+KLEE: ERROR: /work/benchmark_sem_assertions_alinhamento_natural_v4/B_uint16_t_misaligned.c:7: memory error: out of bound pointer
+KLEE: NOTE: now ignoring this error at this location

@@ -1,0 +1,7 @@
+Error: ASSERTION FAIL: ((uintptr_t)(p) % sizeof(*(p))) == 0
+File: /work/benchmark_com_assertions_alinhamento_natural_v4/F_uint32_t_misaligned.c
+Line: 10
+assembly.ll line: 35
+State: 1
+Stack: 
+	#000000035 in main() at /work/benchmark_com_assertions_alinhamento_natural_v4/F_uint32_t_misaligned.c:10

@@ -1,0 +1,40 @@
+version: 1
+creator: klee
+pid: 1
+cmd: /work/benchmark_sem_assertions_alinhamento_natural_v4/G_uint32_t_aligned.bc
+
+
+positions: instr line
+event: Icov : CoveredInstructions
+event: Forks : Forks
+event: Ireal : InstructionRealTimes
+event: Itime : InstructionTimes
+event: I : Instructions
+event: UCdist : MinDistToUncovered
+event: Rtime : ResolveTime
+event: States : States
+event: Iuncov : UncoveredInstructions
+event: Q : Queries
+event: Qiv : QueriesInvalid
+event: Qv : QueriesValid
+event: Qtime : QueryTime
+events: Icov Forks Ireal Itime I UCdist Rtime States Iuncov Q Qiv Qv Qtime 
+ob=assembly.ll
+fl=/work/benchmark_sem_assertions_alinhamento_natural_v4/G_uint32_t_aligned.c
+fn=main
+9 6 1 0 0 0 1 0 0 0 0 0 0 0 0 
+10 6 1 0 0 0 1 0 0 0 0 0 0 0 0 
+11 6 1 0 0 0 1 0 0 0 0 0 0 0 0 
+12 6 1 0 0 0 1 0 0 0 0 0 0 0 0 
+13 6 1 0 0 0 1 0 0 0 0 1 0 0 0 
+14 7 1 0 0 0 1 0 0 0 0 0 0 0 0 
+15 8 1 0 0 0 1 0 0 0 0 0 0 0 0 
+16 8 1 0 0 0 1 0 0 0 0 0 0 0 0 
+17 8 1 0 0 0 1 0 0 0 0 0 0 0 0 
+18 8 1 0 0 0 1 0 0 0 0 1 0 0 0 
+19 9 1 0 0 0 1 0 0 0 0 0 0 0 0 
+20 9 1 0 0 0 1 0 0 0 0 1 0 0 0 
+21 9 1 0 0 0 1 0 0 0 0 1 0 0 0 
+22 9 1 0 0 0 1 0 0 0 0 1 0 0 0 
+23 10 1 0 0 0 1 0 0 0 0 1 0 0 0 
+24 11 1 0 0 0 1 0 0 0 0 1 0 0 0 

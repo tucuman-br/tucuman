@@ -102,13 +102,47 @@ def extract_cast_expr(code, ptr_type):
 # STRUCTS: parsing e calculo de layout (offsetof real)
 # =====================================================
 
+def _detect_pragma_packed_structs(code):
+    """
+    Retorna um set com os nomes de structs envolvidas por
+    #pragma pack(push, 1) ... #pragma pack(pop).
+    Usado por parse_struct_defs para complementar a deteccao
+    de __attribute__((packed)).
+    """
+
+    packed_names = set()
+
+    push_pat   = re.compile(r"#\s*pragma\s+pack\s*\(\s*push\s*,\s*1\s*\)")
+    pop_pat    = re.compile(r"#\s*pragma\s+pack\s*\(\s*pop\s*\)")
+    struct_pat = re.compile(r"struct\s+(\w+)\s*\{")
+
+    pop_matches = list(pop_pat.finditer(code))
+
+    for push_m in push_pat.finditer(code):
+
+        # pop mais proximo apos o push
+        pop_m = next((p for p in pop_matches if p.start() > push_m.end()), None)
+
+        end   = pop_m.start() if pop_m else len(code)
+
+        bloco = code[push_m.end():end]
+
+        for sm in struct_pat.finditer(bloco):
+            packed_names.add(sm.group(1))
+
+    return packed_names
+
+
 def parse_struct_defs(code):
     """
-    Encontra definicoes de struct no arquivo, incluindo a variante
-    com __attribute__((packed)) logo apos 'struct'.
+    Encontra definicoes de struct no arquivo, incluindo as variantes:
+      - com __attribute__((packed)) logo apos 'struct';
+      - envolvidas por #pragma pack(push, 1) ... #pragma pack(pop).
 
     Retorna: { nome_struct: {"packed": bool, "fields": [(nome, tipo), ...]} }
     """
+
+    pragma_packed = _detect_pragma_packed_structs(code)
 
     structs = {}
 
@@ -122,8 +156,10 @@ def parse_struct_defs(code):
         packed = "__attribute__((packed))" in m.group(0).replace(" ", "") \
             .replace("\n", "") or "__attribute__ ((packed))" in m.group(0)
 
-        # normaliza deteccao de 'packed' ignorando espacos
-        packed = bool(re.search(r"__attribute__\s*\(\(\s*packed\s*\)\)", m.group(0)))
+        # normaliza deteccao de 'packed' ignorando espacos; acrescenta
+        # structs envolvidas por #pragma pack(push, 1)
+        packed = bool(re.search(r"__attribute__\s*\(\(\s*packed\s*\)\)", m.group(0))) \
+            or m.group(1) in pragma_packed
 
         name = m.group(1)
 
@@ -138,10 +174,38 @@ def parse_struct_defs(code):
             if not stmt:
                 continue
 
+            # Array com sizeof: char pad[sizeof(uint32_t) - 1]
+            fm_arr_sizeof = re.match(
+                r"(char|uint16_t|uint32_t|uint64_t)\s+(\w+)"
+                r"\s*\[\s*sizeof\s*\(\s*(\w+)\s*\)\s*([+-]\s*\d+)?\s*\]",
+                stmt
+            )
+            if fm_arr_sizeof:
+                elem_type = fm_arr_sizeof.group(1)
+                fname     = fm_arr_sizeof.group(2)
+                sz_type   = fm_arr_sizeof.group(3)
+                adj_str   = (fm_arr_sizeof.group(4) or "").replace(" ", "")
+                base_size = TYPE_INFO.get(sz_type, TYPE_INFO.get(elem_type, (1, 1)))[0]
+                adj_val   = int(adj_str) if adj_str else 0
+                count     = base_size + adj_val
+                fields.append((fname, elem_type, count))
+                continue
+
+            # Array com literal: char pad[3]
+            fm_arr_lit = re.match(
+                r"(char|uint16_t|uint32_t|uint64_t)\s+(\w+)\s*\[\s*(\d+)\s*\]",
+                stmt
+            )
+            if fm_arr_lit:
+                fields.append((fm_arr_lit.group(2), fm_arr_lit.group(1),
+                                int(fm_arr_lit.group(3))))
+                continue
+
+            # Campo simples (sem colchetes)
             fm = re.match(r"(char|uint16_t|uint32_t|uint64_t)\s+(\w+)", stmt)
 
             if fm:
-                fields.append((fm.group(2), fm.group(1)))
+                fields.append((fm.group(2), fm.group(1), 1))
 
         structs[name] = {"packed": packed, "fields": fields}
 
@@ -158,7 +222,9 @@ def compute_field_offset(struct_def, field_name):
 
     offset = 0
 
-    for fname, ftype in struct_def["fields"]:
+    for entry in struct_def["fields"]:
+
+        fname, ftype, count = entry
 
         size, align = TYPE_INFO[ftype]
 
@@ -172,7 +238,7 @@ def compute_field_offset(struct_def, field_name):
         if fname == field_name:
             return offset
 
-        offset += size
+        offset += size * count
 
     raise Exception(f"Campo '{field_name}' nao encontrado na struct")
 
@@ -425,7 +491,17 @@ def evaluate_expr(expr, code, struct_defs, ptr_type):
     # 6) offset simbolico: variavel vinda de nondet_uint()
     # ----------------------------------------------------------------
 
-    dm = re.search(r"(\w+)\s*=\s*nondet_uint\s*\(\s*\)", code)
+    # aceita tanto 'nondet_uint()' quanto variantes com prefixo, ex.:
+    # 'VERIFIER_nondet_uint()' (nome real usado no corpus/verifier.h).
+    # Tenta primeiro casar com o '% N' colado na propria chamada, ja
+    # que e ali (na atribuicao) que o modulo realmente aparece:
+    # 'k = VERIFIER_nondet_uint() % 6;' -> o '%' fica apos '()', nao
+    # apos 'k'.
+    dm_mod = re.search(
+        r"(\w+)\s*=\s*\w*nondet_uint\s*\(\s*\)\s*%\s*(\d+)", code
+    )
+
+    dm = dm_mod or re.search(r"(\w+)\s*=\s*\w*nondet_uint\s*\(\s*\)", code)
 
     if dm:
 
@@ -435,18 +511,56 @@ def evaluate_expr(expr, code, struct_defs, ptr_type):
 
             bound = None
 
-            bm = re.search(r"\b" + re.escape(symvar) + r"\s*<\s*(\d+)", code)
-
-            if bm:
-                bound = int(bm.group(1))
+            if dm_mod:
+                # 'k = nondet() % N' -> valores possiveis em [0, N-1]
+                bound = int(dm_mod.group(2))
             else:
-                bm = re.search(r"(\d+)\s*<\s*" + re.escape(symvar), code)
+                bm = re.search(r"\b" + re.escape(symvar) + r"\s*<\s*(\d+)", code)
+
                 if bm:
                     bound = int(bm.group(1))
+                else:
+                    bm = re.search(r"(\d+)\s*<\s*" + re.escape(symvar), code)
+                    if bm:
+                        bound = int(bm.group(1))
+
+            # termo 'symvar * sizeof(tipo)' na propria expressao do cast:
+            # o offset e sempre um multiplo de sizeof(tipo), simbolico em k
+            mult_type = None
+
+            mm = re.search(
+                re.escape(symvar) + r"\s*\*\s*sizeof\s*\(\s*(\w+)\s*\)",
+                expr,
+            )
+
+            if not mm:
+                mm = re.search(
+                    r"sizeof\s*\(\s*(\w+)\s*\)\s*\*\s*" + re.escape(symvar),
+                    expr,
+                )
+
+            # offset constante residual somado ao termo simbolico, ex.:
+            # em 'k * sizeof(uint16_t) + 1' o residual e 1 -- e' esse
+            # valor que decide se o caso e alinhado (residual multiplo
+            # do sizeof) ou desalinhado (residual nao-multiplo).
+            residual_offset = None
+
+            if mm:
+                mult_type = mm.group(1)
+
+                residual_expr = expr[:mm.start()] + "0" + expr[mm.end():]
+
+                try:
+                    residual_offset = _sum_constant_offset(residual_expr)
+                except Exception:
+                    residual_offset = None
 
             return {
                 "kind": "symbolic",
+                "symbolic_var": symvar,
                 "symbolic_bound": bound,
+                "symbolic_multiple_of": mult_type,
+                "symbolic_residual_offset": residual_offset,
             }
 
     # ----------------------------------------------------------------
