@@ -1,11 +1,11 @@
 # Tucuma — Relatorio de Verificacao de Alinhamento
-# Arquivo analisado : /home/wesley/tucuman/benchmark/H_uint16_t_aligned.c
-# Data              : 2026-07-13 20:44:25
+# Arquivo analisado : /home/wesley/benchmark_v4/benchmark_com_assertions_alinhamento_natural_v4/A_uint16_t_aligned.c
+# Data              : 2026-07-27 17:41:50
 # Total de casos    : 1
-# Violacoes         : 1
-# OK                : 0
+# Violacoes         : 0
+# OK                : 1
 # Possivel Violacao : 0
 # Unknown           : 0
 #
 ID,Grupo,Tipo,Alinhamento,Resultado,Mensagem,Contra-exemplo,Linha
-H1,"H - Campo Struct",uint16_t,2,VIOLACAO,"VIOLACAO: offset 1 nao satisfaz alinhamento de 2 bytes",-,6
+G1,"G - Offset Impar",uint16_t,2,OK,"OK: offset 0 satisfaz alinhamento de 2 bytes",-,7

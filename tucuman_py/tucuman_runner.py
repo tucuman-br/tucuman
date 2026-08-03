@@ -148,6 +148,30 @@ def verify(filename, verbose=True):
 # MAIN
 # =====================================================
 
+def process_directory(root):
+
+    for current_root, _, files in os.walk(root):
+
+        for file in sorted(files):
+
+            if not file.endswith(".c"):
+                continue
+
+            filename = os.path.join(current_root, file)
+
+            try:
+                verify(filename)
+
+            except Exception as e:
+
+                print()
+                print("=" * 50)
+                print(file)
+                print("=" * 50)
+                print("ERRO:", e)
+                print()
+
+
 if __name__ == "__main__":
 
     if len(sys.argv) != 2:
@@ -155,9 +179,19 @@ if __name__ == "__main__":
         print()
         print("Uso:")
         print()
-        print("python3 verifier.py arquivo.c")
+        print("python3 tucuman.py arquivo.c")
+        print("ou")
+        print("python3 tucuman.py diretorio_benchmark")
         print()
 
         sys.exit(1)
 
-    verify(sys.argv[1])
+    target = os.path.abspath(sys.argv[1])
+
+    if os.path.isdir(target):
+
+        process_directory(target)
+
+    else:
+
+        verify(target)

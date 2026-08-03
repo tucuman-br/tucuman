@@ -7,7 +7,7 @@
 #include "smt_model.h"
 #include "verifier.h"
 
-#define MAX_FILES   64
+#define MAX_FILES   100
 #define MAX_ENTRIES 512
 
 int main(int argc, char *argv[]) {
