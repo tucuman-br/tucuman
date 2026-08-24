@@ -239,7 +239,7 @@ Caso utilize este projeto em trabalhos acadêmicos, cite:
 
 A versão arquivada deste projeto encontra-se disponível no Zenodo.
 
-> **DOI:** *(https://doi.org/10.5281/zenodo.21424718)*
+> **DOI:** *(https://doi.org/10.5281/zenodo.22075206)*
 
 ---
 
