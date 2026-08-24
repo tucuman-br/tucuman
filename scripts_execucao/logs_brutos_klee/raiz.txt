@@ -1,0 +1,33 @@
+================================================================================
+ARQUIVO: byte_level_memory.c
+REPETICAO: 1/1
+TEMPO: 0.4574s
+================================================================================
+KLEE: output directory is "/work/klee-out-0"
+KLEE: Using STP solver backend
+KLEE: SAT solver: MiniSat
+KLEE: Deterministic allocator: Using quarantine queue size 8
+KLEE: Deterministic allocator: globals (start-address=0x7dc5d0471000 size=10 GiB)
+KLEE: Deterministic allocator: constants (start-address=0x7dc350471000 size=10 GiB)
+KLEE: Deterministic allocator: heap (start-address=0x7cc350471000 size=1024 GiB)
+KLEE: Deterministic allocator: stack (start-address=0x7ca350471000 size=128 GiB)
+KLEE: WARNING: undefined reference to function: printf
+KLEE: WARNING ONCE: calling external: printf(138282650767360, 100) at /work/byte_level_memory.c:104 32
+
+KLEE: done: total instructions = 12415
+KLEE: done: completed paths = 1
+KLEE: done: partially completed paths = 0
+KLEE: done: generated tests = 1
+Endereco base : 100
+Endereco p    : 101
+Valor lido    : 0x3322
+
+
+================================================================================
+ARQUIVO: validacao_experimental.c
+REPETICAO: 1/1
+TEMPO: 0.3574s
+================================================================================
+KLEE: ERROR: Loading file /work/validacao_experimental.bc failed: No such file or directory
+
+

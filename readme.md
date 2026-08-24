@@ -34,9 +34,10 @@ O Tucuman foi desenvolvido para preencher essa lacuna, inferindo automaticamente
 - Detecção de acessos alinhados e desalinhados;
 - Dispensa a inserção manual de *assertions*;
 - Classificação dos programas em:
-  - ✅ OK
-  - ❌ VIOLATION
-  - ⚠️ UNKNOWN
+  - OK
+  - PARCIALMENTE ALINHADO
+  - VIOLATION
+  - NKNOWN
 
 ---
 
@@ -44,42 +45,49 @@ O Tucuman foi desenvolvido para preencher essa lacuna, inferindo automaticamente
 
 ```text
 .
-├── README.md
+tucuman
+├── LICENSE
 ├── benchmark
-│   ├── benchmark_com_assertions_com_alinhamento_v3
-│   ├── benchmark_com_assertions_sem_alinhamento_v3
-│   ├── benchmark_sem_assertions_com_alinhamento_v3
-│   └── benchmark_sem_assertions_sem_alinhamento_v3
-├── tucuman_c
-│   ├── README.md
-│   ├── benchmark_relatorio.csv
-│   ├── benchmark_runner
-│   ├── benchmark_runner.c
-│   ├── main.c
-│   ├── parser.c
-│   ├── parser.h
-│   ├── smt_model.c
-│   ├── smt_model.h
-│   ├── test_input.c
-│   ├── tucuma.exe
-│   ├── tucuman
-│   ├── verifier.c
-│   └── verifier.h
-└── tucuman_py
-    ├── __pycache__
-    ├── benchmark_runner.py
+│   ├── benchmark_com_assertions_alinhamento_natural_v4
+│   ├── benchmark_com_assertions_com_alinhamento_explicito_v4
+│   ├── benchmark_sem_assertions_alinhamento_natural_v4
+│   ├── benchmark_sem_assertions_com_alinhamento_explicito_v4
+│   ├── byte_level_memory.c
+│   ├── byte_level_memory.py
+│   └── validacao_experimental.c
+├── readme.md
+├── scripts_execucao
+│   ├── dockerfile                    ← imagem Docker com todas as dependências
+│   ├── environment.yml               ← ambiente Conda reprodutível
+│   ├── logs_brutos_cbmc
+│   ├── logs_brutos_cpachecker
+│   ├── logs_brutos_esbmc
+│   ├── logs_brutos_klee
+│   ├── logs_brutos_seahorn
+│   ├── logs_brutos_tucuman
+│   ├── readme.md
+│   ├── requirements.txt              ← dependências Python com versões fixadas
+│   ├── run_cbmc.py
+│   ├── run_cpachecker.py
+│   ├── run_esbmc.py
+│   ├── run_klee.py
+│   ├── run_seahorn.py
+│   └── run_tucuman.py
+├── tucuman_c                         ← implementação C do tucuman (em desemvolvimento)
+└── tucuman_py                        ← implementação Python do tucuman
     ├── parser.py
-    ├── readme.md
+    ├── run_tucuman.py
     ├── smt_model.py
     ├── tucuman.py
-    └── verifier.py
+    └── tucuman_runner.py
+
 ```
 
 ---
 
 # Implementações
 
-## 🐍 Versão em Python (Estável)
+## Versão em Python (Estável)
 
 A implementação em Python corresponde à versão de referência utilizada nos experimentos apresentados no artigo científico.
 
@@ -95,7 +103,7 @@ A implementação em Python corresponde à versão de referência utilizada nos 
 
 ---
 
-## ⚙️ Versão em C (Em desenvolvimento)
+### Versão em C (Em desenvolvimento)
 
 Uma implementação nativa em linguagem C encontra-se atualmente em desenvolvimento.
 
@@ -116,7 +124,7 @@ O repositório inclui um benchmark original desenvolvido especificamente para av
 
 ## Características
 
-- 120 programas escritos em C;
+- 240 programas escritos em C;
 - 10 grupos de testes (A–J);
 - Casos alinhados e desalinhados;
 - Tipos de 16, 32 e 64 bits.
@@ -160,7 +168,7 @@ Instalação:
 ```bash
 pip install z3-solver
 ```
-
+ 
 ---
 
 ## Versão C
@@ -185,13 +193,17 @@ python tucuman.py programa.c
 ./tucuman programa.c
 ```
 
+Nota:
+O arquivo readme.md em tucuman/scripts_execucao/ contém os scripts de automação necessários para reproduzir a avaliação experimental dos
+ verificadores formais comparados neste trabalho.
+
 ---
 
 # Contribuições científicas
 
 O projeto apresenta as seguintes contribuições:
 
-- Desenvolvimento de um verificador especializado para alinhamento de memória;
+- Desenvolvimento de um protótipo-verificador especializado para alinhamento de memória;
 - Inferência automática de propriedades de alinhamento;
 - Geração automática de restrições SMT;
 - Benchmark original para avaliação de verificadores de alinhamento;
@@ -201,7 +213,6 @@ O projeto apresenta as seguintes contribuições:
   - CPAchecker;
   - KLEE;
   - SeaHorn;
-  - UBSan.
 
 ---
 
@@ -209,9 +220,18 @@ O projeto apresenta as seguintes contribuições:
 
 Caso utilize este projeto em trabalhos acadêmicos, cite:
 
-> Antônio Carlos de Castro Silva, Bruna Tatiane Farias Ferreira e Wesley Victtorino.
+> Antônio Carlos de Castro Silva e Wesley Vitorino Teixeira.
 >
 > **Tucuman: Inferência Automática de Propriedades de Alinhamento de Memória para Verificação Formal de Programas C Baseada em SMT.**
+
+@article{teixeira2026tucuman,
+  title  = {Verificação Formal de Modelos de Memória Alinhada em
+             Programas C usando o Solver Z3},
+  author = {Silva, Antônio Carlos de Castro and
+            Teixeira, Wesley Vitorino},
+  school = {PPGEE -- Universidade Federal do Amazonas},
+  year   = {2026}
+  orcid: https://orcid.org/0000-0000-0000-0000
 
 ---
 
@@ -234,7 +254,7 @@ Consulte o arquivo **LICENSE** para mais informações.
 # Autores
 
 - **Antônio Carlos de Castro Silva**
-- **Wesley Victtorino**
+- **Wesley Vitorino Teixeira**
 
 ---
 

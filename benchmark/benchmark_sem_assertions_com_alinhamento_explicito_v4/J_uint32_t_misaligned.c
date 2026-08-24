@@ -1,22 +1,15 @@
 #include <stdint.h>
 #include <stddef.h>
-
-/* Grupo J — struct packed desalinhado | esperado: VIOLATION */
-
+#include "verifier.h"
+/* Grupo J — struct packed | esperado: VIOLATION */
 #pragma pack(push, 1)
-
-struct packed_s { 
-                 char a; 
-                 uint32_t b; 
-};
-
+struct packed_s { char a; uint32_t b; };
 #pragma pack(pop)
-
 int main(void) {
     _Alignas(uint32_t) struct packed_s obj;
     struct packed_s *ptr = &obj;
-    uint32_t *q = (uint32_t *)&(ptr->b);
-    uint32_t z  = *q;
+    uint32_t *q = (uint32_t *)&(ptr->b);  // offset = 1 → desalinhado
+    uint32_t z = *q;
     (void)z;
     return 0;
 }

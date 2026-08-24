@@ -1,0 +1,46 @@
+================================================================================
+ARQUIVO: byte_level_memory.c
+REPETICAO: 1/1
+TEMPO: 0.9091s
+================================================================================
+
+==================================================
+byte_level_memory.c
+==================================================
+
+Tipo: uint16_t
+Alinhamento: 2
+Caso: offset
+Offset: 1
+
+SMT(alinhado): unsat
+SMT(desalinhado): sat
+
+RESULTADO: VIOLACAO
+Contraexemplo: {'addr': 1}
+
+
+
+================================================================================
+ARQUIVO: validacao_experimental.c
+REPETICAO: 1/1
+TEMPO: 0.6485s
+================================================================================
+
+==================================================
+validacao_experimental.c
+==================================================
+
+Tipo: uint16_t
+Alinhamento: 2
+Caso: offset
+Offset: 1
+
+SMT(alinhado): unsat
+SMT(desalinhado): sat
+
+RESULTADO: VIOLACAO
+Contraexemplo: {'addr': 1}
+
+
+

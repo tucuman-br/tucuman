@@ -1,0 +1,2571 @@
+================================================================================
+ARQUIVO: benchmark_com_assertions_alinhamento_natural_v4\A_uint16_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 3.8412s
+================================================================================
+Target: 64-bit little-endian x86_64-unknown-windows with esbmclibc
+Parsing C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\A_uint16_t_aligned.c
+In file included from C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\A_uint16_t_aligned.c:3:
+C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4/verifier.h:82:13: warning: verifier.h: branch = ESBMC (__ESBMC__ passado pelo driver) [-W#pragma-messages]
+    #pragma message "verifier.h: branch = ESBMC (__ESBMC__ passado pelo driver)"
+            ^
+Converting
+Generating GOTO Program
+GOTO program creation time: 0.275s
+GOTO program processing time: 0.000s
+Starting Bounded Model Checking
+Symex completed in: 0.001s (18 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.000s (removed 15 assignments)
+Generated 3 VCC(s), 1 remaining after simplification (3 assignments)
+No solver specified; defaulting to z3
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving with solver Z3 v4.13.3
+Runtime decision procedure: 0.002s
+Building error trace
+
+[Counterexample]
+
+
+State 1 file C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\A_uint16_t_aligned.c line 10 column 5 function main thread 0
+----------------------------------------------------
+Violated property:
+  file C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\A_uint16_t_aligned.c line 10 column 5 function main
+  assertion ((uintptr_t)(p) % sizeof(*(p))) == 0
+  0
+
+
+VERIFICATION FAILED
+ESBMC version 8.2.0 64-bit x86_64 windows
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_alinhamento_natural_v4\A_uint16_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 0.3146s
+================================================================================
+Target: 64-bit little-endian x86_64-unknown-windows with esbmclibc
+Parsing C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\A_uint16_t_misaligned.c
+In file included from C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\A_uint16_t_misaligned.c:3:
+C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4/verifier.h:82:13: warning: verifier.h: branch = ESBMC (__ESBMC__ passado pelo driver) [-W#pragma-messages]
+    #pragma message "verifier.h: branch = ESBMC (__ESBMC__ passado pelo driver)"
+            ^
+Converting
+Generating GOTO Program
+GOTO program creation time: 0.257s
+GOTO program processing time: 0.000s
+Starting Bounded Model Checking
+Symex completed in: 0.001s (19 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.000s (removed 15 assignments)
+Generated 3 VCC(s), 2 remaining after simplification (4 assignments)
+No solver specified; defaulting to z3
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving with solver Z3 v4.13.3
+Runtime decision procedure: 0.002s
+Building error trace
+
+[Counterexample]
+
+
+State 1 file C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\A_uint16_t_misaligned.c line 8 column 5 function main thread 0
+----------------------------------------------------
+Violated property:
+  file C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\A_uint16_t_misaligned.c line 8 column 5 function main
+  dereference failure: Incorrect alignment when accessing data object
+
+
+VERIFICATION FAILED
+ESBMC version 8.2.0 64-bit x86_64 windows
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_alinhamento_natural_v4\A_uint32_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 0.317s
+================================================================================
+Target: 64-bit little-endian x86_64-unknown-windows with esbmclibc
+Parsing C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\A_uint32_t_aligned.c
+In file included from C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\A_uint32_t_aligned.c:3:
+C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4/verifier.h:82:13: warning: verifier.h: branch = ESBMC (__ESBMC__ passado pelo driver) [-W#pragma-messages]
+    #pragma message "verifier.h: branch = ESBMC (__ESBMC__ passado pelo driver)"
+            ^
+Converting
+Generating GOTO Program
+GOTO program creation time: 0.258s
+GOTO program processing time: 0.000s
+Starting Bounded Model Checking
+Symex completed in: 0.001s (18 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.000s (removed 15 assignments)
+Generated 3 VCC(s), 1 remaining after simplification (3 assignments)
+No solver specified; defaulting to z3
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving with solver Z3 v4.13.3
+Runtime decision procedure: 0.001s
+Building error trace
+
+[Counterexample]
+
+
+State 1 file C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\A_uint32_t_aligned.c line 10 column 5 function main thread 0
+----------------------------------------------------
+Violated property:
+  file C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\A_uint32_t_aligned.c line 10 column 5 function main
+  assertion ((uintptr_t)(p) % sizeof(*(p))) == 0
+  0
+
+
+VERIFICATION FAILED
+ESBMC version 8.2.0 64-bit x86_64 windows
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_alinhamento_natural_v4\A_uint32_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 0.5813s
+================================================================================
+Target: 64-bit little-endian x86_64-unknown-windows with esbmclibc
+Parsing C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\A_uint32_t_misaligned.c
+In file included from C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\A_uint32_t_misaligned.c:3:
+C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4/verifier.h:82:13: warning: verifier.h: branch = ESBMC (__ESBMC__ passado pelo driver) [-W#pragma-messages]
+    #pragma message "verifier.h: branch = ESBMC (__ESBMC__ passado pelo driver)"
+            ^
+Converting
+Generating GOTO Program
+GOTO program creation time: 0.385s
+GOTO program processing time: 0.000s
+Starting Bounded Model Checking
+Symex completed in: 0.001s (19 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.000s (removed 15 assignments)
+Generated 3 VCC(s), 2 remaining after simplification (4 assignments)
+No solver specified; defaulting to z3
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving with solver Z3 v4.13.3
+Runtime decision procedure: 0.001s
+Building error trace
+
+[Counterexample]
+
+
+State 1 file C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\A_uint32_t_misaligned.c line 8 column 5 function main thread 0
+----------------------------------------------------
+Violated property:
+  file C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\A_uint32_t_misaligned.c line 8 column 5 function main
+  dereference failure: Incorrect alignment when accessing data object
+
+
+VERIFICATION FAILED
+ESBMC version 8.2.0 64-bit x86_64 windows
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_alinhamento_natural_v4\A_uint64_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 0.3303s
+================================================================================
+Target: 64-bit little-endian x86_64-unknown-windows with esbmclibc
+Parsing C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\A_uint64_t_aligned.c
+In file included from C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\A_uint64_t_aligned.c:3:
+C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4/verifier.h:82:13: warning: verifier.h: branch = ESBMC (__ESBMC__ passado pelo driver) [-W#pragma-messages]
+    #pragma message "verifier.h: branch = ESBMC (__ESBMC__ passado pelo driver)"
+            ^
+Converting
+Generating GOTO Program
+GOTO program creation time: 0.266s
+GOTO program processing time: 0.000s
+Starting Bounded Model Checking
+Symex completed in: 0.001s (18 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.000s (removed 15 assignments)
+Generated 3 VCC(s), 1 remaining after simplification (3 assignments)
+No solver specified; defaulting to z3
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving with solver Z3 v4.13.3
+Runtime decision procedure: 0.001s
+Building error trace
+
+[Counterexample]
+
+
+State 1 file C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\A_uint64_t_aligned.c line 10 column 5 function main thread 0
+----------------------------------------------------
+Violated property:
+  file C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\A_uint64_t_aligned.c line 10 column 5 function main
+  assertion ((uintptr_t)(p) % sizeof(*(p))) == 0
+  0
+
+
+VERIFICATION FAILED
+ESBMC version 8.2.0 64-bit x86_64 windows
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_alinhamento_natural_v4\A_uint64_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 0.3333s
+================================================================================
+Target: 64-bit little-endian x86_64-unknown-windows with esbmclibc
+Parsing C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\A_uint64_t_misaligned.c
+In file included from C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\A_uint64_t_misaligned.c:3:
+C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4/verifier.h:82:13: warning: verifier.h: branch = ESBMC (__ESBMC__ passado pelo driver) [-W#pragma-messages]
+    #pragma message "verifier.h: branch = ESBMC (__ESBMC__ passado pelo driver)"
+            ^
+Converting
+Generating GOTO Program
+GOTO program creation time: 0.265s
+GOTO program processing time: 0.000s
+Starting Bounded Model Checking
+Symex completed in: 0.001s (19 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.000s (removed 15 assignments)
+Generated 3 VCC(s), 2 remaining after simplification (4 assignments)
+No solver specified; defaulting to z3
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving with solver Z3 v4.13.3
+Runtime decision procedure: 0.002s
+Building error trace
+
+[Counterexample]
+
+
+State 1 file C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\A_uint64_t_misaligned.c line 8 column 5 function main thread 0
+----------------------------------------------------
+Violated property:
+  file C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\A_uint64_t_misaligned.c line 8 column 5 function main
+  dereference failure: Incorrect alignment when accessing data object
+
+
+VERIFICATION FAILED
+ESBMC version 8.2.0 64-bit x86_64 windows
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_alinhamento_natural_v4\B_uint16_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 0.3165s
+================================================================================
+Target: 64-bit little-endian x86_64-unknown-windows with esbmclibc
+Parsing C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\B_uint16_t_aligned.c
+In file included from C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\B_uint16_t_aligned.c:3:
+C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4/verifier.h:82:13: warning: verifier.h: branch = ESBMC (__ESBMC__ passado pelo driver) [-W#pragma-messages]
+    #pragma message "verifier.h: branch = ESBMC (__ESBMC__ passado pelo driver)"
+            ^
+Converting
+Generating GOTO Program
+GOTO program creation time: 0.256s
+GOTO program processing time: 0.001s
+Starting Bounded Model Checking
+Symex completed in: 0.000s (18 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.000s (removed 15 assignments)
+Generated 4 VCC(s), 1 remaining after simplification (3 assignments)
+No solver specified; defaulting to z3
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving with solver Z3 v4.13.3
+Runtime decision procedure: 0.001s
+Building error trace
+
+[Counterexample]
+
+
+State 1 file C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\B_uint16_t_aligned.c line 10 column 5 function main thread 0
+----------------------------------------------------
+Violated property:
+  file C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\B_uint16_t_aligned.c line 10 column 5 function main
+  assertion ((uintptr_t)(p) % sizeof(*(p))) == 0
+  0
+
+
+VERIFICATION FAILED
+ESBMC version 8.2.0 64-bit x86_64 windows
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_alinhamento_natural_v4\B_uint16_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 0.326s
+================================================================================
+Target: 64-bit little-endian x86_64-unknown-windows with esbmclibc
+Parsing C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\B_uint16_t_misaligned.c
+In file included from C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\B_uint16_t_misaligned.c:3:
+C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4/verifier.h:82:13: warning: verifier.h: branch = ESBMC (__ESBMC__ passado pelo driver) [-W#pragma-messages]
+    #pragma message "verifier.h: branch = ESBMC (__ESBMC__ passado pelo driver)"
+            ^
+Converting
+Generating GOTO Program
+GOTO program creation time: 0.266s
+GOTO program processing time: 0.000s
+Starting Bounded Model Checking
+Symex completed in: 0.001s (21 assignments)
+Caching time: 0.000s (removed 1 assertions)
+Slicing time: 0.000s (removed 15 assignments)
+Generated 4 VCC(s), 3 remaining after simplification (5 assignments)
+No solver specified; defaulting to z3
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving with solver Z3 v4.13.3
+Runtime decision procedure: 0.002s
+Building error trace
+
+[Counterexample]
+
+
+State 1 file C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\B_uint16_t_misaligned.c line 8 column 5 function main thread 0
+----------------------------------------------------
+Violated property:
+  file C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\B_uint16_t_misaligned.c line 8 column 5 function main
+  dereference failure: Incorrect alignment when accessing data object
+
+
+VERIFICATION FAILED
+ESBMC version 8.2.0 64-bit x86_64 windows
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_alinhamento_natural_v4\B_uint32_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 0.3261s
+================================================================================
+Target: 64-bit little-endian x86_64-unknown-windows with esbmclibc
+Parsing C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\B_uint32_t_aligned.c
+In file included from C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\B_uint32_t_aligned.c:3:
+C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4/verifier.h:82:13: warning: verifier.h: branch = ESBMC (__ESBMC__ passado pelo driver) [-W#pragma-messages]
+    #pragma message "verifier.h: branch = ESBMC (__ESBMC__ passado pelo driver)"
+            ^
+Converting
+Generating GOTO Program
+GOTO program creation time: 0.261s
+GOTO program processing time: 0.000s
+Starting Bounded Model Checking
+Symex completed in: 0.001s (18 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.000s (removed 15 assignments)
+Generated 4 VCC(s), 1 remaining after simplification (3 assignments)
+No solver specified; defaulting to z3
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving with solver Z3 v4.13.3
+Runtime decision procedure: 0.001s
+Building error trace
+
+[Counterexample]
+
+
+State 1 file C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\B_uint32_t_aligned.c line 10 column 5 function main thread 0
+----------------------------------------------------
+Violated property:
+  file C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\B_uint32_t_aligned.c line 10 column 5 function main
+  assertion ((uintptr_t)(p) % sizeof(*(p))) == 0
+  0
+
+
+VERIFICATION FAILED
+ESBMC version 8.2.0 64-bit x86_64 windows
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_alinhamento_natural_v4\B_uint32_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 0.3257s
+================================================================================
+Target: 64-bit little-endian x86_64-unknown-windows with esbmclibc
+Parsing C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\B_uint32_t_misaligned.c
+In file included from C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\B_uint32_t_misaligned.c:3:
+C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4/verifier.h:82:13: warning: verifier.h: branch = ESBMC (__ESBMC__ passado pelo driver) [-W#pragma-messages]
+    #pragma message "verifier.h: branch = ESBMC (__ESBMC__ passado pelo driver)"
+            ^
+Converting
+Generating GOTO Program
+GOTO program creation time: 0.269s
+GOTO program processing time: 0.000s
+Starting Bounded Model Checking
+Symex completed in: 0.001s (21 assignments)
+Caching time: 0.000s (removed 1 assertions)
+Slicing time: 0.000s (removed 15 assignments)
+Generated 4 VCC(s), 3 remaining after simplification (5 assignments)
+No solver specified; defaulting to z3
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving with solver Z3 v4.13.3
+Runtime decision procedure: 0.001s
+Building error trace
+
+[Counterexample]
+
+
+State 1 file C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\B_uint32_t_misaligned.c line 8 column 5 function main thread 0
+----------------------------------------------------
+Violated property:
+  file C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\B_uint32_t_misaligned.c line 8 column 5 function main
+  dereference failure: Incorrect alignment when accessing data object
+
+
+VERIFICATION FAILED
+ESBMC version 8.2.0 64-bit x86_64 windows
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_alinhamento_natural_v4\B_uint64_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 0.3313s
+================================================================================
+Target: 64-bit little-endian x86_64-unknown-windows with esbmclibc
+Parsing C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\B_uint64_t_aligned.c
+In file included from C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\B_uint64_t_aligned.c:3:
+C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4/verifier.h:82:13: warning: verifier.h: branch = ESBMC (__ESBMC__ passado pelo driver) [-W#pragma-messages]
+    #pragma message "verifier.h: branch = ESBMC (__ESBMC__ passado pelo driver)"
+            ^
+Converting
+Generating GOTO Program
+GOTO program creation time: 0.266s
+GOTO program processing time: 0.001s
+Starting Bounded Model Checking
+Symex completed in: 0.000s (18 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.000s (removed 15 assignments)
+Generated 4 VCC(s), 1 remaining after simplification (3 assignments)
+No solver specified; defaulting to z3
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving with solver Z3 v4.13.3
+Runtime decision procedure: 0.002s
+Building error trace
+
+[Counterexample]
+
+
+State 1 file C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\B_uint64_t_aligned.c line 10 column 5 function main thread 0
+----------------------------------------------------
+Violated property:
+  file C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\B_uint64_t_aligned.c line 10 column 5 function main
+  assertion ((uintptr_t)(p) % sizeof(*(p))) == 0
+  0
+
+
+VERIFICATION FAILED
+ESBMC version 8.2.0 64-bit x86_64 windows
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_alinhamento_natural_v4\B_uint64_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 0.3257s
+================================================================================
+Target: 64-bit little-endian x86_64-unknown-windows with esbmclibc
+Parsing C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\B_uint64_t_misaligned.c
+In file included from C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\B_uint64_t_misaligned.c:3:
+C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4/verifier.h:82:13: warning: verifier.h: branch = ESBMC (__ESBMC__ passado pelo driver) [-W#pragma-messages]
+    #pragma message "verifier.h: branch = ESBMC (__ESBMC__ passado pelo driver)"
+            ^
+Converting
+Generating GOTO Program
+GOTO program creation time: 0.266s
+GOTO program processing time: 0.001s
+Starting Bounded Model Checking
+Symex completed in: 0.001s (21 assignments)
+Caching time: 0.000s (removed 1 assertions)
+Slicing time: 0.000s (removed 15 assignments)
+Generated 4 VCC(s), 3 remaining after simplification (5 assignments)
+No solver specified; defaulting to z3
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving with solver Z3 v4.13.3
+Runtime decision procedure: 0.001s
+Building error trace
+
+[Counterexample]
+
+
+State 1 file C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\B_uint64_t_misaligned.c line 8 column 5 function main thread 0
+----------------------------------------------------
+Violated property:
+  file C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\B_uint64_t_misaligned.c line 8 column 5 function main
+  dereference failure: Incorrect alignment when accessing data object
+
+
+VERIFICATION FAILED
+ESBMC version 8.2.0 64-bit x86_64 windows
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_alinhamento_natural_v4\C_uint16_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 0.3258s
+================================================================================
+Target: 64-bit little-endian x86_64-unknown-windows with esbmclibc
+Parsing C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\C_uint16_t_aligned.c
+In file included from C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\C_uint16_t_aligned.c:3:
+C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4/verifier.h:82:13: warning: verifier.h: branch = ESBMC (__ESBMC__ passado pelo driver) [-W#pragma-messages]
+    #pragma message "verifier.h: branch = ESBMC (__ESBMC__ passado pelo driver)"
+            ^
+Converting
+Generating GOTO Program
+GOTO program creation time: 0.268s
+GOTO program processing time: 0.001s
+Starting Bounded Model Checking
+Symex completed in: 0.000s (18 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.000s (removed 15 assignments)
+Generated 3 VCC(s), 1 remaining after simplification (3 assignments)
+No solver specified; defaulting to z3
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving with solver Z3 v4.13.3
+Runtime decision procedure: 0.001s
+Building error trace
+
+[Counterexample]
+
+
+State 1 file C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\C_uint16_t_aligned.c line 10 column 5 function main thread 0
+----------------------------------------------------
+Violated property:
+  file C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\C_uint16_t_aligned.c line 10 column 5 function main
+  assertion ((uintptr_t)(p) % sizeof(*(p))) == 0
+  0
+
+
+VERIFICATION FAILED
+ESBMC version 8.2.0 64-bit x86_64 windows
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_alinhamento_natural_v4\C_uint16_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 0.3285s
+================================================================================
+Target: 64-bit little-endian x86_64-unknown-windows with esbmclibc
+Parsing C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\C_uint16_t_misaligned.c
+In file included from C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\C_uint16_t_misaligned.c:3:
+C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4/verifier.h:82:13: warning: verifier.h: branch = ESBMC (__ESBMC__ passado pelo driver) [-W#pragma-messages]
+    #pragma message "verifier.h: branch = ESBMC (__ESBMC__ passado pelo driver)"
+            ^
+Converting
+Generating GOTO Program
+GOTO program creation time: 0.265s
+GOTO program processing time: 0.000s
+Starting Bounded Model Checking
+Symex completed in: 0.001s (19 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.000s (removed 15 assignments)
+Generated 3 VCC(s), 2 remaining after simplification (4 assignments)
+No solver specified; defaulting to z3
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving with solver Z3 v4.13.3
+Runtime decision procedure: 0.001s
+Building error trace
+
+[Counterexample]
+
+
+State 1 file C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\C_uint16_t_misaligned.c line 9 column 5 function main thread 0
+----------------------------------------------------
+Violated property:
+  file C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\C_uint16_t_misaligned.c line 9 column 5 function main
+  dereference failure: Incorrect alignment when accessing data object
+
+
+VERIFICATION FAILED
+ESBMC version 8.2.0 64-bit x86_64 windows
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_alinhamento_natural_v4\C_uint32_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 0.3425s
+================================================================================
+Target: 64-bit little-endian x86_64-unknown-windows with esbmclibc
+Parsing C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\C_uint32_t_aligned.c
+In file included from C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\C_uint32_t_aligned.c:3:
+C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4/verifier.h:82:13: warning: verifier.h: branch = ESBMC (__ESBMC__ passado pelo driver) [-W#pragma-messages]
+    #pragma message "verifier.h: branch = ESBMC (__ESBMC__ passado pelo driver)"
+            ^
+Converting
+Generating GOTO Program
+GOTO program creation time: 0.282s
+GOTO program processing time: 0.000s
+Starting Bounded Model Checking
+Symex completed in: 0.001s (18 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.000s (removed 15 assignments)
+Generated 3 VCC(s), 1 remaining after simplification (3 assignments)
+No solver specified; defaulting to z3
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving with solver Z3 v4.13.3
+Runtime decision procedure: 0.001s
+Building error trace
+
+[Counterexample]
+
+
+State 1 file C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\C_uint32_t_aligned.c line 10 column 5 function main thread 0
+----------------------------------------------------
+Violated property:
+  file C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\C_uint32_t_aligned.c line 10 column 5 function main
+  assertion ((uintptr_t)(p) % sizeof(*(p))) == 0
+  0
+
+
+VERIFICATION FAILED
+ESBMC version 8.2.0 64-bit x86_64 windows
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_alinhamento_natural_v4\C_uint32_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 0.326s
+================================================================================
+Target: 64-bit little-endian x86_64-unknown-windows with esbmclibc
+Parsing C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\C_uint32_t_misaligned.c
+In file included from C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\C_uint32_t_misaligned.c:3:
+C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4/verifier.h:82:13: warning: verifier.h: branch = ESBMC (__ESBMC__ passado pelo driver) [-W#pragma-messages]
+    #pragma message "verifier.h: branch = ESBMC (__ESBMC__ passado pelo driver)"
+            ^
+Converting
+Generating GOTO Program
+GOTO program creation time: 0.262s
+GOTO program processing time: 0.000s
+Starting Bounded Model Checking
+Symex completed in: 0.001s (19 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.000s (removed 15 assignments)
+Generated 3 VCC(s), 2 remaining after simplification (4 assignments)
+No solver specified; defaulting to z3
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving with solver Z3 v4.13.3
+Runtime decision procedure: 0.001s
+Building error trace
+
+[Counterexample]
+
+
+State 1 file C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\C_uint32_t_misaligned.c line 8 column 5 function main thread 0
+----------------------------------------------------
+Violated property:
+  file C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\C_uint32_t_misaligned.c line 8 column 5 function main
+  dereference failure: Incorrect alignment when accessing data object
+
+
+VERIFICATION FAILED
+ESBMC version 8.2.0 64-bit x86_64 windows
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_alinhamento_natural_v4\C_uint64_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 0.3383s
+================================================================================
+Target: 64-bit little-endian x86_64-unknown-windows with esbmclibc
+Parsing C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\C_uint64_t_aligned.c
+In file included from C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\C_uint64_t_aligned.c:3:
+C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4/verifier.h:82:13: warning: verifier.h: branch = ESBMC (__ESBMC__ passado pelo driver) [-W#pragma-messages]
+    #pragma message "verifier.h: branch = ESBMC (__ESBMC__ passado pelo driver)"
+            ^
+Converting
+Generating GOTO Program
+GOTO program creation time: 0.274s
+GOTO program processing time: 0.000s
+Starting Bounded Model Checking
+Symex completed in: 0.001s (18 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.000s (removed 15 assignments)
+Generated 3 VCC(s), 1 remaining after simplification (3 assignments)
+No solver specified; defaulting to z3
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving with solver Z3 v4.13.3
+Runtime decision procedure: 0.001s
+Building error trace
+
+[Counterexample]
+
+
+State 1 file C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\C_uint64_t_aligned.c line 10 column 5 function main thread 0
+----------------------------------------------------
+Violated property:
+  file C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\C_uint64_t_aligned.c line 10 column 5 function main
+  assertion ((uintptr_t)(p) % sizeof(*(p))) == 0
+  0
+
+
+VERIFICATION FAILED
+ESBMC version 8.2.0 64-bit x86_64 windows
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_alinhamento_natural_v4\C_uint64_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 0.3369s
+================================================================================
+Target: 64-bit little-endian x86_64-unknown-windows with esbmclibc
+Parsing C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\C_uint64_t_misaligned.c
+In file included from C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\C_uint64_t_misaligned.c:3:
+C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4/verifier.h:82:13: warning: verifier.h: branch = ESBMC (__ESBMC__ passado pelo driver) [-W#pragma-messages]
+    #pragma message "verifier.h: branch = ESBMC (__ESBMC__ passado pelo driver)"
+            ^
+Converting
+Generating GOTO Program
+GOTO program creation time: 0.272s
+GOTO program processing time: 0.000s
+Starting Bounded Model Checking
+Symex completed in: 0.001s (19 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.000s (removed 15 assignments)
+Generated 3 VCC(s), 2 remaining after simplification (4 assignments)
+No solver specified; defaulting to z3
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving with solver Z3 v4.13.3
+Runtime decision procedure: 0.002s
+Building error trace
+
+[Counterexample]
+
+
+State 1 file C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\C_uint64_t_misaligned.c line 9 column 5 function main thread 0
+----------------------------------------------------
+Violated property:
+  file C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\C_uint64_t_misaligned.c line 9 column 5 function main
+  dereference failure: Incorrect alignment when accessing data object
+
+
+VERIFICATION FAILED
+ESBMC version 8.2.0 64-bit x86_64 windows
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_alinhamento_natural_v4\D_uint16_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 0.3544s
+================================================================================
+Target: 64-bit little-endian x86_64-unknown-windows with esbmclibc
+Parsing C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\D_uint16_t_aligned.c
+In file included from C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\D_uint16_t_aligned.c:3:
+C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4/verifier.h:82:13: warning: verifier.h: branch = ESBMC (__ESBMC__ passado pelo driver) [-W#pragma-messages]
+    #pragma message "verifier.h: branch = ESBMC (__ESBMC__ passado pelo driver)"
+            ^
+Converting
+Generating GOTO Program
+GOTO program creation time: 0.284s
+GOTO program processing time: 0.001s
+Starting Bounded Model Checking
+Symex completed in: 0.001s (22 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.000s (removed 15 assignments)
+Generated 4 VCC(s), 4 remaining after simplification (7 assignments)
+No solver specified; defaulting to z3
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving with solver Z3 v4.13.3
+Runtime decision procedure: 0.002s
+Building error trace
+
+[Counterexample]
+
+
+State 1 file C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\D_uint16_t_aligned.c line 9 column 5 function main thread 0
+----------------------------------------------------
+  p = (unsigned short int *)((signed char *)(&s) + 2)
+
+State 5 file C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\D_uint16_t_aligned.c line 12 column 5 function main thread 0
+----------------------------------------------------
+Violated property:
+  file C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\D_uint16_t_aligned.c line 12 column 5 function main
+  assertion ((uintptr_t)(p) % sizeof(*(p))) == 0
+  0
+
+
+VERIFICATION FAILED
+ESBMC version 8.2.0 64-bit x86_64 windows
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_alinhamento_natural_v4\D_uint16_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 0.4282s
+================================================================================
+Target: 64-bit little-endian x86_64-unknown-windows with esbmclibc
+Parsing C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\D_uint16_t_misaligned.c
+In file included from C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\D_uint16_t_misaligned.c:4:
+C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4/verifier.h:82:13: warning: verifier.h: branch = ESBMC (__ESBMC__ passado pelo driver) [-W#pragma-messages]
+    #pragma message "verifier.h: branch = ESBMC (__ESBMC__ passado pelo driver)"
+            ^
+Converting
+Generating GOTO Program
+GOTO program creation time: 0.307s
+GOTO program processing time: 0.000s
+Starting Bounded Model Checking
+Symex completed in: 0.001s (21 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.000s (removed 16 assignments)
+Generated 4 VCC(s), 3 remaining after simplification (5 assignments)
+No solver specified; defaulting to z3
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving with solver Z3 v4.13.3
+Runtime decision procedure: 0.001s
+Building error trace
+
+[Counterexample]
+
+
+State 1 file C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\D_uint16_t_misaligned.c line 14 column 5 function main thread 0
+----------------------------------------------------
+Violated property:
+  file C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\D_uint16_t_misaligned.c line 14 column 5 function main
+  dereference failure: Incorrect alignment when accessing data object
+
+
+VERIFICATION FAILED
+ESBMC version 8.2.0 64-bit x86_64 windows
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_alinhamento_natural_v4\D_uint32_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 0.62s
+================================================================================
+Target: 64-bit little-endian x86_64-unknown-windows with esbmclibc
+Parsing C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\D_uint32_t_aligned.c
+In file included from C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\D_uint32_t_aligned.c:3:
+C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4/verifier.h:82:13: warning: verifier.h: branch = ESBMC (__ESBMC__ passado pelo driver) [-W#pragma-messages]
+    #pragma message "verifier.h: branch = ESBMC (__ESBMC__ passado pelo driver)"
+            ^
+Converting
+Generating GOTO Program
+GOTO program creation time: 0.416s
+GOTO program processing time: 0.001s
+Starting Bounded Model Checking
+Symex completed in: 0.001s (22 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.000s (removed 15 assignments)
+Generated 4 VCC(s), 4 remaining after simplification (7 assignments)
+No solver specified; defaulting to z3
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving with solver Z3 v4.13.3
+Runtime decision procedure: 0.001s
+Building error trace
+
+[Counterexample]
+
+
+State 1 file C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\D_uint32_t_aligned.c line 9 column 5 function main thread 0
+----------------------------------------------------
+  p = (unsigned int *)((signed char *)(&s) + 4)
+
+State 5 file C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\D_uint32_t_aligned.c line 12 column 5 function main thread 0
+----------------------------------------------------
+Violated property:
+  file C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\D_uint32_t_aligned.c line 12 column 5 function main
+  assertion ((uintptr_t)(p) % sizeof(*(p))) == 0
+  0
+
+
+VERIFICATION FAILED
+ESBMC version 8.2.0 64-bit x86_64 windows
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_alinhamento_natural_v4\D_uint32_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 0.6911s
+================================================================================
+Target: 64-bit little-endian x86_64-unknown-windows with esbmclibc
+Parsing C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\D_uint32_t_misaligned.c
+In file included from C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\D_uint32_t_misaligned.c:4:
+C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4/verifier.h:82:13: warning: verifier.h: branch = ESBMC (__ESBMC__ passado pelo driver) [-W#pragma-messages]
+    #pragma message "verifier.h: branch = ESBMC (__ESBMC__ passado pelo driver)"
+            ^
+Converting
+Generating GOTO Program
+GOTO program creation time: 0.551s
+GOTO program processing time: 0.000s
+Starting Bounded Model Checking
+Symex completed in: 0.001s (21 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.000s (removed 16 assignments)
+Generated 4 VCC(s), 3 remaining after simplification (5 assignments)
+No solver specified; defaulting to z3
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving with solver Z3 v4.13.3
+Runtime decision procedure: 0.001s
+Building error trace
+
+[Counterexample]
+
+
+State 1 file C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\D_uint32_t_misaligned.c line 14 column 5 function main thread 0
+----------------------------------------------------
+Violated property:
+  file C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\D_uint32_t_misaligned.c line 14 column 5 function main
+  dereference failure: Incorrect alignment when accessing data object
+
+
+VERIFICATION FAILED
+ESBMC version 8.2.0 64-bit x86_64 windows
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_alinhamento_natural_v4\D_uint64_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 0.5695s
+================================================================================
+Target: 64-bit little-endian x86_64-unknown-windows with esbmclibc
+Parsing C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\D_uint64_t_aligned.c
+In file included from C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\D_uint64_t_aligned.c:3:
+C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4/verifier.h:82:13: warning: verifier.h: branch = ESBMC (__ESBMC__ passado pelo driver) [-W#pragma-messages]
+    #pragma message "verifier.h: branch = ESBMC (__ESBMC__ passado pelo driver)"
+            ^
+Converting
+Generating GOTO Program
+GOTO program creation time: 0.504s
+GOTO program processing time: 0.001s
+Starting Bounded Model Checking
+Symex completed in: 0.001s (22 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.000s (removed 15 assignments)
+Generated 4 VCC(s), 4 remaining after simplification (7 assignments)
+No solver specified; defaulting to z3
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving with solver Z3 v4.13.3
+Runtime decision procedure: 0.001s
+Building error trace
+
+[Counterexample]
+
+
+State 1 file C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\D_uint64_t_aligned.c line 9 column 5 function main thread 0
+----------------------------------------------------
+  p = (unsigned long long int *)((signed char *)(&s) + 8)
+
+State 5 file C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\D_uint64_t_aligned.c line 12 column 5 function main thread 0
+----------------------------------------------------
+Violated property:
+  file C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\D_uint64_t_aligned.c line 12 column 5 function main
+  assertion ((uintptr_t)(p) % sizeof(*(p))) == 0
+  0
+
+
+VERIFICATION FAILED
+ESBMC version 8.2.0 64-bit x86_64 windows
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_alinhamento_natural_v4\D_uint64_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 0.3278s
+================================================================================
+Target: 64-bit little-endian x86_64-unknown-windows with esbmclibc
+Parsing C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\D_uint64_t_misaligned.c
+In file included from C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\D_uint64_t_misaligned.c:4:
+C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4/verifier.h:82:13: warning: verifier.h: branch = ESBMC (__ESBMC__ passado pelo driver) [-W#pragma-messages]
+    #pragma message "verifier.h: branch = ESBMC (__ESBMC__ passado pelo driver)"
+            ^
+Converting
+Generating GOTO Program
+GOTO program creation time: 0.267s
+GOTO program processing time: 0.000s
+Starting Bounded Model Checking
+Symex completed in: 0.001s (21 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.000s (removed 16 assignments)
+Generated 4 VCC(s), 3 remaining after simplification (5 assignments)
+No solver specified; defaulting to z3
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving with solver Z3 v4.13.3
+Runtime decision procedure: 0.002s
+Building error trace
+
+[Counterexample]
+
+
+State 1 file C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\D_uint64_t_misaligned.c line 14 column 5 function main thread 0
+----------------------------------------------------
+Violated property:
+  file C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\D_uint64_t_misaligned.c line 14 column 5 function main
+  dereference failure: Incorrect alignment when accessing data object
+
+
+VERIFICATION FAILED
+ESBMC version 8.2.0 64-bit x86_64 windows
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_alinhamento_natural_v4\E_uint16_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 0.3571s
+================================================================================
+Target: 64-bit little-endian x86_64-unknown-windows with esbmclibc
+Parsing C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\E_uint16_t_aligned.c
+In file included from C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\E_uint16_t_aligned.c:4:
+C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4/verifier.h:82:13: warning: verifier.h: branch = ESBMC (__ESBMC__ passado pelo driver) [-W#pragma-messages]
+    #pragma message "verifier.h: branch = ESBMC (__ESBMC__ passado pelo driver)"
+            ^
+Converting
+Generating GOTO Program
+GOTO program creation time: 0.287s
+GOTO program processing time: 0.000s
+Starting Bounded Model Checking
+Symex completed in: 0.001s (22 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.000s (removed 14 assignments)
+Generated 3 VCC(s), 3 remaining after simplification (8 assignments)
+No solver specified; defaulting to z3
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving with solver Z3 v4.13.3
+Runtime decision procedure: 0.004s
+Building error trace
+
+[Counterexample]
+
+
+State 1 file C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\E_uint16_t_aligned.c line 8 column 5 function main thread 0
+----------------------------------------------------
+  k = 4 (00000000 00000000 00000000 00000100)
+
+State 2 file C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\E_uint16_t_aligned.c line 9 column 5 function main thread 0
+----------------------------------------------------
+  p = (unsigned short int *)(&buf[0] + 8)
+
+State 5 file C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\E_uint16_t_aligned.c line 12 column 5 function main thread 0
+----------------------------------------------------
+Violated property:
+  file C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\E_uint16_t_aligned.c line 12 column 5 function main
+  assertion ((uintptr_t)(p) % sizeof(*(p))) == 0
+  0
+
+
+VERIFICATION FAILED
+ESBMC version 8.2.0 64-bit x86_64 windows
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_alinhamento_natural_v4\E_uint16_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 0.3406s
+================================================================================
+Target: 64-bit little-endian x86_64-unknown-windows with esbmclibc
+Parsing C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\E_uint16_t_misaligned.c
+In file included from C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\E_uint16_t_misaligned.c:4:
+C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4/verifier.h:82:13: warning: verifier.h: branch = ESBMC (__ESBMC__ passado pelo driver) [-W#pragma-messages]
+    #pragma message "verifier.h: branch = ESBMC (__ESBMC__ passado pelo driver)"
+            ^
+Converting
+Generating GOTO Program
+GOTO program creation time: 0.277s
+GOTO program processing time: 0.000s
+Starting Bounded Model Checking
+Symex completed in: 0.001s (22 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.000s (removed 14 assignments)
+Generated 3 VCC(s), 3 remaining after simplification (8 assignments)
+No solver specified; defaulting to z3
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving with solver Z3 v4.13.3
+Runtime decision procedure: 0.005s
+Building error trace
+
+[Counterexample]
+
+
+State 1 file C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\E_uint16_t_misaligned.c line 8 column 5 function main thread 0
+----------------------------------------------------
+  k = 4 (00000000 00000000 00000000 00000100)
+
+State 2 file C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\E_uint16_t_misaligned.c line 9 column 5 function main thread 0
+----------------------------------------------------
+  p = (unsigned short int *)(&buf[0] + 9)
+
+State 3 file C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\E_uint16_t_misaligned.c line 10 column 5 function main thread 0
+----------------------------------------------------
+Violated property:
+  file C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\E_uint16_t_misaligned.c line 10 column 5 function main
+  dereference failure: Incorrect alignment when accessing data object
+
+
+VERIFICATION FAILED
+ESBMC version 8.2.0 64-bit x86_64 windows
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_alinhamento_natural_v4\E_uint32_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 0.3521s
+================================================================================
+Target: 64-bit little-endian x86_64-unknown-windows with esbmclibc
+Parsing C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\E_uint32_t_aligned.c
+In file included from C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\E_uint32_t_aligned.c:4:
+C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4/verifier.h:82:13: warning: verifier.h: branch = ESBMC (__ESBMC__ passado pelo driver) [-W#pragma-messages]
+    #pragma message "verifier.h: branch = ESBMC (__ESBMC__ passado pelo driver)"
+            ^
+Converting
+Generating GOTO Program
+GOTO program creation time: 0.280s
+GOTO program processing time: 0.000s
+Starting Bounded Model Checking
+Symex completed in: 0.001s (22 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.000s (removed 14 assignments)
+Generated 3 VCC(s), 3 remaining after simplification (8 assignments)
+No solver specified; defaulting to z3
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving with solver Z3 v4.13.3
+Runtime decision procedure: 0.005s
+Building error trace
+
+[Counterexample]
+
+
+State 1 file C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\E_uint32_t_aligned.c line 8 column 5 function main thread 0
+----------------------------------------------------
+  k = 2 (00000000 00000000 00000000 00000010)
+
+State 2 file C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\E_uint32_t_aligned.c line 9 column 5 function main thread 0
+----------------------------------------------------
+  p = (unsigned int *)(&buf[0] + 8)
+
+State 5 file C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\E_uint32_t_aligned.c line 12 column 5 function main thread 0
+----------------------------------------------------
+Violated property:
+  file C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\E_uint32_t_aligned.c line 12 column 5 function main
+  assertion ((uintptr_t)(p) % sizeof(*(p))) == 0
+  0
+
+
+VERIFICATION FAILED
+ESBMC version 8.2.0 64-bit x86_64 windows
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_alinhamento_natural_v4\E_uint32_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 0.3584s
+================================================================================
+Target: 64-bit little-endian x86_64-unknown-windows with esbmclibc
+Parsing C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\E_uint32_t_misaligned.c
+In file included from C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\E_uint32_t_misaligned.c:4:
+C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4/verifier.h:82:13: warning: verifier.h: branch = ESBMC (__ESBMC__ passado pelo driver) [-W#pragma-messages]
+    #pragma message "verifier.h: branch = ESBMC (__ESBMC__ passado pelo driver)"
+            ^
+Converting
+Generating GOTO Program
+GOTO program creation time: 0.280s
+GOTO program processing time: 0.000s
+Starting Bounded Model Checking
+Symex completed in: 0.001s (22 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.000s (removed 14 assignments)
+Generated 3 VCC(s), 3 remaining after simplification (8 assignments)
+No solver specified; defaulting to z3
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving with solver Z3 v4.13.3
+Runtime decision procedure: 0.006s
+Building error trace
+
+[Counterexample]
+
+
+State 1 file C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\E_uint32_t_misaligned.c line 8 column 5 function main thread 0
+----------------------------------------------------
+  k = 0 (00000000 00000000 00000000 00000000)
+
+State 2 file C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\E_uint32_t_misaligned.c line 9 column 5 function main thread 0
+----------------------------------------------------
+  p = (unsigned int *)(&buf[0] + 1)
+
+State 3 file C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\E_uint32_t_misaligned.c line 10 column 5 function main thread 0
+----------------------------------------------------
+Violated property:
+  file C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\E_uint32_t_misaligned.c line 10 column 5 function main
+  dereference failure: Incorrect alignment when accessing data object
+
+
+VERIFICATION FAILED
+ESBMC version 8.2.0 64-bit x86_64 windows
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_alinhamento_natural_v4\E_uint64_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 0.3491s
+================================================================================
+Target: 64-bit little-endian x86_64-unknown-windows with esbmclibc
+Parsing C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\E_uint64_t_aligned.c
+In file included from C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\E_uint64_t_aligned.c:4:
+C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4/verifier.h:82:13: warning: verifier.h: branch = ESBMC (__ESBMC__ passado pelo driver) [-W#pragma-messages]
+    #pragma message "verifier.h: branch = ESBMC (__ESBMC__ passado pelo driver)"
+            ^
+Converting
+Generating GOTO Program
+GOTO program creation time: 0.274s
+GOTO program processing time: 0.001s
+Starting Bounded Model Checking
+Symex completed in: 0.001s (22 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.000s (removed 14 assignments)
+Generated 3 VCC(s), 3 remaining after simplification (8 assignments)
+No solver specified; defaulting to z3
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving with solver Z3 v4.13.3
+Runtime decision procedure: 0.006s
+Building error trace
+
+[Counterexample]
+
+
+State 1 file C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\E_uint64_t_aligned.c line 8 column 5 function main thread 0
+----------------------------------------------------
+  k = 2 (00000000 00000000 00000000 00000010)
+
+State 2 file C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\E_uint64_t_aligned.c line 9 column 5 function main thread 0
+----------------------------------------------------
+  p = (unsigned long long int *)(&buf[0] + 16)
+
+State 5 file C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\E_uint64_t_aligned.c line 12 column 5 function main thread 0
+----------------------------------------------------
+Violated property:
+  file C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\E_uint64_t_aligned.c line 12 column 5 function main
+  assertion ((uintptr_t)(p) % sizeof(*(p))) == 0
+  0
+
+
+VERIFICATION FAILED
+ESBMC version 8.2.0 64-bit x86_64 windows
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_alinhamento_natural_v4\E_uint64_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 0.3424s
+================================================================================
+Target: 64-bit little-endian x86_64-unknown-windows with esbmclibc
+Parsing C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\E_uint64_t_misaligned.c
+In file included from C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\E_uint64_t_misaligned.c:4:
+C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4/verifier.h:82:13: warning: verifier.h: branch = ESBMC (__ESBMC__ passado pelo driver) [-W#pragma-messages]
+    #pragma message "verifier.h: branch = ESBMC (__ESBMC__ passado pelo driver)"
+            ^
+Converting
+Generating GOTO Program
+GOTO program creation time: 0.271s
+GOTO program processing time: 0.001s
+Starting Bounded Model Checking
+Symex completed in: 0.001s (22 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.000s (removed 14 assignments)
+Generated 3 VCC(s), 3 remaining after simplification (8 assignments)
+No solver specified; defaulting to z3
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving with solver Z3 v4.13.3
+Runtime decision procedure: 0.006s
+Building error trace
+
+[Counterexample]
+
+
+State 1 file C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\E_uint64_t_misaligned.c line 8 column 5 function main thread 0
+----------------------------------------------------
+  k = 1 (00000000 00000000 00000000 00000001)
+
+State 2 file C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\E_uint64_t_misaligned.c line 9 column 5 function main thread 0
+----------------------------------------------------
+  p = (unsigned long long int *)(&buf[0] + 9)
+
+State 3 file C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\E_uint64_t_misaligned.c line 10 column 5 function main thread 0
+----------------------------------------------------
+Violated property:
+  file C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\E_uint64_t_misaligned.c line 10 column 5 function main
+  dereference failure: Incorrect alignment when accessing data object
+
+
+VERIFICATION FAILED
+ESBMC version 8.2.0 64-bit x86_64 windows
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_alinhamento_natural_v4\F_uint16_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 0.354s
+================================================================================
+Target: 64-bit little-endian x86_64-unknown-windows with esbmclibc
+Parsing C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\F_uint16_t_aligned.c
+In file included from C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\F_uint16_t_aligned.c:3:
+C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4/verifier.h:82:13: warning: verifier.h: branch = ESBMC (__ESBMC__ passado pelo driver) [-W#pragma-messages]
+    #pragma message "verifier.h: branch = ESBMC (__ESBMC__ passado pelo driver)"
+            ^
+Converting
+Generating GOTO Program
+GOTO program creation time: 0.280s
+GOTO program processing time: 0.000s
+Starting Bounded Model Checking
+Symex completed in: 0.001s (18 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.000s (removed 15 assignments)
+Generated 3 VCC(s), 1 remaining after simplification (3 assignments)
+No solver specified; defaulting to z3
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving with solver Z3 v4.13.3
+Runtime decision procedure: 0.001s
+Building error trace
+
+[Counterexample]
+
+
+State 1 file C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\F_uint16_t_aligned.c line 10 column 5 function main thread 0
+----------------------------------------------------
+Violated property:
+  file C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\F_uint16_t_aligned.c line 10 column 5 function main
+  assertion ((uintptr_t)(p) % sizeof(*(p))) == 0
+  0
+
+
+VERIFICATION FAILED
+ESBMC version 8.2.0 64-bit x86_64 windows
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_alinhamento_natural_v4\F_uint16_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 0.6128s
+================================================================================
+Target: 64-bit little-endian x86_64-unknown-windows with esbmclibc
+Parsing C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\F_uint16_t_misaligned.c
+In file included from C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\F_uint16_t_misaligned.c:3:
+C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4/verifier.h:82:13: warning: verifier.h: branch = ESBMC (__ESBMC__ passado pelo driver) [-W#pragma-messages]
+    #pragma message "verifier.h: branch = ESBMC (__ESBMC__ passado pelo driver)"
+            ^
+Converting
+Generating GOTO Program
+GOTO program creation time: 0.462s
+GOTO program processing time: 0.000s
+Starting Bounded Model Checking
+Symex completed in: 0.001s (19 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.000s (removed 15 assignments)
+Generated 3 VCC(s), 2 remaining after simplification (4 assignments)
+No solver specified; defaulting to z3
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving with solver Z3 v4.13.3
+Runtime decision procedure: 0.001s
+Building error trace
+
+[Counterexample]
+
+
+State 1 file C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\F_uint16_t_misaligned.c line 8 column 5 function main thread 0
+----------------------------------------------------
+Violated property:
+  file C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\F_uint16_t_misaligned.c line 8 column 5 function main
+  dereference failure: Incorrect alignment when accessing data object
+
+
+VERIFICATION FAILED
+ESBMC version 8.2.0 64-bit x86_64 windows
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_alinhamento_natural_v4\F_uint32_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 1.7702s
+================================================================================
+Target: 64-bit little-endian x86_64-unknown-windows with esbmclibc
+Parsing C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\F_uint32_t_aligned.c
+In file included from C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\F_uint32_t_aligned.c:3:
+C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4/verifier.h:82:13: warning: verifier.h: branch = ESBMC (__ESBMC__ passado pelo driver) [-W#pragma-messages]
+    #pragma message "verifier.h: branch = ESBMC (__ESBMC__ passado pelo driver)"
+            ^
+Converting
+Generating GOTO Program
+GOTO program creation time: 1.705s
+GOTO program processing time: 0.000s
+Starting Bounded Model Checking
+Symex completed in: 0.001s (18 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.000s (removed 15 assignments)
+Generated 3 VCC(s), 1 remaining after simplification (3 assignments)
+No solver specified; defaulting to z3
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving with solver Z3 v4.13.3
+Runtime decision procedure: 0.002s
+Building error trace
+
+[Counterexample]
+
+
+State 1 file C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\F_uint32_t_aligned.c line 10 column 5 function main thread 0
+----------------------------------------------------
+Violated property:
+  file C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\F_uint32_t_aligned.c line 10 column 5 function main
+  assertion ((uintptr_t)(p) % sizeof(*(p))) == 0
+  0
+
+
+VERIFICATION FAILED
+ESBMC version 8.2.0 64-bit x86_64 windows
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_alinhamento_natural_v4\F_uint32_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 0.3457s
+================================================================================
+Target: 64-bit little-endian x86_64-unknown-windows with esbmclibc
+Parsing C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\F_uint32_t_misaligned.c
+In file included from C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\F_uint32_t_misaligned.c:3:
+C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4/verifier.h:82:13: warning: verifier.h: branch = ESBMC (__ESBMC__ passado pelo driver) [-W#pragma-messages]
+    #pragma message "verifier.h: branch = ESBMC (__ESBMC__ passado pelo driver)"
+            ^
+Converting
+Generating GOTO Program
+GOTO program creation time: 0.282s
+GOTO program processing time: 0.000s
+Starting Bounded Model Checking
+Symex completed in: 0.000s (19 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.000s (removed 15 assignments)
+Generated 3 VCC(s), 2 remaining after simplification (4 assignments)
+No solver specified; defaulting to z3
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving with solver Z3 v4.13.3
+Runtime decision procedure: 0.002s
+Building error trace
+
+[Counterexample]
+
+
+State 1 file C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\F_uint32_t_misaligned.c line 8 column 5 function main thread 0
+----------------------------------------------------
+Violated property:
+  file C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\F_uint32_t_misaligned.c line 8 column 5 function main
+  dereference failure: Incorrect alignment when accessing data object
+
+
+VERIFICATION FAILED
+ESBMC version 8.2.0 64-bit x86_64 windows
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_alinhamento_natural_v4\F_uint64_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 0.3391s
+================================================================================
+Target: 64-bit little-endian x86_64-unknown-windows with esbmclibc
+Parsing C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\F_uint64_t_aligned.c
+In file included from C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\F_uint64_t_aligned.c:3:
+C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4/verifier.h:82:13: warning: verifier.h: branch = ESBMC (__ESBMC__ passado pelo driver) [-W#pragma-messages]
+    #pragma message "verifier.h: branch = ESBMC (__ESBMC__ passado pelo driver)"
+            ^
+Converting
+Generating GOTO Program
+GOTO program creation time: 0.274s
+GOTO program processing time: 0.001s
+Starting Bounded Model Checking
+Symex completed in: 0.000s (18 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.001s (removed 15 assignments)
+Generated 3 VCC(s), 1 remaining after simplification (3 assignments)
+No solver specified; defaulting to z3
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving with solver Z3 v4.13.3
+Runtime decision procedure: 0.002s
+Building error trace
+
+[Counterexample]
+
+
+State 1 file C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\F_uint64_t_aligned.c line 10 column 5 function main thread 0
+----------------------------------------------------
+Violated property:
+  file C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\F_uint64_t_aligned.c line 10 column 5 function main
+  assertion ((uintptr_t)(p) % sizeof(*(p))) == 0
+  0
+
+
+VERIFICATION FAILED
+ESBMC version 8.2.0 64-bit x86_64 windows
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_alinhamento_natural_v4\F_uint64_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 0.3746s
+================================================================================
+Target: 64-bit little-endian x86_64-unknown-windows with esbmclibc
+Parsing C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\F_uint64_t_misaligned.c
+In file included from C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\F_uint64_t_misaligned.c:3:
+C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4/verifier.h:82:13: warning: verifier.h: branch = ESBMC (__ESBMC__ passado pelo driver) [-W#pragma-messages]
+    #pragma message "verifier.h: branch = ESBMC (__ESBMC__ passado pelo driver)"
+            ^
+Converting
+Generating GOTO Program
+GOTO program creation time: 0.309s
+GOTO program processing time: 0.000s
+Starting Bounded Model Checking
+Symex completed in: 0.001s (19 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.000s (removed 15 assignments)
+Generated 3 VCC(s), 2 remaining after simplification (4 assignments)
+No solver specified; defaulting to z3
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving with solver Z3 v4.13.3
+Runtime decision procedure: 0.001s
+Building error trace
+
+[Counterexample]
+
+
+State 1 file C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\F_uint64_t_misaligned.c line 8 column 5 function main thread 0
+----------------------------------------------------
+Violated property:
+  file C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\F_uint64_t_misaligned.c line 8 column 5 function main
+  dereference failure: Incorrect alignment when accessing data object
+
+
+VERIFICATION FAILED
+ESBMC version 8.2.0 64-bit x86_64 windows
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_alinhamento_natural_v4\G_uint16_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 0.3517s
+================================================================================
+Target: 64-bit little-endian x86_64-unknown-windows with esbmclibc
+Parsing C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\G_uint16_t_aligned.c
+In file included from C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\G_uint16_t_aligned.c:4:
+C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4/verifier.h:82:13: warning: verifier.h: branch = ESBMC (__ESBMC__ passado pelo driver) [-W#pragma-messages]
+    #pragma message "verifier.h: branch = ESBMC (__ESBMC__ passado pelo driver)"
+            ^
+Converting
+Generating GOTO Program
+GOTO program creation time: 0.282s
+GOTO program processing time: 0.000s
+Starting Bounded Model Checking
+Symex completed in: 0.001s (18 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.000s (removed 15 assignments)
+Generated 3 VCC(s), 1 remaining after simplification (3 assignments)
+No solver specified; defaulting to z3
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving with solver Z3 v4.13.3
+Runtime decision procedure: 0.002s
+Building error trace
+
+[Counterexample]
+
+
+State 1 file C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\G_uint16_t_aligned.c line 11 column 5 function main thread 0
+----------------------------------------------------
+Violated property:
+  file C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\G_uint16_t_aligned.c line 11 column 5 function main
+  assertion ((uintptr_t)(p) % sizeof(*(p))) == 0
+  0
+
+
+VERIFICATION FAILED
+ESBMC version 8.2.0 64-bit x86_64 windows
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_alinhamento_natural_v4\G_uint16_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 0.3345s
+================================================================================
+Target: 64-bit little-endian x86_64-unknown-windows with esbmclibc
+Parsing C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\G_uint16_t_misaligned.c
+In file included from C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\G_uint16_t_misaligned.c:4:
+C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4/verifier.h:82:13: warning: verifier.h: branch = ESBMC (__ESBMC__ passado pelo driver) [-W#pragma-messages]
+    #pragma message "verifier.h: branch = ESBMC (__ESBMC__ passado pelo driver)"
+            ^
+Converting
+Generating GOTO Program
+GOTO program creation time: 0.274s
+GOTO program processing time: 0.000s
+Starting Bounded Model Checking
+Symex completed in: 0.001s (19 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.000s (removed 15 assignments)
+Generated 3 VCC(s), 2 remaining after simplification (4 assignments)
+No solver specified; defaulting to z3
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving with solver Z3 v4.13.3
+Runtime decision procedure: 0.002s
+Building error trace
+
+[Counterexample]
+
+
+State 1 file C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\G_uint16_t_misaligned.c line 9 column 5 function main thread 0
+----------------------------------------------------
+Violated property:
+  file C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\G_uint16_t_misaligned.c line 9 column 5 function main
+  dereference failure: Incorrect alignment when accessing data object
+
+
+VERIFICATION FAILED
+ESBMC version 8.2.0 64-bit x86_64 windows
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_alinhamento_natural_v4\G_uint32_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 0.349s
+================================================================================
+Target: 64-bit little-endian x86_64-unknown-windows with esbmclibc
+Parsing C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\G_uint32_t_aligned.c
+In file included from C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\G_uint32_t_aligned.c:4:
+C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4/verifier.h:82:13: warning: verifier.h: branch = ESBMC (__ESBMC__ passado pelo driver) [-W#pragma-messages]
+    #pragma message "verifier.h: branch = ESBMC (__ESBMC__ passado pelo driver)"
+            ^
+Converting
+Generating GOTO Program
+GOTO program creation time: 0.276s
+GOTO program processing time: 0.000s
+Starting Bounded Model Checking
+Symex completed in: 0.001s (18 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.000s (removed 15 assignments)
+Generated 3 VCC(s), 1 remaining after simplification (3 assignments)
+No solver specified; defaulting to z3
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving with solver Z3 v4.13.3
+Runtime decision procedure: 0.001s
+Building error trace
+
+[Counterexample]
+
+
+State 1 file C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\G_uint32_t_aligned.c line 11 column 5 function main thread 0
+----------------------------------------------------
+Violated property:
+  file C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\G_uint32_t_aligned.c line 11 column 5 function main
+  assertion ((uintptr_t)(p) % sizeof(*(p))) == 0
+  0
+
+
+VERIFICATION FAILED
+ESBMC version 8.2.0 64-bit x86_64 windows
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_alinhamento_natural_v4\G_uint32_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 0.3468s
+================================================================================
+Target: 64-bit little-endian x86_64-unknown-windows with esbmclibc
+Parsing C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\G_uint32_t_misaligned.c
+In file included from C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\G_uint32_t_misaligned.c:4:
+C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4/verifier.h:82:13: warning: verifier.h: branch = ESBMC (__ESBMC__ passado pelo driver) [-W#pragma-messages]
+    #pragma message "verifier.h: branch = ESBMC (__ESBMC__ passado pelo driver)"
+            ^
+Converting
+Generating GOTO Program
+GOTO program creation time: 0.286s
+GOTO program processing time: 0.000s
+Starting Bounded Model Checking
+Symex completed in: 0.001s (19 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.000s (removed 15 assignments)
+Generated 3 VCC(s), 2 remaining after simplification (4 assignments)
+No solver specified; defaulting to z3
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving with solver Z3 v4.13.3
+Runtime decision procedure: 0.002s
+Building error trace
+
+[Counterexample]
+
+
+State 1 file C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\G_uint32_t_misaligned.c line 9 column 5 function main thread 0
+----------------------------------------------------
+Violated property:
+  file C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\G_uint32_t_misaligned.c line 9 column 5 function main
+  dereference failure: Incorrect alignment when accessing data object
+
+
+VERIFICATION FAILED
+ESBMC version 8.2.0 64-bit x86_64 windows
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_alinhamento_natural_v4\G_uint64_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 0.4507s
+================================================================================
+Target: 64-bit little-endian x86_64-unknown-windows with esbmclibc
+Parsing C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\G_uint64_t_aligned.c
+In file included from C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\G_uint64_t_aligned.c:4:
+C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4/verifier.h:82:13: warning: verifier.h: branch = ESBMC (__ESBMC__ passado pelo driver) [-W#pragma-messages]
+    #pragma message "verifier.h: branch = ESBMC (__ESBMC__ passado pelo driver)"
+            ^
+Converting
+Generating GOTO Program
+GOTO program creation time: 0.294s
+GOTO program processing time: 0.000s
+Starting Bounded Model Checking
+Symex completed in: 0.001s (18 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.000s (removed 15 assignments)
+Generated 3 VCC(s), 1 remaining after simplification (3 assignments)
+No solver specified; defaulting to z3
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving with solver Z3 v4.13.3
+Runtime decision procedure: 0.001s
+Building error trace
+
+[Counterexample]
+
+
+State 1 file C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\G_uint64_t_aligned.c line 11 column 5 function main thread 0
+----------------------------------------------------
+Violated property:
+  file C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\G_uint64_t_aligned.c line 11 column 5 function main
+  assertion ((uintptr_t)(p) % sizeof(*(p))) == 0
+  0
+
+
+VERIFICATION FAILED
+ESBMC version 8.2.0 64-bit x86_64 windows
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_alinhamento_natural_v4\G_uint64_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 0.6031s
+================================================================================
+Target: 64-bit little-endian x86_64-unknown-windows with esbmclibc
+Parsing C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\G_uint64_t_misaligned.c
+In file included from C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\G_uint64_t_misaligned.c:4:
+C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4/verifier.h:82:13: warning: verifier.h: branch = ESBMC (__ESBMC__ passado pelo driver) [-W#pragma-messages]
+    #pragma message "verifier.h: branch = ESBMC (__ESBMC__ passado pelo driver)"
+            ^
+Converting
+Generating GOTO Program
+GOTO program creation time: 0.438s
+GOTO program processing time: 0.000s
+Starting Bounded Model Checking
+Symex completed in: 0.000s (19 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.000s (removed 15 assignments)
+Generated 3 VCC(s), 2 remaining after simplification (4 assignments)
+No solver specified; defaulting to z3
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving with solver Z3 v4.13.3
+Runtime decision procedure: 0.002s
+Building error trace
+
+[Counterexample]
+
+
+State 1 file C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\G_uint64_t_misaligned.c line 9 column 5 function main thread 0
+----------------------------------------------------
+Violated property:
+  file C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\G_uint64_t_misaligned.c line 9 column 5 function main
+  dereference failure: Incorrect alignment when accessing data object
+
+
+VERIFICATION FAILED
+ESBMC version 8.2.0 64-bit x86_64 windows
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_alinhamento_natural_v4\H_uint16_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 0.622s
+================================================================================
+Target: 64-bit little-endian x86_64-unknown-windows with esbmclibc
+Parsing C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\H_uint16_t_aligned.c
+In file included from C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\H_uint16_t_aligned.c:3:
+C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4/verifier.h:82:13: warning: verifier.h: branch = ESBMC (__ESBMC__ passado pelo driver) [-W#pragma-messages]
+    #pragma message "verifier.h: branch = ESBMC (__ESBMC__ passado pelo driver)"
+            ^
+C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\H_uint16_t_aligned.c:13:31: warning: taking address of packed member 'b' of class or structure 'S' may result in an unaligned pointer value [-Waddress-of-packed-member]
+    uint16_t *p = (uint16_t*)&sp.b;
+                              ^~~~
+Converting
+Generating GOTO Program
+GOTO program creation time: 0.553s
+GOTO program processing time: 0.000s
+Starting Bounded Model Checking
+Symex completed in: 0.001s (18 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.000s (removed 15 assignments)
+Generated 4 VCC(s), 1 remaining after simplification (3 assignments)
+No solver specified; defaulting to z3
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving with solver Z3 v4.13.3
+Runtime decision procedure: 0.001s
+Building error trace
+
+[Counterexample]
+
+
+State 1 file C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\H_uint16_t_aligned.c line 16 column 5 function main thread 0
+----------------------------------------------------
+Violated property:
+  file C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\H_uint16_t_aligned.c line 16 column 5 function main
+  assertion ((uintptr_t)(p) % sizeof(*(p))) == 0
+  0
+
+
+VERIFICATION FAILED
+ESBMC version 8.2.0 64-bit x86_64 windows
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_alinhamento_natural_v4\H_uint16_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 0.3604s
+================================================================================
+Target: 64-bit little-endian x86_64-unknown-windows with esbmclibc
+Parsing C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\H_uint16_t_misaligned.c
+In file included from C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\H_uint16_t_misaligned.c:3:
+C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4/verifier.h:82:13: warning: verifier.h: branch = ESBMC (__ESBMC__ passado pelo driver) [-W#pragma-messages]
+    #pragma message "verifier.h: branch = ESBMC (__ESBMC__ passado pelo driver)"
+            ^
+C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\H_uint16_t_misaligned.c:12:31: warning: taking address of packed member 'b' of class or structure 'S' may result in an unaligned pointer value [-Waddress-of-packed-member]
+    uint16_t *p = (uint16_t*)&s.b;
+                              ^~~
+Converting
+Generating GOTO Program
+GOTO program creation time: 0.289s
+GOTO program processing time: 0.000s
+Starting Bounded Model Checking
+Symex completed in: 0.001s (20 assignments)
+Caching time: 0.000s (removed 1 assertions)
+Slicing time: 0.000s (removed 15 assignments)
+Generated 4 VCC(s), 2 remaining after simplification (4 assignments)
+No solver specified; defaulting to z3
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving with solver Z3 v4.13.3
+Runtime decision procedure: 0.001s
+Building error trace
+
+[Counterexample]
+
+
+State 1 file C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\H_uint16_t_misaligned.c line 13 column 5 function main thread 0
+----------------------------------------------------
+Violated property:
+  file C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\H_uint16_t_misaligned.c line 13 column 5 function main
+  dereference failure: Incorrect alignment when accessing data object
+
+
+VERIFICATION FAILED
+ESBMC version 8.2.0 64-bit x86_64 windows
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_alinhamento_natural_v4\H_uint32_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 0.3551s
+================================================================================
+Target: 64-bit little-endian x86_64-unknown-windows with esbmclibc
+Parsing C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\H_uint32_t_aligned.c
+In file included from C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\H_uint32_t_aligned.c:3:
+C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4/verifier.h:82:13: warning: verifier.h: branch = ESBMC (__ESBMC__ passado pelo driver) [-W#pragma-messages]
+    #pragma message "verifier.h: branch = ESBMC (__ESBMC__ passado pelo driver)"
+            ^
+C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\H_uint32_t_aligned.c:13:31: warning: taking address of packed member 'b' of class or structure 'S' may result in an unaligned pointer value [-Waddress-of-packed-member]
+    uint32_t *p = (uint32_t*)&sp.b;
+                              ^~~~
+Converting
+Generating GOTO Program
+GOTO program creation time: 0.286s
+GOTO program processing time: 0.000s
+Starting Bounded Model Checking
+Symex completed in: 0.001s (18 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.000s (removed 15 assignments)
+Generated 4 VCC(s), 1 remaining after simplification (3 assignments)
+No solver specified; defaulting to z3
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving with solver Z3 v4.13.3
+Runtime decision procedure: 0.002s
+Building error trace
+
+[Counterexample]
+
+
+State 1 file C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\H_uint32_t_aligned.c line 16 column 5 function main thread 0
+----------------------------------------------------
+Violated property:
+  file C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\H_uint32_t_aligned.c line 16 column 5 function main
+  assertion ((uintptr_t)(p) % sizeof(*(p))) == 0
+  0
+
+
+VERIFICATION FAILED
+ESBMC version 8.2.0 64-bit x86_64 windows
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_alinhamento_natural_v4\H_uint32_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 0.3519s
+================================================================================
+Target: 64-bit little-endian x86_64-unknown-windows with esbmclibc
+Parsing C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\H_uint32_t_misaligned.c
+In file included from C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\H_uint32_t_misaligned.c:3:
+C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4/verifier.h:82:13: warning: verifier.h: branch = ESBMC (__ESBMC__ passado pelo driver) [-W#pragma-messages]
+    #pragma message "verifier.h: branch = ESBMC (__ESBMC__ passado pelo driver)"
+            ^
+C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\H_uint32_t_misaligned.c:12:31: warning: taking address of packed member 'b' of class or structure 'S' may result in an unaligned pointer value [-Waddress-of-packed-member]
+    uint32_t *p = (uint32_t*)&s.b;
+                              ^~~
+Converting
+Generating GOTO Program
+GOTO program creation time: 0.280s
+GOTO program processing time: 0.000s
+Starting Bounded Model Checking
+Symex completed in: 0.000s (20 assignments)
+Caching time: 0.000s (removed 1 assertions)
+Slicing time: 0.000s (removed 15 assignments)
+Generated 4 VCC(s), 2 remaining after simplification (4 assignments)
+No solver specified; defaulting to z3
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving with solver Z3 v4.13.3
+Runtime decision procedure: 0.002s
+Building error trace
+
+[Counterexample]
+
+
+State 1 file C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\H_uint32_t_misaligned.c line 13 column 5 function main thread 0
+----------------------------------------------------
+Violated property:
+  file C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\H_uint32_t_misaligned.c line 13 column 5 function main
+  dereference failure: Incorrect alignment when accessing data object
+
+
+VERIFICATION FAILED
+ESBMC version 8.2.0 64-bit x86_64 windows
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_alinhamento_natural_v4\H_uint64_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 0.3358s
+================================================================================
+Target: 64-bit little-endian x86_64-unknown-windows with esbmclibc
+Parsing C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\H_uint64_t_aligned.c
+In file included from C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\H_uint64_t_aligned.c:3:
+C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4/verifier.h:82:13: warning: verifier.h: branch = ESBMC (__ESBMC__ passado pelo driver) [-W#pragma-messages]
+    #pragma message "verifier.h: branch = ESBMC (__ESBMC__ passado pelo driver)"
+            ^
+C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\H_uint64_t_aligned.c:13:31: warning: taking address of packed member 'b' of class or structure 'S' may result in an unaligned pointer value [-Waddress-of-packed-member]
+    uint64_t *p = (uint64_t*)&sp.b;
+                              ^~~~
+Converting
+Generating GOTO Program
+GOTO program creation time: 0.275s
+GOTO program processing time: 0.000s
+Starting Bounded Model Checking
+Symex completed in: 0.001s (18 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.000s (removed 15 assignments)
+Generated 4 VCC(s), 1 remaining after simplification (3 assignments)
+No solver specified; defaulting to z3
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving with solver Z3 v4.13.3
+Runtime decision procedure: 0.001s
+Building error trace
+
+[Counterexample]
+
+
+State 1 file C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\H_uint64_t_aligned.c line 16 column 5 function main thread 0
+----------------------------------------------------
+Violated property:
+  file C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\H_uint64_t_aligned.c line 16 column 5 function main
+  assertion ((uintptr_t)(p) % sizeof(*(p))) == 0
+  0
+
+
+VERIFICATION FAILED
+ESBMC version 8.2.0 64-bit x86_64 windows
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_alinhamento_natural_v4\H_uint64_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 0.337s
+================================================================================
+Target: 64-bit little-endian x86_64-unknown-windows with esbmclibc
+Parsing C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\H_uint64_t_misaligned.c
+In file included from C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\H_uint64_t_misaligned.c:3:
+C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4/verifier.h:82:13: warning: verifier.h: branch = ESBMC (__ESBMC__ passado pelo driver) [-W#pragma-messages]
+    #pragma message "verifier.h: branch = ESBMC (__ESBMC__ passado pelo driver)"
+            ^
+C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\H_uint64_t_misaligned.c:12:31: warning: taking address of packed member 'b' of class or structure 'S' may result in an unaligned pointer value [-Waddress-of-packed-member]
+    uint64_t *p = (uint64_t*)&s.b;
+                              ^~~
+Converting
+Generating GOTO Program
+GOTO program creation time: 0.273s
+GOTO program processing time: 0.001s
+Starting Bounded Model Checking
+Symex completed in: 0.000s (20 assignments)
+Caching time: 0.000s (removed 1 assertions)
+Slicing time: 0.000s (removed 15 assignments)
+Generated 4 VCC(s), 2 remaining after simplification (4 assignments)
+No solver specified; defaulting to z3
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving with solver Z3 v4.13.3
+Runtime decision procedure: 0.001s
+Building error trace
+
+[Counterexample]
+
+
+State 1 file C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\H_uint64_t_misaligned.c line 13 column 5 function main thread 0
+----------------------------------------------------
+Violated property:
+  file C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\H_uint64_t_misaligned.c line 13 column 5 function main
+  dereference failure: Incorrect alignment when accessing data object
+
+
+VERIFICATION FAILED
+ESBMC version 8.2.0 64-bit x86_64 windows
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_alinhamento_natural_v4\I_uint16_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 0.3383s
+================================================================================
+Target: 64-bit little-endian x86_64-unknown-windows with esbmclibc
+Parsing C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\I_uint16_t_aligned.c
+In file included from C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\I_uint16_t_aligned.c:3:
+C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4/verifier.h:82:13: warning: verifier.h: branch = ESBMC (__ESBMC__ passado pelo driver) [-W#pragma-messages]
+    #pragma message "verifier.h: branch = ESBMC (__ESBMC__ passado pelo driver)"
+            ^
+Converting
+Generating GOTO Program
+GOTO program creation time: 0.277s
+GOTO program processing time: 0.000s
+Starting Bounded Model Checking
+Symex completed in: 0.001s (18 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.000s (removed 15 assignments)
+Generated 3 VCC(s), 1 remaining after simplification (3 assignments)
+No solver specified; defaulting to z3
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving with solver Z3 v4.13.3
+Runtime decision procedure: 0.001s
+Building error trace
+
+[Counterexample]
+
+
+State 1 file C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\I_uint16_t_aligned.c line 10 column 5 function main thread 0
+----------------------------------------------------
+Violated property:
+  file C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\I_uint16_t_aligned.c line 10 column 5 function main
+  assertion ((uintptr_t)(p) % sizeof(*(p))) == 0
+  0
+
+
+VERIFICATION FAILED
+ESBMC version 8.2.0 64-bit x86_64 windows
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_alinhamento_natural_v4\I_uint16_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 0.337s
+================================================================================
+Target: 64-bit little-endian x86_64-unknown-windows with esbmclibc
+Parsing C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\I_uint16_t_misaligned.c
+In file included from C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\I_uint16_t_misaligned.c:3:
+C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4/verifier.h:82:13: warning: verifier.h: branch = ESBMC (__ESBMC__ passado pelo driver) [-W#pragma-messages]
+    #pragma message "verifier.h: branch = ESBMC (__ESBMC__ passado pelo driver)"
+            ^
+Converting
+Generating GOTO Program
+GOTO program creation time: 0.273s
+GOTO program processing time: 0.001s
+Starting Bounded Model Checking
+Symex completed in: 0.000s (19 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.000s (removed 15 assignments)
+Generated 3 VCC(s), 2 remaining after simplification (4 assignments)
+No solver specified; defaulting to z3
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving with solver Z3 v4.13.3
+Runtime decision procedure: 0.002s
+Building error trace
+
+[Counterexample]
+
+
+State 1 file C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\I_uint16_t_misaligned.c line 8 column 5 function main thread 0
+----------------------------------------------------
+Violated property:
+  file C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\I_uint16_t_misaligned.c line 8 column 5 function main
+  dereference failure: Incorrect alignment when accessing data object
+
+
+VERIFICATION FAILED
+ESBMC version 8.2.0 64-bit x86_64 windows
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_alinhamento_natural_v4\I_uint32_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 0.3378s
+================================================================================
+Target: 64-bit little-endian x86_64-unknown-windows with esbmclibc
+Parsing C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\I_uint32_t_aligned.c
+In file included from C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\I_uint32_t_aligned.c:3:
+C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4/verifier.h:82:13: warning: verifier.h: branch = ESBMC (__ESBMC__ passado pelo driver) [-W#pragma-messages]
+    #pragma message "verifier.h: branch = ESBMC (__ESBMC__ passado pelo driver)"
+            ^
+Converting
+Generating GOTO Program
+GOTO program creation time: 0.278s
+GOTO program processing time: 0.000s
+Starting Bounded Model Checking
+Symex completed in: 0.001s (18 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.000s (removed 15 assignments)
+Generated 3 VCC(s), 1 remaining after simplification (3 assignments)
+No solver specified; defaulting to z3
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving with solver Z3 v4.13.3
+Runtime decision procedure: 0.001s
+Building error trace
+
+[Counterexample]
+
+
+State 1 file C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\I_uint32_t_aligned.c line 10 column 5 function main thread 0
+----------------------------------------------------
+Violated property:
+  file C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\I_uint32_t_aligned.c line 10 column 5 function main
+  assertion ((uintptr_t)(p) % sizeof(*(p))) == 0
+  0
+
+
+VERIFICATION FAILED
+ESBMC version 8.2.0 64-bit x86_64 windows
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_alinhamento_natural_v4\I_uint32_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 0.3414s
+================================================================================
+Target: 64-bit little-endian x86_64-unknown-windows with esbmclibc
+Parsing C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\I_uint32_t_misaligned.c
+In file included from C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\I_uint32_t_misaligned.c:3:
+C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4/verifier.h:82:13: warning: verifier.h: branch = ESBMC (__ESBMC__ passado pelo driver) [-W#pragma-messages]
+    #pragma message "verifier.h: branch = ESBMC (__ESBMC__ passado pelo driver)"
+            ^
+Converting
+Generating GOTO Program
+GOTO program creation time: 0.282s
+GOTO program processing time: 0.001s
+Starting Bounded Model Checking
+Symex completed in: 0.001s (19 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.000s (removed 15 assignments)
+Generated 3 VCC(s), 2 remaining after simplification (4 assignments)
+No solver specified; defaulting to z3
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving with solver Z3 v4.13.3
+Runtime decision procedure: 0.001s
+Building error trace
+
+[Counterexample]
+
+
+State 1 file C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\I_uint32_t_misaligned.c line 8 column 5 function main thread 0
+----------------------------------------------------
+Violated property:
+  file C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\I_uint32_t_misaligned.c line 8 column 5 function main
+  dereference failure: Incorrect alignment when accessing data object
+
+
+VERIFICATION FAILED
+ESBMC version 8.2.0 64-bit x86_64 windows
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_alinhamento_natural_v4\I_uint64_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 0.3469s
+================================================================================
+Target: 64-bit little-endian x86_64-unknown-windows with esbmclibc
+Parsing C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\I_uint64_t_aligned.c
+In file included from C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\I_uint64_t_aligned.c:3:
+C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4/verifier.h:82:13: warning: verifier.h: branch = ESBMC (__ESBMC__ passado pelo driver) [-W#pragma-messages]
+    #pragma message "verifier.h: branch = ESBMC (__ESBMC__ passado pelo driver)"
+            ^
+Converting
+Generating GOTO Program
+GOTO program creation time: 0.287s
+GOTO program processing time: 0.000s
+Starting Bounded Model Checking
+Symex completed in: 0.001s (18 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.000s (removed 15 assignments)
+Generated 3 VCC(s), 1 remaining after simplification (3 assignments)
+No solver specified; defaulting to z3
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving with solver Z3 v4.13.3
+Runtime decision procedure: 0.001s
+Building error trace
+
+[Counterexample]
+
+
+State 1 file C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\I_uint64_t_aligned.c line 10 column 5 function main thread 0
+----------------------------------------------------
+Violated property:
+  file C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\I_uint64_t_aligned.c line 10 column 5 function main
+  assertion ((uintptr_t)(p) % sizeof(*(p))) == 0
+  0
+
+
+VERIFICATION FAILED
+ESBMC version 8.2.0 64-bit x86_64 windows
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_alinhamento_natural_v4\I_uint64_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 0.3537s
+================================================================================
+Target: 64-bit little-endian x86_64-unknown-windows with esbmclibc
+Parsing C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\I_uint64_t_misaligned.c
+In file included from C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\I_uint64_t_misaligned.c:3:
+C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4/verifier.h:82:13: warning: verifier.h: branch = ESBMC (__ESBMC__ passado pelo driver) [-W#pragma-messages]
+    #pragma message "verifier.h: branch = ESBMC (__ESBMC__ passado pelo driver)"
+            ^
+Converting
+Generating GOTO Program
+GOTO program creation time: 0.286s
+GOTO program processing time: 0.000s
+Starting Bounded Model Checking
+Symex completed in: 0.001s (19 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.000s (removed 15 assignments)
+Generated 3 VCC(s), 2 remaining after simplification (4 assignments)
+No solver specified; defaulting to z3
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving with solver Z3 v4.13.3
+Runtime decision procedure: 0.001s
+Building error trace
+
+[Counterexample]
+
+
+State 1 file C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\I_uint64_t_misaligned.c line 8 column 5 function main thread 0
+----------------------------------------------------
+Violated property:
+  file C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\I_uint64_t_misaligned.c line 8 column 5 function main
+  dereference failure: Incorrect alignment when accessing data object
+
+
+VERIFICATION FAILED
+ESBMC version 8.2.0 64-bit x86_64 windows
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_alinhamento_natural_v4\J_uint16_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 0.3405s
+================================================================================
+Target: 64-bit little-endian x86_64-unknown-windows with esbmclibc
+Parsing C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\J_uint16_t_aligned.c
+In file included from C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\J_uint16_t_aligned.c:3:
+C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4/verifier.h:82:13: warning: verifier.h: branch = ESBMC (__ESBMC__ passado pelo driver) [-W#pragma-messages]
+    #pragma message "verifier.h: branch = ESBMC (__ESBMC__ passado pelo driver)"
+            ^
+Converting
+Generating GOTO Program
+GOTO program creation time: 0.274s
+GOTO program processing time: 0.000s
+Starting Bounded Model Checking
+Symex completed in: 0.001s (19 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.000s (removed 16 assignments)
+Generated 4 VCC(s), 1 remaining after simplification (3 assignments)
+No solver specified; defaulting to z3
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving with solver Z3 v4.13.3
+Runtime decision procedure: 0.001s
+Building error trace
+
+[Counterexample]
+
+
+State 1 file C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\J_uint16_t_aligned.c line 11 column 5 function main thread 0
+----------------------------------------------------
+Violated property:
+  file C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\J_uint16_t_aligned.c line 11 column 5 function main
+  assertion ((uintptr_t)(q) % sizeof(*(q))) == 0
+  0
+
+
+VERIFICATION FAILED
+ESBMC version 8.2.0 64-bit x86_64 windows
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_alinhamento_natural_v4\J_uint16_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 0.5862s
+================================================================================
+Target: 64-bit little-endian x86_64-unknown-windows with esbmclibc
+Parsing C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\J_uint16_t_misaligned.c
+In file included from C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\J_uint16_t_misaligned.c:3:
+C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4/verifier.h:82:13: warning: verifier.h: branch = ESBMC (__ESBMC__ passado pelo driver) [-W#pragma-messages]
+    #pragma message "verifier.h: branch = ESBMC (__ESBMC__ passado pelo driver)"
+            ^
+Converting
+Generating GOTO Program
+GOTO program creation time: 0.411s
+GOTO program processing time: 0.000s
+Starting Bounded Model Checking
+Symex completed in: 0.001s (19 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.000s (removed 16 assignments)
+Generated 4 VCC(s), 1 remaining after simplification (3 assignments)
+No solver specified; defaulting to z3
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving with solver Z3 v4.13.3
+Runtime decision procedure: 0.001s
+Building error trace
+
+[Counterexample]
+
+
+State 1 file C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\J_uint16_t_misaligned.c line 13 column 5 function main thread 0
+----------------------------------------------------
+Violated property:
+  file C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\J_uint16_t_misaligned.c line 13 column 5 function main
+  assertion ((uintptr_t)(q) % sizeof(*(q))) == 0
+  0
+
+
+VERIFICATION FAILED
+ESBMC version 8.2.0 64-bit x86_64 windows
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_alinhamento_natural_v4\J_uint32_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 0.8279s
+================================================================================
+Target: 64-bit little-endian x86_64-unknown-windows with esbmclibc
+Parsing C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\J_uint32_t_aligned.c
+In file included from C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\J_uint32_t_aligned.c:3:
+C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4/verifier.h:82:13: warning: verifier.h: branch = ESBMC (__ESBMC__ passado pelo driver) [-W#pragma-messages]
+    #pragma message "verifier.h: branch = ESBMC (__ESBMC__ passado pelo driver)"
+            ^
+Converting
+Generating GOTO Program
+GOTO program creation time: 0.586s
+GOTO program processing time: 0.000s
+Starting Bounded Model Checking
+Symex completed in: 0.000s (19 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.000s (removed 16 assignments)
+Generated 4 VCC(s), 1 remaining after simplification (3 assignments)
+No solver specified; defaulting to z3
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving with solver Z3 v4.13.3
+Runtime decision procedure: 0.001s
+Building error trace
+
+[Counterexample]
+
+
+State 1 file C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\J_uint32_t_aligned.c line 12 column 5 function main thread 0
+----------------------------------------------------
+Violated property:
+  file C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\J_uint32_t_aligned.c line 12 column 5 function main
+  assertion ((uintptr_t)(q) % sizeof(*(q))) == 0
+  0
+
+
+VERIFICATION FAILED
+ESBMC version 8.2.0 64-bit x86_64 windows
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_alinhamento_natural_v4\J_uint32_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 0.7182s
+================================================================================
+Target: 64-bit little-endian x86_64-unknown-windows with esbmclibc
+Parsing C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\J_uint32_t_misaligned.c
+In file included from C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\J_uint32_t_misaligned.c:3:
+C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4/verifier.h:82:13: warning: verifier.h: branch = ESBMC (__ESBMC__ passado pelo driver) [-W#pragma-messages]
+    #pragma message "verifier.h: branch = ESBMC (__ESBMC__ passado pelo driver)"
+            ^
+Converting
+Generating GOTO Program
+GOTO program creation time: 0.531s
+GOTO program processing time: 0.000s
+Starting Bounded Model Checking
+Symex completed in: 0.001s (19 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.000s (removed 16 assignments)
+Generated 4 VCC(s), 1 remaining after simplification (3 assignments)
+No solver specified; defaulting to z3
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving with solver Z3 v4.13.3
+Runtime decision procedure: 0.002s
+Building error trace
+
+[Counterexample]
+
+
+State 1 file C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\J_uint32_t_misaligned.c line 14 column 5 function main thread 0
+----------------------------------------------------
+Violated property:
+  file C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\J_uint32_t_misaligned.c line 14 column 5 function main
+  assertion ((uintptr_t)(q) % sizeof(*(q))) == 0
+  0
+
+
+VERIFICATION FAILED
+ESBMC version 8.2.0 64-bit x86_64 windows
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_alinhamento_natural_v4\J_uint64_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 0.372s
+================================================================================
+Target: 64-bit little-endian x86_64-unknown-windows with esbmclibc
+Parsing C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\J_uint64_t_aligned.c
+In file included from C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\J_uint64_t_aligned.c:3:
+C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4/verifier.h:82:13: warning: verifier.h: branch = ESBMC (__ESBMC__ passado pelo driver) [-W#pragma-messages]
+    #pragma message "verifier.h: branch = ESBMC (__ESBMC__ passado pelo driver)"
+            ^
+Converting
+Generating GOTO Program
+GOTO program creation time: 0.309s
+GOTO program processing time: 0.001s
+Starting Bounded Model Checking
+Symex completed in: 0.000s (19 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.000s (removed 16 assignments)
+Generated 4 VCC(s), 1 remaining after simplification (3 assignments)
+No solver specified; defaulting to z3
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving with solver Z3 v4.13.3
+Runtime decision procedure: 0.001s
+Building error trace
+
+[Counterexample]
+
+
+State 1 file C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\J_uint64_t_aligned.c line 12 column 5 function main thread 0
+----------------------------------------------------
+Violated property:
+  file C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\J_uint64_t_aligned.c line 12 column 5 function main
+  assertion ((uintptr_t)(q) % sizeof(*(q))) == 0
+  0
+
+
+VERIFICATION FAILED
+ESBMC version 8.2.0 64-bit x86_64 windows
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_alinhamento_natural_v4\J_uint64_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 0.3312s
+================================================================================
+Target: 64-bit little-endian x86_64-unknown-windows with esbmclibc
+Parsing C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\J_uint64_t_misaligned.c
+In file included from C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\J_uint64_t_misaligned.c:3:
+C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4/verifier.h:82:13: warning: verifier.h: branch = ESBMC (__ESBMC__ passado pelo driver) [-W#pragma-messages]
+    #pragma message "verifier.h: branch = ESBMC (__ESBMC__ passado pelo driver)"
+            ^
+Converting
+Generating GOTO Program
+GOTO program creation time: 0.272s
+GOTO program processing time: 0.000s
+Starting Bounded Model Checking
+Symex completed in: 0.001s (19 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.000s (removed 16 assignments)
+Generated 4 VCC(s), 1 remaining after simplification (3 assignments)
+No solver specified; defaulting to z3
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving with solver Z3 v4.13.3
+Runtime decision procedure: 0.002s
+Building error trace
+
+[Counterexample]
+
+
+State 1 file C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\J_uint64_t_misaligned.c line 14 column 5 function main thread 0
+----------------------------------------------------
+Violated property:
+  file C:\Wesley\UFAM\esbmc-windows\windows-release\bin\benchmark_v4_3\benchmark_com_assertions_alinhamento_natural_v4\J_uint64_t_misaligned.c line 14 column 5 function main
+  assertion ((uintptr_t)(q) % sizeof(*(q))) == 0
+  0
+
+
+VERIFICATION FAILED
+ESBMC version 8.2.0 64-bit x86_64 windows
+
+

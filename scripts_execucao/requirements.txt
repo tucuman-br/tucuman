@@ -1,0 +1,4 @@
+# Tucuman — dependências Python
+# Instalar com: pip install -r requirements.txt
+
+z3-solver==4.13.0.0   # solver SMT — versão testada no experimento

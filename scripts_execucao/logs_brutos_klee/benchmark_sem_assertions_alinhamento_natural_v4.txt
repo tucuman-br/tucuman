@@ -1,0 +1,1206 @@
+================================================================================
+ARQUIVO: benchmark_sem_assertions_alinhamento_natural_v4/A_uint16_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 0.3565s
+================================================================================
+KLEE: output directory is "/work/benchmark_sem_assertions_alinhamento_natural_v4/klee-out-0"
+KLEE: Using STP solver backend
+KLEE: SAT solver: MiniSat
+KLEE: Deterministic allocator: Using quarantine queue size 8
+KLEE: Deterministic allocator: globals (start-address=0x78b5db479000 size=10 GiB)
+KLEE: Deterministic allocator: constants (start-address=0x78b35b479000 size=10 GiB)
+KLEE: Deterministic allocator: heap (start-address=0x77b35b479000 size=1024 GiB)
+KLEE: Deterministic allocator: stack (start-address=0x77935b479000 size=128 GiB)
+
+KLEE: done: total instructions = 16
+KLEE: done: completed paths = 1
+KLEE: done: partially completed paths = 0
+KLEE: done: generated tests = 1
+
+
+================================================================================
+ARQUIVO: benchmark_sem_assertions_alinhamento_natural_v4/A_uint16_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 0.4233s
+================================================================================
+KLEE: output directory is "/work/benchmark_sem_assertions_alinhamento_natural_v4/klee-out-1"
+KLEE: Using STP solver backend
+KLEE: SAT solver: MiniSat
+KLEE: Deterministic allocator: Using quarantine queue size 8
+KLEE: Deterministic allocator: globals (start-address=0x7b4caa71b000 size=10 GiB)
+KLEE: Deterministic allocator: constants (start-address=0x7b4a2a71b000 size=10 GiB)
+KLEE: Deterministic allocator: heap (start-address=0x7a4a2a71b000 size=1024 GiB)
+KLEE: Deterministic allocator: stack (start-address=0x7a2a2a71b000 size=128 GiB)
+
+KLEE: done: total instructions = 16
+KLEE: done: completed paths = 1
+KLEE: done: partially completed paths = 0
+KLEE: done: generated tests = 1
+
+
+================================================================================
+ARQUIVO: benchmark_sem_assertions_alinhamento_natural_v4/A_uint32_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 0.4654s
+================================================================================
+KLEE: output directory is "/work/benchmark_sem_assertions_alinhamento_natural_v4/klee-out-2"
+KLEE: Using STP solver backend
+KLEE: SAT solver: MiniSat
+KLEE: Deterministic allocator: Using quarantine queue size 8
+KLEE: Deterministic allocator: globals (start-address=0x72ec0529f000 size=10 GiB)
+KLEE: Deterministic allocator: constants (start-address=0x72e98529f000 size=10 GiB)
+KLEE: Deterministic allocator: heap (start-address=0x71e98529f000 size=1024 GiB)
+KLEE: Deterministic allocator: stack (start-address=0x71c98529f000 size=128 GiB)
+
+KLEE: done: total instructions = 16
+KLEE: done: completed paths = 1
+KLEE: done: partially completed paths = 0
+KLEE: done: generated tests = 1
+
+
+================================================================================
+ARQUIVO: benchmark_sem_assertions_alinhamento_natural_v4/A_uint32_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 0.5037s
+================================================================================
+KLEE: output directory is "/work/benchmark_sem_assertions_alinhamento_natural_v4/klee-out-3"
+KLEE: Using STP solver backend
+KLEE: SAT solver: MiniSat
+KLEE: Deterministic allocator: Using quarantine queue size 8
+KLEE: Deterministic allocator: globals (start-address=0x7407836a7000 size=10 GiB)
+KLEE: Deterministic allocator: constants (start-address=0x7405036a7000 size=10 GiB)
+KLEE: Deterministic allocator: heap (start-address=0x7305036a7000 size=1024 GiB)
+KLEE: Deterministic allocator: stack (start-address=0x72e5036a7000 size=128 GiB)
+
+KLEE: done: total instructions = 16
+KLEE: done: completed paths = 1
+KLEE: done: partially completed paths = 0
+KLEE: done: generated tests = 1
+
+
+================================================================================
+ARQUIVO: benchmark_sem_assertions_alinhamento_natural_v4/A_uint64_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 0.4817s
+================================================================================
+KLEE: output directory is "/work/benchmark_sem_assertions_alinhamento_natural_v4/klee-out-4"
+KLEE: Using STP solver backend
+KLEE: SAT solver: MiniSat
+KLEE: Deterministic allocator: Using quarantine queue size 8
+KLEE: Deterministic allocator: globals (start-address=0x7e9588c19000 size=10 GiB)
+KLEE: Deterministic allocator: constants (start-address=0x7e9308c19000 size=10 GiB)
+KLEE: Deterministic allocator: heap (start-address=0x7d9308c19000 size=1024 GiB)
+KLEE: Deterministic allocator: stack (start-address=0x7d7308c19000 size=128 GiB)
+
+KLEE: done: total instructions = 16
+KLEE: done: completed paths = 1
+KLEE: done: partially completed paths = 0
+KLEE: done: generated tests = 1
+
+
+================================================================================
+ARQUIVO: benchmark_sem_assertions_alinhamento_natural_v4/A_uint64_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 0.4544s
+================================================================================
+KLEE: output directory is "/work/benchmark_sem_assertions_alinhamento_natural_v4/klee-out-5"
+KLEE: Using STP solver backend
+KLEE: SAT solver: MiniSat
+KLEE: Deterministic allocator: Using quarantine queue size 8
+KLEE: Deterministic allocator: globals (start-address=0x721e3d3f2000 size=10 GiB)
+KLEE: Deterministic allocator: constants (start-address=0x721bbd3f2000 size=10 GiB)
+KLEE: Deterministic allocator: heap (start-address=0x711bbd3f2000 size=1024 GiB)
+KLEE: Deterministic allocator: stack (start-address=0x70fbbd3f2000 size=128 GiB)
+
+KLEE: done: total instructions = 16
+KLEE: done: completed paths = 1
+KLEE: done: partially completed paths = 0
+KLEE: done: generated tests = 1
+
+
+================================================================================
+ARQUIVO: benchmark_sem_assertions_alinhamento_natural_v4/B_uint16_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 0.4907s
+================================================================================
+KLEE: output directory is "/work/benchmark_sem_assertions_alinhamento_natural_v4/klee-out-6"
+KLEE: Using STP solver backend
+KLEE: SAT solver: MiniSat
+KLEE: Deterministic allocator: Using quarantine queue size 8
+KLEE: Deterministic allocator: globals (start-address=0x76ab1cb26000 size=10 GiB)
+KLEE: Deterministic allocator: constants (start-address=0x76a89cb26000 size=10 GiB)
+KLEE: Deterministic allocator: heap (start-address=0x75a89cb26000 size=1024 GiB)
+KLEE: Deterministic allocator: stack (start-address=0x75889cb26000 size=128 GiB)
+
+KLEE: done: total instructions = 15
+KLEE: done: completed paths = 1
+KLEE: done: partially completed paths = 0
+KLEE: done: generated tests = 1
+
+
+================================================================================
+ARQUIVO: benchmark_sem_assertions_alinhamento_natural_v4/B_uint16_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 0.3703s
+================================================================================
+KLEE: output directory is "/work/benchmark_sem_assertions_alinhamento_natural_v4/klee-out-7"
+KLEE: Using STP solver backend
+KLEE: SAT solver: MiniSat
+KLEE: Deterministic allocator: Using quarantine queue size 8
+KLEE: Deterministic allocator: globals (start-address=0x71ea3258b000 size=10 GiB)
+KLEE: Deterministic allocator: constants (start-address=0x71e7b258b000 size=10 GiB)
+KLEE: Deterministic allocator: heap (start-address=0x70e7b258b000 size=1024 GiB)
+KLEE: Deterministic allocator: stack (start-address=0x70c7b258b000 size=128 GiB)
+KLEE: ERROR: /work/benchmark_sem_assertions_alinhamento_natural_v4/B_uint16_t_misaligned.c:7: memory error: out of bound pointer
+KLEE: NOTE: now ignoring this error at this location
+
+KLEE: done: total instructions = 12
+KLEE: done: completed paths = 0
+KLEE: done: partially completed paths = 1
+KLEE: done: generated tests = 1
+
+
+================================================================================
+ARQUIVO: benchmark_sem_assertions_alinhamento_natural_v4/B_uint32_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 0.38s
+================================================================================
+KLEE: output directory is "/work/benchmark_sem_assertions_alinhamento_natural_v4/klee-out-8"
+KLEE: Using STP solver backend
+KLEE: SAT solver: MiniSat
+KLEE: Deterministic allocator: Using quarantine queue size 8
+KLEE: Deterministic allocator: globals (start-address=0x7af7c5580000 size=10 GiB)
+KLEE: Deterministic allocator: constants (start-address=0x7af545580000 size=10 GiB)
+KLEE: Deterministic allocator: heap (start-address=0x79f545580000 size=1024 GiB)
+KLEE: Deterministic allocator: stack (start-address=0x79d545580000 size=128 GiB)
+
+KLEE: done: total instructions = 16
+KLEE: done: completed paths = 1
+KLEE: done: partially completed paths = 0
+KLEE: done: generated tests = 1
+
+
+================================================================================
+ARQUIVO: benchmark_sem_assertions_alinhamento_natural_v4/B_uint32_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 0.4006s
+================================================================================
+KLEE: output directory is "/work/benchmark_sem_assertions_alinhamento_natural_v4/klee-out-9"
+KLEE: Using STP solver backend
+KLEE: SAT solver: MiniSat
+KLEE: Deterministic allocator: Using quarantine queue size 8
+KLEE: Deterministic allocator: globals (start-address=0x7c5d9bc8a000 size=10 GiB)
+KLEE: Deterministic allocator: constants (start-address=0x7c5b1bc8a000 size=10 GiB)
+KLEE: Deterministic allocator: heap (start-address=0x7b5b1bc8a000 size=1024 GiB)
+KLEE: Deterministic allocator: stack (start-address=0x7b3b1bc8a000 size=128 GiB)
+KLEE: ERROR: /work/benchmark_sem_assertions_alinhamento_natural_v4/B_uint32_t_misaligned.c:7: memory error: out of bound pointer
+KLEE: NOTE: now ignoring this error at this location
+
+KLEE: done: total instructions = 12
+KLEE: done: completed paths = 0
+KLEE: done: partially completed paths = 1
+KLEE: done: generated tests = 1
+
+
+================================================================================
+ARQUIVO: benchmark_sem_assertions_alinhamento_natural_v4/B_uint64_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 0.4014s
+================================================================================
+KLEE: output directory is "/work/benchmark_sem_assertions_alinhamento_natural_v4/klee-out-10"
+KLEE: Using STP solver backend
+KLEE: SAT solver: MiniSat
+KLEE: Deterministic allocator: Using quarantine queue size 8
+KLEE: Deterministic allocator: globals (start-address=0x702335bbf000 size=10 GiB)
+KLEE: Deterministic allocator: constants (start-address=0x7020b5bbf000 size=10 GiB)
+KLEE: Deterministic allocator: heap (start-address=0x6f20b5bbf000 size=1024 GiB)
+KLEE: Deterministic allocator: stack (start-address=0x6f00b5bbf000 size=128 GiB)
+
+KLEE: done: total instructions = 16
+KLEE: done: completed paths = 1
+KLEE: done: partially completed paths = 0
+KLEE: done: generated tests = 1
+
+
+================================================================================
+ARQUIVO: benchmark_sem_assertions_alinhamento_natural_v4/B_uint64_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 0.3723s
+================================================================================
+KLEE: output directory is "/work/benchmark_sem_assertions_alinhamento_natural_v4/klee-out-11"
+KLEE: Using STP solver backend
+KLEE: SAT solver: MiniSat
+KLEE: Deterministic allocator: Using quarantine queue size 8
+KLEE: Deterministic allocator: globals (start-address=0x7e846c1fb000 size=10 GiB)
+KLEE: Deterministic allocator: constants (start-address=0x7e81ec1fb000 size=10 GiB)
+KLEE: Deterministic allocator: heap (start-address=0x7d81ec1fb000 size=1024 GiB)
+KLEE: Deterministic allocator: stack (start-address=0x7d61ec1fb000 size=128 GiB)
+KLEE: ERROR: /work/benchmark_sem_assertions_alinhamento_natural_v4/B_uint64_t_misaligned.c:7: memory error: out of bound pointer
+KLEE: NOTE: now ignoring this error at this location
+
+KLEE: done: total instructions = 12
+KLEE: done: completed paths = 0
+KLEE: done: partially completed paths = 1
+KLEE: done: generated tests = 1
+
+
+================================================================================
+ARQUIVO: benchmark_sem_assertions_alinhamento_natural_v4/C_uint16_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 0.3364s
+================================================================================
+KLEE: output directory is "/work/benchmark_sem_assertions_alinhamento_natural_v4/klee-out-12"
+KLEE: Using STP solver backend
+KLEE: SAT solver: MiniSat
+KLEE: Deterministic allocator: Using quarantine queue size 8
+KLEE: Deterministic allocator: globals (start-address=0x756524710000 size=10 GiB)
+KLEE: Deterministic allocator: constants (start-address=0x7562a4710000 size=10 GiB)
+KLEE: Deterministic allocator: heap (start-address=0x7462a4710000 size=1024 GiB)
+KLEE: Deterministic allocator: stack (start-address=0x7442a4710000 size=128 GiB)
+
+KLEE: done: total instructions = 15
+KLEE: done: completed paths = 1
+KLEE: done: partially completed paths = 0
+KLEE: done: generated tests = 1
+
+
+================================================================================
+ARQUIVO: benchmark_sem_assertions_alinhamento_natural_v4/C_uint16_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 0.3387s
+================================================================================
+KLEE: output directory is "/work/benchmark_sem_assertions_alinhamento_natural_v4/klee-out-13"
+KLEE: Using STP solver backend
+KLEE: SAT solver: MiniSat
+KLEE: Deterministic allocator: Using quarantine queue size 8
+KLEE: Deterministic allocator: globals (start-address=0x734fbadcb000 size=10 GiB)
+KLEE: Deterministic allocator: constants (start-address=0x734d3adcb000 size=10 GiB)
+KLEE: Deterministic allocator: heap (start-address=0x724d3adcb000 size=1024 GiB)
+KLEE: Deterministic allocator: stack (start-address=0x722d3adcb000 size=128 GiB)
+
+KLEE: done: total instructions = 15
+KLEE: done: completed paths = 1
+KLEE: done: partially completed paths = 0
+KLEE: done: generated tests = 1
+
+
+================================================================================
+ARQUIVO: benchmark_sem_assertions_alinhamento_natural_v4/C_uint32_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 0.3571s
+================================================================================
+KLEE: output directory is "/work/benchmark_sem_assertions_alinhamento_natural_v4/klee-out-14"
+KLEE: Using STP solver backend
+KLEE: SAT solver: MiniSat
+KLEE: Deterministic allocator: Using quarantine queue size 8
+KLEE: Deterministic allocator: globals (start-address=0x724dc5d17000 size=10 GiB)
+KLEE: Deterministic allocator: constants (start-address=0x724b45d17000 size=10 GiB)
+KLEE: Deterministic allocator: heap (start-address=0x714b45d17000 size=1024 GiB)
+KLEE: Deterministic allocator: stack (start-address=0x712b45d17000 size=128 GiB)
+
+KLEE: done: total instructions = 15
+KLEE: done: completed paths = 1
+KLEE: done: partially completed paths = 0
+KLEE: done: generated tests = 1
+
+
+================================================================================
+ARQUIVO: benchmark_sem_assertions_alinhamento_natural_v4/C_uint32_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 0.3777s
+================================================================================
+KLEE: output directory is "/work/benchmark_sem_assertions_alinhamento_natural_v4/klee-out-15"
+KLEE: Using STP solver backend
+KLEE: SAT solver: MiniSat
+KLEE: Deterministic allocator: Using quarantine queue size 8
+KLEE: Deterministic allocator: globals (start-address=0x72ff85204000 size=10 GiB)
+KLEE: Deterministic allocator: constants (start-address=0x72fd05204000 size=10 GiB)
+KLEE: Deterministic allocator: heap (start-address=0x71fd05204000 size=1024 GiB)
+KLEE: Deterministic allocator: stack (start-address=0x71dd05204000 size=128 GiB)
+
+KLEE: done: total instructions = 15
+KLEE: done: completed paths = 1
+KLEE: done: partially completed paths = 0
+KLEE: done: generated tests = 1
+
+
+================================================================================
+ARQUIVO: benchmark_sem_assertions_alinhamento_natural_v4/C_uint64_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 0.346s
+================================================================================
+KLEE: output directory is "/work/benchmark_sem_assertions_alinhamento_natural_v4/klee-out-16"
+KLEE: Using STP solver backend
+KLEE: SAT solver: MiniSat
+KLEE: Deterministic allocator: Using quarantine queue size 8
+KLEE: Deterministic allocator: globals (start-address=0x778363eb8000 size=10 GiB)
+KLEE: Deterministic allocator: constants (start-address=0x7780e3eb8000 size=10 GiB)
+KLEE: Deterministic allocator: heap (start-address=0x7680e3eb8000 size=1024 GiB)
+KLEE: Deterministic allocator: stack (start-address=0x7660e3eb8000 size=128 GiB)
+
+KLEE: done: total instructions = 15
+KLEE: done: completed paths = 1
+KLEE: done: partially completed paths = 0
+KLEE: done: generated tests = 1
+
+
+================================================================================
+ARQUIVO: benchmark_sem_assertions_alinhamento_natural_v4/C_uint64_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 0.3715s
+================================================================================
+KLEE: output directory is "/work/benchmark_sem_assertions_alinhamento_natural_v4/klee-out-17"
+KLEE: Using STP solver backend
+KLEE: SAT solver: MiniSat
+KLEE: Deterministic allocator: Using quarantine queue size 8
+KLEE: Deterministic allocator: globals (start-address=0x74c6ea70b000 size=10 GiB)
+KLEE: Deterministic allocator: constants (start-address=0x74c46a70b000 size=10 GiB)
+KLEE: Deterministic allocator: heap (start-address=0x73c46a70b000 size=1024 GiB)
+KLEE: Deterministic allocator: stack (start-address=0x73a46a70b000 size=128 GiB)
+
+KLEE: done: total instructions = 15
+KLEE: done: completed paths = 1
+KLEE: done: partially completed paths = 0
+KLEE: done: generated tests = 1
+
+
+================================================================================
+ARQUIVO: benchmark_sem_assertions_alinhamento_natural_v4/D_uint16_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 0.4049s
+================================================================================
+KLEE: output directory is "/work/benchmark_sem_assertions_alinhamento_natural_v4/klee-out-18"
+KLEE: Using STP solver backend
+KLEE: SAT solver: MiniSat
+KLEE: Deterministic allocator: Using quarantine queue size 8
+KLEE: Deterministic allocator: globals (start-address=0x75c89fb9b000 size=10 GiB)
+KLEE: Deterministic allocator: constants (start-address=0x75c61fb9b000 size=10 GiB)
+KLEE: Deterministic allocator: heap (start-address=0x74c61fb9b000 size=1024 GiB)
+KLEE: Deterministic allocator: stack (start-address=0x74a61fb9b000 size=128 GiB)
+
+KLEE: done: total instructions = 19
+KLEE: done: completed paths = 1
+KLEE: done: partially completed paths = 0
+KLEE: done: generated tests = 1
+
+
+================================================================================
+ARQUIVO: benchmark_sem_assertions_alinhamento_natural_v4/D_uint16_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 0.3488s
+================================================================================
+KLEE: output directory is "/work/benchmark_sem_assertions_alinhamento_natural_v4/klee-out-19"
+KLEE: Using STP solver backend
+KLEE: SAT solver: MiniSat
+KLEE: Deterministic allocator: Using quarantine queue size 8
+KLEE: Deterministic allocator: globals (start-address=0x79913e4cc000 size=10 GiB)
+KLEE: Deterministic allocator: constants (start-address=0x798ebe4cc000 size=10 GiB)
+KLEE: Deterministic allocator: heap (start-address=0x788ebe4cc000 size=1024 GiB)
+KLEE: Deterministic allocator: stack (start-address=0x786ebe4cc000 size=128 GiB)
+
+KLEE: done: total instructions = 19
+KLEE: done: completed paths = 1
+KLEE: done: partially completed paths = 0
+KLEE: done: generated tests = 1
+
+
+================================================================================
+ARQUIVO: benchmark_sem_assertions_alinhamento_natural_v4/D_uint32_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 0.3805s
+================================================================================
+KLEE: output directory is "/work/benchmark_sem_assertions_alinhamento_natural_v4/klee-out-20"
+KLEE: Using STP solver backend
+KLEE: SAT solver: MiniSat
+KLEE: Deterministic allocator: Using quarantine queue size 8
+KLEE: Deterministic allocator: globals (start-address=0x759a8bb4f000 size=10 GiB)
+KLEE: Deterministic allocator: constants (start-address=0x75980bb4f000 size=10 GiB)
+KLEE: Deterministic allocator: heap (start-address=0x74980bb4f000 size=1024 GiB)
+KLEE: Deterministic allocator: stack (start-address=0x74780bb4f000 size=128 GiB)
+
+KLEE: done: total instructions = 19
+KLEE: done: completed paths = 1
+KLEE: done: partially completed paths = 0
+KLEE: done: generated tests = 1
+
+
+================================================================================
+ARQUIVO: benchmark_sem_assertions_alinhamento_natural_v4/D_uint32_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 0.361s
+================================================================================
+KLEE: output directory is "/work/benchmark_sem_assertions_alinhamento_natural_v4/klee-out-21"
+KLEE: Using STP solver backend
+KLEE: SAT solver: MiniSat
+KLEE: Deterministic allocator: Using quarantine queue size 8
+KLEE: Deterministic allocator: globals (start-address=0x71741c0b6000 size=10 GiB)
+KLEE: Deterministic allocator: constants (start-address=0x71719c0b6000 size=10 GiB)
+KLEE: Deterministic allocator: heap (start-address=0x70719c0b6000 size=1024 GiB)
+KLEE: Deterministic allocator: stack (start-address=0x70519c0b6000 size=128 GiB)
+
+KLEE: done: total instructions = 19
+KLEE: done: completed paths = 1
+KLEE: done: partially completed paths = 0
+KLEE: done: generated tests = 1
+
+
+================================================================================
+ARQUIVO: benchmark_sem_assertions_alinhamento_natural_v4/D_uint64_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 0.3462s
+================================================================================
+KLEE: output directory is "/work/benchmark_sem_assertions_alinhamento_natural_v4/klee-out-22"
+KLEE: Using STP solver backend
+KLEE: SAT solver: MiniSat
+KLEE: Deterministic allocator: Using quarantine queue size 8
+KLEE: Deterministic allocator: globals (start-address=0x7a1ecdb86000 size=10 GiB)
+KLEE: Deterministic allocator: constants (start-address=0x7a1c4db86000 size=10 GiB)
+KLEE: Deterministic allocator: heap (start-address=0x791c4db86000 size=1024 GiB)
+KLEE: Deterministic allocator: stack (start-address=0x78fc4db86000 size=128 GiB)
+
+KLEE: done: total instructions = 19
+KLEE: done: completed paths = 1
+KLEE: done: partially completed paths = 0
+KLEE: done: generated tests = 1
+
+
+================================================================================
+ARQUIVO: benchmark_sem_assertions_alinhamento_natural_v4/D_uint64_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 0.3409s
+================================================================================
+KLEE: output directory is "/work/benchmark_sem_assertions_alinhamento_natural_v4/klee-out-23"
+KLEE: Using STP solver backend
+KLEE: SAT solver: MiniSat
+KLEE: Deterministic allocator: Using quarantine queue size 8
+KLEE: Deterministic allocator: globals (start-address=0x759a99993000 size=10 GiB)
+KLEE: Deterministic allocator: constants (start-address=0x759819993000 size=10 GiB)
+KLEE: Deterministic allocator: heap (start-address=0x749819993000 size=1024 GiB)
+KLEE: Deterministic allocator: stack (start-address=0x747819993000 size=128 GiB)
+
+KLEE: done: total instructions = 19
+KLEE: done: completed paths = 1
+KLEE: done: partially completed paths = 0
+KLEE: done: generated tests = 1
+
+
+================================================================================
+ARQUIVO: benchmark_sem_assertions_alinhamento_natural_v4/E_uint16_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 0.3815s
+================================================================================
+KLEE: output directory is "/work/benchmark_sem_assertions_alinhamento_natural_v4/klee-out-24"
+KLEE: Using STP solver backend
+KLEE: SAT solver: MiniSat
+KLEE: Deterministic allocator: Using quarantine queue size 8
+KLEE: Deterministic allocator: globals (start-address=0x7b3642c41000 size=10 GiB)
+KLEE: Deterministic allocator: constants (start-address=0x7b33c2c41000 size=10 GiB)
+KLEE: Deterministic allocator: heap (start-address=0x7a33c2c41000 size=1024 GiB)
+KLEE: Deterministic allocator: stack (start-address=0x7a13c2c41000 size=128 GiB)
+
+KLEE: done: total instructions = 29
+KLEE: done: completed paths = 1
+KLEE: done: partially completed paths = 0
+KLEE: done: generated tests = 1
+
+
+================================================================================
+ARQUIVO: benchmark_sem_assertions_alinhamento_natural_v4/E_uint16_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 0.3872s
+================================================================================
+KLEE: output directory is "/work/benchmark_sem_assertions_alinhamento_natural_v4/klee-out-25"
+KLEE: Using STP solver backend
+KLEE: SAT solver: MiniSat
+KLEE: Deterministic allocator: Using quarantine queue size 8
+KLEE: Deterministic allocator: globals (start-address=0x7b547928d000 size=10 GiB)
+KLEE: Deterministic allocator: constants (start-address=0x7b51f928d000 size=10 GiB)
+KLEE: Deterministic allocator: heap (start-address=0x7a51f928d000 size=1024 GiB)
+KLEE: Deterministic allocator: stack (start-address=0x7a31f928d000 size=128 GiB)
+
+KLEE: done: total instructions = 30
+KLEE: done: completed paths = 1
+KLEE: done: partially completed paths = 0
+KLEE: done: generated tests = 1
+
+
+================================================================================
+ARQUIVO: benchmark_sem_assertions_alinhamento_natural_v4/E_uint32_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 0.3749s
+================================================================================
+KLEE: output directory is "/work/benchmark_sem_assertions_alinhamento_natural_v4/klee-out-26"
+KLEE: Using STP solver backend
+KLEE: SAT solver: MiniSat
+KLEE: Deterministic allocator: Using quarantine queue size 8
+KLEE: Deterministic allocator: globals (start-address=0x7228ae030000 size=10 GiB)
+KLEE: Deterministic allocator: constants (start-address=0x72262e030000 size=10 GiB)
+KLEE: Deterministic allocator: heap (start-address=0x71262e030000 size=1024 GiB)
+KLEE: Deterministic allocator: stack (start-address=0x71062e030000 size=128 GiB)
+
+KLEE: done: total instructions = 29
+KLEE: done: completed paths = 1
+KLEE: done: partially completed paths = 0
+KLEE: done: generated tests = 1
+
+
+================================================================================
+ARQUIVO: benchmark_sem_assertions_alinhamento_natural_v4/E_uint32_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 0.3628s
+================================================================================
+KLEE: output directory is "/work/benchmark_sem_assertions_alinhamento_natural_v4/klee-out-27"
+KLEE: Using STP solver backend
+KLEE: SAT solver: MiniSat
+KLEE: Deterministic allocator: Using quarantine queue size 8
+KLEE: Deterministic allocator: globals (start-address=0x7d4192015000 size=10 GiB)
+KLEE: Deterministic allocator: constants (start-address=0x7d3f12015000 size=10 GiB)
+KLEE: Deterministic allocator: heap (start-address=0x7c3f12015000 size=1024 GiB)
+KLEE: Deterministic allocator: stack (start-address=0x7c1f12015000 size=128 GiB)
+
+KLEE: done: total instructions = 30
+KLEE: done: completed paths = 1
+KLEE: done: partially completed paths = 0
+KLEE: done: generated tests = 1
+
+
+================================================================================
+ARQUIVO: benchmark_sem_assertions_alinhamento_natural_v4/E_uint64_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 0.3703s
+================================================================================
+KLEE: output directory is "/work/benchmark_sem_assertions_alinhamento_natural_v4/klee-out-28"
+KLEE: Using STP solver backend
+KLEE: SAT solver: MiniSat
+KLEE: Deterministic allocator: Using quarantine queue size 8
+KLEE: Deterministic allocator: globals (start-address=0x72bcd745e000 size=10 GiB)
+KLEE: Deterministic allocator: constants (start-address=0x72ba5745e000 size=10 GiB)
+KLEE: Deterministic allocator: heap (start-address=0x71ba5745e000 size=1024 GiB)
+KLEE: Deterministic allocator: stack (start-address=0x719a5745e000 size=128 GiB)
+
+KLEE: done: total instructions = 29
+KLEE: done: completed paths = 1
+KLEE: done: partially completed paths = 0
+KLEE: done: generated tests = 1
+
+
+================================================================================
+ARQUIVO: benchmark_sem_assertions_alinhamento_natural_v4/E_uint64_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 0.3254s
+================================================================================
+KLEE: output directory is "/work/benchmark_sem_assertions_alinhamento_natural_v4/klee-out-29"
+KLEE: Using STP solver backend
+KLEE: SAT solver: MiniSat
+KLEE: Deterministic allocator: Using quarantine queue size 8
+KLEE: Deterministic allocator: globals (start-address=0x796bc9c0f000 size=10 GiB)
+KLEE: Deterministic allocator: constants (start-address=0x796949c0f000 size=10 GiB)
+KLEE: Deterministic allocator: heap (start-address=0x786949c0f000 size=1024 GiB)
+KLEE: Deterministic allocator: stack (start-address=0x784949c0f000 size=128 GiB)
+
+KLEE: done: total instructions = 30
+KLEE: done: completed paths = 1
+KLEE: done: partially completed paths = 0
+KLEE: done: generated tests = 1
+
+
+================================================================================
+ARQUIVO: benchmark_sem_assertions_alinhamento_natural_v4/F_uint16_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 0.3211s
+================================================================================
+KLEE: output directory is "/work/benchmark_sem_assertions_alinhamento_natural_v4/klee-out-30"
+KLEE: Using STP solver backend
+KLEE: SAT solver: MiniSat
+KLEE: Deterministic allocator: Using quarantine queue size 8
+KLEE: Deterministic allocator: globals (start-address=0x7fc654a1a000 size=10 GiB)
+KLEE: Deterministic allocator: constants (start-address=0x7fc3d4a1a000 size=10 GiB)
+KLEE: Deterministic allocator: heap (start-address=0x7ec3d4a1a000 size=1024 GiB)
+KLEE: Deterministic allocator: stack (start-address=0x7ea3d4a1a000 size=128 GiB)
+
+KLEE: done: total instructions = 16
+KLEE: done: completed paths = 1
+KLEE: done: partially completed paths = 0
+KLEE: done: generated tests = 1
+
+
+================================================================================
+ARQUIVO: benchmark_sem_assertions_alinhamento_natural_v4/F_uint16_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 0.3496s
+================================================================================
+KLEE: output directory is "/work/benchmark_sem_assertions_alinhamento_natural_v4/klee-out-31"
+KLEE: Using STP solver backend
+KLEE: SAT solver: MiniSat
+KLEE: Deterministic allocator: Using quarantine queue size 8
+KLEE: Deterministic allocator: globals (start-address=0x7de3a01b8000 size=10 GiB)
+KLEE: Deterministic allocator: constants (start-address=0x7de1201b8000 size=10 GiB)
+KLEE: Deterministic allocator: heap (start-address=0x7ce1201b8000 size=1024 GiB)
+KLEE: Deterministic allocator: stack (start-address=0x7cc1201b8000 size=128 GiB)
+
+KLEE: done: total instructions = 16
+KLEE: done: completed paths = 1
+KLEE: done: partially completed paths = 0
+KLEE: done: generated tests = 1
+
+
+================================================================================
+ARQUIVO: benchmark_sem_assertions_alinhamento_natural_v4/F_uint32_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 0.3517s
+================================================================================
+KLEE: output directory is "/work/benchmark_sem_assertions_alinhamento_natural_v4/klee-out-32"
+KLEE: Using STP solver backend
+KLEE: SAT solver: MiniSat
+KLEE: Deterministic allocator: Using quarantine queue size 8
+KLEE: Deterministic allocator: globals (start-address=0x776f3f872000 size=10 GiB)
+KLEE: Deterministic allocator: constants (start-address=0x776cbf872000 size=10 GiB)
+KLEE: Deterministic allocator: heap (start-address=0x766cbf872000 size=1024 GiB)
+KLEE: Deterministic allocator: stack (start-address=0x764cbf872000 size=128 GiB)
+
+KLEE: done: total instructions = 16
+KLEE: done: completed paths = 1
+KLEE: done: partially completed paths = 0
+KLEE: done: generated tests = 1
+
+
+================================================================================
+ARQUIVO: benchmark_sem_assertions_alinhamento_natural_v4/F_uint32_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 0.3972s
+================================================================================
+KLEE: output directory is "/work/benchmark_sem_assertions_alinhamento_natural_v4/klee-out-33"
+KLEE: Using STP solver backend
+KLEE: SAT solver: MiniSat
+KLEE: Deterministic allocator: Using quarantine queue size 8
+KLEE: Deterministic allocator: globals (start-address=0x7cd3d3eb0000 size=10 GiB)
+KLEE: Deterministic allocator: constants (start-address=0x7cd153eb0000 size=10 GiB)
+KLEE: Deterministic allocator: heap (start-address=0x7bd153eb0000 size=1024 GiB)
+KLEE: Deterministic allocator: stack (start-address=0x7bb153eb0000 size=128 GiB)
+
+KLEE: done: total instructions = 16
+KLEE: done: completed paths = 1
+KLEE: done: partially completed paths = 0
+KLEE: done: generated tests = 1
+
+
+================================================================================
+ARQUIVO: benchmark_sem_assertions_alinhamento_natural_v4/F_uint64_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 0.3444s
+================================================================================
+KLEE: output directory is "/work/benchmark_sem_assertions_alinhamento_natural_v4/klee-out-34"
+KLEE: Using STP solver backend
+KLEE: SAT solver: MiniSat
+KLEE: Deterministic allocator: Using quarantine queue size 8
+KLEE: Deterministic allocator: globals (start-address=0x7fa02c788000 size=10 GiB)
+KLEE: Deterministic allocator: constants (start-address=0x7f9dac788000 size=10 GiB)
+KLEE: Deterministic allocator: heap (start-address=0x7e9dac788000 size=1024 GiB)
+KLEE: Deterministic allocator: stack (start-address=0x7e7dac788000 size=128 GiB)
+
+KLEE: done: total instructions = 16
+KLEE: done: completed paths = 1
+KLEE: done: partially completed paths = 0
+KLEE: done: generated tests = 1
+
+
+================================================================================
+ARQUIVO: benchmark_sem_assertions_alinhamento_natural_v4/F_uint64_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 0.3633s
+================================================================================
+KLEE: output directory is "/work/benchmark_sem_assertions_alinhamento_natural_v4/klee-out-35"
+KLEE: Using STP solver backend
+KLEE: SAT solver: MiniSat
+KLEE: Deterministic allocator: Using quarantine queue size 8
+KLEE: Deterministic allocator: globals (start-address=0x7211aad1a000 size=10 GiB)
+KLEE: Deterministic allocator: constants (start-address=0x720f2ad1a000 size=10 GiB)
+KLEE: Deterministic allocator: heap (start-address=0x710f2ad1a000 size=1024 GiB)
+KLEE: Deterministic allocator: stack (start-address=0x70ef2ad1a000 size=128 GiB)
+
+KLEE: done: total instructions = 16
+KLEE: done: completed paths = 1
+KLEE: done: partially completed paths = 0
+KLEE: done: generated tests = 1
+
+
+================================================================================
+ARQUIVO: benchmark_sem_assertions_alinhamento_natural_v4/G_uint16_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 0.3971s
+================================================================================
+KLEE: output directory is "/work/benchmark_sem_assertions_alinhamento_natural_v4/klee-out-36"
+KLEE: Using STP solver backend
+KLEE: SAT solver: MiniSat
+KLEE: Deterministic allocator: Using quarantine queue size 8
+KLEE: Deterministic allocator: globals (start-address=0x7da818f94000 size=10 GiB)
+KLEE: Deterministic allocator: constants (start-address=0x7da598f94000 size=10 GiB)
+KLEE: Deterministic allocator: heap (start-address=0x7ca598f94000 size=1024 GiB)
+KLEE: Deterministic allocator: stack (start-address=0x7c8598f94000 size=128 GiB)
+
+KLEE: done: total instructions = 16
+KLEE: done: completed paths = 1
+KLEE: done: partially completed paths = 0
+KLEE: done: generated tests = 1
+
+
+================================================================================
+ARQUIVO: benchmark_sem_assertions_alinhamento_natural_v4/G_uint16_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 0.3972s
+================================================================================
+KLEE: output directory is "/work/benchmark_sem_assertions_alinhamento_natural_v4/klee-out-37"
+KLEE: Using STP solver backend
+KLEE: SAT solver: MiniSat
+KLEE: Deterministic allocator: Using quarantine queue size 8
+KLEE: Deterministic allocator: globals (start-address=0x7a4b513a6000 size=10 GiB)
+KLEE: Deterministic allocator: constants (start-address=0x7a48d13a6000 size=10 GiB)
+KLEE: Deterministic allocator: heap (start-address=0x7948d13a6000 size=1024 GiB)
+KLEE: Deterministic allocator: stack (start-address=0x7928d13a6000 size=128 GiB)
+
+KLEE: done: total instructions = 16
+KLEE: done: completed paths = 1
+KLEE: done: partially completed paths = 0
+KLEE: done: generated tests = 1
+
+
+================================================================================
+ARQUIVO: benchmark_sem_assertions_alinhamento_natural_v4/G_uint32_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 0.3657s
+================================================================================
+KLEE: output directory is "/work/benchmark_sem_assertions_alinhamento_natural_v4/klee-out-38"
+KLEE: Using STP solver backend
+KLEE: SAT solver: MiniSat
+KLEE: Deterministic allocator: Using quarantine queue size 8
+KLEE: Deterministic allocator: globals (start-address=0x72c2bec5e000 size=10 GiB)
+KLEE: Deterministic allocator: constants (start-address=0x72c03ec5e000 size=10 GiB)
+KLEE: Deterministic allocator: heap (start-address=0x71c03ec5e000 size=1024 GiB)
+KLEE: Deterministic allocator: stack (start-address=0x71a03ec5e000 size=128 GiB)
+
+KLEE: done: total instructions = 16
+KLEE: done: completed paths = 1
+KLEE: done: partially completed paths = 0
+KLEE: done: generated tests = 1
+
+
+================================================================================
+ARQUIVO: benchmark_sem_assertions_alinhamento_natural_v4/G_uint32_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 0.3686s
+================================================================================
+KLEE: output directory is "/work/benchmark_sem_assertions_alinhamento_natural_v4/klee-out-39"
+KLEE: Using STP solver backend
+KLEE: SAT solver: MiniSat
+KLEE: Deterministic allocator: Using quarantine queue size 8
+KLEE: Deterministic allocator: globals (start-address=0x720adeefb000 size=10 GiB)
+KLEE: Deterministic allocator: constants (start-address=0x72085eefb000 size=10 GiB)
+KLEE: Deterministic allocator: heap (start-address=0x71085eefb000 size=1024 GiB)
+KLEE: Deterministic allocator: stack (start-address=0x70e85eefb000 size=128 GiB)
+
+KLEE: done: total instructions = 16
+KLEE: done: completed paths = 1
+KLEE: done: partially completed paths = 0
+KLEE: done: generated tests = 1
+
+
+================================================================================
+ARQUIVO: benchmark_sem_assertions_alinhamento_natural_v4/G_uint64_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 0.3434s
+================================================================================
+KLEE: output directory is "/work/benchmark_sem_assertions_alinhamento_natural_v4/klee-out-40"
+KLEE: Using STP solver backend
+KLEE: SAT solver: MiniSat
+KLEE: Deterministic allocator: Using quarantine queue size 8
+KLEE: Deterministic allocator: globals (start-address=0x783e3284e000 size=10 GiB)
+KLEE: Deterministic allocator: constants (start-address=0x783bb284e000 size=10 GiB)
+KLEE: Deterministic allocator: heap (start-address=0x773bb284e000 size=1024 GiB)
+KLEE: Deterministic allocator: stack (start-address=0x771bb284e000 size=128 GiB)
+
+KLEE: done: total instructions = 16
+KLEE: done: completed paths = 1
+KLEE: done: partially completed paths = 0
+KLEE: done: generated tests = 1
+
+
+================================================================================
+ARQUIVO: benchmark_sem_assertions_alinhamento_natural_v4/G_uint64_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 0.3891s
+================================================================================
+KLEE: output directory is "/work/benchmark_sem_assertions_alinhamento_natural_v4/klee-out-41"
+KLEE: Using STP solver backend
+KLEE: SAT solver: MiniSat
+KLEE: Deterministic allocator: Using quarantine queue size 8
+KLEE: Deterministic allocator: globals (start-address=0x71570eb36000 size=10 GiB)
+KLEE: Deterministic allocator: constants (start-address=0x71548eb36000 size=10 GiB)
+KLEE: Deterministic allocator: heap (start-address=0x70548eb36000 size=1024 GiB)
+KLEE: Deterministic allocator: stack (start-address=0x70348eb36000 size=128 GiB)
+
+KLEE: done: total instructions = 16
+KLEE: done: completed paths = 1
+KLEE: done: partially completed paths = 0
+KLEE: done: generated tests = 1
+
+
+================================================================================
+ARQUIVO: benchmark_sem_assertions_alinhamento_natural_v4/H_uint16_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 0.3919s
+================================================================================
+KLEE: output directory is "/work/benchmark_sem_assertions_alinhamento_natural_v4/klee-out-42"
+KLEE: Using STP solver backend
+KLEE: SAT solver: MiniSat
+KLEE: Deterministic allocator: Using quarantine queue size 8
+KLEE: Deterministic allocator: globals (start-address=0x7dfa563c3000 size=10 GiB)
+KLEE: Deterministic allocator: constants (start-address=0x7df7d63c3000 size=10 GiB)
+KLEE: Deterministic allocator: heap (start-address=0x7cf7d63c3000 size=1024 GiB)
+KLEE: Deterministic allocator: stack (start-address=0x7cd7d63c3000 size=128 GiB)
+
+KLEE: done: total instructions = 15
+KLEE: done: completed paths = 1
+KLEE: done: partially completed paths = 0
+KLEE: done: generated tests = 1
+
+
+================================================================================
+ARQUIVO: benchmark_sem_assertions_alinhamento_natural_v4/H_uint16_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 0.3382s
+================================================================================
+KLEE: output directory is "/work/benchmark_sem_assertions_alinhamento_natural_v4/klee-out-43"
+KLEE: Using STP solver backend
+KLEE: SAT solver: MiniSat
+KLEE: Deterministic allocator: Using quarantine queue size 8
+KLEE: Deterministic allocator: globals (start-address=0x7ac9c529b000 size=10 GiB)
+KLEE: Deterministic allocator: constants (start-address=0x7ac74529b000 size=10 GiB)
+KLEE: Deterministic allocator: heap (start-address=0x79c74529b000 size=1024 GiB)
+KLEE: Deterministic allocator: stack (start-address=0x79a74529b000 size=128 GiB)
+
+KLEE: done: total instructions = 15
+KLEE: done: completed paths = 1
+KLEE: done: partially completed paths = 0
+KLEE: done: generated tests = 1
+
+
+================================================================================
+ARQUIVO: benchmark_sem_assertions_alinhamento_natural_v4/H_uint32_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 0.3599s
+================================================================================
+KLEE: output directory is "/work/benchmark_sem_assertions_alinhamento_natural_v4/klee-out-44"
+KLEE: Using STP solver backend
+KLEE: SAT solver: MiniSat
+KLEE: Deterministic allocator: Using quarantine queue size 8
+KLEE: Deterministic allocator: globals (start-address=0x7d5390ade000 size=10 GiB)
+KLEE: Deterministic allocator: constants (start-address=0x7d5110ade000 size=10 GiB)
+KLEE: Deterministic allocator: heap (start-address=0x7c5110ade000 size=1024 GiB)
+KLEE: Deterministic allocator: stack (start-address=0x7c3110ade000 size=128 GiB)
+
+KLEE: done: total instructions = 15
+KLEE: done: completed paths = 1
+KLEE: done: partially completed paths = 0
+KLEE: done: generated tests = 1
+
+
+================================================================================
+ARQUIVO: benchmark_sem_assertions_alinhamento_natural_v4/H_uint32_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 0.2971s
+================================================================================
+KLEE: output directory is "/work/benchmark_sem_assertions_alinhamento_natural_v4/klee-out-45"
+KLEE: Using STP solver backend
+KLEE: SAT solver: MiniSat
+KLEE: Deterministic allocator: Using quarantine queue size 8
+KLEE: Deterministic allocator: globals (start-address=0x78e0cd42a000 size=10 GiB)
+KLEE: Deterministic allocator: constants (start-address=0x78de4d42a000 size=10 GiB)
+KLEE: Deterministic allocator: heap (start-address=0x77de4d42a000 size=1024 GiB)
+KLEE: Deterministic allocator: stack (start-address=0x77be4d42a000 size=128 GiB)
+
+KLEE: done: total instructions = 15
+KLEE: done: completed paths = 1
+KLEE: done: partially completed paths = 0
+KLEE: done: generated tests = 1
+
+
+================================================================================
+ARQUIVO: benchmark_sem_assertions_alinhamento_natural_v4/H_uint64_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 0.4008s
+================================================================================
+KLEE: output directory is "/work/benchmark_sem_assertions_alinhamento_natural_v4/klee-out-46"
+KLEE: Using STP solver backend
+KLEE: SAT solver: MiniSat
+KLEE: Deterministic allocator: Using quarantine queue size 8
+KLEE: Deterministic allocator: globals (start-address=0x7c25cf81e000 size=10 GiB)
+KLEE: Deterministic allocator: constants (start-address=0x7c234f81e000 size=10 GiB)
+KLEE: Deterministic allocator: heap (start-address=0x7b234f81e000 size=1024 GiB)
+KLEE: Deterministic allocator: stack (start-address=0x7b034f81e000 size=128 GiB)
+
+KLEE: done: total instructions = 15
+KLEE: done: completed paths = 1
+KLEE: done: partially completed paths = 0
+KLEE: done: generated tests = 1
+
+
+================================================================================
+ARQUIVO: benchmark_sem_assertions_alinhamento_natural_v4/H_uint64_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 0.4002s
+================================================================================
+KLEE: output directory is "/work/benchmark_sem_assertions_alinhamento_natural_v4/klee-out-47"
+KLEE: Using STP solver backend
+KLEE: SAT solver: MiniSat
+KLEE: Deterministic allocator: Using quarantine queue size 8
+KLEE: Deterministic allocator: globals (start-address=0x7254f8780000 size=10 GiB)
+KLEE: Deterministic allocator: constants (start-address=0x725278780000 size=10 GiB)
+KLEE: Deterministic allocator: heap (start-address=0x715278780000 size=1024 GiB)
+KLEE: Deterministic allocator: stack (start-address=0x713278780000 size=128 GiB)
+
+KLEE: done: total instructions = 15
+KLEE: done: completed paths = 1
+KLEE: done: partially completed paths = 0
+KLEE: done: generated tests = 1
+
+
+================================================================================
+ARQUIVO: benchmark_sem_assertions_alinhamento_natural_v4/I_uint16_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 0.3614s
+================================================================================
+KLEE: output directory is "/work/benchmark_sem_assertions_alinhamento_natural_v4/klee-out-48"
+KLEE: Using STP solver backend
+KLEE: SAT solver: MiniSat
+KLEE: Deterministic allocator: Using quarantine queue size 8
+KLEE: Deterministic allocator: globals (start-address=0x72d060d63000 size=10 GiB)
+KLEE: Deterministic allocator: constants (start-address=0x72cde0d63000 size=10 GiB)
+KLEE: Deterministic allocator: heap (start-address=0x71cde0d63000 size=1024 GiB)
+KLEE: Deterministic allocator: stack (start-address=0x71ade0d63000 size=128 GiB)
+
+KLEE: done: total instructions = 16
+KLEE: done: completed paths = 1
+KLEE: done: partially completed paths = 0
+KLEE: done: generated tests = 1
+
+
+================================================================================
+ARQUIVO: benchmark_sem_assertions_alinhamento_natural_v4/I_uint16_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 0.4221s
+================================================================================
+KLEE: output directory is "/work/benchmark_sem_assertions_alinhamento_natural_v4/klee-out-49"
+KLEE: Using STP solver backend
+KLEE: SAT solver: MiniSat
+KLEE: Deterministic allocator: Using quarantine queue size 8
+KLEE: Deterministic allocator: globals (start-address=0x7ee4f7788000 size=10 GiB)
+KLEE: Deterministic allocator: constants (start-address=0x7ee277788000 size=10 GiB)
+KLEE: Deterministic allocator: heap (start-address=0x7de277788000 size=1024 GiB)
+KLEE: Deterministic allocator: stack (start-address=0x7dc277788000 size=128 GiB)
+
+KLEE: done: total instructions = 16
+KLEE: done: completed paths = 1
+KLEE: done: partially completed paths = 0
+KLEE: done: generated tests = 1
+
+
+================================================================================
+ARQUIVO: benchmark_sem_assertions_alinhamento_natural_v4/I_uint32_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 0.4232s
+================================================================================
+KLEE: output directory is "/work/benchmark_sem_assertions_alinhamento_natural_v4/klee-out-50"
+KLEE: Using STP solver backend
+KLEE: SAT solver: MiniSat
+KLEE: Deterministic allocator: Using quarantine queue size 8
+KLEE: Deterministic allocator: globals (start-address=0x77d652469000 size=10 GiB)
+KLEE: Deterministic allocator: constants (start-address=0x77d3d2469000 size=10 GiB)
+KLEE: Deterministic allocator: heap (start-address=0x76d3d2469000 size=1024 GiB)
+KLEE: Deterministic allocator: stack (start-address=0x76b3d2469000 size=128 GiB)
+
+KLEE: done: total instructions = 16
+KLEE: done: completed paths = 1
+KLEE: done: partially completed paths = 0
+KLEE: done: generated tests = 1
+
+
+================================================================================
+ARQUIVO: benchmark_sem_assertions_alinhamento_natural_v4/I_uint32_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 0.3902s
+================================================================================
+KLEE: output directory is "/work/benchmark_sem_assertions_alinhamento_natural_v4/klee-out-51"
+KLEE: Using STP solver backend
+KLEE: SAT solver: MiniSat
+KLEE: Deterministic allocator: Using quarantine queue size 8
+KLEE: Deterministic allocator: globals (start-address=0x7800d759a000 size=10 GiB)
+KLEE: Deterministic allocator: constants (start-address=0x77fe5759a000 size=10 GiB)
+KLEE: Deterministic allocator: heap (start-address=0x76fe5759a000 size=1024 GiB)
+KLEE: Deterministic allocator: stack (start-address=0x76de5759a000 size=128 GiB)
+
+KLEE: done: total instructions = 16
+KLEE: done: completed paths = 1
+KLEE: done: partially completed paths = 0
+KLEE: done: generated tests = 1
+
+
+================================================================================
+ARQUIVO: benchmark_sem_assertions_alinhamento_natural_v4/I_uint64_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 0.3156s
+================================================================================
+KLEE: output directory is "/work/benchmark_sem_assertions_alinhamento_natural_v4/klee-out-52"
+KLEE: Using STP solver backend
+KLEE: SAT solver: MiniSat
+KLEE: Deterministic allocator: Using quarantine queue size 8
+KLEE: Deterministic allocator: globals (start-address=0x750e15792000 size=10 GiB)
+KLEE: Deterministic allocator: constants (start-address=0x750b95792000 size=10 GiB)
+KLEE: Deterministic allocator: heap (start-address=0x740b95792000 size=1024 GiB)
+KLEE: Deterministic allocator: stack (start-address=0x73eb95792000 size=128 GiB)
+
+KLEE: done: total instructions = 16
+KLEE: done: completed paths = 1
+KLEE: done: partially completed paths = 0
+KLEE: done: generated tests = 1
+
+
+================================================================================
+ARQUIVO: benchmark_sem_assertions_alinhamento_natural_v4/I_uint64_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 0.3365s
+================================================================================
+KLEE: output directory is "/work/benchmark_sem_assertions_alinhamento_natural_v4/klee-out-53"
+KLEE: Using STP solver backend
+KLEE: SAT solver: MiniSat
+KLEE: Deterministic allocator: Using quarantine queue size 8
+KLEE: Deterministic allocator: globals (start-address=0x70e69327c000 size=10 GiB)
+KLEE: Deterministic allocator: constants (start-address=0x70e41327c000 size=10 GiB)
+KLEE: Deterministic allocator: heap (start-address=0x6fe41327c000 size=1024 GiB)
+KLEE: Deterministic allocator: stack (start-address=0x6fc41327c000 size=128 GiB)
+
+KLEE: done: total instructions = 16
+KLEE: done: completed paths = 1
+KLEE: done: partially completed paths = 0
+KLEE: done: generated tests = 1
+
+
+================================================================================
+ARQUIVO: benchmark_sem_assertions_alinhamento_natural_v4/J_uint16_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 0.3629s
+================================================================================
+KLEE: output directory is "/work/benchmark_sem_assertions_alinhamento_natural_v4/klee-out-54"
+KLEE: Using STP solver backend
+KLEE: SAT solver: MiniSat
+KLEE: Deterministic allocator: Using quarantine queue size 8
+KLEE: Deterministic allocator: globals (start-address=0x75447de4e000 size=10 GiB)
+KLEE: Deterministic allocator: constants (start-address=0x7541fde4e000 size=10 GiB)
+KLEE: Deterministic allocator: heap (start-address=0x7441fde4e000 size=1024 GiB)
+KLEE: Deterministic allocator: stack (start-address=0x7421fde4e000 size=128 GiB)
+
+KLEE: done: total instructions = 19
+KLEE: done: completed paths = 1
+KLEE: done: partially completed paths = 0
+KLEE: done: generated tests = 1
+
+
+================================================================================
+ARQUIVO: benchmark_sem_assertions_alinhamento_natural_v4/J_uint16_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 0.3909s
+================================================================================
+KLEE: output directory is "/work/benchmark_sem_assertions_alinhamento_natural_v4/klee-out-55"
+KLEE: Using STP solver backend
+KLEE: SAT solver: MiniSat
+KLEE: Deterministic allocator: Using quarantine queue size 8
+KLEE: Deterministic allocator: globals (start-address=0x7de92822b000 size=10 GiB)
+KLEE: Deterministic allocator: constants (start-address=0x7de6a822b000 size=10 GiB)
+KLEE: Deterministic allocator: heap (start-address=0x7ce6a822b000 size=1024 GiB)
+KLEE: Deterministic allocator: stack (start-address=0x7cc6a822b000 size=128 GiB)
+
+KLEE: done: total instructions = 19
+KLEE: done: completed paths = 1
+KLEE: done: partially completed paths = 0
+KLEE: done: generated tests = 1
+
+
+================================================================================
+ARQUIVO: benchmark_sem_assertions_alinhamento_natural_v4/J_uint32_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 0.3573s
+================================================================================
+KLEE: output directory is "/work/benchmark_sem_assertions_alinhamento_natural_v4/klee-out-56"
+KLEE: Using STP solver backend
+KLEE: SAT solver: MiniSat
+KLEE: Deterministic allocator: Using quarantine queue size 8
+KLEE: Deterministic allocator: globals (start-address=0x7509d33a0000 size=10 GiB)
+KLEE: Deterministic allocator: constants (start-address=0x7507533a0000 size=10 GiB)
+KLEE: Deterministic allocator: heap (start-address=0x7407533a0000 size=1024 GiB)
+KLEE: Deterministic allocator: stack (start-address=0x73e7533a0000 size=128 GiB)
+
+KLEE: done: total instructions = 19
+KLEE: done: completed paths = 1
+KLEE: done: partially completed paths = 0
+KLEE: done: generated tests = 1
+
+
+================================================================================
+ARQUIVO: benchmark_sem_assertions_alinhamento_natural_v4/J_uint32_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 0.3944s
+================================================================================
+KLEE: output directory is "/work/benchmark_sem_assertions_alinhamento_natural_v4/klee-out-57"
+KLEE: Using STP solver backend
+KLEE: SAT solver: MiniSat
+KLEE: Deterministic allocator: Using quarantine queue size 8
+KLEE: Deterministic allocator: globals (start-address=0x727487c7b000 size=10 GiB)
+KLEE: Deterministic allocator: constants (start-address=0x727207c7b000 size=10 GiB)
+KLEE: Deterministic allocator: heap (start-address=0x717207c7b000 size=1024 GiB)
+KLEE: Deterministic allocator: stack (start-address=0x715207c7b000 size=128 GiB)
+
+KLEE: done: total instructions = 19
+KLEE: done: completed paths = 1
+KLEE: done: partially completed paths = 0
+KLEE: done: generated tests = 1
+
+
+================================================================================
+ARQUIVO: benchmark_sem_assertions_alinhamento_natural_v4/J_uint64_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 0.3882s
+================================================================================
+KLEE: output directory is "/work/benchmark_sem_assertions_alinhamento_natural_v4/klee-out-58"
+KLEE: Using STP solver backend
+KLEE: SAT solver: MiniSat
+KLEE: Deterministic allocator: Using quarantine queue size 8
+KLEE: Deterministic allocator: globals (start-address=0x78b661760000 size=10 GiB)
+KLEE: Deterministic allocator: constants (start-address=0x78b3e1760000 size=10 GiB)
+KLEE: Deterministic allocator: heap (start-address=0x77b3e1760000 size=1024 GiB)
+KLEE: Deterministic allocator: stack (start-address=0x7793e1760000 size=128 GiB)
+
+KLEE: done: total instructions = 19
+KLEE: done: completed paths = 1
+KLEE: done: partially completed paths = 0
+KLEE: done: generated tests = 1
+
+
+================================================================================
+ARQUIVO: benchmark_sem_assertions_alinhamento_natural_v4/J_uint64_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 0.3677s
+================================================================================
+KLEE: output directory is "/work/benchmark_sem_assertions_alinhamento_natural_v4/klee-out-59"
+KLEE: Using STP solver backend
+KLEE: SAT solver: MiniSat
+KLEE: Deterministic allocator: Using quarantine queue size 8
+KLEE: Deterministic allocator: globals (start-address=0x7fdd711c1000 size=10 GiB)
+KLEE: Deterministic allocator: constants (start-address=0x7fdaf11c1000 size=10 GiB)
+KLEE: Deterministic allocator: heap (start-address=0x7edaf11c1000 size=1024 GiB)
+KLEE: Deterministic allocator: stack (start-address=0x7ebaf11c1000 size=128 GiB)
+
+KLEE: done: total instructions = 19
+KLEE: done: completed paths = 1
+KLEE: done: partially completed paths = 0
+KLEE: done: generated tests = 1
+
+

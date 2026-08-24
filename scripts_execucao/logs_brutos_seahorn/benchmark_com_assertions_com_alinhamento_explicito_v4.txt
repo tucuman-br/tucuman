@@ -1,0 +1,1109 @@
+================================================================================
+ARQUIVO: benchmark_com_assertions_com_alinhamento_explicito_v4/A_uint16_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 0.4575s
+================================================================================
+/usr/bin/clang-14 -c -emit-llvm -D__SEAHORN__ -fdeclspec -O1 -Xclang -disable-llvm-optzns -fgnu89-inline -m32 -I/seahorn/build/run/include -o /tmp/sea-552qn5v_/A_uint16_t_aligned.bc /bench/benchmark_com_assertions_com_alinhamento_explicito_v4/A_uint16_t_aligned.c
+In file included from /bench/benchmark_com_assertions_com_alinhamento_explicito_v4/A_uint16_t_aligned.c:3:
+/bench/benchmark_com_assertions_com_alinhamento_explicito_v4/verifier.h:98:13: warning: verifier.h: branch = SeaHorn (__SEAHORN__ detectado) [-W#pragma-messages]
+    #pragma message "verifier.h: branch = SeaHorn (__SEAHORN__ detectado)"
+            ^
+1 warning generated.
+/seahorn/build/run/bin/seapp -o /tmp/sea-552qn5v_/A_uint16_t_aligned.pp.bc --simplifycfg-sink-common=false --strip-extern=false --promote-assumptions=false --kill-vaarg=true --ignore-def-verifier-fn=false --horn-keep-arith-overflow=false /tmp/sea-552qn5v_/A_uint16_t_aligned.bc
+/seahorn/build/run/bin/seapp --simplifycfg-sink-common=false -o /tmp/sea-552qn5v_/A_uint16_t_aligned.pp.ms.bc --horn-mixed-sem --ms-reduce-main /tmp/sea-552qn5v_/A_uint16_t_aligned.pp.bc
+/seahorn/build/run/bin/seaopt -f --simplifycfg-sink-common=false -o /tmp/sea-552qn5v_/A_uint16_t_aligned.pp.ms.o.bc -O3 --seaopt-enable-indvar=false --seaopt-enable-loop-idiom=false --unroll-threshold=150 --unroll-allow-partial=false --unroll-partial-threshold=0 --vectorize-slp=false /tmp/sea-552qn5v_/A_uint16_t_aligned.pp.ms.bc
+/seahorn/build/run/bin/seahorn --keep-shadows=true --sea-dsa=ci --horn-solve -horn-inter-proc -horn-sem-lvl=mem --horn-step=large /tmp/sea-552qn5v_/A_uint16_t_aligned.pp.ms.o.bc
+WARNING: no assertion was found so either program does not have assertions or frontend discharged them.
+unsat
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_com_alinhamento_explicito_v4/A_uint16_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 0.5058s
+================================================================================
+/usr/bin/clang-14 -c -emit-llvm -D__SEAHORN__ -fdeclspec -O1 -Xclang -disable-llvm-optzns -fgnu89-inline -m32 -I/seahorn/build/run/include -o /tmp/sea-_kleo5ev/A_uint16_t_misaligned.bc /bench/benchmark_com_assertions_com_alinhamento_explicito_v4/A_uint16_t_misaligned.c
+In file included from /bench/benchmark_com_assertions_com_alinhamento_explicito_v4/A_uint16_t_misaligned.c:3:
+/bench/benchmark_com_assertions_com_alinhamento_explicito_v4/verifier.h:98:13: warning: verifier.h: branch = SeaHorn (__SEAHORN__ detectado) [-W#pragma-messages]
+    #pragma message "verifier.h: branch = SeaHorn (__SEAHORN__ detectado)"
+            ^
+1 warning generated.
+/seahorn/build/run/bin/seapp -o /tmp/sea-_kleo5ev/A_uint16_t_misaligned.pp.bc --simplifycfg-sink-common=false --strip-extern=false --promote-assumptions=false --kill-vaarg=true --ignore-def-verifier-fn=false --horn-keep-arith-overflow=false /tmp/sea-_kleo5ev/A_uint16_t_misaligned.bc
+/seahorn/build/run/bin/seapp --simplifycfg-sink-common=false -o /tmp/sea-_kleo5ev/A_uint16_t_misaligned.pp.ms.bc --horn-mixed-sem --ms-reduce-main /tmp/sea-_kleo5ev/A_uint16_t_misaligned.pp.bc
+/seahorn/build/run/bin/seaopt -f --simplifycfg-sink-common=false -o /tmp/sea-_kleo5ev/A_uint16_t_misaligned.pp.ms.o.bc -O3 --seaopt-enable-indvar=false --seaopt-enable-loop-idiom=false --unroll-threshold=150 --unroll-allow-partial=false --unroll-partial-threshold=0 --vectorize-slp=false /tmp/sea-_kleo5ev/A_uint16_t_misaligned.pp.ms.bc
+/seahorn/build/run/bin/seahorn --keep-shadows=true --sea-dsa=ci --horn-solve -horn-inter-proc -horn-sem-lvl=mem --horn-step=large /tmp/sea-_kleo5ev/A_uint16_t_misaligned.pp.ms.o.bc
+sat
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_com_alinhamento_explicito_v4/A_uint32_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 0.408s
+================================================================================
+/usr/bin/clang-14 -c -emit-llvm -D__SEAHORN__ -fdeclspec -O1 -Xclang -disable-llvm-optzns -fgnu89-inline -m32 -I/seahorn/build/run/include -o /tmp/sea-qrqqh6ub/A_uint32_t_aligned.bc /bench/benchmark_com_assertions_com_alinhamento_explicito_v4/A_uint32_t_aligned.c
+In file included from /bench/benchmark_com_assertions_com_alinhamento_explicito_v4/A_uint32_t_aligned.c:3:
+/bench/benchmark_com_assertions_com_alinhamento_explicito_v4/verifier.h:98:13: warning: verifier.h: branch = SeaHorn (__SEAHORN__ detectado) [-W#pragma-messages]
+    #pragma message "verifier.h: branch = SeaHorn (__SEAHORN__ detectado)"
+            ^
+1 warning generated.
+/seahorn/build/run/bin/seapp -o /tmp/sea-qrqqh6ub/A_uint32_t_aligned.pp.bc --simplifycfg-sink-common=false --strip-extern=false --promote-assumptions=false --kill-vaarg=true --ignore-def-verifier-fn=false --horn-keep-arith-overflow=false /tmp/sea-qrqqh6ub/A_uint32_t_aligned.bc
+/seahorn/build/run/bin/seapp --simplifycfg-sink-common=false -o /tmp/sea-qrqqh6ub/A_uint32_t_aligned.pp.ms.bc --horn-mixed-sem --ms-reduce-main /tmp/sea-qrqqh6ub/A_uint32_t_aligned.pp.bc
+/seahorn/build/run/bin/seaopt -f --simplifycfg-sink-common=false -o /tmp/sea-qrqqh6ub/A_uint32_t_aligned.pp.ms.o.bc -O3 --seaopt-enable-indvar=false --seaopt-enable-loop-idiom=false --unroll-threshold=150 --unroll-allow-partial=false --unroll-partial-threshold=0 --vectorize-slp=false /tmp/sea-qrqqh6ub/A_uint32_t_aligned.pp.ms.bc
+/seahorn/build/run/bin/seahorn --keep-shadows=true --sea-dsa=ci --horn-solve -horn-inter-proc -horn-sem-lvl=mem --horn-step=large /tmp/sea-qrqqh6ub/A_uint32_t_aligned.pp.ms.o.bc
+WARNING: no assertion was found so either program does not have assertions or frontend discharged them.
+unsat
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_com_alinhamento_explicito_v4/A_uint32_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 0.4573s
+================================================================================
+/usr/bin/clang-14 -c -emit-llvm -D__SEAHORN__ -fdeclspec -O1 -Xclang -disable-llvm-optzns -fgnu89-inline -m32 -I/seahorn/build/run/include -o /tmp/sea-zem8ea3v/A_uint32_t_misaligned.bc /bench/benchmark_com_assertions_com_alinhamento_explicito_v4/A_uint32_t_misaligned.c
+In file included from /bench/benchmark_com_assertions_com_alinhamento_explicito_v4/A_uint32_t_misaligned.c:3:
+/bench/benchmark_com_assertions_com_alinhamento_explicito_v4/verifier.h:98:13: warning: verifier.h: branch = SeaHorn (__SEAHORN__ detectado) [-W#pragma-messages]
+    #pragma message "verifier.h: branch = SeaHorn (__SEAHORN__ detectado)"
+            ^
+1 warning generated.
+/seahorn/build/run/bin/seapp -o /tmp/sea-zem8ea3v/A_uint32_t_misaligned.pp.bc --simplifycfg-sink-common=false --strip-extern=false --promote-assumptions=false --kill-vaarg=true --ignore-def-verifier-fn=false --horn-keep-arith-overflow=false /tmp/sea-zem8ea3v/A_uint32_t_misaligned.bc
+/seahorn/build/run/bin/seapp --simplifycfg-sink-common=false -o /tmp/sea-zem8ea3v/A_uint32_t_misaligned.pp.ms.bc --horn-mixed-sem --ms-reduce-main /tmp/sea-zem8ea3v/A_uint32_t_misaligned.pp.bc
+/seahorn/build/run/bin/seaopt -f --simplifycfg-sink-common=false -o /tmp/sea-zem8ea3v/A_uint32_t_misaligned.pp.ms.o.bc -O3 --seaopt-enable-indvar=false --seaopt-enable-loop-idiom=false --unroll-threshold=150 --unroll-allow-partial=false --unroll-partial-threshold=0 --vectorize-slp=false /tmp/sea-zem8ea3v/A_uint32_t_misaligned.pp.ms.bc
+/seahorn/build/run/bin/seahorn --keep-shadows=true --sea-dsa=ci --horn-solve -horn-inter-proc -horn-sem-lvl=mem --horn-step=large /tmp/sea-zem8ea3v/A_uint32_t_misaligned.pp.ms.o.bc
+sat
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_com_alinhamento_explicito_v4/A_uint64_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 0.4294s
+================================================================================
+/usr/bin/clang-14 -c -emit-llvm -D__SEAHORN__ -fdeclspec -O1 -Xclang -disable-llvm-optzns -fgnu89-inline -m32 -I/seahorn/build/run/include -o /tmp/sea-6yz4ps3l/A_uint64_t_aligned.bc /bench/benchmark_com_assertions_com_alinhamento_explicito_v4/A_uint64_t_aligned.c
+In file included from /bench/benchmark_com_assertions_com_alinhamento_explicito_v4/A_uint64_t_aligned.c:3:
+/bench/benchmark_com_assertions_com_alinhamento_explicito_v4/verifier.h:98:13: warning: verifier.h: branch = SeaHorn (__SEAHORN__ detectado) [-W#pragma-messages]
+    #pragma message "verifier.h: branch = SeaHorn (__SEAHORN__ detectado)"
+            ^
+1 warning generated.
+/seahorn/build/run/bin/seapp -o /tmp/sea-6yz4ps3l/A_uint64_t_aligned.pp.bc --simplifycfg-sink-common=false --strip-extern=false --promote-assumptions=false --kill-vaarg=true --ignore-def-verifier-fn=false --horn-keep-arith-overflow=false /tmp/sea-6yz4ps3l/A_uint64_t_aligned.bc
+/seahorn/build/run/bin/seapp --simplifycfg-sink-common=false -o /tmp/sea-6yz4ps3l/A_uint64_t_aligned.pp.ms.bc --horn-mixed-sem --ms-reduce-main /tmp/sea-6yz4ps3l/A_uint64_t_aligned.pp.bc
+/seahorn/build/run/bin/seaopt -f --simplifycfg-sink-common=false -o /tmp/sea-6yz4ps3l/A_uint64_t_aligned.pp.ms.o.bc -O3 --seaopt-enable-indvar=false --seaopt-enable-loop-idiom=false --unroll-threshold=150 --unroll-allow-partial=false --unroll-partial-threshold=0 --vectorize-slp=false /tmp/sea-6yz4ps3l/A_uint64_t_aligned.pp.ms.bc
+/seahorn/build/run/bin/seahorn --keep-shadows=true --sea-dsa=ci --horn-solve -horn-inter-proc -horn-sem-lvl=mem --horn-step=large /tmp/sea-6yz4ps3l/A_uint64_t_aligned.pp.ms.o.bc
+sat
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_com_alinhamento_explicito_v4/A_uint64_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 0.4419s
+================================================================================
+/usr/bin/clang-14 -c -emit-llvm -D__SEAHORN__ -fdeclspec -O1 -Xclang -disable-llvm-optzns -fgnu89-inline -m32 -I/seahorn/build/run/include -o /tmp/sea-kud00o42/A_uint64_t_misaligned.bc /bench/benchmark_com_assertions_com_alinhamento_explicito_v4/A_uint64_t_misaligned.c
+In file included from /bench/benchmark_com_assertions_com_alinhamento_explicito_v4/A_uint64_t_misaligned.c:3:
+/bench/benchmark_com_assertions_com_alinhamento_explicito_v4/verifier.h:98:13: warning: verifier.h: branch = SeaHorn (__SEAHORN__ detectado) [-W#pragma-messages]
+    #pragma message "verifier.h: branch = SeaHorn (__SEAHORN__ detectado)"
+            ^
+1 warning generated.
+/seahorn/build/run/bin/seapp -o /tmp/sea-kud00o42/A_uint64_t_misaligned.pp.bc --simplifycfg-sink-common=false --strip-extern=false --promote-assumptions=false --kill-vaarg=true --ignore-def-verifier-fn=false --horn-keep-arith-overflow=false /tmp/sea-kud00o42/A_uint64_t_misaligned.bc
+/seahorn/build/run/bin/seapp --simplifycfg-sink-common=false -o /tmp/sea-kud00o42/A_uint64_t_misaligned.pp.ms.bc --horn-mixed-sem --ms-reduce-main /tmp/sea-kud00o42/A_uint64_t_misaligned.pp.bc
+/seahorn/build/run/bin/seaopt -f --simplifycfg-sink-common=false -o /tmp/sea-kud00o42/A_uint64_t_misaligned.pp.ms.o.bc -O3 --seaopt-enable-indvar=false --seaopt-enable-loop-idiom=false --unroll-threshold=150 --unroll-allow-partial=false --unroll-partial-threshold=0 --vectorize-slp=false /tmp/sea-kud00o42/A_uint64_t_misaligned.pp.ms.bc
+/seahorn/build/run/bin/seahorn --keep-shadows=true --sea-dsa=ci --horn-solve -horn-inter-proc -horn-sem-lvl=mem --horn-step=large /tmp/sea-kud00o42/A_uint64_t_misaligned.pp.ms.o.bc
+sat
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_com_alinhamento_explicito_v4/B_uint16_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 0.4655s
+================================================================================
+/usr/bin/clang-14 -c -emit-llvm -D__SEAHORN__ -fdeclspec -O1 -Xclang -disable-llvm-optzns -fgnu89-inline -m32 -I/seahorn/build/run/include -o /tmp/sea-mgdmseb_/B_uint16_t_aligned.bc /bench/benchmark_com_assertions_com_alinhamento_explicito_v4/B_uint16_t_aligned.c
+In file included from /bench/benchmark_com_assertions_com_alinhamento_explicito_v4/B_uint16_t_aligned.c:3:
+/bench/benchmark_com_assertions_com_alinhamento_explicito_v4/verifier.h:98:13: warning: verifier.h: branch = SeaHorn (__SEAHORN__ detectado) [-W#pragma-messages]
+    #pragma message "verifier.h: branch = SeaHorn (__SEAHORN__ detectado)"
+            ^
+1 warning generated.
+/seahorn/build/run/bin/seapp -o /tmp/sea-mgdmseb_/B_uint16_t_aligned.pp.bc --simplifycfg-sink-common=false --strip-extern=false --promote-assumptions=false --kill-vaarg=true --ignore-def-verifier-fn=false --horn-keep-arith-overflow=false /tmp/sea-mgdmseb_/B_uint16_t_aligned.bc
+/seahorn/build/run/bin/seapp --simplifycfg-sink-common=false -o /tmp/sea-mgdmseb_/B_uint16_t_aligned.pp.ms.bc --horn-mixed-sem --ms-reduce-main /tmp/sea-mgdmseb_/B_uint16_t_aligned.pp.bc
+/seahorn/build/run/bin/seaopt -f --simplifycfg-sink-common=false -o /tmp/sea-mgdmseb_/B_uint16_t_aligned.pp.ms.o.bc -O3 --seaopt-enable-indvar=false --seaopt-enable-loop-idiom=false --unroll-threshold=150 --unroll-allow-partial=false --unroll-partial-threshold=0 --vectorize-slp=false /tmp/sea-mgdmseb_/B_uint16_t_aligned.pp.ms.bc
+/seahorn/build/run/bin/seahorn --keep-shadows=true --sea-dsa=ci --horn-solve -horn-inter-proc -horn-sem-lvl=mem --horn-step=large /tmp/sea-mgdmseb_/B_uint16_t_aligned.pp.ms.o.bc
+WARNING: no assertion was found so either program does not have assertions or frontend discharged them.
+unsat
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_com_alinhamento_explicito_v4/B_uint16_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 0.4361s
+================================================================================
+/usr/bin/clang-14 -c -emit-llvm -D__SEAHORN__ -fdeclspec -O1 -Xclang -disable-llvm-optzns -fgnu89-inline -m32 -I/seahorn/build/run/include -o /tmp/sea-chcrc2xs/B_uint16_t_misaligned.bc /bench/benchmark_com_assertions_com_alinhamento_explicito_v4/B_uint16_t_misaligned.c
+In file included from /bench/benchmark_com_assertions_com_alinhamento_explicito_v4/B_uint16_t_misaligned.c:3:
+/bench/benchmark_com_assertions_com_alinhamento_explicito_v4/verifier.h:98:13: warning: verifier.h: branch = SeaHorn (__SEAHORN__ detectado) [-W#pragma-messages]
+    #pragma message "verifier.h: branch = SeaHorn (__SEAHORN__ detectado)"
+            ^
+1 warning generated.
+/seahorn/build/run/bin/seapp -o /tmp/sea-chcrc2xs/B_uint16_t_misaligned.pp.bc --simplifycfg-sink-common=false --strip-extern=false --promote-assumptions=false --kill-vaarg=true --ignore-def-verifier-fn=false --horn-keep-arith-overflow=false /tmp/sea-chcrc2xs/B_uint16_t_misaligned.bc
+/seahorn/build/run/bin/seapp --simplifycfg-sink-common=false -o /tmp/sea-chcrc2xs/B_uint16_t_misaligned.pp.ms.bc --horn-mixed-sem --ms-reduce-main /tmp/sea-chcrc2xs/B_uint16_t_misaligned.pp.bc
+/seahorn/build/run/bin/seaopt -f --simplifycfg-sink-common=false -o /tmp/sea-chcrc2xs/B_uint16_t_misaligned.pp.ms.o.bc -O3 --seaopt-enable-indvar=false --seaopt-enable-loop-idiom=false --unroll-threshold=150 --unroll-allow-partial=false --unroll-partial-threshold=0 --vectorize-slp=false /tmp/sea-chcrc2xs/B_uint16_t_misaligned.pp.ms.bc
+/seahorn/build/run/bin/seahorn --keep-shadows=true --sea-dsa=ci --horn-solve -horn-inter-proc -horn-sem-lvl=mem --horn-step=large /tmp/sea-chcrc2xs/B_uint16_t_misaligned.pp.ms.o.bc
+sat
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_com_alinhamento_explicito_v4/B_uint32_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 0.4321s
+================================================================================
+/usr/bin/clang-14 -c -emit-llvm -D__SEAHORN__ -fdeclspec -O1 -Xclang -disable-llvm-optzns -fgnu89-inline -m32 -I/seahorn/build/run/include -o /tmp/sea-z64asdh7/B_uint32_t_aligned.bc /bench/benchmark_com_assertions_com_alinhamento_explicito_v4/B_uint32_t_aligned.c
+In file included from /bench/benchmark_com_assertions_com_alinhamento_explicito_v4/B_uint32_t_aligned.c:3:
+/bench/benchmark_com_assertions_com_alinhamento_explicito_v4/verifier.h:98:13: warning: verifier.h: branch = SeaHorn (__SEAHORN__ detectado) [-W#pragma-messages]
+    #pragma message "verifier.h: branch = SeaHorn (__SEAHORN__ detectado)"
+            ^
+1 warning generated.
+/seahorn/build/run/bin/seapp -o /tmp/sea-z64asdh7/B_uint32_t_aligned.pp.bc --simplifycfg-sink-common=false --strip-extern=false --promote-assumptions=false --kill-vaarg=true --ignore-def-verifier-fn=false --horn-keep-arith-overflow=false /tmp/sea-z64asdh7/B_uint32_t_aligned.bc
+/seahorn/build/run/bin/seapp --simplifycfg-sink-common=false -o /tmp/sea-z64asdh7/B_uint32_t_aligned.pp.ms.bc --horn-mixed-sem --ms-reduce-main /tmp/sea-z64asdh7/B_uint32_t_aligned.pp.bc
+/seahorn/build/run/bin/seaopt -f --simplifycfg-sink-common=false -o /tmp/sea-z64asdh7/B_uint32_t_aligned.pp.ms.o.bc -O3 --seaopt-enable-indvar=false --seaopt-enable-loop-idiom=false --unroll-threshold=150 --unroll-allow-partial=false --unroll-partial-threshold=0 --vectorize-slp=false /tmp/sea-z64asdh7/B_uint32_t_aligned.pp.ms.bc
+/seahorn/build/run/bin/seahorn --keep-shadows=true --sea-dsa=ci --horn-solve -horn-inter-proc -horn-sem-lvl=mem --horn-step=large /tmp/sea-z64asdh7/B_uint32_t_aligned.pp.ms.o.bc
+WARNING: no assertion was found so either program does not have assertions or frontend discharged them.
+unsat
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_com_alinhamento_explicito_v4/B_uint32_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 0.4182s
+================================================================================
+/usr/bin/clang-14 -c -emit-llvm -D__SEAHORN__ -fdeclspec -O1 -Xclang -disable-llvm-optzns -fgnu89-inline -m32 -I/seahorn/build/run/include -o /tmp/sea-t9g9pfgq/B_uint32_t_misaligned.bc /bench/benchmark_com_assertions_com_alinhamento_explicito_v4/B_uint32_t_misaligned.c
+In file included from /bench/benchmark_com_assertions_com_alinhamento_explicito_v4/B_uint32_t_misaligned.c:3:
+/bench/benchmark_com_assertions_com_alinhamento_explicito_v4/verifier.h:98:13: warning: verifier.h: branch = SeaHorn (__SEAHORN__ detectado) [-W#pragma-messages]
+    #pragma message "verifier.h: branch = SeaHorn (__SEAHORN__ detectado)"
+            ^
+1 warning generated.
+/seahorn/build/run/bin/seapp -o /tmp/sea-t9g9pfgq/B_uint32_t_misaligned.pp.bc --simplifycfg-sink-common=false --strip-extern=false --promote-assumptions=false --kill-vaarg=true --ignore-def-verifier-fn=false --horn-keep-arith-overflow=false /tmp/sea-t9g9pfgq/B_uint32_t_misaligned.bc
+/seahorn/build/run/bin/seapp --simplifycfg-sink-common=false -o /tmp/sea-t9g9pfgq/B_uint32_t_misaligned.pp.ms.bc --horn-mixed-sem --ms-reduce-main /tmp/sea-t9g9pfgq/B_uint32_t_misaligned.pp.bc
+/seahorn/build/run/bin/seaopt -f --simplifycfg-sink-common=false -o /tmp/sea-t9g9pfgq/B_uint32_t_misaligned.pp.ms.o.bc -O3 --seaopt-enable-indvar=false --seaopt-enable-loop-idiom=false --unroll-threshold=150 --unroll-allow-partial=false --unroll-partial-threshold=0 --vectorize-slp=false /tmp/sea-t9g9pfgq/B_uint32_t_misaligned.pp.ms.bc
+/seahorn/build/run/bin/seahorn --keep-shadows=true --sea-dsa=ci --horn-solve -horn-inter-proc -horn-sem-lvl=mem --horn-step=large /tmp/sea-t9g9pfgq/B_uint32_t_misaligned.pp.ms.o.bc
+sat
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_com_alinhamento_explicito_v4/B_uint64_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 0.4018s
+================================================================================
+/usr/bin/clang-14 -c -emit-llvm -D__SEAHORN__ -fdeclspec -O1 -Xclang -disable-llvm-optzns -fgnu89-inline -m32 -I/seahorn/build/run/include -o /tmp/sea-c2heayjb/B_uint64_t_aligned.bc /bench/benchmark_com_assertions_com_alinhamento_explicito_v4/B_uint64_t_aligned.c
+In file included from /bench/benchmark_com_assertions_com_alinhamento_explicito_v4/B_uint64_t_aligned.c:3:
+/bench/benchmark_com_assertions_com_alinhamento_explicito_v4/verifier.h:98:13: warning: verifier.h: branch = SeaHorn (__SEAHORN__ detectado) [-W#pragma-messages]
+    #pragma message "verifier.h: branch = SeaHorn (__SEAHORN__ detectado)"
+            ^
+1 warning generated.
+/seahorn/build/run/bin/seapp -o /tmp/sea-c2heayjb/B_uint64_t_aligned.pp.bc --simplifycfg-sink-common=false --strip-extern=false --promote-assumptions=false --kill-vaarg=true --ignore-def-verifier-fn=false --horn-keep-arith-overflow=false /tmp/sea-c2heayjb/B_uint64_t_aligned.bc
+/seahorn/build/run/bin/seapp --simplifycfg-sink-common=false -o /tmp/sea-c2heayjb/B_uint64_t_aligned.pp.ms.bc --horn-mixed-sem --ms-reduce-main /tmp/sea-c2heayjb/B_uint64_t_aligned.pp.bc
+/seahorn/build/run/bin/seaopt -f --simplifycfg-sink-common=false -o /tmp/sea-c2heayjb/B_uint64_t_aligned.pp.ms.o.bc -O3 --seaopt-enable-indvar=false --seaopt-enable-loop-idiom=false --unroll-threshold=150 --unroll-allow-partial=false --unroll-partial-threshold=0 --vectorize-slp=false /tmp/sea-c2heayjb/B_uint64_t_aligned.pp.ms.bc
+/seahorn/build/run/bin/seahorn --keep-shadows=true --sea-dsa=ci --horn-solve -horn-inter-proc -horn-sem-lvl=mem --horn-step=large /tmp/sea-c2heayjb/B_uint64_t_aligned.pp.ms.o.bc
+sat
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_com_alinhamento_explicito_v4/B_uint64_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 0.4498s
+================================================================================
+/usr/bin/clang-14 -c -emit-llvm -D__SEAHORN__ -fdeclspec -O1 -Xclang -disable-llvm-optzns -fgnu89-inline -m32 -I/seahorn/build/run/include -o /tmp/sea-eq0tccni/B_uint64_t_misaligned.bc /bench/benchmark_com_assertions_com_alinhamento_explicito_v4/B_uint64_t_misaligned.c
+In file included from /bench/benchmark_com_assertions_com_alinhamento_explicito_v4/B_uint64_t_misaligned.c:3:
+/bench/benchmark_com_assertions_com_alinhamento_explicito_v4/verifier.h:98:13: warning: verifier.h: branch = SeaHorn (__SEAHORN__ detectado) [-W#pragma-messages]
+    #pragma message "verifier.h: branch = SeaHorn (__SEAHORN__ detectado)"
+            ^
+1 warning generated.
+/seahorn/build/run/bin/seapp -o /tmp/sea-eq0tccni/B_uint64_t_misaligned.pp.bc --simplifycfg-sink-common=false --strip-extern=false --promote-assumptions=false --kill-vaarg=true --ignore-def-verifier-fn=false --horn-keep-arith-overflow=false /tmp/sea-eq0tccni/B_uint64_t_misaligned.bc
+/seahorn/build/run/bin/seapp --simplifycfg-sink-common=false -o /tmp/sea-eq0tccni/B_uint64_t_misaligned.pp.ms.bc --horn-mixed-sem --ms-reduce-main /tmp/sea-eq0tccni/B_uint64_t_misaligned.pp.bc
+/seahorn/build/run/bin/seaopt -f --simplifycfg-sink-common=false -o /tmp/sea-eq0tccni/B_uint64_t_misaligned.pp.ms.o.bc -O3 --seaopt-enable-indvar=false --seaopt-enable-loop-idiom=false --unroll-threshold=150 --unroll-allow-partial=false --unroll-partial-threshold=0 --vectorize-slp=false /tmp/sea-eq0tccni/B_uint64_t_misaligned.pp.ms.bc
+/seahorn/build/run/bin/seahorn --keep-shadows=true --sea-dsa=ci --horn-solve -horn-inter-proc -horn-sem-lvl=mem --horn-step=large /tmp/sea-eq0tccni/B_uint64_t_misaligned.pp.ms.o.bc
+sat
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_com_alinhamento_explicito_v4/C_uint16_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 0.4523s
+================================================================================
+/usr/bin/clang-14 -c -emit-llvm -D__SEAHORN__ -fdeclspec -O1 -Xclang -disable-llvm-optzns -fgnu89-inline -m32 -I/seahorn/build/run/include -o /tmp/sea-jt9bi6n6/C_uint16_t_aligned.bc /bench/benchmark_com_assertions_com_alinhamento_explicito_v4/C_uint16_t_aligned.c
+In file included from /bench/benchmark_com_assertions_com_alinhamento_explicito_v4/C_uint16_t_aligned.c:3:
+/bench/benchmark_com_assertions_com_alinhamento_explicito_v4/verifier.h:98:13: warning: verifier.h: branch = SeaHorn (__SEAHORN__ detectado) [-W#pragma-messages]
+    #pragma message "verifier.h: branch = SeaHorn (__SEAHORN__ detectado)"
+            ^
+1 warning generated.
+/seahorn/build/run/bin/seapp -o /tmp/sea-jt9bi6n6/C_uint16_t_aligned.pp.bc --simplifycfg-sink-common=false --strip-extern=false --promote-assumptions=false --kill-vaarg=true --ignore-def-verifier-fn=false --horn-keep-arith-overflow=false /tmp/sea-jt9bi6n6/C_uint16_t_aligned.bc
+/seahorn/build/run/bin/seapp --simplifycfg-sink-common=false -o /tmp/sea-jt9bi6n6/C_uint16_t_aligned.pp.ms.bc --horn-mixed-sem --ms-reduce-main /tmp/sea-jt9bi6n6/C_uint16_t_aligned.pp.bc
+/seahorn/build/run/bin/seaopt -f --simplifycfg-sink-common=false -o /tmp/sea-jt9bi6n6/C_uint16_t_aligned.pp.ms.o.bc -O3 --seaopt-enable-indvar=false --seaopt-enable-loop-idiom=false --unroll-threshold=150 --unroll-allow-partial=false --unroll-partial-threshold=0 --vectorize-slp=false /tmp/sea-jt9bi6n6/C_uint16_t_aligned.pp.ms.bc
+/seahorn/build/run/bin/seahorn --keep-shadows=true --sea-dsa=ci --horn-solve -horn-inter-proc -horn-sem-lvl=mem --horn-step=large /tmp/sea-jt9bi6n6/C_uint16_t_aligned.pp.ms.o.bc
+WARNING: no assertion was found so either program does not have assertions or frontend discharged them.
+unsat
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_com_alinhamento_explicito_v4/C_uint16_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 0.4205s
+================================================================================
+/usr/bin/clang-14 -c -emit-llvm -D__SEAHORN__ -fdeclspec -O1 -Xclang -disable-llvm-optzns -fgnu89-inline -m32 -I/seahorn/build/run/include -o /tmp/sea-4huj2ypg/C_uint16_t_misaligned.bc /bench/benchmark_com_assertions_com_alinhamento_explicito_v4/C_uint16_t_misaligned.c
+In file included from /bench/benchmark_com_assertions_com_alinhamento_explicito_v4/C_uint16_t_misaligned.c:3:
+/bench/benchmark_com_assertions_com_alinhamento_explicito_v4/verifier.h:98:13: warning: verifier.h: branch = SeaHorn (__SEAHORN__ detectado) [-W#pragma-messages]
+    #pragma message "verifier.h: branch = SeaHorn (__SEAHORN__ detectado)"
+            ^
+1 warning generated.
+/seahorn/build/run/bin/seapp -o /tmp/sea-4huj2ypg/C_uint16_t_misaligned.pp.bc --simplifycfg-sink-common=false --strip-extern=false --promote-assumptions=false --kill-vaarg=true --ignore-def-verifier-fn=false --horn-keep-arith-overflow=false /tmp/sea-4huj2ypg/C_uint16_t_misaligned.bc
+/seahorn/build/run/bin/seapp --simplifycfg-sink-common=false -o /tmp/sea-4huj2ypg/C_uint16_t_misaligned.pp.ms.bc --horn-mixed-sem --ms-reduce-main /tmp/sea-4huj2ypg/C_uint16_t_misaligned.pp.bc
+/seahorn/build/run/bin/seaopt -f --simplifycfg-sink-common=false -o /tmp/sea-4huj2ypg/C_uint16_t_misaligned.pp.ms.o.bc -O3 --seaopt-enable-indvar=false --seaopt-enable-loop-idiom=false --unroll-threshold=150 --unroll-allow-partial=false --unroll-partial-threshold=0 --vectorize-slp=false /tmp/sea-4huj2ypg/C_uint16_t_misaligned.pp.ms.bc
+/seahorn/build/run/bin/seahorn --keep-shadows=true --sea-dsa=ci --horn-solve -horn-inter-proc -horn-sem-lvl=mem --horn-step=large /tmp/sea-4huj2ypg/C_uint16_t_misaligned.pp.ms.o.bc
+sat
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_com_alinhamento_explicito_v4/C_uint32_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 0.4461s
+================================================================================
+/usr/bin/clang-14 -c -emit-llvm -D__SEAHORN__ -fdeclspec -O1 -Xclang -disable-llvm-optzns -fgnu89-inline -m32 -I/seahorn/build/run/include -o /tmp/sea-qylb_whd/C_uint32_t_aligned.bc /bench/benchmark_com_assertions_com_alinhamento_explicito_v4/C_uint32_t_aligned.c
+In file included from /bench/benchmark_com_assertions_com_alinhamento_explicito_v4/C_uint32_t_aligned.c:3:
+/bench/benchmark_com_assertions_com_alinhamento_explicito_v4/verifier.h:98:13: warning: verifier.h: branch = SeaHorn (__SEAHORN__ detectado) [-W#pragma-messages]
+    #pragma message "verifier.h: branch = SeaHorn (__SEAHORN__ detectado)"
+            ^
+1 warning generated.
+/seahorn/build/run/bin/seapp -o /tmp/sea-qylb_whd/C_uint32_t_aligned.pp.bc --simplifycfg-sink-common=false --strip-extern=false --promote-assumptions=false --kill-vaarg=true --ignore-def-verifier-fn=false --horn-keep-arith-overflow=false /tmp/sea-qylb_whd/C_uint32_t_aligned.bc
+/seahorn/build/run/bin/seapp --simplifycfg-sink-common=false -o /tmp/sea-qylb_whd/C_uint32_t_aligned.pp.ms.bc --horn-mixed-sem --ms-reduce-main /tmp/sea-qylb_whd/C_uint32_t_aligned.pp.bc
+/seahorn/build/run/bin/seaopt -f --simplifycfg-sink-common=false -o /tmp/sea-qylb_whd/C_uint32_t_aligned.pp.ms.o.bc -O3 --seaopt-enable-indvar=false --seaopt-enable-loop-idiom=false --unroll-threshold=150 --unroll-allow-partial=false --unroll-partial-threshold=0 --vectorize-slp=false /tmp/sea-qylb_whd/C_uint32_t_aligned.pp.ms.bc
+/seahorn/build/run/bin/seahorn --keep-shadows=true --sea-dsa=ci --horn-solve -horn-inter-proc -horn-sem-lvl=mem --horn-step=large /tmp/sea-qylb_whd/C_uint32_t_aligned.pp.ms.o.bc
+WARNING: no assertion was found so either program does not have assertions or frontend discharged them.
+unsat
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_com_alinhamento_explicito_v4/C_uint32_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 0.4501s
+================================================================================
+/usr/bin/clang-14 -c -emit-llvm -D__SEAHORN__ -fdeclspec -O1 -Xclang -disable-llvm-optzns -fgnu89-inline -m32 -I/seahorn/build/run/include -o /tmp/sea-bzfsgkfj/C_uint32_t_misaligned.bc /bench/benchmark_com_assertions_com_alinhamento_explicito_v4/C_uint32_t_misaligned.c
+In file included from /bench/benchmark_com_assertions_com_alinhamento_explicito_v4/C_uint32_t_misaligned.c:3:
+/bench/benchmark_com_assertions_com_alinhamento_explicito_v4/verifier.h:98:13: warning: verifier.h: branch = SeaHorn (__SEAHORN__ detectado) [-W#pragma-messages]
+    #pragma message "verifier.h: branch = SeaHorn (__SEAHORN__ detectado)"
+            ^
+1 warning generated.
+/seahorn/build/run/bin/seapp -o /tmp/sea-bzfsgkfj/C_uint32_t_misaligned.pp.bc --simplifycfg-sink-common=false --strip-extern=false --promote-assumptions=false --kill-vaarg=true --ignore-def-verifier-fn=false --horn-keep-arith-overflow=false /tmp/sea-bzfsgkfj/C_uint32_t_misaligned.bc
+/seahorn/build/run/bin/seapp --simplifycfg-sink-common=false -o /tmp/sea-bzfsgkfj/C_uint32_t_misaligned.pp.ms.bc --horn-mixed-sem --ms-reduce-main /tmp/sea-bzfsgkfj/C_uint32_t_misaligned.pp.bc
+/seahorn/build/run/bin/seaopt -f --simplifycfg-sink-common=false -o /tmp/sea-bzfsgkfj/C_uint32_t_misaligned.pp.ms.o.bc -O3 --seaopt-enable-indvar=false --seaopt-enable-loop-idiom=false --unroll-threshold=150 --unroll-allow-partial=false --unroll-partial-threshold=0 --vectorize-slp=false /tmp/sea-bzfsgkfj/C_uint32_t_misaligned.pp.ms.bc
+/seahorn/build/run/bin/seahorn --keep-shadows=true --sea-dsa=ci --horn-solve -horn-inter-proc -horn-sem-lvl=mem --horn-step=large /tmp/sea-bzfsgkfj/C_uint32_t_misaligned.pp.ms.o.bc
+sat
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_com_alinhamento_explicito_v4/C_uint64_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 0.4669s
+================================================================================
+/usr/bin/clang-14 -c -emit-llvm -D__SEAHORN__ -fdeclspec -O1 -Xclang -disable-llvm-optzns -fgnu89-inline -m32 -I/seahorn/build/run/include -o /tmp/sea-d8fslw3m/C_uint64_t_aligned.bc /bench/benchmark_com_assertions_com_alinhamento_explicito_v4/C_uint64_t_aligned.c
+In file included from /bench/benchmark_com_assertions_com_alinhamento_explicito_v4/C_uint64_t_aligned.c:3:
+/bench/benchmark_com_assertions_com_alinhamento_explicito_v4/verifier.h:98:13: warning: verifier.h: branch = SeaHorn (__SEAHORN__ detectado) [-W#pragma-messages]
+    #pragma message "verifier.h: branch = SeaHorn (__SEAHORN__ detectado)"
+            ^
+1 warning generated.
+/seahorn/build/run/bin/seapp -o /tmp/sea-d8fslw3m/C_uint64_t_aligned.pp.bc --simplifycfg-sink-common=false --strip-extern=false --promote-assumptions=false --kill-vaarg=true --ignore-def-verifier-fn=false --horn-keep-arith-overflow=false /tmp/sea-d8fslw3m/C_uint64_t_aligned.bc
+/seahorn/build/run/bin/seapp --simplifycfg-sink-common=false -o /tmp/sea-d8fslw3m/C_uint64_t_aligned.pp.ms.bc --horn-mixed-sem --ms-reduce-main /tmp/sea-d8fslw3m/C_uint64_t_aligned.pp.bc
+/seahorn/build/run/bin/seaopt -f --simplifycfg-sink-common=false -o /tmp/sea-d8fslw3m/C_uint64_t_aligned.pp.ms.o.bc -O3 --seaopt-enable-indvar=false --seaopt-enable-loop-idiom=false --unroll-threshold=150 --unroll-allow-partial=false --unroll-partial-threshold=0 --vectorize-slp=false /tmp/sea-d8fslw3m/C_uint64_t_aligned.pp.ms.bc
+/seahorn/build/run/bin/seahorn --keep-shadows=true --sea-dsa=ci --horn-solve -horn-inter-proc -horn-sem-lvl=mem --horn-step=large /tmp/sea-d8fslw3m/C_uint64_t_aligned.pp.ms.o.bc
+sat
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_com_alinhamento_explicito_v4/C_uint64_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 0.499s
+================================================================================
+/usr/bin/clang-14 -c -emit-llvm -D__SEAHORN__ -fdeclspec -O1 -Xclang -disable-llvm-optzns -fgnu89-inline -m32 -I/seahorn/build/run/include -o /tmp/sea-1b5azolm/C_uint64_t_misaligned.bc /bench/benchmark_com_assertions_com_alinhamento_explicito_v4/C_uint64_t_misaligned.c
+In file included from /bench/benchmark_com_assertions_com_alinhamento_explicito_v4/C_uint64_t_misaligned.c:3:
+/bench/benchmark_com_assertions_com_alinhamento_explicito_v4/verifier.h:98:13: warning: verifier.h: branch = SeaHorn (__SEAHORN__ detectado) [-W#pragma-messages]
+    #pragma message "verifier.h: branch = SeaHorn (__SEAHORN__ detectado)"
+            ^
+1 warning generated.
+/seahorn/build/run/bin/seapp -o /tmp/sea-1b5azolm/C_uint64_t_misaligned.pp.bc --simplifycfg-sink-common=false --strip-extern=false --promote-assumptions=false --kill-vaarg=true --ignore-def-verifier-fn=false --horn-keep-arith-overflow=false /tmp/sea-1b5azolm/C_uint64_t_misaligned.bc
+/seahorn/build/run/bin/seapp --simplifycfg-sink-common=false -o /tmp/sea-1b5azolm/C_uint64_t_misaligned.pp.ms.bc --horn-mixed-sem --ms-reduce-main /tmp/sea-1b5azolm/C_uint64_t_misaligned.pp.bc
+/seahorn/build/run/bin/seaopt -f --simplifycfg-sink-common=false -o /tmp/sea-1b5azolm/C_uint64_t_misaligned.pp.ms.o.bc -O3 --seaopt-enable-indvar=false --seaopt-enable-loop-idiom=false --unroll-threshold=150 --unroll-allow-partial=false --unroll-partial-threshold=0 --vectorize-slp=false /tmp/sea-1b5azolm/C_uint64_t_misaligned.pp.ms.bc
+/seahorn/build/run/bin/seahorn --keep-shadows=true --sea-dsa=ci --horn-solve -horn-inter-proc -horn-sem-lvl=mem --horn-step=large /tmp/sea-1b5azolm/C_uint64_t_misaligned.pp.ms.o.bc
+sat
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_com_alinhamento_explicito_v4/D_uint16_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 0.4554s
+================================================================================
+/usr/bin/clang-14 -c -emit-llvm -D__SEAHORN__ -fdeclspec -O1 -Xclang -disable-llvm-optzns -fgnu89-inline -m32 -I/seahorn/build/run/include -o /tmp/sea-53spkcbp/D_uint16_t_aligned.bc /bench/benchmark_com_assertions_com_alinhamento_explicito_v4/D_uint16_t_aligned.c
+In file included from /bench/benchmark_com_assertions_com_alinhamento_explicito_v4/D_uint16_t_aligned.c:3:
+/bench/benchmark_com_assertions_com_alinhamento_explicito_v4/verifier.h:98:13: warning: verifier.h: branch = SeaHorn (__SEAHORN__ detectado) [-W#pragma-messages]
+    #pragma message "verifier.h: branch = SeaHorn (__SEAHORN__ detectado)"
+            ^
+1 warning generated.
+/seahorn/build/run/bin/seapp -o /tmp/sea-53spkcbp/D_uint16_t_aligned.pp.bc --simplifycfg-sink-common=false --strip-extern=false --promote-assumptions=false --kill-vaarg=true --ignore-def-verifier-fn=false --horn-keep-arith-overflow=false /tmp/sea-53spkcbp/D_uint16_t_aligned.bc
+/seahorn/build/run/bin/seapp --simplifycfg-sink-common=false -o /tmp/sea-53spkcbp/D_uint16_t_aligned.pp.ms.bc --horn-mixed-sem --ms-reduce-main /tmp/sea-53spkcbp/D_uint16_t_aligned.pp.bc
+/seahorn/build/run/bin/seaopt -f --simplifycfg-sink-common=false -o /tmp/sea-53spkcbp/D_uint16_t_aligned.pp.ms.o.bc -O3 --seaopt-enable-indvar=false --seaopt-enable-loop-idiom=false --unroll-threshold=150 --unroll-allow-partial=false --unroll-partial-threshold=0 --vectorize-slp=false /tmp/sea-53spkcbp/D_uint16_t_aligned.pp.ms.bc
+/seahorn/build/run/bin/seahorn --keep-shadows=true --sea-dsa=ci --horn-solve -horn-inter-proc -horn-sem-lvl=mem --horn-step=large /tmp/sea-53spkcbp/D_uint16_t_aligned.pp.ms.o.bc
+WARNING: no assertion was found so either program does not have assertions or frontend discharged them.
+unsat
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_com_alinhamento_explicito_v4/D_uint16_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 0.4449s
+================================================================================
+/usr/bin/clang-14 -c -emit-llvm -D__SEAHORN__ -fdeclspec -O1 -Xclang -disable-llvm-optzns -fgnu89-inline -m32 -I/seahorn/build/run/include -o /tmp/sea-it8txdun/D_uint16_t_misaligned.bc /bench/benchmark_com_assertions_com_alinhamento_explicito_v4/D_uint16_t_misaligned.c
+In file included from /bench/benchmark_com_assertions_com_alinhamento_explicito_v4/D_uint16_t_misaligned.c:3:
+/bench/benchmark_com_assertions_com_alinhamento_explicito_v4/verifier.h:98:13: warning: verifier.h: branch = SeaHorn (__SEAHORN__ detectado) [-W#pragma-messages]
+    #pragma message "verifier.h: branch = SeaHorn (__SEAHORN__ detectado)"
+            ^
+1 warning generated.
+/seahorn/build/run/bin/seapp -o /tmp/sea-it8txdun/D_uint16_t_misaligned.pp.bc --simplifycfg-sink-common=false --strip-extern=false --promote-assumptions=false --kill-vaarg=true --ignore-def-verifier-fn=false --horn-keep-arith-overflow=false /tmp/sea-it8txdun/D_uint16_t_misaligned.bc
+/seahorn/build/run/bin/seapp --simplifycfg-sink-common=false -o /tmp/sea-it8txdun/D_uint16_t_misaligned.pp.ms.bc --horn-mixed-sem --ms-reduce-main /tmp/sea-it8txdun/D_uint16_t_misaligned.pp.bc
+/seahorn/build/run/bin/seaopt -f --simplifycfg-sink-common=false -o /tmp/sea-it8txdun/D_uint16_t_misaligned.pp.ms.o.bc -O3 --seaopt-enable-indvar=false --seaopt-enable-loop-idiom=false --unroll-threshold=150 --unroll-allow-partial=false --unroll-partial-threshold=0 --vectorize-slp=false /tmp/sea-it8txdun/D_uint16_t_misaligned.pp.ms.bc
+/seahorn/build/run/bin/seahorn --keep-shadows=true --sea-dsa=ci --horn-solve -horn-inter-proc -horn-sem-lvl=mem --horn-step=large /tmp/sea-it8txdun/D_uint16_t_misaligned.pp.ms.o.bc
+sat
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_com_alinhamento_explicito_v4/D_uint32_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 0.4702s
+================================================================================
+/usr/bin/clang-14 -c -emit-llvm -D__SEAHORN__ -fdeclspec -O1 -Xclang -disable-llvm-optzns -fgnu89-inline -m32 -I/seahorn/build/run/include -o /tmp/sea-ay2mf6ro/D_uint32_t_aligned.bc /bench/benchmark_com_assertions_com_alinhamento_explicito_v4/D_uint32_t_aligned.c
+In file included from /bench/benchmark_com_assertions_com_alinhamento_explicito_v4/D_uint32_t_aligned.c:3:
+/bench/benchmark_com_assertions_com_alinhamento_explicito_v4/verifier.h:98:13: warning: verifier.h: branch = SeaHorn (__SEAHORN__ detectado) [-W#pragma-messages]
+    #pragma message "verifier.h: branch = SeaHorn (__SEAHORN__ detectado)"
+            ^
+1 warning generated.
+/seahorn/build/run/bin/seapp -o /tmp/sea-ay2mf6ro/D_uint32_t_aligned.pp.bc --simplifycfg-sink-common=false --strip-extern=false --promote-assumptions=false --kill-vaarg=true --ignore-def-verifier-fn=false --horn-keep-arith-overflow=false /tmp/sea-ay2mf6ro/D_uint32_t_aligned.bc
+/seahorn/build/run/bin/seapp --simplifycfg-sink-common=false -o /tmp/sea-ay2mf6ro/D_uint32_t_aligned.pp.ms.bc --horn-mixed-sem --ms-reduce-main /tmp/sea-ay2mf6ro/D_uint32_t_aligned.pp.bc
+/seahorn/build/run/bin/seaopt -f --simplifycfg-sink-common=false -o /tmp/sea-ay2mf6ro/D_uint32_t_aligned.pp.ms.o.bc -O3 --seaopt-enable-indvar=false --seaopt-enable-loop-idiom=false --unroll-threshold=150 --unroll-allow-partial=false --unroll-partial-threshold=0 --vectorize-slp=false /tmp/sea-ay2mf6ro/D_uint32_t_aligned.pp.ms.bc
+/seahorn/build/run/bin/seahorn --keep-shadows=true --sea-dsa=ci --horn-solve -horn-inter-proc -horn-sem-lvl=mem --horn-step=large /tmp/sea-ay2mf6ro/D_uint32_t_aligned.pp.ms.o.bc
+WARNING: no assertion was found so either program does not have assertions or frontend discharged them.
+unsat
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_com_alinhamento_explicito_v4/D_uint32_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 0.436s
+================================================================================
+/usr/bin/clang-14 -c -emit-llvm -D__SEAHORN__ -fdeclspec -O1 -Xclang -disable-llvm-optzns -fgnu89-inline -m32 -I/seahorn/build/run/include -o /tmp/sea-jzqvcn_c/D_uint32_t_misaligned.bc /bench/benchmark_com_assertions_com_alinhamento_explicito_v4/D_uint32_t_misaligned.c
+In file included from /bench/benchmark_com_assertions_com_alinhamento_explicito_v4/D_uint32_t_misaligned.c:3:
+/bench/benchmark_com_assertions_com_alinhamento_explicito_v4/verifier.h:98:13: warning: verifier.h: branch = SeaHorn (__SEAHORN__ detectado) [-W#pragma-messages]
+    #pragma message "verifier.h: branch = SeaHorn (__SEAHORN__ detectado)"
+            ^
+1 warning generated.
+/seahorn/build/run/bin/seapp -o /tmp/sea-jzqvcn_c/D_uint32_t_misaligned.pp.bc --simplifycfg-sink-common=false --strip-extern=false --promote-assumptions=false --kill-vaarg=true --ignore-def-verifier-fn=false --horn-keep-arith-overflow=false /tmp/sea-jzqvcn_c/D_uint32_t_misaligned.bc
+/seahorn/build/run/bin/seapp --simplifycfg-sink-common=false -o /tmp/sea-jzqvcn_c/D_uint32_t_misaligned.pp.ms.bc --horn-mixed-sem --ms-reduce-main /tmp/sea-jzqvcn_c/D_uint32_t_misaligned.pp.bc
+/seahorn/build/run/bin/seaopt -f --simplifycfg-sink-common=false -o /tmp/sea-jzqvcn_c/D_uint32_t_misaligned.pp.ms.o.bc -O3 --seaopt-enable-indvar=false --seaopt-enable-loop-idiom=false --unroll-threshold=150 --unroll-allow-partial=false --unroll-partial-threshold=0 --vectorize-slp=false /tmp/sea-jzqvcn_c/D_uint32_t_misaligned.pp.ms.bc
+/seahorn/build/run/bin/seahorn --keep-shadows=true --sea-dsa=ci --horn-solve -horn-inter-proc -horn-sem-lvl=mem --horn-step=large /tmp/sea-jzqvcn_c/D_uint32_t_misaligned.pp.ms.o.bc
+sat
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_com_alinhamento_explicito_v4/D_uint64_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 0.4623s
+================================================================================
+/usr/bin/clang-14 -c -emit-llvm -D__SEAHORN__ -fdeclspec -O1 -Xclang -disable-llvm-optzns -fgnu89-inline -m32 -I/seahorn/build/run/include -o /tmp/sea-7qjhrg0_/D_uint64_t_aligned.bc /bench/benchmark_com_assertions_com_alinhamento_explicito_v4/D_uint64_t_aligned.c
+In file included from /bench/benchmark_com_assertions_com_alinhamento_explicito_v4/D_uint64_t_aligned.c:3:
+/bench/benchmark_com_assertions_com_alinhamento_explicito_v4/verifier.h:98:13: warning: verifier.h: branch = SeaHorn (__SEAHORN__ detectado) [-W#pragma-messages]
+    #pragma message "verifier.h: branch = SeaHorn (__SEAHORN__ detectado)"
+            ^
+1 warning generated.
+/seahorn/build/run/bin/seapp -o /tmp/sea-7qjhrg0_/D_uint64_t_aligned.pp.bc --simplifycfg-sink-common=false --strip-extern=false --promote-assumptions=false --kill-vaarg=true --ignore-def-verifier-fn=false --horn-keep-arith-overflow=false /tmp/sea-7qjhrg0_/D_uint64_t_aligned.bc
+/seahorn/build/run/bin/seapp --simplifycfg-sink-common=false -o /tmp/sea-7qjhrg0_/D_uint64_t_aligned.pp.ms.bc --horn-mixed-sem --ms-reduce-main /tmp/sea-7qjhrg0_/D_uint64_t_aligned.pp.bc
+/seahorn/build/run/bin/seaopt -f --simplifycfg-sink-common=false -o /tmp/sea-7qjhrg0_/D_uint64_t_aligned.pp.ms.o.bc -O3 --seaopt-enable-indvar=false --seaopt-enable-loop-idiom=false --unroll-threshold=150 --unroll-allow-partial=false --unroll-partial-threshold=0 --vectorize-slp=false /tmp/sea-7qjhrg0_/D_uint64_t_aligned.pp.ms.bc
+/seahorn/build/run/bin/seahorn --keep-shadows=true --sea-dsa=ci --horn-solve -horn-inter-proc -horn-sem-lvl=mem --horn-step=large /tmp/sea-7qjhrg0_/D_uint64_t_aligned.pp.ms.o.bc
+sat
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_com_alinhamento_explicito_v4/D_uint64_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 0.435s
+================================================================================
+/usr/bin/clang-14 -c -emit-llvm -D__SEAHORN__ -fdeclspec -O1 -Xclang -disable-llvm-optzns -fgnu89-inline -m32 -I/seahorn/build/run/include -o /tmp/sea-rzrvdm28/D_uint64_t_misaligned.bc /bench/benchmark_com_assertions_com_alinhamento_explicito_v4/D_uint64_t_misaligned.c
+In file included from /bench/benchmark_com_assertions_com_alinhamento_explicito_v4/D_uint64_t_misaligned.c:3:
+/bench/benchmark_com_assertions_com_alinhamento_explicito_v4/verifier.h:98:13: warning: verifier.h: branch = SeaHorn (__SEAHORN__ detectado) [-W#pragma-messages]
+    #pragma message "verifier.h: branch = SeaHorn (__SEAHORN__ detectado)"
+            ^
+1 warning generated.
+/seahorn/build/run/bin/seapp -o /tmp/sea-rzrvdm28/D_uint64_t_misaligned.pp.bc --simplifycfg-sink-common=false --strip-extern=false --promote-assumptions=false --kill-vaarg=true --ignore-def-verifier-fn=false --horn-keep-arith-overflow=false /tmp/sea-rzrvdm28/D_uint64_t_misaligned.bc
+/seahorn/build/run/bin/seapp --simplifycfg-sink-common=false -o /tmp/sea-rzrvdm28/D_uint64_t_misaligned.pp.ms.bc --horn-mixed-sem --ms-reduce-main /tmp/sea-rzrvdm28/D_uint64_t_misaligned.pp.bc
+/seahorn/build/run/bin/seaopt -f --simplifycfg-sink-common=false -o /tmp/sea-rzrvdm28/D_uint64_t_misaligned.pp.ms.o.bc -O3 --seaopt-enable-indvar=false --seaopt-enable-loop-idiom=false --unroll-threshold=150 --unroll-allow-partial=false --unroll-partial-threshold=0 --vectorize-slp=false /tmp/sea-rzrvdm28/D_uint64_t_misaligned.pp.ms.bc
+/seahorn/build/run/bin/seahorn --keep-shadows=true --sea-dsa=ci --horn-solve -horn-inter-proc -horn-sem-lvl=mem --horn-step=large /tmp/sea-rzrvdm28/D_uint64_t_misaligned.pp.ms.o.bc
+sat
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_com_alinhamento_explicito_v4/E_uint16_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 0.4313s
+================================================================================
+/usr/bin/clang-14 -c -emit-llvm -D__SEAHORN__ -fdeclspec -O1 -Xclang -disable-llvm-optzns -fgnu89-inline -m32 -I/seahorn/build/run/include -o /tmp/sea-c4iht6rc/E_uint16_t_aligned.bc /bench/benchmark_com_assertions_com_alinhamento_explicito_v4/E_uint16_t_aligned.c
+In file included from /bench/benchmark_com_assertions_com_alinhamento_explicito_v4/E_uint16_t_aligned.c:4:
+/bench/benchmark_com_assertions_com_alinhamento_explicito_v4/verifier.h:98:13: warning: verifier.h: branch = SeaHorn (__SEAHORN__ detectado) [-W#pragma-messages]
+    #pragma message "verifier.h: branch = SeaHorn (__SEAHORN__ detectado)"
+            ^
+1 warning generated.
+/seahorn/build/run/bin/seapp -o /tmp/sea-c4iht6rc/E_uint16_t_aligned.pp.bc --simplifycfg-sink-common=false --strip-extern=false --promote-assumptions=false --kill-vaarg=true --ignore-def-verifier-fn=false --horn-keep-arith-overflow=false /tmp/sea-c4iht6rc/E_uint16_t_aligned.bc
+/seahorn/build/run/bin/seapp --simplifycfg-sink-common=false -o /tmp/sea-c4iht6rc/E_uint16_t_aligned.pp.ms.bc --horn-mixed-sem --ms-reduce-main /tmp/sea-c4iht6rc/E_uint16_t_aligned.pp.bc
+/seahorn/build/run/bin/seaopt -f --simplifycfg-sink-common=false -o /tmp/sea-c4iht6rc/E_uint16_t_aligned.pp.ms.o.bc -O3 --seaopt-enable-indvar=false --seaopt-enable-loop-idiom=false --unroll-threshold=150 --unroll-allow-partial=false --unroll-partial-threshold=0 --vectorize-slp=false /tmp/sea-c4iht6rc/E_uint16_t_aligned.pp.ms.bc
+/seahorn/build/run/bin/seahorn --keep-shadows=true --sea-dsa=ci --horn-solve -horn-inter-proc -horn-sem-lvl=mem --horn-step=large /tmp/sea-c4iht6rc/E_uint16_t_aligned.pp.ms.o.bc
+WARNING: no assertion was found so either program does not have assertions or frontend discharged them.
+unsat
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_com_alinhamento_explicito_v4/E_uint16_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 0.4313s
+================================================================================
+/usr/bin/clang-14 -c -emit-llvm -D__SEAHORN__ -fdeclspec -O1 -Xclang -disable-llvm-optzns -fgnu89-inline -m32 -I/seahorn/build/run/include -o /tmp/sea-6har62pa/E_uint16_t_misaligned.bc /bench/benchmark_com_assertions_com_alinhamento_explicito_v4/E_uint16_t_misaligned.c
+In file included from /bench/benchmark_com_assertions_com_alinhamento_explicito_v4/E_uint16_t_misaligned.c:4:
+/bench/benchmark_com_assertions_com_alinhamento_explicito_v4/verifier.h:98:13: warning: verifier.h: branch = SeaHorn (__SEAHORN__ detectado) [-W#pragma-messages]
+    #pragma message "verifier.h: branch = SeaHorn (__SEAHORN__ detectado)"
+            ^
+1 warning generated.
+/seahorn/build/run/bin/seapp -o /tmp/sea-6har62pa/E_uint16_t_misaligned.pp.bc --simplifycfg-sink-common=false --strip-extern=false --promote-assumptions=false --kill-vaarg=true --ignore-def-verifier-fn=false --horn-keep-arith-overflow=false /tmp/sea-6har62pa/E_uint16_t_misaligned.bc
+/seahorn/build/run/bin/seapp --simplifycfg-sink-common=false -o /tmp/sea-6har62pa/E_uint16_t_misaligned.pp.ms.bc --horn-mixed-sem --ms-reduce-main /tmp/sea-6har62pa/E_uint16_t_misaligned.pp.bc
+/seahorn/build/run/bin/seaopt -f --simplifycfg-sink-common=false -o /tmp/sea-6har62pa/E_uint16_t_misaligned.pp.ms.o.bc -O3 --seaopt-enable-indvar=false --seaopt-enable-loop-idiom=false --unroll-threshold=150 --unroll-allow-partial=false --unroll-partial-threshold=0 --vectorize-slp=false /tmp/sea-6har62pa/E_uint16_t_misaligned.pp.ms.bc
+/seahorn/build/run/bin/seahorn --keep-shadows=true --sea-dsa=ci --horn-solve -horn-inter-proc -horn-sem-lvl=mem --horn-step=large /tmp/sea-6har62pa/E_uint16_t_misaligned.pp.ms.o.bc
+sat
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_com_alinhamento_explicito_v4/E_uint32_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 0.4472s
+================================================================================
+/usr/bin/clang-14 -c -emit-llvm -D__SEAHORN__ -fdeclspec -O1 -Xclang -disable-llvm-optzns -fgnu89-inline -m32 -I/seahorn/build/run/include -o /tmp/sea-fkcdou1q/E_uint32_t_aligned.bc /bench/benchmark_com_assertions_com_alinhamento_explicito_v4/E_uint32_t_aligned.c
+In file included from /bench/benchmark_com_assertions_com_alinhamento_explicito_v4/E_uint32_t_aligned.c:4:
+/bench/benchmark_com_assertions_com_alinhamento_explicito_v4/verifier.h:98:13: warning: verifier.h: branch = SeaHorn (__SEAHORN__ detectado) [-W#pragma-messages]
+    #pragma message "verifier.h: branch = SeaHorn (__SEAHORN__ detectado)"
+            ^
+1 warning generated.
+/seahorn/build/run/bin/seapp -o /tmp/sea-fkcdou1q/E_uint32_t_aligned.pp.bc --simplifycfg-sink-common=false --strip-extern=false --promote-assumptions=false --kill-vaarg=true --ignore-def-verifier-fn=false --horn-keep-arith-overflow=false /tmp/sea-fkcdou1q/E_uint32_t_aligned.bc
+/seahorn/build/run/bin/seapp --simplifycfg-sink-common=false -o /tmp/sea-fkcdou1q/E_uint32_t_aligned.pp.ms.bc --horn-mixed-sem --ms-reduce-main /tmp/sea-fkcdou1q/E_uint32_t_aligned.pp.bc
+/seahorn/build/run/bin/seaopt -f --simplifycfg-sink-common=false -o /tmp/sea-fkcdou1q/E_uint32_t_aligned.pp.ms.o.bc -O3 --seaopt-enable-indvar=false --seaopt-enable-loop-idiom=false --unroll-threshold=150 --unroll-allow-partial=false --unroll-partial-threshold=0 --vectorize-slp=false /tmp/sea-fkcdou1q/E_uint32_t_aligned.pp.ms.bc
+/seahorn/build/run/bin/seahorn --keep-shadows=true --sea-dsa=ci --horn-solve -horn-inter-proc -horn-sem-lvl=mem --horn-step=large /tmp/sea-fkcdou1q/E_uint32_t_aligned.pp.ms.o.bc
+WARNING: no assertion was found so either program does not have assertions or frontend discharged them.
+unsat
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_com_alinhamento_explicito_v4/E_uint32_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 0.4345s
+================================================================================
+/usr/bin/clang-14 -c -emit-llvm -D__SEAHORN__ -fdeclspec -O1 -Xclang -disable-llvm-optzns -fgnu89-inline -m32 -I/seahorn/build/run/include -o /tmp/sea-_wjf4n2g/E_uint32_t_misaligned.bc /bench/benchmark_com_assertions_com_alinhamento_explicito_v4/E_uint32_t_misaligned.c
+In file included from /bench/benchmark_com_assertions_com_alinhamento_explicito_v4/E_uint32_t_misaligned.c:4:
+/bench/benchmark_com_assertions_com_alinhamento_explicito_v4/verifier.h:98:13: warning: verifier.h: branch = SeaHorn (__SEAHORN__ detectado) [-W#pragma-messages]
+    #pragma message "verifier.h: branch = SeaHorn (__SEAHORN__ detectado)"
+            ^
+1 warning generated.
+/seahorn/build/run/bin/seapp -o /tmp/sea-_wjf4n2g/E_uint32_t_misaligned.pp.bc --simplifycfg-sink-common=false --strip-extern=false --promote-assumptions=false --kill-vaarg=true --ignore-def-verifier-fn=false --horn-keep-arith-overflow=false /tmp/sea-_wjf4n2g/E_uint32_t_misaligned.bc
+/seahorn/build/run/bin/seapp --simplifycfg-sink-common=false -o /tmp/sea-_wjf4n2g/E_uint32_t_misaligned.pp.ms.bc --horn-mixed-sem --ms-reduce-main /tmp/sea-_wjf4n2g/E_uint32_t_misaligned.pp.bc
+/seahorn/build/run/bin/seaopt -f --simplifycfg-sink-common=false -o /tmp/sea-_wjf4n2g/E_uint32_t_misaligned.pp.ms.o.bc -O3 --seaopt-enable-indvar=false --seaopt-enable-loop-idiom=false --unroll-threshold=150 --unroll-allow-partial=false --unroll-partial-threshold=0 --vectorize-slp=false /tmp/sea-_wjf4n2g/E_uint32_t_misaligned.pp.ms.bc
+/seahorn/build/run/bin/seahorn --keep-shadows=true --sea-dsa=ci --horn-solve -horn-inter-proc -horn-sem-lvl=mem --horn-step=large /tmp/sea-_wjf4n2g/E_uint32_t_misaligned.pp.ms.o.bc
+sat
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_com_alinhamento_explicito_v4/E_uint64_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 0.477s
+================================================================================
+/usr/bin/clang-14 -c -emit-llvm -D__SEAHORN__ -fdeclspec -O1 -Xclang -disable-llvm-optzns -fgnu89-inline -m32 -I/seahorn/build/run/include -o /tmp/sea-m7cayzrz/E_uint64_t_aligned.bc /bench/benchmark_com_assertions_com_alinhamento_explicito_v4/E_uint64_t_aligned.c
+In file included from /bench/benchmark_com_assertions_com_alinhamento_explicito_v4/E_uint64_t_aligned.c:4:
+/bench/benchmark_com_assertions_com_alinhamento_explicito_v4/verifier.h:98:13: warning: verifier.h: branch = SeaHorn (__SEAHORN__ detectado) [-W#pragma-messages]
+    #pragma message "verifier.h: branch = SeaHorn (__SEAHORN__ detectado)"
+            ^
+1 warning generated.
+/seahorn/build/run/bin/seapp -o /tmp/sea-m7cayzrz/E_uint64_t_aligned.pp.bc --simplifycfg-sink-common=false --strip-extern=false --promote-assumptions=false --kill-vaarg=true --ignore-def-verifier-fn=false --horn-keep-arith-overflow=false /tmp/sea-m7cayzrz/E_uint64_t_aligned.bc
+/seahorn/build/run/bin/seapp --simplifycfg-sink-common=false -o /tmp/sea-m7cayzrz/E_uint64_t_aligned.pp.ms.bc --horn-mixed-sem --ms-reduce-main /tmp/sea-m7cayzrz/E_uint64_t_aligned.pp.bc
+/seahorn/build/run/bin/seaopt -f --simplifycfg-sink-common=false -o /tmp/sea-m7cayzrz/E_uint64_t_aligned.pp.ms.o.bc -O3 --seaopt-enable-indvar=false --seaopt-enable-loop-idiom=false --unroll-threshold=150 --unroll-allow-partial=false --unroll-partial-threshold=0 --vectorize-slp=false /tmp/sea-m7cayzrz/E_uint64_t_aligned.pp.ms.bc
+/seahorn/build/run/bin/seahorn --keep-shadows=true --sea-dsa=ci --horn-solve -horn-inter-proc -horn-sem-lvl=mem --horn-step=large /tmp/sea-m7cayzrz/E_uint64_t_aligned.pp.ms.o.bc
+sat
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_com_alinhamento_explicito_v4/E_uint64_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 0.46s
+================================================================================
+/usr/bin/clang-14 -c -emit-llvm -D__SEAHORN__ -fdeclspec -O1 -Xclang -disable-llvm-optzns -fgnu89-inline -m32 -I/seahorn/build/run/include -o /tmp/sea-gtepu26j/E_uint64_t_misaligned.bc /bench/benchmark_com_assertions_com_alinhamento_explicito_v4/E_uint64_t_misaligned.c
+In file included from /bench/benchmark_com_assertions_com_alinhamento_explicito_v4/E_uint64_t_misaligned.c:4:
+/bench/benchmark_com_assertions_com_alinhamento_explicito_v4/verifier.h:98:13: warning: verifier.h: branch = SeaHorn (__SEAHORN__ detectado) [-W#pragma-messages]
+    #pragma message "verifier.h: branch = SeaHorn (__SEAHORN__ detectado)"
+            ^
+1 warning generated.
+/seahorn/build/run/bin/seapp -o /tmp/sea-gtepu26j/E_uint64_t_misaligned.pp.bc --simplifycfg-sink-common=false --strip-extern=false --promote-assumptions=false --kill-vaarg=true --ignore-def-verifier-fn=false --horn-keep-arith-overflow=false /tmp/sea-gtepu26j/E_uint64_t_misaligned.bc
+/seahorn/build/run/bin/seapp --simplifycfg-sink-common=false -o /tmp/sea-gtepu26j/E_uint64_t_misaligned.pp.ms.bc --horn-mixed-sem --ms-reduce-main /tmp/sea-gtepu26j/E_uint64_t_misaligned.pp.bc
+/seahorn/build/run/bin/seaopt -f --simplifycfg-sink-common=false -o /tmp/sea-gtepu26j/E_uint64_t_misaligned.pp.ms.o.bc -O3 --seaopt-enable-indvar=false --seaopt-enable-loop-idiom=false --unroll-threshold=150 --unroll-allow-partial=false --unroll-partial-threshold=0 --vectorize-slp=false /tmp/sea-gtepu26j/E_uint64_t_misaligned.pp.ms.bc
+/seahorn/build/run/bin/seahorn --keep-shadows=true --sea-dsa=ci --horn-solve -horn-inter-proc -horn-sem-lvl=mem --horn-step=large /tmp/sea-gtepu26j/E_uint64_t_misaligned.pp.ms.o.bc
+sat
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_com_alinhamento_explicito_v4/F_uint16_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 0.4503s
+================================================================================
+/usr/bin/clang-14 -c -emit-llvm -D__SEAHORN__ -fdeclspec -O1 -Xclang -disable-llvm-optzns -fgnu89-inline -m32 -I/seahorn/build/run/include -o /tmp/sea-16sekx7p/F_uint16_t_aligned.bc /bench/benchmark_com_assertions_com_alinhamento_explicito_v4/F_uint16_t_aligned.c
+In file included from /bench/benchmark_com_assertions_com_alinhamento_explicito_v4/F_uint16_t_aligned.c:3:
+/bench/benchmark_com_assertions_com_alinhamento_explicito_v4/verifier.h:98:13: warning: verifier.h: branch = SeaHorn (__SEAHORN__ detectado) [-W#pragma-messages]
+    #pragma message "verifier.h: branch = SeaHorn (__SEAHORN__ detectado)"
+            ^
+1 warning generated.
+/seahorn/build/run/bin/seapp -o /tmp/sea-16sekx7p/F_uint16_t_aligned.pp.bc --simplifycfg-sink-common=false --strip-extern=false --promote-assumptions=false --kill-vaarg=true --ignore-def-verifier-fn=false --horn-keep-arith-overflow=false /tmp/sea-16sekx7p/F_uint16_t_aligned.bc
+/seahorn/build/run/bin/seapp --simplifycfg-sink-common=false -o /tmp/sea-16sekx7p/F_uint16_t_aligned.pp.ms.bc --horn-mixed-sem --ms-reduce-main /tmp/sea-16sekx7p/F_uint16_t_aligned.pp.bc
+/seahorn/build/run/bin/seaopt -f --simplifycfg-sink-common=false -o /tmp/sea-16sekx7p/F_uint16_t_aligned.pp.ms.o.bc -O3 --seaopt-enable-indvar=false --seaopt-enable-loop-idiom=false --unroll-threshold=150 --unroll-allow-partial=false --unroll-partial-threshold=0 --vectorize-slp=false /tmp/sea-16sekx7p/F_uint16_t_aligned.pp.ms.bc
+/seahorn/build/run/bin/seahorn --keep-shadows=true --sea-dsa=ci --horn-solve -horn-inter-proc -horn-sem-lvl=mem --horn-step=large /tmp/sea-16sekx7p/F_uint16_t_aligned.pp.ms.o.bc
+WARNING: no assertion was found so either program does not have assertions or frontend discharged them.
+unsat
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_com_alinhamento_explicito_v4/F_uint16_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 0.4763s
+================================================================================
+/usr/bin/clang-14 -c -emit-llvm -D__SEAHORN__ -fdeclspec -O1 -Xclang -disable-llvm-optzns -fgnu89-inline -m32 -I/seahorn/build/run/include -o /tmp/sea-uiycy530/F_uint16_t_misaligned.bc /bench/benchmark_com_assertions_com_alinhamento_explicito_v4/F_uint16_t_misaligned.c
+In file included from /bench/benchmark_com_assertions_com_alinhamento_explicito_v4/F_uint16_t_misaligned.c:3:
+/bench/benchmark_com_assertions_com_alinhamento_explicito_v4/verifier.h:98:13: warning: verifier.h: branch = SeaHorn (__SEAHORN__ detectado) [-W#pragma-messages]
+    #pragma message "verifier.h: branch = SeaHorn (__SEAHORN__ detectado)"
+            ^
+1 warning generated.
+/seahorn/build/run/bin/seapp -o /tmp/sea-uiycy530/F_uint16_t_misaligned.pp.bc --simplifycfg-sink-common=false --strip-extern=false --promote-assumptions=false --kill-vaarg=true --ignore-def-verifier-fn=false --horn-keep-arith-overflow=false /tmp/sea-uiycy530/F_uint16_t_misaligned.bc
+/seahorn/build/run/bin/seapp --simplifycfg-sink-common=false -o /tmp/sea-uiycy530/F_uint16_t_misaligned.pp.ms.bc --horn-mixed-sem --ms-reduce-main /tmp/sea-uiycy530/F_uint16_t_misaligned.pp.bc
+/seahorn/build/run/bin/seaopt -f --simplifycfg-sink-common=false -o /tmp/sea-uiycy530/F_uint16_t_misaligned.pp.ms.o.bc -O3 --seaopt-enable-indvar=false --seaopt-enable-loop-idiom=false --unroll-threshold=150 --unroll-allow-partial=false --unroll-partial-threshold=0 --vectorize-slp=false /tmp/sea-uiycy530/F_uint16_t_misaligned.pp.ms.bc
+/seahorn/build/run/bin/seahorn --keep-shadows=true --sea-dsa=ci --horn-solve -horn-inter-proc -horn-sem-lvl=mem --horn-step=large /tmp/sea-uiycy530/F_uint16_t_misaligned.pp.ms.o.bc
+sat
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_com_alinhamento_explicito_v4/F_uint32_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 0.4693s
+================================================================================
+/usr/bin/clang-14 -c -emit-llvm -D__SEAHORN__ -fdeclspec -O1 -Xclang -disable-llvm-optzns -fgnu89-inline -m32 -I/seahorn/build/run/include -o /tmp/sea-1xnp9fin/F_uint32_t_aligned.bc /bench/benchmark_com_assertions_com_alinhamento_explicito_v4/F_uint32_t_aligned.c
+In file included from /bench/benchmark_com_assertions_com_alinhamento_explicito_v4/F_uint32_t_aligned.c:3:
+/bench/benchmark_com_assertions_com_alinhamento_explicito_v4/verifier.h:98:13: warning: verifier.h: branch = SeaHorn (__SEAHORN__ detectado) [-W#pragma-messages]
+    #pragma message "verifier.h: branch = SeaHorn (__SEAHORN__ detectado)"
+            ^
+1 warning generated.
+/seahorn/build/run/bin/seapp -o /tmp/sea-1xnp9fin/F_uint32_t_aligned.pp.bc --simplifycfg-sink-common=false --strip-extern=false --promote-assumptions=false --kill-vaarg=true --ignore-def-verifier-fn=false --horn-keep-arith-overflow=false /tmp/sea-1xnp9fin/F_uint32_t_aligned.bc
+/seahorn/build/run/bin/seapp --simplifycfg-sink-common=false -o /tmp/sea-1xnp9fin/F_uint32_t_aligned.pp.ms.bc --horn-mixed-sem --ms-reduce-main /tmp/sea-1xnp9fin/F_uint32_t_aligned.pp.bc
+/seahorn/build/run/bin/seaopt -f --simplifycfg-sink-common=false -o /tmp/sea-1xnp9fin/F_uint32_t_aligned.pp.ms.o.bc -O3 --seaopt-enable-indvar=false --seaopt-enable-loop-idiom=false --unroll-threshold=150 --unroll-allow-partial=false --unroll-partial-threshold=0 --vectorize-slp=false /tmp/sea-1xnp9fin/F_uint32_t_aligned.pp.ms.bc
+/seahorn/build/run/bin/seahorn --keep-shadows=true --sea-dsa=ci --horn-solve -horn-inter-proc -horn-sem-lvl=mem --horn-step=large /tmp/sea-1xnp9fin/F_uint32_t_aligned.pp.ms.o.bc
+WARNING: no assertion was found so either program does not have assertions or frontend discharged them.
+unsat
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_com_alinhamento_explicito_v4/F_uint32_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 0.4516s
+================================================================================
+/usr/bin/clang-14 -c -emit-llvm -D__SEAHORN__ -fdeclspec -O1 -Xclang -disable-llvm-optzns -fgnu89-inline -m32 -I/seahorn/build/run/include -o /tmp/sea-64xhet23/F_uint32_t_misaligned.bc /bench/benchmark_com_assertions_com_alinhamento_explicito_v4/F_uint32_t_misaligned.c
+In file included from /bench/benchmark_com_assertions_com_alinhamento_explicito_v4/F_uint32_t_misaligned.c:3:
+/bench/benchmark_com_assertions_com_alinhamento_explicito_v4/verifier.h:98:13: warning: verifier.h: branch = SeaHorn (__SEAHORN__ detectado) [-W#pragma-messages]
+    #pragma message "verifier.h: branch = SeaHorn (__SEAHORN__ detectado)"
+            ^
+1 warning generated.
+/seahorn/build/run/bin/seapp -o /tmp/sea-64xhet23/F_uint32_t_misaligned.pp.bc --simplifycfg-sink-common=false --strip-extern=false --promote-assumptions=false --kill-vaarg=true --ignore-def-verifier-fn=false --horn-keep-arith-overflow=false /tmp/sea-64xhet23/F_uint32_t_misaligned.bc
+/seahorn/build/run/bin/seapp --simplifycfg-sink-common=false -o /tmp/sea-64xhet23/F_uint32_t_misaligned.pp.ms.bc --horn-mixed-sem --ms-reduce-main /tmp/sea-64xhet23/F_uint32_t_misaligned.pp.bc
+/seahorn/build/run/bin/seaopt -f --simplifycfg-sink-common=false -o /tmp/sea-64xhet23/F_uint32_t_misaligned.pp.ms.o.bc -O3 --seaopt-enable-indvar=false --seaopt-enable-loop-idiom=false --unroll-threshold=150 --unroll-allow-partial=false --unroll-partial-threshold=0 --vectorize-slp=false /tmp/sea-64xhet23/F_uint32_t_misaligned.pp.ms.bc
+/seahorn/build/run/bin/seahorn --keep-shadows=true --sea-dsa=ci --horn-solve -horn-inter-proc -horn-sem-lvl=mem --horn-step=large /tmp/sea-64xhet23/F_uint32_t_misaligned.pp.ms.o.bc
+sat
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_com_alinhamento_explicito_v4/F_uint64_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 0.4799s
+================================================================================
+/usr/bin/clang-14 -c -emit-llvm -D__SEAHORN__ -fdeclspec -O1 -Xclang -disable-llvm-optzns -fgnu89-inline -m32 -I/seahorn/build/run/include -o /tmp/sea-mdilbch6/F_uint64_t_aligned.bc /bench/benchmark_com_assertions_com_alinhamento_explicito_v4/F_uint64_t_aligned.c
+In file included from /bench/benchmark_com_assertions_com_alinhamento_explicito_v4/F_uint64_t_aligned.c:3:
+/bench/benchmark_com_assertions_com_alinhamento_explicito_v4/verifier.h:98:13: warning: verifier.h: branch = SeaHorn (__SEAHORN__ detectado) [-W#pragma-messages]
+    #pragma message "verifier.h: branch = SeaHorn (__SEAHORN__ detectado)"
+            ^
+1 warning generated.
+/seahorn/build/run/bin/seapp -o /tmp/sea-mdilbch6/F_uint64_t_aligned.pp.bc --simplifycfg-sink-common=false --strip-extern=false --promote-assumptions=false --kill-vaarg=true --ignore-def-verifier-fn=false --horn-keep-arith-overflow=false /tmp/sea-mdilbch6/F_uint64_t_aligned.bc
+/seahorn/build/run/bin/seapp --simplifycfg-sink-common=false -o /tmp/sea-mdilbch6/F_uint64_t_aligned.pp.ms.bc --horn-mixed-sem --ms-reduce-main /tmp/sea-mdilbch6/F_uint64_t_aligned.pp.bc
+/seahorn/build/run/bin/seaopt -f --simplifycfg-sink-common=false -o /tmp/sea-mdilbch6/F_uint64_t_aligned.pp.ms.o.bc -O3 --seaopt-enable-indvar=false --seaopt-enable-loop-idiom=false --unroll-threshold=150 --unroll-allow-partial=false --unroll-partial-threshold=0 --vectorize-slp=false /tmp/sea-mdilbch6/F_uint64_t_aligned.pp.ms.bc
+/seahorn/build/run/bin/seahorn --keep-shadows=true --sea-dsa=ci --horn-solve -horn-inter-proc -horn-sem-lvl=mem --horn-step=large /tmp/sea-mdilbch6/F_uint64_t_aligned.pp.ms.o.bc
+sat
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_com_alinhamento_explicito_v4/F_uint64_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 0.4336s
+================================================================================
+/usr/bin/clang-14 -c -emit-llvm -D__SEAHORN__ -fdeclspec -O1 -Xclang -disable-llvm-optzns -fgnu89-inline -m32 -I/seahorn/build/run/include -o /tmp/sea-ks1j9glw/F_uint64_t_misaligned.bc /bench/benchmark_com_assertions_com_alinhamento_explicito_v4/F_uint64_t_misaligned.c
+In file included from /bench/benchmark_com_assertions_com_alinhamento_explicito_v4/F_uint64_t_misaligned.c:3:
+/bench/benchmark_com_assertions_com_alinhamento_explicito_v4/verifier.h:98:13: warning: verifier.h: branch = SeaHorn (__SEAHORN__ detectado) [-W#pragma-messages]
+    #pragma message "verifier.h: branch = SeaHorn (__SEAHORN__ detectado)"
+            ^
+1 warning generated.
+/seahorn/build/run/bin/seapp -o /tmp/sea-ks1j9glw/F_uint64_t_misaligned.pp.bc --simplifycfg-sink-common=false --strip-extern=false --promote-assumptions=false --kill-vaarg=true --ignore-def-verifier-fn=false --horn-keep-arith-overflow=false /tmp/sea-ks1j9glw/F_uint64_t_misaligned.bc
+/seahorn/build/run/bin/seapp --simplifycfg-sink-common=false -o /tmp/sea-ks1j9glw/F_uint64_t_misaligned.pp.ms.bc --horn-mixed-sem --ms-reduce-main /tmp/sea-ks1j9glw/F_uint64_t_misaligned.pp.bc
+/seahorn/build/run/bin/seaopt -f --simplifycfg-sink-common=false -o /tmp/sea-ks1j9glw/F_uint64_t_misaligned.pp.ms.o.bc -O3 --seaopt-enable-indvar=false --seaopt-enable-loop-idiom=false --unroll-threshold=150 --unroll-allow-partial=false --unroll-partial-threshold=0 --vectorize-slp=false /tmp/sea-ks1j9glw/F_uint64_t_misaligned.pp.ms.bc
+/seahorn/build/run/bin/seahorn --keep-shadows=true --sea-dsa=ci --horn-solve -horn-inter-proc -horn-sem-lvl=mem --horn-step=large /tmp/sea-ks1j9glw/F_uint64_t_misaligned.pp.ms.o.bc
+sat
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_com_alinhamento_explicito_v4/G_uint16_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 0.4414s
+================================================================================
+/usr/bin/clang-14 -c -emit-llvm -D__SEAHORN__ -fdeclspec -O1 -Xclang -disable-llvm-optzns -fgnu89-inline -m32 -I/seahorn/build/run/include -o /tmp/sea-i19q_fy7/G_uint16_t_aligned.bc /bench/benchmark_com_assertions_com_alinhamento_explicito_v4/G_uint16_t_aligned.c
+In file included from /bench/benchmark_com_assertions_com_alinhamento_explicito_v4/G_uint16_t_aligned.c:3:
+/bench/benchmark_com_assertions_com_alinhamento_explicito_v4/verifier.h:98:13: warning: verifier.h: branch = SeaHorn (__SEAHORN__ detectado) [-W#pragma-messages]
+    #pragma message "verifier.h: branch = SeaHorn (__SEAHORN__ detectado)"
+            ^
+1 warning generated.
+/seahorn/build/run/bin/seapp -o /tmp/sea-i19q_fy7/G_uint16_t_aligned.pp.bc --simplifycfg-sink-common=false --strip-extern=false --promote-assumptions=false --kill-vaarg=true --ignore-def-verifier-fn=false --horn-keep-arith-overflow=false /tmp/sea-i19q_fy7/G_uint16_t_aligned.bc
+/seahorn/build/run/bin/seapp --simplifycfg-sink-common=false -o /tmp/sea-i19q_fy7/G_uint16_t_aligned.pp.ms.bc --horn-mixed-sem --ms-reduce-main /tmp/sea-i19q_fy7/G_uint16_t_aligned.pp.bc
+/seahorn/build/run/bin/seaopt -f --simplifycfg-sink-common=false -o /tmp/sea-i19q_fy7/G_uint16_t_aligned.pp.ms.o.bc -O3 --seaopt-enable-indvar=false --seaopt-enable-loop-idiom=false --unroll-threshold=150 --unroll-allow-partial=false --unroll-partial-threshold=0 --vectorize-slp=false /tmp/sea-i19q_fy7/G_uint16_t_aligned.pp.ms.bc
+/seahorn/build/run/bin/seahorn --keep-shadows=true --sea-dsa=ci --horn-solve -horn-inter-proc -horn-sem-lvl=mem --horn-step=large /tmp/sea-i19q_fy7/G_uint16_t_aligned.pp.ms.o.bc
+WARNING: no assertion was found so either program does not have assertions or frontend discharged them.
+unsat
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_com_alinhamento_explicito_v4/G_uint16_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 0.4604s
+================================================================================
+/usr/bin/clang-14 -c -emit-llvm -D__SEAHORN__ -fdeclspec -O1 -Xclang -disable-llvm-optzns -fgnu89-inline -m32 -I/seahorn/build/run/include -o /tmp/sea-0ptan_6m/G_uint16_t_misaligned.bc /bench/benchmark_com_assertions_com_alinhamento_explicito_v4/G_uint16_t_misaligned.c
+In file included from /bench/benchmark_com_assertions_com_alinhamento_explicito_v4/G_uint16_t_misaligned.c:4:
+/bench/benchmark_com_assertions_com_alinhamento_explicito_v4/verifier.h:98:13: warning: verifier.h: branch = SeaHorn (__SEAHORN__ detectado) [-W#pragma-messages]
+    #pragma message "verifier.h: branch = SeaHorn (__SEAHORN__ detectado)"
+            ^
+1 warning generated.
+/seahorn/build/run/bin/seapp -o /tmp/sea-0ptan_6m/G_uint16_t_misaligned.pp.bc --simplifycfg-sink-common=false --strip-extern=false --promote-assumptions=false --kill-vaarg=true --ignore-def-verifier-fn=false --horn-keep-arith-overflow=false /tmp/sea-0ptan_6m/G_uint16_t_misaligned.bc
+/seahorn/build/run/bin/seapp --simplifycfg-sink-common=false -o /tmp/sea-0ptan_6m/G_uint16_t_misaligned.pp.ms.bc --horn-mixed-sem --ms-reduce-main /tmp/sea-0ptan_6m/G_uint16_t_misaligned.pp.bc
+/seahorn/build/run/bin/seaopt -f --simplifycfg-sink-common=false -o /tmp/sea-0ptan_6m/G_uint16_t_misaligned.pp.ms.o.bc -O3 --seaopt-enable-indvar=false --seaopt-enable-loop-idiom=false --unroll-threshold=150 --unroll-allow-partial=false --unroll-partial-threshold=0 --vectorize-slp=false /tmp/sea-0ptan_6m/G_uint16_t_misaligned.pp.ms.bc
+/seahorn/build/run/bin/seahorn --keep-shadows=true --sea-dsa=ci --horn-solve -horn-inter-proc -horn-sem-lvl=mem --horn-step=large /tmp/sea-0ptan_6m/G_uint16_t_misaligned.pp.ms.o.bc
+sat
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_com_alinhamento_explicito_v4/G_uint32_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 0.4781s
+================================================================================
+/usr/bin/clang-14 -c -emit-llvm -D__SEAHORN__ -fdeclspec -O1 -Xclang -disable-llvm-optzns -fgnu89-inline -m32 -I/seahorn/build/run/include -o /tmp/sea-ez_sgsyf/G_uint32_t_aligned.bc /bench/benchmark_com_assertions_com_alinhamento_explicito_v4/G_uint32_t_aligned.c
+In file included from /bench/benchmark_com_assertions_com_alinhamento_explicito_v4/G_uint32_t_aligned.c:4:
+/bench/benchmark_com_assertions_com_alinhamento_explicito_v4/verifier.h:98:13: warning: verifier.h: branch = SeaHorn (__SEAHORN__ detectado) [-W#pragma-messages]
+    #pragma message "verifier.h: branch = SeaHorn (__SEAHORN__ detectado)"
+            ^
+1 warning generated.
+/seahorn/build/run/bin/seapp -o /tmp/sea-ez_sgsyf/G_uint32_t_aligned.pp.bc --simplifycfg-sink-common=false --strip-extern=false --promote-assumptions=false --kill-vaarg=true --ignore-def-verifier-fn=false --horn-keep-arith-overflow=false /tmp/sea-ez_sgsyf/G_uint32_t_aligned.bc
+/seahorn/build/run/bin/seapp --simplifycfg-sink-common=false -o /tmp/sea-ez_sgsyf/G_uint32_t_aligned.pp.ms.bc --horn-mixed-sem --ms-reduce-main /tmp/sea-ez_sgsyf/G_uint32_t_aligned.pp.bc
+/seahorn/build/run/bin/seaopt -f --simplifycfg-sink-common=false -o /tmp/sea-ez_sgsyf/G_uint32_t_aligned.pp.ms.o.bc -O3 --seaopt-enable-indvar=false --seaopt-enable-loop-idiom=false --unroll-threshold=150 --unroll-allow-partial=false --unroll-partial-threshold=0 --vectorize-slp=false /tmp/sea-ez_sgsyf/G_uint32_t_aligned.pp.ms.bc
+/seahorn/build/run/bin/seahorn --keep-shadows=true --sea-dsa=ci --horn-solve -horn-inter-proc -horn-sem-lvl=mem --horn-step=large /tmp/sea-ez_sgsyf/G_uint32_t_aligned.pp.ms.o.bc
+WARNING: no assertion was found so either program does not have assertions or frontend discharged them.
+unsat
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_com_alinhamento_explicito_v4/G_uint32_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 0.4619s
+================================================================================
+/usr/bin/clang-14 -c -emit-llvm -D__SEAHORN__ -fdeclspec -O1 -Xclang -disable-llvm-optzns -fgnu89-inline -m32 -I/seahorn/build/run/include -o /tmp/sea-f8rbfp6i/G_uint32_t_misaligned.bc /bench/benchmark_com_assertions_com_alinhamento_explicito_v4/G_uint32_t_misaligned.c
+In file included from /bench/benchmark_com_assertions_com_alinhamento_explicito_v4/G_uint32_t_misaligned.c:4:
+/bench/benchmark_com_assertions_com_alinhamento_explicito_v4/verifier.h:98:13: warning: verifier.h: branch = SeaHorn (__SEAHORN__ detectado) [-W#pragma-messages]
+    #pragma message "verifier.h: branch = SeaHorn (__SEAHORN__ detectado)"
+            ^
+1 warning generated.
+/seahorn/build/run/bin/seapp -o /tmp/sea-f8rbfp6i/G_uint32_t_misaligned.pp.bc --simplifycfg-sink-common=false --strip-extern=false --promote-assumptions=false --kill-vaarg=true --ignore-def-verifier-fn=false --horn-keep-arith-overflow=false /tmp/sea-f8rbfp6i/G_uint32_t_misaligned.bc
+/seahorn/build/run/bin/seapp --simplifycfg-sink-common=false -o /tmp/sea-f8rbfp6i/G_uint32_t_misaligned.pp.ms.bc --horn-mixed-sem --ms-reduce-main /tmp/sea-f8rbfp6i/G_uint32_t_misaligned.pp.bc
+/seahorn/build/run/bin/seaopt -f --simplifycfg-sink-common=false -o /tmp/sea-f8rbfp6i/G_uint32_t_misaligned.pp.ms.o.bc -O3 --seaopt-enable-indvar=false --seaopt-enable-loop-idiom=false --unroll-threshold=150 --unroll-allow-partial=false --unroll-partial-threshold=0 --vectorize-slp=false /tmp/sea-f8rbfp6i/G_uint32_t_misaligned.pp.ms.bc
+/seahorn/build/run/bin/seahorn --keep-shadows=true --sea-dsa=ci --horn-solve -horn-inter-proc -horn-sem-lvl=mem --horn-step=large /tmp/sea-f8rbfp6i/G_uint32_t_misaligned.pp.ms.o.bc
+sat
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_com_alinhamento_explicito_v4/G_uint64_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 0.4686s
+================================================================================
+/usr/bin/clang-14 -c -emit-llvm -D__SEAHORN__ -fdeclspec -O1 -Xclang -disable-llvm-optzns -fgnu89-inline -m32 -I/seahorn/build/run/include -o /tmp/sea-q5p6k_dl/G_uint64_t_aligned.bc /bench/benchmark_com_assertions_com_alinhamento_explicito_v4/G_uint64_t_aligned.c
+In file included from /bench/benchmark_com_assertions_com_alinhamento_explicito_v4/G_uint64_t_aligned.c:4:
+/bench/benchmark_com_assertions_com_alinhamento_explicito_v4/verifier.h:98:13: warning: verifier.h: branch = SeaHorn (__SEAHORN__ detectado) [-W#pragma-messages]
+    #pragma message "verifier.h: branch = SeaHorn (__SEAHORN__ detectado)"
+            ^
+1 warning generated.
+/seahorn/build/run/bin/seapp -o /tmp/sea-q5p6k_dl/G_uint64_t_aligned.pp.bc --simplifycfg-sink-common=false --strip-extern=false --promote-assumptions=false --kill-vaarg=true --ignore-def-verifier-fn=false --horn-keep-arith-overflow=false /tmp/sea-q5p6k_dl/G_uint64_t_aligned.bc
+/seahorn/build/run/bin/seapp --simplifycfg-sink-common=false -o /tmp/sea-q5p6k_dl/G_uint64_t_aligned.pp.ms.bc --horn-mixed-sem --ms-reduce-main /tmp/sea-q5p6k_dl/G_uint64_t_aligned.pp.bc
+/seahorn/build/run/bin/seaopt -f --simplifycfg-sink-common=false -o /tmp/sea-q5p6k_dl/G_uint64_t_aligned.pp.ms.o.bc -O3 --seaopt-enable-indvar=false --seaopt-enable-loop-idiom=false --unroll-threshold=150 --unroll-allow-partial=false --unroll-partial-threshold=0 --vectorize-slp=false /tmp/sea-q5p6k_dl/G_uint64_t_aligned.pp.ms.bc
+/seahorn/build/run/bin/seahorn --keep-shadows=true --sea-dsa=ci --horn-solve -horn-inter-proc -horn-sem-lvl=mem --horn-step=large /tmp/sea-q5p6k_dl/G_uint64_t_aligned.pp.ms.o.bc
+sat
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_com_alinhamento_explicito_v4/G_uint64_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 0.445s
+================================================================================
+/usr/bin/clang-14 -c -emit-llvm -D__SEAHORN__ -fdeclspec -O1 -Xclang -disable-llvm-optzns -fgnu89-inline -m32 -I/seahorn/build/run/include -o /tmp/sea-1zhm2znj/G_uint64_t_misaligned.bc /bench/benchmark_com_assertions_com_alinhamento_explicito_v4/G_uint64_t_misaligned.c
+In file included from /bench/benchmark_com_assertions_com_alinhamento_explicito_v4/G_uint64_t_misaligned.c:4:
+/bench/benchmark_com_assertions_com_alinhamento_explicito_v4/verifier.h:98:13: warning: verifier.h: branch = SeaHorn (__SEAHORN__ detectado) [-W#pragma-messages]
+    #pragma message "verifier.h: branch = SeaHorn (__SEAHORN__ detectado)"
+            ^
+1 warning generated.
+/seahorn/build/run/bin/seapp -o /tmp/sea-1zhm2znj/G_uint64_t_misaligned.pp.bc --simplifycfg-sink-common=false --strip-extern=false --promote-assumptions=false --kill-vaarg=true --ignore-def-verifier-fn=false --horn-keep-arith-overflow=false /tmp/sea-1zhm2znj/G_uint64_t_misaligned.bc
+/seahorn/build/run/bin/seapp --simplifycfg-sink-common=false -o /tmp/sea-1zhm2znj/G_uint64_t_misaligned.pp.ms.bc --horn-mixed-sem --ms-reduce-main /tmp/sea-1zhm2znj/G_uint64_t_misaligned.pp.bc
+/seahorn/build/run/bin/seaopt -f --simplifycfg-sink-common=false -o /tmp/sea-1zhm2znj/G_uint64_t_misaligned.pp.ms.o.bc -O3 --seaopt-enable-indvar=false --seaopt-enable-loop-idiom=false --unroll-threshold=150 --unroll-allow-partial=false --unroll-partial-threshold=0 --vectorize-slp=false /tmp/sea-1zhm2znj/G_uint64_t_misaligned.pp.ms.bc
+/seahorn/build/run/bin/seahorn --keep-shadows=true --sea-dsa=ci --horn-solve -horn-inter-proc -horn-sem-lvl=mem --horn-step=large /tmp/sea-1zhm2znj/G_uint64_t_misaligned.pp.ms.o.bc
+sat
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_com_alinhamento_explicito_v4/H_uint16_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 0.4547s
+================================================================================
+/usr/bin/clang-14 -c -emit-llvm -D__SEAHORN__ -fdeclspec -O1 -Xclang -disable-llvm-optzns -fgnu89-inline -m32 -I/seahorn/build/run/include -o /tmp/sea-8zt2ttdu/H_uint16_t_aligned.bc /bench/benchmark_com_assertions_com_alinhamento_explicito_v4/H_uint16_t_aligned.c
+In file included from /bench/benchmark_com_assertions_com_alinhamento_explicito_v4/H_uint16_t_aligned.c:3:
+/bench/benchmark_com_assertions_com_alinhamento_explicito_v4/verifier.h:98:13: warning: verifier.h: branch = SeaHorn (__SEAHORN__ detectado) [-W#pragma-messages]
+    #pragma message "verifier.h: branch = SeaHorn (__SEAHORN__ detectado)"
+            ^
+1 warning generated.
+/seahorn/build/run/bin/seapp -o /tmp/sea-8zt2ttdu/H_uint16_t_aligned.pp.bc --simplifycfg-sink-common=false --strip-extern=false --promote-assumptions=false --kill-vaarg=true --ignore-def-verifier-fn=false --horn-keep-arith-overflow=false /tmp/sea-8zt2ttdu/H_uint16_t_aligned.bc
+/seahorn/build/run/bin/seapp --simplifycfg-sink-common=false -o /tmp/sea-8zt2ttdu/H_uint16_t_aligned.pp.ms.bc --horn-mixed-sem --ms-reduce-main /tmp/sea-8zt2ttdu/H_uint16_t_aligned.pp.bc
+/seahorn/build/run/bin/seaopt -f --simplifycfg-sink-common=false -o /tmp/sea-8zt2ttdu/H_uint16_t_aligned.pp.ms.o.bc -O3 --seaopt-enable-indvar=false --seaopt-enable-loop-idiom=false --unroll-threshold=150 --unroll-allow-partial=false --unroll-partial-threshold=0 --vectorize-slp=false /tmp/sea-8zt2ttdu/H_uint16_t_aligned.pp.ms.bc
+/seahorn/build/run/bin/seahorn --keep-shadows=true --sea-dsa=ci --horn-solve -horn-inter-proc -horn-sem-lvl=mem --horn-step=large /tmp/sea-8zt2ttdu/H_uint16_t_aligned.pp.ms.o.bc
+WARNING: no assertion was found so either program does not have assertions or frontend discharged them.
+unsat
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_com_alinhamento_explicito_v4/H_uint16_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 0.4512s
+================================================================================
+/usr/bin/clang-14 -c -emit-llvm -D__SEAHORN__ -fdeclspec -O1 -Xclang -disable-llvm-optzns -fgnu89-inline -m32 -I/seahorn/build/run/include -o /tmp/sea-idtl6rjr/H_uint16_t_misaligned.bc /bench/benchmark_com_assertions_com_alinhamento_explicito_v4/H_uint16_t_misaligned.c
+In file included from /bench/benchmark_com_assertions_com_alinhamento_explicito_v4/H_uint16_t_misaligned.c:3:
+/bench/benchmark_com_assertions_com_alinhamento_explicito_v4/verifier.h:98:13: warning: verifier.h: branch = SeaHorn (__SEAHORN__ detectado) [-W#pragma-messages]
+    #pragma message "verifier.h: branch = SeaHorn (__SEAHORN__ detectado)"
+            ^
+/bench/benchmark_com_assertions_com_alinhamento_explicito_v4/H_uint16_t_misaligned.c:12:31: warning: taking address of packed member 'b' of class or structure 'S' may result in an unaligned pointer value [-Waddress-of-packed-member]
+    uint16_t *p = (uint16_t*)&s.b;
+                              ^~~
+2 warnings generated.
+/seahorn/build/run/bin/seapp -o /tmp/sea-idtl6rjr/H_uint16_t_misaligned.pp.bc --simplifycfg-sink-common=false --strip-extern=false --promote-assumptions=false --kill-vaarg=true --ignore-def-verifier-fn=false --horn-keep-arith-overflow=false /tmp/sea-idtl6rjr/H_uint16_t_misaligned.bc
+/seahorn/build/run/bin/seapp --simplifycfg-sink-common=false -o /tmp/sea-idtl6rjr/H_uint16_t_misaligned.pp.ms.bc --horn-mixed-sem --ms-reduce-main /tmp/sea-idtl6rjr/H_uint16_t_misaligned.pp.bc
+/seahorn/build/run/bin/seaopt -f --simplifycfg-sink-common=false -o /tmp/sea-idtl6rjr/H_uint16_t_misaligned.pp.ms.o.bc -O3 --seaopt-enable-indvar=false --seaopt-enable-loop-idiom=false --unroll-threshold=150 --unroll-allow-partial=false --unroll-partial-threshold=0 --vectorize-slp=false /tmp/sea-idtl6rjr/H_uint16_t_misaligned.pp.ms.bc
+/seahorn/build/run/bin/seahorn --keep-shadows=true --sea-dsa=ci --horn-solve -horn-inter-proc -horn-sem-lvl=mem --horn-step=large /tmp/sea-idtl6rjr/H_uint16_t_misaligned.pp.ms.o.bc
+sat
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_com_alinhamento_explicito_v4/H_uint32_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 0.4793s
+================================================================================
+/usr/bin/clang-14 -c -emit-llvm -D__SEAHORN__ -fdeclspec -O1 -Xclang -disable-llvm-optzns -fgnu89-inline -m32 -I/seahorn/build/run/include -o /tmp/sea-0ls5ks0s/H_uint32_t_aligned.bc /bench/benchmark_com_assertions_com_alinhamento_explicito_v4/H_uint32_t_aligned.c
+In file included from /bench/benchmark_com_assertions_com_alinhamento_explicito_v4/H_uint32_t_aligned.c:3:
+/bench/benchmark_com_assertions_com_alinhamento_explicito_v4/verifier.h:98:13: warning: verifier.h: branch = SeaHorn (__SEAHORN__ detectado) [-W#pragma-messages]
+    #pragma message "verifier.h: branch = SeaHorn (__SEAHORN__ detectado)"
+            ^
+1 warning generated.
+/seahorn/build/run/bin/seapp -o /tmp/sea-0ls5ks0s/H_uint32_t_aligned.pp.bc --simplifycfg-sink-common=false --strip-extern=false --promote-assumptions=false --kill-vaarg=true --ignore-def-verifier-fn=false --horn-keep-arith-overflow=false /tmp/sea-0ls5ks0s/H_uint32_t_aligned.bc
+/seahorn/build/run/bin/seapp --simplifycfg-sink-common=false -o /tmp/sea-0ls5ks0s/H_uint32_t_aligned.pp.ms.bc --horn-mixed-sem --ms-reduce-main /tmp/sea-0ls5ks0s/H_uint32_t_aligned.pp.bc
+/seahorn/build/run/bin/seaopt -f --simplifycfg-sink-common=false -o /tmp/sea-0ls5ks0s/H_uint32_t_aligned.pp.ms.o.bc -O3 --seaopt-enable-indvar=false --seaopt-enable-loop-idiom=false --unroll-threshold=150 --unroll-allow-partial=false --unroll-partial-threshold=0 --vectorize-slp=false /tmp/sea-0ls5ks0s/H_uint32_t_aligned.pp.ms.bc
+/seahorn/build/run/bin/seahorn --keep-shadows=true --sea-dsa=ci --horn-solve -horn-inter-proc -horn-sem-lvl=mem --horn-step=large /tmp/sea-0ls5ks0s/H_uint32_t_aligned.pp.ms.o.bc
+WARNING: no assertion was found so either program does not have assertions or frontend discharged them.
+unsat
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_com_alinhamento_explicito_v4/H_uint32_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 0.5008s
+================================================================================
+/usr/bin/clang-14 -c -emit-llvm -D__SEAHORN__ -fdeclspec -O1 -Xclang -disable-llvm-optzns -fgnu89-inline -m32 -I/seahorn/build/run/include -o /tmp/sea-da7tebmm/H_uint32_t_misaligned.bc /bench/benchmark_com_assertions_com_alinhamento_explicito_v4/H_uint32_t_misaligned.c
+In file included from /bench/benchmark_com_assertions_com_alinhamento_explicito_v4/H_uint32_t_misaligned.c:3:
+/bench/benchmark_com_assertions_com_alinhamento_explicito_v4/verifier.h:98:13: warning: verifier.h: branch = SeaHorn (__SEAHORN__ detectado) [-W#pragma-messages]
+    #pragma message "verifier.h: branch = SeaHorn (__SEAHORN__ detectado)"
+            ^
+/bench/benchmark_com_assertions_com_alinhamento_explicito_v4/H_uint32_t_misaligned.c:11:31: warning: taking address of packed member 'b' of class or structure 'S' may result in an unaligned pointer value [-Waddress-of-packed-member]
+    uint32_t *p = (uint32_t*)&s.b;
+                              ^~~
+2 warnings generated.
+/seahorn/build/run/bin/seapp -o /tmp/sea-da7tebmm/H_uint32_t_misaligned.pp.bc --simplifycfg-sink-common=false --strip-extern=false --promote-assumptions=false --kill-vaarg=true --ignore-def-verifier-fn=false --horn-keep-arith-overflow=false /tmp/sea-da7tebmm/H_uint32_t_misaligned.bc
+/seahorn/build/run/bin/seapp --simplifycfg-sink-common=false -o /tmp/sea-da7tebmm/H_uint32_t_misaligned.pp.ms.bc --horn-mixed-sem --ms-reduce-main /tmp/sea-da7tebmm/H_uint32_t_misaligned.pp.bc
+/seahorn/build/run/bin/seaopt -f --simplifycfg-sink-common=false -o /tmp/sea-da7tebmm/H_uint32_t_misaligned.pp.ms.o.bc -O3 --seaopt-enable-indvar=false --seaopt-enable-loop-idiom=false --unroll-threshold=150 --unroll-allow-partial=false --unroll-partial-threshold=0 --vectorize-slp=false /tmp/sea-da7tebmm/H_uint32_t_misaligned.pp.ms.bc
+/seahorn/build/run/bin/seahorn --keep-shadows=true --sea-dsa=ci --horn-solve -horn-inter-proc -horn-sem-lvl=mem --horn-step=large /tmp/sea-da7tebmm/H_uint32_t_misaligned.pp.ms.o.bc
+sat
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_com_alinhamento_explicito_v4/H_uint64_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 0.4444s
+================================================================================
+/usr/bin/clang-14 -c -emit-llvm -D__SEAHORN__ -fdeclspec -O1 -Xclang -disable-llvm-optzns -fgnu89-inline -m32 -I/seahorn/build/run/include -o /tmp/sea-41gb1gph/H_uint64_t_aligned.bc /bench/benchmark_com_assertions_com_alinhamento_explicito_v4/H_uint64_t_aligned.c
+In file included from /bench/benchmark_com_assertions_com_alinhamento_explicito_v4/H_uint64_t_aligned.c:3:
+/bench/benchmark_com_assertions_com_alinhamento_explicito_v4/verifier.h:98:13: warning: verifier.h: branch = SeaHorn (__SEAHORN__ detectado) [-W#pragma-messages]
+    #pragma message "verifier.h: branch = SeaHorn (__SEAHORN__ detectado)"
+            ^
+1 warning generated.
+/seahorn/build/run/bin/seapp -o /tmp/sea-41gb1gph/H_uint64_t_aligned.pp.bc --simplifycfg-sink-common=false --strip-extern=false --promote-assumptions=false --kill-vaarg=true --ignore-def-verifier-fn=false --horn-keep-arith-overflow=false /tmp/sea-41gb1gph/H_uint64_t_aligned.bc
+/seahorn/build/run/bin/seapp --simplifycfg-sink-common=false -o /tmp/sea-41gb1gph/H_uint64_t_aligned.pp.ms.bc --horn-mixed-sem --ms-reduce-main /tmp/sea-41gb1gph/H_uint64_t_aligned.pp.bc
+/seahorn/build/run/bin/seaopt -f --simplifycfg-sink-common=false -o /tmp/sea-41gb1gph/H_uint64_t_aligned.pp.ms.o.bc -O3 --seaopt-enable-indvar=false --seaopt-enable-loop-idiom=false --unroll-threshold=150 --unroll-allow-partial=false --unroll-partial-threshold=0 --vectorize-slp=false /tmp/sea-41gb1gph/H_uint64_t_aligned.pp.ms.bc
+/seahorn/build/run/bin/seahorn --keep-shadows=true --sea-dsa=ci --horn-solve -horn-inter-proc -horn-sem-lvl=mem --horn-step=large /tmp/sea-41gb1gph/H_uint64_t_aligned.pp.ms.o.bc
+sat
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_com_alinhamento_explicito_v4/H_uint64_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 0.4397s
+================================================================================
+/usr/bin/clang-14 -c -emit-llvm -D__SEAHORN__ -fdeclspec -O1 -Xclang -disable-llvm-optzns -fgnu89-inline -m32 -I/seahorn/build/run/include -o /tmp/sea-dlmvxjw1/H_uint64_t_misaligned.bc /bench/benchmark_com_assertions_com_alinhamento_explicito_v4/H_uint64_t_misaligned.c
+In file included from /bench/benchmark_com_assertions_com_alinhamento_explicito_v4/H_uint64_t_misaligned.c:3:
+/bench/benchmark_com_assertions_com_alinhamento_explicito_v4/verifier.h:98:13: warning: verifier.h: branch = SeaHorn (__SEAHORN__ detectado) [-W#pragma-messages]
+    #pragma message "verifier.h: branch = SeaHorn (__SEAHORN__ detectado)"
+            ^
+/bench/benchmark_com_assertions_com_alinhamento_explicito_v4/H_uint64_t_misaligned.c:11:31: warning: taking address of packed member 'b' of class or structure 'S' may result in an unaligned pointer value [-Waddress-of-packed-member]
+    uint64_t *p = (uint64_t*)&s.b;
+                              ^~~
+2 warnings generated.
+/seahorn/build/run/bin/seapp -o /tmp/sea-dlmvxjw1/H_uint64_t_misaligned.pp.bc --simplifycfg-sink-common=false --strip-extern=false --promote-assumptions=false --kill-vaarg=true --ignore-def-verifier-fn=false --horn-keep-arith-overflow=false /tmp/sea-dlmvxjw1/H_uint64_t_misaligned.bc
+/seahorn/build/run/bin/seapp --simplifycfg-sink-common=false -o /tmp/sea-dlmvxjw1/H_uint64_t_misaligned.pp.ms.bc --horn-mixed-sem --ms-reduce-main /tmp/sea-dlmvxjw1/H_uint64_t_misaligned.pp.bc
+/seahorn/build/run/bin/seaopt -f --simplifycfg-sink-common=false -o /tmp/sea-dlmvxjw1/H_uint64_t_misaligned.pp.ms.o.bc -O3 --seaopt-enable-indvar=false --seaopt-enable-loop-idiom=false --unroll-threshold=150 --unroll-allow-partial=false --unroll-partial-threshold=0 --vectorize-slp=false /tmp/sea-dlmvxjw1/H_uint64_t_misaligned.pp.ms.bc
+/seahorn/build/run/bin/seahorn --keep-shadows=true --sea-dsa=ci --horn-solve -horn-inter-proc -horn-sem-lvl=mem --horn-step=large /tmp/sea-dlmvxjw1/H_uint64_t_misaligned.pp.ms.o.bc
+sat
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_com_alinhamento_explicito_v4/I_uint16_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 0.4106s
+================================================================================
+/usr/bin/clang-14 -c -emit-llvm -D__SEAHORN__ -fdeclspec -O1 -Xclang -disable-llvm-optzns -fgnu89-inline -m32 -I/seahorn/build/run/include -o /tmp/sea-i8dhz926/I_uint16_t_aligned.bc /bench/benchmark_com_assertions_com_alinhamento_explicito_v4/I_uint16_t_aligned.c
+In file included from /bench/benchmark_com_assertions_com_alinhamento_explicito_v4/I_uint16_t_aligned.c:3:
+/bench/benchmark_com_assertions_com_alinhamento_explicito_v4/verifier.h:98:13: warning: verifier.h: branch = SeaHorn (__SEAHORN__ detectado) [-W#pragma-messages]
+    #pragma message "verifier.h: branch = SeaHorn (__SEAHORN__ detectado)"
+            ^
+1 warning generated.
+/seahorn/build/run/bin/seapp -o /tmp/sea-i8dhz926/I_uint16_t_aligned.pp.bc --simplifycfg-sink-common=false --strip-extern=false --promote-assumptions=false --kill-vaarg=true --ignore-def-verifier-fn=false --horn-keep-arith-overflow=false /tmp/sea-i8dhz926/I_uint16_t_aligned.bc
+/seahorn/build/run/bin/seapp --simplifycfg-sink-common=false -o /tmp/sea-i8dhz926/I_uint16_t_aligned.pp.ms.bc --horn-mixed-sem --ms-reduce-main /tmp/sea-i8dhz926/I_uint16_t_aligned.pp.bc
+/seahorn/build/run/bin/seaopt -f --simplifycfg-sink-common=false -o /tmp/sea-i8dhz926/I_uint16_t_aligned.pp.ms.o.bc -O3 --seaopt-enable-indvar=false --seaopt-enable-loop-idiom=false --unroll-threshold=150 --unroll-allow-partial=false --unroll-partial-threshold=0 --vectorize-slp=false /tmp/sea-i8dhz926/I_uint16_t_aligned.pp.ms.bc
+/seahorn/build/run/bin/seahorn --keep-shadows=true --sea-dsa=ci --horn-solve -horn-inter-proc -horn-sem-lvl=mem --horn-step=large /tmp/sea-i8dhz926/I_uint16_t_aligned.pp.ms.o.bc
+WARNING: no assertion was found so either program does not have assertions or frontend discharged them.
+unsat
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_com_alinhamento_explicito_v4/I_uint16_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 0.4346s
+================================================================================
+/usr/bin/clang-14 -c -emit-llvm -D__SEAHORN__ -fdeclspec -O1 -Xclang -disable-llvm-optzns -fgnu89-inline -m32 -I/seahorn/build/run/include -o /tmp/sea-c2w81fli/I_uint16_t_misaligned.bc /bench/benchmark_com_assertions_com_alinhamento_explicito_v4/I_uint16_t_misaligned.c
+In file included from /bench/benchmark_com_assertions_com_alinhamento_explicito_v4/I_uint16_t_misaligned.c:3:
+/bench/benchmark_com_assertions_com_alinhamento_explicito_v4/verifier.h:98:13: warning: verifier.h: branch = SeaHorn (__SEAHORN__ detectado) [-W#pragma-messages]
+    #pragma message "verifier.h: branch = SeaHorn (__SEAHORN__ detectado)"
+            ^
+1 warning generated.
+/seahorn/build/run/bin/seapp -o /tmp/sea-c2w81fli/I_uint16_t_misaligned.pp.bc --simplifycfg-sink-common=false --strip-extern=false --promote-assumptions=false --kill-vaarg=true --ignore-def-verifier-fn=false --horn-keep-arith-overflow=false /tmp/sea-c2w81fli/I_uint16_t_misaligned.bc
+/seahorn/build/run/bin/seapp --simplifycfg-sink-common=false -o /tmp/sea-c2w81fli/I_uint16_t_misaligned.pp.ms.bc --horn-mixed-sem --ms-reduce-main /tmp/sea-c2w81fli/I_uint16_t_misaligned.pp.bc
+/seahorn/build/run/bin/seaopt -f --simplifycfg-sink-common=false -o /tmp/sea-c2w81fli/I_uint16_t_misaligned.pp.ms.o.bc -O3 --seaopt-enable-indvar=false --seaopt-enable-loop-idiom=false --unroll-threshold=150 --unroll-allow-partial=false --unroll-partial-threshold=0 --vectorize-slp=false /tmp/sea-c2w81fli/I_uint16_t_misaligned.pp.ms.bc
+/seahorn/build/run/bin/seahorn --keep-shadows=true --sea-dsa=ci --horn-solve -horn-inter-proc -horn-sem-lvl=mem --horn-step=large /tmp/sea-c2w81fli/I_uint16_t_misaligned.pp.ms.o.bc
+sat
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_com_alinhamento_explicito_v4/I_uint32_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 0.4647s
+================================================================================
+/usr/bin/clang-14 -c -emit-llvm -D__SEAHORN__ -fdeclspec -O1 -Xclang -disable-llvm-optzns -fgnu89-inline -m32 -I/seahorn/build/run/include -o /tmp/sea-l64kwvnj/I_uint32_t_aligned.bc /bench/benchmark_com_assertions_com_alinhamento_explicito_v4/I_uint32_t_aligned.c
+In file included from /bench/benchmark_com_assertions_com_alinhamento_explicito_v4/I_uint32_t_aligned.c:3:
+/bench/benchmark_com_assertions_com_alinhamento_explicito_v4/verifier.h:98:13: warning: verifier.h: branch = SeaHorn (__SEAHORN__ detectado) [-W#pragma-messages]
+    #pragma message "verifier.h: branch = SeaHorn (__SEAHORN__ detectado)"
+            ^
+1 warning generated.
+/seahorn/build/run/bin/seapp -o /tmp/sea-l64kwvnj/I_uint32_t_aligned.pp.bc --simplifycfg-sink-common=false --strip-extern=false --promote-assumptions=false --kill-vaarg=true --ignore-def-verifier-fn=false --horn-keep-arith-overflow=false /tmp/sea-l64kwvnj/I_uint32_t_aligned.bc
+/seahorn/build/run/bin/seapp --simplifycfg-sink-common=false -o /tmp/sea-l64kwvnj/I_uint32_t_aligned.pp.ms.bc --horn-mixed-sem --ms-reduce-main /tmp/sea-l64kwvnj/I_uint32_t_aligned.pp.bc
+/seahorn/build/run/bin/seaopt -f --simplifycfg-sink-common=false -o /tmp/sea-l64kwvnj/I_uint32_t_aligned.pp.ms.o.bc -O3 --seaopt-enable-indvar=false --seaopt-enable-loop-idiom=false --unroll-threshold=150 --unroll-allow-partial=false --unroll-partial-threshold=0 --vectorize-slp=false /tmp/sea-l64kwvnj/I_uint32_t_aligned.pp.ms.bc
+/seahorn/build/run/bin/seahorn --keep-shadows=true --sea-dsa=ci --horn-solve -horn-inter-proc -horn-sem-lvl=mem --horn-step=large /tmp/sea-l64kwvnj/I_uint32_t_aligned.pp.ms.o.bc
+WARNING: no assertion was found so either program does not have assertions or frontend discharged them.
+unsat
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_com_alinhamento_explicito_v4/I_uint32_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 0.4482s
+================================================================================
+/usr/bin/clang-14 -c -emit-llvm -D__SEAHORN__ -fdeclspec -O1 -Xclang -disable-llvm-optzns -fgnu89-inline -m32 -I/seahorn/build/run/include -o /tmp/sea-g2nsmprt/I_uint32_t_misaligned.bc /bench/benchmark_com_assertions_com_alinhamento_explicito_v4/I_uint32_t_misaligned.c
+In file included from /bench/benchmark_com_assertions_com_alinhamento_explicito_v4/I_uint32_t_misaligned.c:3:
+/bench/benchmark_com_assertions_com_alinhamento_explicito_v4/verifier.h:98:13: warning: verifier.h: branch = SeaHorn (__SEAHORN__ detectado) [-W#pragma-messages]
+    #pragma message "verifier.h: branch = SeaHorn (__SEAHORN__ detectado)"
+            ^
+1 warning generated.
+/seahorn/build/run/bin/seapp -o /tmp/sea-g2nsmprt/I_uint32_t_misaligned.pp.bc --simplifycfg-sink-common=false --strip-extern=false --promote-assumptions=false --kill-vaarg=true --ignore-def-verifier-fn=false --horn-keep-arith-overflow=false /tmp/sea-g2nsmprt/I_uint32_t_misaligned.bc
+/seahorn/build/run/bin/seapp --simplifycfg-sink-common=false -o /tmp/sea-g2nsmprt/I_uint32_t_misaligned.pp.ms.bc --horn-mixed-sem --ms-reduce-main /tmp/sea-g2nsmprt/I_uint32_t_misaligned.pp.bc
+/seahorn/build/run/bin/seaopt -f --simplifycfg-sink-common=false -o /tmp/sea-g2nsmprt/I_uint32_t_misaligned.pp.ms.o.bc -O3 --seaopt-enable-indvar=false --seaopt-enable-loop-idiom=false --unroll-threshold=150 --unroll-allow-partial=false --unroll-partial-threshold=0 --vectorize-slp=false /tmp/sea-g2nsmprt/I_uint32_t_misaligned.pp.ms.bc
+/seahorn/build/run/bin/seahorn --keep-shadows=true --sea-dsa=ci --horn-solve -horn-inter-proc -horn-sem-lvl=mem --horn-step=large /tmp/sea-g2nsmprt/I_uint32_t_misaligned.pp.ms.o.bc
+sat
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_com_alinhamento_explicito_v4/I_uint64_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 0.4706s
+================================================================================
+/usr/bin/clang-14 -c -emit-llvm -D__SEAHORN__ -fdeclspec -O1 -Xclang -disable-llvm-optzns -fgnu89-inline -m32 -I/seahorn/build/run/include -o /tmp/sea-6s4nxukf/I_uint64_t_aligned.bc /bench/benchmark_com_assertions_com_alinhamento_explicito_v4/I_uint64_t_aligned.c
+In file included from /bench/benchmark_com_assertions_com_alinhamento_explicito_v4/I_uint64_t_aligned.c:3:
+/bench/benchmark_com_assertions_com_alinhamento_explicito_v4/verifier.h:98:13: warning: verifier.h: branch = SeaHorn (__SEAHORN__ detectado) [-W#pragma-messages]
+    #pragma message "verifier.h: branch = SeaHorn (__SEAHORN__ detectado)"
+            ^
+1 warning generated.
+/seahorn/build/run/bin/seapp -o /tmp/sea-6s4nxukf/I_uint64_t_aligned.pp.bc --simplifycfg-sink-common=false --strip-extern=false --promote-assumptions=false --kill-vaarg=true --ignore-def-verifier-fn=false --horn-keep-arith-overflow=false /tmp/sea-6s4nxukf/I_uint64_t_aligned.bc
+/seahorn/build/run/bin/seapp --simplifycfg-sink-common=false -o /tmp/sea-6s4nxukf/I_uint64_t_aligned.pp.ms.bc --horn-mixed-sem --ms-reduce-main /tmp/sea-6s4nxukf/I_uint64_t_aligned.pp.bc
+/seahorn/build/run/bin/seaopt -f --simplifycfg-sink-common=false -o /tmp/sea-6s4nxukf/I_uint64_t_aligned.pp.ms.o.bc -O3 --seaopt-enable-indvar=false --seaopt-enable-loop-idiom=false --unroll-threshold=150 --unroll-allow-partial=false --unroll-partial-threshold=0 --vectorize-slp=false /tmp/sea-6s4nxukf/I_uint64_t_aligned.pp.ms.bc
+/seahorn/build/run/bin/seahorn --keep-shadows=true --sea-dsa=ci --horn-solve -horn-inter-proc -horn-sem-lvl=mem --horn-step=large /tmp/sea-6s4nxukf/I_uint64_t_aligned.pp.ms.o.bc
+sat
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_com_alinhamento_explicito_v4/I_uint64_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 0.4379s
+================================================================================
+/usr/bin/clang-14 -c -emit-llvm -D__SEAHORN__ -fdeclspec -O1 -Xclang -disable-llvm-optzns -fgnu89-inline -m32 -I/seahorn/build/run/include -o /tmp/sea-yg1xm8pc/I_uint64_t_misaligned.bc /bench/benchmark_com_assertions_com_alinhamento_explicito_v4/I_uint64_t_misaligned.c
+In file included from /bench/benchmark_com_assertions_com_alinhamento_explicito_v4/I_uint64_t_misaligned.c:3:
+/bench/benchmark_com_assertions_com_alinhamento_explicito_v4/verifier.h:98:13: warning: verifier.h: branch = SeaHorn (__SEAHORN__ detectado) [-W#pragma-messages]
+    #pragma message "verifier.h: branch = SeaHorn (__SEAHORN__ detectado)"
+            ^
+1 warning generated.
+/seahorn/build/run/bin/seapp -o /tmp/sea-yg1xm8pc/I_uint64_t_misaligned.pp.bc --simplifycfg-sink-common=false --strip-extern=false --promote-assumptions=false --kill-vaarg=true --ignore-def-verifier-fn=false --horn-keep-arith-overflow=false /tmp/sea-yg1xm8pc/I_uint64_t_misaligned.bc
+/seahorn/build/run/bin/seapp --simplifycfg-sink-common=false -o /tmp/sea-yg1xm8pc/I_uint64_t_misaligned.pp.ms.bc --horn-mixed-sem --ms-reduce-main /tmp/sea-yg1xm8pc/I_uint64_t_misaligned.pp.bc
+/seahorn/build/run/bin/seaopt -f --simplifycfg-sink-common=false -o /tmp/sea-yg1xm8pc/I_uint64_t_misaligned.pp.ms.o.bc -O3 --seaopt-enable-indvar=false --seaopt-enable-loop-idiom=false --unroll-threshold=150 --unroll-allow-partial=false --unroll-partial-threshold=0 --vectorize-slp=false /tmp/sea-yg1xm8pc/I_uint64_t_misaligned.pp.ms.bc
+/seahorn/build/run/bin/seahorn --keep-shadows=true --sea-dsa=ci --horn-solve -horn-inter-proc -horn-sem-lvl=mem --horn-step=large /tmp/sea-yg1xm8pc/I_uint64_t_misaligned.pp.ms.o.bc
+sat
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_com_alinhamento_explicito_v4/J_uint16_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 0.4744s
+================================================================================
+/usr/bin/clang-14 -c -emit-llvm -D__SEAHORN__ -fdeclspec -O1 -Xclang -disable-llvm-optzns -fgnu89-inline -m32 -I/seahorn/build/run/include -o /tmp/sea-dqfzxfjh/J_uint16_t_aligned.bc /bench/benchmark_com_assertions_com_alinhamento_explicito_v4/J_uint16_t_aligned.c
+In file included from /bench/benchmark_com_assertions_com_alinhamento_explicito_v4/J_uint16_t_aligned.c:3:
+/bench/benchmark_com_assertions_com_alinhamento_explicito_v4/verifier.h:98:13: warning: verifier.h: branch = SeaHorn (__SEAHORN__ detectado) [-W#pragma-messages]
+    #pragma message "verifier.h: branch = SeaHorn (__SEAHORN__ detectado)"
+            ^
+1 warning generated.
+/seahorn/build/run/bin/seapp -o /tmp/sea-dqfzxfjh/J_uint16_t_aligned.pp.bc --simplifycfg-sink-common=false --strip-extern=false --promote-assumptions=false --kill-vaarg=true --ignore-def-verifier-fn=false --horn-keep-arith-overflow=false /tmp/sea-dqfzxfjh/J_uint16_t_aligned.bc
+/seahorn/build/run/bin/seapp --simplifycfg-sink-common=false -o /tmp/sea-dqfzxfjh/J_uint16_t_aligned.pp.ms.bc --horn-mixed-sem --ms-reduce-main /tmp/sea-dqfzxfjh/J_uint16_t_aligned.pp.bc
+/seahorn/build/run/bin/seaopt -f --simplifycfg-sink-common=false -o /tmp/sea-dqfzxfjh/J_uint16_t_aligned.pp.ms.o.bc -O3 --seaopt-enable-indvar=false --seaopt-enable-loop-idiom=false --unroll-threshold=150 --unroll-allow-partial=false --unroll-partial-threshold=0 --vectorize-slp=false /tmp/sea-dqfzxfjh/J_uint16_t_aligned.pp.ms.bc
+/seahorn/build/run/bin/seahorn --keep-shadows=true --sea-dsa=ci --horn-solve -horn-inter-proc -horn-sem-lvl=mem --horn-step=large /tmp/sea-dqfzxfjh/J_uint16_t_aligned.pp.ms.o.bc
+WARNING: no assertion was found so either program does not have assertions or frontend discharged them.
+unsat
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_com_alinhamento_explicito_v4/J_uint16_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 0.4638s
+================================================================================
+/usr/bin/clang-14 -c -emit-llvm -D__SEAHORN__ -fdeclspec -O1 -Xclang -disable-llvm-optzns -fgnu89-inline -m32 -I/seahorn/build/run/include -o /tmp/sea-7xordzp0/J_uint16_t_misaligned.bc /bench/benchmark_com_assertions_com_alinhamento_explicito_v4/J_uint16_t_misaligned.c
+In file included from /bench/benchmark_com_assertions_com_alinhamento_explicito_v4/J_uint16_t_misaligned.c:3:
+/bench/benchmark_com_assertions_com_alinhamento_explicito_v4/verifier.h:98:13: warning: verifier.h: branch = SeaHorn (__SEAHORN__ detectado) [-W#pragma-messages]
+    #pragma message "verifier.h: branch = SeaHorn (__SEAHORN__ detectado)"
+            ^
+1 warning generated.
+/seahorn/build/run/bin/seapp -o /tmp/sea-7xordzp0/J_uint16_t_misaligned.pp.bc --simplifycfg-sink-common=false --strip-extern=false --promote-assumptions=false --kill-vaarg=true --ignore-def-verifier-fn=false --horn-keep-arith-overflow=false /tmp/sea-7xordzp0/J_uint16_t_misaligned.bc
+/seahorn/build/run/bin/seapp --simplifycfg-sink-common=false -o /tmp/sea-7xordzp0/J_uint16_t_misaligned.pp.ms.bc --horn-mixed-sem --ms-reduce-main /tmp/sea-7xordzp0/J_uint16_t_misaligned.pp.bc
+/seahorn/build/run/bin/seaopt -f --simplifycfg-sink-common=false -o /tmp/sea-7xordzp0/J_uint16_t_misaligned.pp.ms.o.bc -O3 --seaopt-enable-indvar=false --seaopt-enable-loop-idiom=false --unroll-threshold=150 --unroll-allow-partial=false --unroll-partial-threshold=0 --vectorize-slp=false /tmp/sea-7xordzp0/J_uint16_t_misaligned.pp.ms.bc
+/seahorn/build/run/bin/seahorn --keep-shadows=true --sea-dsa=ci --horn-solve -horn-inter-proc -horn-sem-lvl=mem --horn-step=large /tmp/sea-7xordzp0/J_uint16_t_misaligned.pp.ms.o.bc
+sat
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_com_alinhamento_explicito_v4/J_uint32_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 0.4262s
+================================================================================
+/usr/bin/clang-14 -c -emit-llvm -D__SEAHORN__ -fdeclspec -O1 -Xclang -disable-llvm-optzns -fgnu89-inline -m32 -I/seahorn/build/run/include -o /tmp/sea-3azxyxgj/J_uint32_t_aligned.bc /bench/benchmark_com_assertions_com_alinhamento_explicito_v4/J_uint32_t_aligned.c
+In file included from /bench/benchmark_com_assertions_com_alinhamento_explicito_v4/J_uint32_t_aligned.c:3:
+/bench/benchmark_com_assertions_com_alinhamento_explicito_v4/verifier.h:98:13: warning: verifier.h: branch = SeaHorn (__SEAHORN__ detectado) [-W#pragma-messages]
+    #pragma message "verifier.h: branch = SeaHorn (__SEAHORN__ detectado)"
+            ^
+1 warning generated.
+/seahorn/build/run/bin/seapp -o /tmp/sea-3azxyxgj/J_uint32_t_aligned.pp.bc --simplifycfg-sink-common=false --strip-extern=false --promote-assumptions=false --kill-vaarg=true --ignore-def-verifier-fn=false --horn-keep-arith-overflow=false /tmp/sea-3azxyxgj/J_uint32_t_aligned.bc
+/seahorn/build/run/bin/seapp --simplifycfg-sink-common=false -o /tmp/sea-3azxyxgj/J_uint32_t_aligned.pp.ms.bc --horn-mixed-sem --ms-reduce-main /tmp/sea-3azxyxgj/J_uint32_t_aligned.pp.bc
+/seahorn/build/run/bin/seaopt -f --simplifycfg-sink-common=false -o /tmp/sea-3azxyxgj/J_uint32_t_aligned.pp.ms.o.bc -O3 --seaopt-enable-indvar=false --seaopt-enable-loop-idiom=false --unroll-threshold=150 --unroll-allow-partial=false --unroll-partial-threshold=0 --vectorize-slp=false /tmp/sea-3azxyxgj/J_uint32_t_aligned.pp.ms.bc
+/seahorn/build/run/bin/seahorn --keep-shadows=true --sea-dsa=ci --horn-solve -horn-inter-proc -horn-sem-lvl=mem --horn-step=large /tmp/sea-3azxyxgj/J_uint32_t_aligned.pp.ms.o.bc
+WARNING: no assertion was found so either program does not have assertions or frontend discharged them.
+unsat
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_com_alinhamento_explicito_v4/J_uint32_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 0.4596s
+================================================================================
+/usr/bin/clang-14 -c -emit-llvm -D__SEAHORN__ -fdeclspec -O1 -Xclang -disable-llvm-optzns -fgnu89-inline -m32 -I/seahorn/build/run/include -o /tmp/sea-vq0kdxfe/J_uint32_t_misaligned.bc /bench/benchmark_com_assertions_com_alinhamento_explicito_v4/J_uint32_t_misaligned.c
+In file included from /bench/benchmark_com_assertions_com_alinhamento_explicito_v4/J_uint32_t_misaligned.c:3:
+/bench/benchmark_com_assertions_com_alinhamento_explicito_v4/verifier.h:98:13: warning: verifier.h: branch = SeaHorn (__SEAHORN__ detectado) [-W#pragma-messages]
+    #pragma message "verifier.h: branch = SeaHorn (__SEAHORN__ detectado)"
+            ^
+1 warning generated.
+/seahorn/build/run/bin/seapp -o /tmp/sea-vq0kdxfe/J_uint32_t_misaligned.pp.bc --simplifycfg-sink-common=false --strip-extern=false --promote-assumptions=false --kill-vaarg=true --ignore-def-verifier-fn=false --horn-keep-arith-overflow=false /tmp/sea-vq0kdxfe/J_uint32_t_misaligned.bc
+/seahorn/build/run/bin/seapp --simplifycfg-sink-common=false -o /tmp/sea-vq0kdxfe/J_uint32_t_misaligned.pp.ms.bc --horn-mixed-sem --ms-reduce-main /tmp/sea-vq0kdxfe/J_uint32_t_misaligned.pp.bc
+/seahorn/build/run/bin/seaopt -f --simplifycfg-sink-common=false -o /tmp/sea-vq0kdxfe/J_uint32_t_misaligned.pp.ms.o.bc -O3 --seaopt-enable-indvar=false --seaopt-enable-loop-idiom=false --unroll-threshold=150 --unroll-allow-partial=false --unroll-partial-threshold=0 --vectorize-slp=false /tmp/sea-vq0kdxfe/J_uint32_t_misaligned.pp.ms.bc
+/seahorn/build/run/bin/seahorn --keep-shadows=true --sea-dsa=ci --horn-solve -horn-inter-proc -horn-sem-lvl=mem --horn-step=large /tmp/sea-vq0kdxfe/J_uint32_t_misaligned.pp.ms.o.bc
+sat
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_com_alinhamento_explicito_v4/J_uint64_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 0.4507s
+================================================================================
+/usr/bin/clang-14 -c -emit-llvm -D__SEAHORN__ -fdeclspec -O1 -Xclang -disable-llvm-optzns -fgnu89-inline -m32 -I/seahorn/build/run/include -o /tmp/sea-zqbtqrck/J_uint64_t_aligned.bc /bench/benchmark_com_assertions_com_alinhamento_explicito_v4/J_uint64_t_aligned.c
+In file included from /bench/benchmark_com_assertions_com_alinhamento_explicito_v4/J_uint64_t_aligned.c:3:
+/bench/benchmark_com_assertions_com_alinhamento_explicito_v4/verifier.h:98:13: warning: verifier.h: branch = SeaHorn (__SEAHORN__ detectado) [-W#pragma-messages]
+    #pragma message "verifier.h: branch = SeaHorn (__SEAHORN__ detectado)"
+            ^
+1 warning generated.
+/seahorn/build/run/bin/seapp -o /tmp/sea-zqbtqrck/J_uint64_t_aligned.pp.bc --simplifycfg-sink-common=false --strip-extern=false --promote-assumptions=false --kill-vaarg=true --ignore-def-verifier-fn=false --horn-keep-arith-overflow=false /tmp/sea-zqbtqrck/J_uint64_t_aligned.bc
+/seahorn/build/run/bin/seapp --simplifycfg-sink-common=false -o /tmp/sea-zqbtqrck/J_uint64_t_aligned.pp.ms.bc --horn-mixed-sem --ms-reduce-main /tmp/sea-zqbtqrck/J_uint64_t_aligned.pp.bc
+/seahorn/build/run/bin/seaopt -f --simplifycfg-sink-common=false -o /tmp/sea-zqbtqrck/J_uint64_t_aligned.pp.ms.o.bc -O3 --seaopt-enable-indvar=false --seaopt-enable-loop-idiom=false --unroll-threshold=150 --unroll-allow-partial=false --unroll-partial-threshold=0 --vectorize-slp=false /tmp/sea-zqbtqrck/J_uint64_t_aligned.pp.ms.bc
+/seahorn/build/run/bin/seahorn --keep-shadows=true --sea-dsa=ci --horn-solve -horn-inter-proc -horn-sem-lvl=mem --horn-step=large /tmp/sea-zqbtqrck/J_uint64_t_aligned.pp.ms.o.bc
+sat
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_com_alinhamento_explicito_v4/J_uint64_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 0.4404s
+================================================================================
+/usr/bin/clang-14 -c -emit-llvm -D__SEAHORN__ -fdeclspec -O1 -Xclang -disable-llvm-optzns -fgnu89-inline -m32 -I/seahorn/build/run/include -o /tmp/sea-tdtzeu3w/J_uint64_t_misaligned.bc /bench/benchmark_com_assertions_com_alinhamento_explicito_v4/J_uint64_t_misaligned.c
+In file included from /bench/benchmark_com_assertions_com_alinhamento_explicito_v4/J_uint64_t_misaligned.c:3:
+/bench/benchmark_com_assertions_com_alinhamento_explicito_v4/verifier.h:98:13: warning: verifier.h: branch = SeaHorn (__SEAHORN__ detectado) [-W#pragma-messages]
+    #pragma message "verifier.h: branch = SeaHorn (__SEAHORN__ detectado)"
+            ^
+1 warning generated.
+/seahorn/build/run/bin/seapp -o /tmp/sea-tdtzeu3w/J_uint64_t_misaligned.pp.bc --simplifycfg-sink-common=false --strip-extern=false --promote-assumptions=false --kill-vaarg=true --ignore-def-verifier-fn=false --horn-keep-arith-overflow=false /tmp/sea-tdtzeu3w/J_uint64_t_misaligned.bc
+/seahorn/build/run/bin/seapp --simplifycfg-sink-common=false -o /tmp/sea-tdtzeu3w/J_uint64_t_misaligned.pp.ms.bc --horn-mixed-sem --ms-reduce-main /tmp/sea-tdtzeu3w/J_uint64_t_misaligned.pp.bc
+/seahorn/build/run/bin/seaopt -f --simplifycfg-sink-common=false -o /tmp/sea-tdtzeu3w/J_uint64_t_misaligned.pp.ms.o.bc -O3 --seaopt-enable-indvar=false --seaopt-enable-loop-idiom=false --unroll-threshold=150 --unroll-allow-partial=false --unroll-partial-threshold=0 --vectorize-slp=false /tmp/sea-tdtzeu3w/J_uint64_t_misaligned.pp.ms.bc
+/seahorn/build/run/bin/seahorn --keep-shadows=true --sea-dsa=ci --horn-solve -horn-inter-proc -horn-sem-lvl=mem --horn-step=large /tmp/sea-tdtzeu3w/J_uint64_t_misaligned.pp.ms.o.bc
+sat
+
+

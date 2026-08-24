@@ -1,0 +1,15 @@
+# Tucuman — ambiente Conda
+# Criar com: conda env create -f environment.yml
+# Ativar com: conda activate tucuman
+
+name: tucuman
+channels:
+  - defaults
+  - conda-forge
+
+dependencies:
+  - python=3.11
+  - openjdk>=17
+  - pip
+  - pip:
+    - z3-solver==4.13.0.0

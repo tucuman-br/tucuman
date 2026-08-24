@@ -1,12 +1,12 @@
 #include <stdint.h>
 #include <stddef.h>
 #include "verifier.h"
-/* Grupo J — struct nao-packed com offsetof (alinhado) | esperado: OK */
+/* Grupo J — struct nao-packed | esperado: OK */
 struct packed_s { char a; uint32_t b; };
 int main(void) {
     struct packed_s obj;
-    char *base = (char*)&obj;
-    uint32_t *q = (uint32_t*)(base + offsetof(struct packed_s, b));
+    struct packed_s *ptr = &obj;
+    uint32_t *q = (uint32_t *)&(ptr->b);  // offset = 2 → alinhado
     uint32_t z = *q;
     (void)z;
     ALIGN_ASSERT(q);

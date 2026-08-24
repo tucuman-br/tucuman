@@ -1,0 +1,98 @@
+================================================================================
+ARQUIVO: byte_level_memory.c
+REPETICAO: 1/1
+TEMPO: 2.1999s
+================================================================================
+Running CPAchecker with default heap size (1200M). Specify a larger value with --heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with --stack if needed.
+Language C detected and set for analysis (CPAMain.detectFrontendLanguageIfNecessary, INFO)
+
+CPAchecker 4.1 / svcomp25 (OpenJDK 64-Bit Server VM 21.0.11) started (CPAchecker.run, INFO)
+
+Parsing CFA from file(s) "/home/wesley/tucuman/benchmark/byte_level_memory.c" (CPAchecker.parse, INFO)
+
+Using heuristics to select analysis (CoreComponentsFactory.createAlgorithm, INFO)
+
+The following configuration options were specified but are not used:
+ cpa.callstack.unsupportedFunctions
+ termination.violation.witness
+ cpa.predicate.memoryAllocationsAlwaysSucceed
+ cpa.arg.compressWitness
+ cpa.arg.yamlProofWitness
+ cpa.callstack.skipFunctionPointerRecursion
+ counterexample.export.yaml
+ cpa.composite.aggregateBasicBlocks
+ counterexample.export.graphml
+ counterexample.export.compressWitness 
+ (CPAchecker.printConfigurationWarnings, WARNING)
+
+Starting analysis ... (CPAchecker.runAlgorithm, INFO)
+
+Performing heuristic ... (SelectionAlgorithm.chooseConfig, INFO)
+
+Using Restarting Algorithm (Analysis /home/wesley/verifiers/CPAchecker-4.1-unix/config/components/svcomp25--configselection-restart-valueAnalysis-fallbacks.properties:CoreComponentsFactory.createAlgorithm, INFO)
+
+Loading analysis 1 from file /home/wesley/verifiers/CPAchecker-4.1-unix/config/components/svcomp25--parallel-valueAnalysis.properties ... (Analysis /home/wesley/verifiers/CPAchecker-4.1-unix/config/components/svcomp25--configselection-restart-valueAnalysis-fallbacks.properties:RestartAlgorithm.run, INFO)
+
+Mismatch of configuration options when loading from '/home/wesley/verifiers/CPAchecker-4.1-unix/config/components/svcomp25--configselection-restartcomponent-valueAnalysis.properties': 'cpa.composite.aggregateBasicBlocks' has two values 'false' and 'true'. Using 'true'. (Analysis /home/wesley/verifiers/CPAchecker-4.1-unix/config/components/svcomp25--configselection-restart-valueAnalysis-fallbacks.properties:Analysis /home/wesley/verifiers/CPAchecker-4.1-unix/config/components/svcomp25--parallel-valueAnalysis.properties:NestingAlgorithm.checkConfigs, INFO)
+
+Using the following resource limits: Thread CPU-time limit of 90s (Analysis /home/wesley/verifiers/CPAchecker-4.1-unix/config/components/svcomp25--configselection-restart-valueAnalysis-fallbacks.properties:Analysis /home/wesley/verifiers/CPAchecker-4.1-unix/config/components/svcomp25--parallel-valueAnalysis.properties:Parallel analysis /home/wesley/verifiers/CPAchecker-4.1-unix/config/components/svcomp25--configselection-restartcomponent-valueAnalysis.properties:ResourceLimitChecker.fromConfiguration, INFO)
+
+Mismatch of configuration options when loading from '/home/wesley/verifiers/CPAchecker-4.1-unix/config/components/svcomp25--configselection-restartcomponent-valueAnalysis-itp-end.properties': 'cpa.composite.aggregateBasicBlocks' has two values 'false' and 'true'. Using 'true'. (Analysis /home/wesley/verifiers/CPAchecker-4.1-unix/config/components/svcomp25--configselection-restart-valueAnalysis-fallbacks.properties:Analysis /home/wesley/verifiers/CPAchecker-4.1-unix/config/components/svcomp25--parallel-valueAnalysis.properties:NestingAlgorithm.checkConfigs, INFO)
+
+Using the following resource limits: Thread CPU-time limit of 900s (Analysis /home/wesley/verifiers/CPAchecker-4.1-unix/config/components/svcomp25--configselection-restart-valueAnalysis-fallbacks.properties:Analysis /home/wesley/verifiers/CPAchecker-4.1-unix/config/components/svcomp25--parallel-valueAnalysis.properties:Parallel analysis /home/wesley/verifiers/CPAchecker-4.1-unix/config/components/svcomp25--complexLoops-kInduction.properties:ResourceLimitChecker.fromConfiguration, INFO)
+
+Using predicate analysis with MathSAT5 version 5.6.10 (9293adc746be) (May 31 2023 12:38:06, gmp 6.2.0, gcc 7.5.0, 64-bit, reentrant). (Analysis /home/wesley/verifiers/CPAchecker-4.1-unix/config/components/svcomp25--configselection-restart-valueAnalysis-fallbacks.properties:Analysis /home/wesley/verifiers/CPAchecker-4.1-unix/config/components/svcomp25--parallel-valueAnalysis.properties:Parallel analysis /home/wesley/verifiers/CPAchecker-4.1-unix/config/components/svcomp25--complexLoops-kInduction.properties:PredicateCPA:PredicateCPA.<init>, INFO)
+
+Starting analysis 1 ... (Analysis /home/wesley/verifiers/CPAchecker-4.1-unix/config/components/svcomp25--configselection-restart-valueAnalysis-fallbacks.properties:RestartAlgorithm.run, INFO)
+
+/home/wesley/verifiers/CPAchecker-4.1-unix/config/components/svcomp25--complexLoops-kInduction.properties finished successfully. (Analysis /home/wesley/verifiers/CPAchecker-4.1-unix/config/components/svcomp25--configselection-restart-valueAnalysis-fallbacks.properties:Analysis /home/wesley/verifiers/CPAchecker-4.1-unix/config/components/svcomp25--parallel-valueAnalysis.properties:ParallelAlgorithm.handleFutureResults, INFO)
+
+Analysis was terminated (One of the parallel analyses has finished successfully, cancelling all other runs.) (Analysis /home/wesley/verifiers/CPAchecker-4.1-unix/config/components/svcomp25--configselection-restart-valueAnalysis-fallbacks.properties:Analysis /home/wesley/verifiers/CPAchecker-4.1-unix/config/components/svcomp25--parallel-valueAnalysis.properties:Parallel analysis /home/wesley/verifiers/CPAchecker-4.1-unix/config/components/svcomp25--configselection-restartcomponent-valueAnalysis.properties:ShutdownNotifier.shutdownIfNecessary, INFO)
+
+Analysis was terminated (One of the parallel analyses has finished successfully, cancelling all other runs.) (Analysis /home/wesley/verifiers/CPAchecker-4.1-unix/config/components/svcomp25--configselection-restart-valueAnalysis-fallbacks.properties:Analysis /home/wesley/verifiers/CPAchecker-4.1-unix/config/components/svcomp25--parallel-valueAnalysis.properties:Parallel analysis /home/wesley/verifiers/CPAchecker-4.1-unix/config/components/svcomp25--configselection-restartcomponent-valueAnalysis-itp-end.properties:ShutdownNotifier.shutdownIfNecessary, INFO)
+
+Ignoring restart configuration '/home/wesley/verifiers/CPAchecker-4.1-unix/config/components/svcomp25--recursion.properties' because condition if-recursive did not match. (Analysis /home/wesley/verifiers/CPAchecker-4.1-unix/config/components/svcomp25--configselection-restart-valueAnalysis-fallbacks.properties:RestartAlgorithm.skipNextAnalysesIfRequired, INFO)
+
+Ignoring restart configuration '/home/wesley/verifiers/CPAchecker-4.1-unix/config/components/svcomp25--concurrency.properties' because condition if-concurrent did not match. (Analysis /home/wesley/verifiers/CPAchecker-4.1-unix/config/components/svcomp25--configselection-restart-valueAnalysis-fallbacks.properties:RestartAlgorithm.skipNextAnalysesIfRequired, INFO)
+
+Stopping analysis ... (CPAchecker.runAlgorithm, INFO)
+
+Verification result: TRUE. No property violation found by chosen configuration.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
+
+
+================================================================================
+ARQUIVO: validacao_experimental.c
+REPETICAO: 1/1
+TEMPO: 0.5306s
+================================================================================
+Running CPAchecker with default heap size (1200M). Specify a larger value with --heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with --stack if needed.
+Language C detected and set for analysis (CPAMain.detectFrontendLanguageIfNecessary, INFO)
+
+CPAchecker 4.1 / svcomp25 (OpenJDK 64-Bit Server VM 21.0.11) started (CPAchecker.run, INFO)
+
+Parsing CFA from file(s) "/home/wesley/tucuman/benchmark/validacao_experimental.c" (CPAchecker.parse, INFO)
+
+cpp[9790] error output: /home/wesley/tucuman/benchmark/validacao_experimental.c:1:10: fatal error: Arduino.h: No such file or directory (ProcessExecutor.handleErrorOutput, WARNING)
+
+cpp[9790] error output:     1 | #include <Arduino.h> (ProcessExecutor.handleErrorOutput, WARNING)
+
+cpp[9790] error output:       |          ^~~~~~~~~~~ (ProcessExecutor.handleErrorOutput, WARNING)
+
+cpp[9790] error output: compilation terminated. (ProcessExecutor.handleErrorOutput, WARNING)
+
+Error: Parsing failed (Preprocessor failed with exit code 1) (CPreprocessor.createCorrespondingParserException, SEVERE)
+
+Please make sure that the code can be compiled by a compiler.
+If the code was not preprocessed, please use a C preprocessor
+or specify the --preprocess command-line argument.
+If the error still occurs, please send this error message
+together with the input file to cpachecker-users@googlegroups.com.
+ (CPAchecker.handleParserException, INFO)
+
+More details about the verification run can be found in the directory "./output".
+
+

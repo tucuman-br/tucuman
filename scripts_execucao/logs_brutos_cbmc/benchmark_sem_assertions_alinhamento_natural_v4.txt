@@ -1,0 +1,1404 @@
+================================================================================
+ARQUIVO: benchmark_sem_assertions_alinhamento_natural_v4/A_uint16_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 0.0371s
+================================================================================
+CBMC version 6.6.0 (cbmc-6.6.0) 64-bit x86_64 linux
+Type-checking A_uint16_t_aligned
+Generating GOTO Program
+Adding CPROVER library (x86_64)
+Removal of function pointers and virtual functions
+Generic Property Instrumentation
+Starting Bounded Model Checking
+
+** Results:
+/home/wesley/tucuman/benchmark/benchmark_sem_assertions_alinhamento_natural_v4/A_uint16_t_aligned.c function main
+[main.pointer_dereference.1] line 7 dereference failure: dead object in *p: SUCCESS
+[main.pointer_dereference.2] line 7 dereference failure: pointer outside object bounds in *p: SUCCESS
+
+** 0 of 2 failed (1 iterations)
+VERIFICATION SUCCESSFUL
+
+
+================================================================================
+ARQUIVO: benchmark_sem_assertions_alinhamento_natural_v4/A_uint16_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 0.0381s
+================================================================================
+CBMC version 6.6.0 (cbmc-6.6.0) 64-bit x86_64 linux
+Type-checking A_uint16_t_misaligned
+Generating GOTO Program
+Adding CPROVER library (x86_64)
+Removal of function pointers and virtual functions
+Generic Property Instrumentation
+Starting Bounded Model Checking
+
+** Results:
+/home/wesley/tucuman/benchmark/benchmark_sem_assertions_alinhamento_natural_v4/A_uint16_t_misaligned.c function main
+[main.pointer_dereference.1] line 7 dereference failure: dead object in *p: SUCCESS
+[main.pointer_dereference.2] line 7 dereference failure: pointer outside object bounds in *p: SUCCESS
+
+** 0 of 2 failed (1 iterations)
+VERIFICATION SUCCESSFUL
+
+
+================================================================================
+ARQUIVO: benchmark_sem_assertions_alinhamento_natural_v4/A_uint32_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 0.0414s
+================================================================================
+CBMC version 6.6.0 (cbmc-6.6.0) 64-bit x86_64 linux
+Type-checking A_uint32_t_aligned
+Generating GOTO Program
+Adding CPROVER library (x86_64)
+Removal of function pointers and virtual functions
+Generic Property Instrumentation
+Starting Bounded Model Checking
+
+** Results:
+/home/wesley/tucuman/benchmark/benchmark_sem_assertions_alinhamento_natural_v4/A_uint32_t_aligned.c function main
+[main.pointer_dereference.1] line 7 dereference failure: dead object in *p: SUCCESS
+[main.pointer_dereference.2] line 7 dereference failure: pointer outside object bounds in *p: SUCCESS
+
+** 0 of 2 failed (1 iterations)
+VERIFICATION SUCCESSFUL
+
+
+================================================================================
+ARQUIVO: benchmark_sem_assertions_alinhamento_natural_v4/A_uint32_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 0.0415s
+================================================================================
+CBMC version 6.6.0 (cbmc-6.6.0) 64-bit x86_64 linux
+Type-checking A_uint32_t_misaligned
+Generating GOTO Program
+Adding CPROVER library (x86_64)
+Removal of function pointers and virtual functions
+Generic Property Instrumentation
+Starting Bounded Model Checking
+
+** Results:
+/home/wesley/tucuman/benchmark/benchmark_sem_assertions_alinhamento_natural_v4/A_uint32_t_misaligned.c function main
+[main.pointer_dereference.1] line 7 dereference failure: dead object in *p: SUCCESS
+[main.pointer_dereference.2] line 7 dereference failure: pointer outside object bounds in *p: SUCCESS
+
+** 0 of 2 failed (1 iterations)
+VERIFICATION SUCCESSFUL
+
+
+================================================================================
+ARQUIVO: benchmark_sem_assertions_alinhamento_natural_v4/A_uint64_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 0.0356s
+================================================================================
+CBMC version 6.6.0 (cbmc-6.6.0) 64-bit x86_64 linux
+Type-checking A_uint64_t_aligned
+Generating GOTO Program
+Adding CPROVER library (x86_64)
+Removal of function pointers and virtual functions
+Generic Property Instrumentation
+Starting Bounded Model Checking
+
+** Results:
+/home/wesley/tucuman/benchmark/benchmark_sem_assertions_alinhamento_natural_v4/A_uint64_t_aligned.c function main
+[main.pointer_dereference.1] line 7 dereference failure: dead object in *p: SUCCESS
+[main.pointer_dereference.2] line 7 dereference failure: pointer outside object bounds in *p: SUCCESS
+
+** 0 of 2 failed (1 iterations)
+VERIFICATION SUCCESSFUL
+
+
+================================================================================
+ARQUIVO: benchmark_sem_assertions_alinhamento_natural_v4/A_uint64_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 0.0364s
+================================================================================
+CBMC version 6.6.0 (cbmc-6.6.0) 64-bit x86_64 linux
+Type-checking A_uint64_t_misaligned
+Generating GOTO Program
+Adding CPROVER library (x86_64)
+Removal of function pointers and virtual functions
+Generic Property Instrumentation
+Starting Bounded Model Checking
+
+** Results:
+/home/wesley/tucuman/benchmark/benchmark_sem_assertions_alinhamento_natural_v4/A_uint64_t_misaligned.c function main
+[main.pointer_dereference.1] line 7 dereference failure: dead object in *p: SUCCESS
+[main.pointer_dereference.2] line 7 dereference failure: pointer outside object bounds in *p: SUCCESS
+
+** 0 of 2 failed (1 iterations)
+VERIFICATION SUCCESSFUL
+
+
+================================================================================
+ARQUIVO: benchmark_sem_assertions_alinhamento_natural_v4/B_uint16_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 0.0347s
+================================================================================
+CBMC version 6.6.0 (cbmc-6.6.0) 64-bit x86_64 linux
+Type-checking B_uint16_t_aligned
+Generating GOTO Program
+Adding CPROVER library (x86_64)
+Removal of function pointers and virtual functions
+Generic Property Instrumentation
+Starting Bounded Model Checking
+
+** Results:
+/home/wesley/tucuman/benchmark/benchmark_sem_assertions_alinhamento_natural_v4/B_uint16_t_aligned.c function main
+[main.pointer_dereference.1] line 7 dereference failure: dead object in *p: SUCCESS
+[main.pointer_dereference.2] line 7 dereference failure: pointer outside object bounds in *p: SUCCESS
+
+** 0 of 2 failed (1 iterations)
+VERIFICATION SUCCESSFUL
+
+
+================================================================================
+ARQUIVO: benchmark_sem_assertions_alinhamento_natural_v4/B_uint16_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 0.0428s
+================================================================================
+CBMC version 6.6.0 (cbmc-6.6.0) 64-bit x86_64 linux
+Type-checking B_uint16_t_misaligned
+Generating GOTO Program
+Adding CPROVER library (x86_64)
+Removal of function pointers and virtual functions
+Generic Property Instrumentation
+Starting Bounded Model Checking
+Passing problem to propositional reduction
+converting SSA
+Running propositional reduction
+SAT checker: instance is SATISFIABLE
+
+** Results:
+/home/wesley/tucuman/benchmark/benchmark_sem_assertions_alinhamento_natural_v4/B_uint16_t_misaligned.c function main
+[main.pointer_dereference.1] line 7 dereference failure: dead object in *p: SUCCESS
+[main.pointer_dereference.2] line 7 dereference failure: pointer outside object bounds in *p: FAILURE
+
+** 1 of 2 failed (2 iterations)
+VERIFICATION FAILED
+
+
+================================================================================
+ARQUIVO: benchmark_sem_assertions_alinhamento_natural_v4/B_uint32_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 0.0478s
+================================================================================
+CBMC version 6.6.0 (cbmc-6.6.0) 64-bit x86_64 linux
+Type-checking B_uint32_t_aligned
+Generating GOTO Program
+Adding CPROVER library (x86_64)
+Removal of function pointers and virtual functions
+Generic Property Instrumentation
+Starting Bounded Model Checking
+
+** Results:
+/home/wesley/tucuman/benchmark/benchmark_sem_assertions_alinhamento_natural_v4/B_uint32_t_aligned.c function main
+[main.pointer_dereference.1] line 7 dereference failure: dead object in *p: SUCCESS
+[main.pointer_dereference.2] line 7 dereference failure: pointer outside object bounds in *p: SUCCESS
+
+** 0 of 2 failed (1 iterations)
+VERIFICATION SUCCESSFUL
+
+
+================================================================================
+ARQUIVO: benchmark_sem_assertions_alinhamento_natural_v4/B_uint32_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 0.0485s
+================================================================================
+CBMC version 6.6.0 (cbmc-6.6.0) 64-bit x86_64 linux
+Type-checking B_uint32_t_misaligned
+Generating GOTO Program
+Adding CPROVER library (x86_64)
+Removal of function pointers and virtual functions
+Generic Property Instrumentation
+Starting Bounded Model Checking
+Passing problem to propositional reduction
+converting SSA
+Running propositional reduction
+SAT checker: instance is SATISFIABLE
+
+** Results:
+/home/wesley/tucuman/benchmark/benchmark_sem_assertions_alinhamento_natural_v4/B_uint32_t_misaligned.c function main
+[main.pointer_dereference.1] line 7 dereference failure: dead object in *p: SUCCESS
+[main.pointer_dereference.2] line 7 dereference failure: pointer outside object bounds in *p: FAILURE
+
+** 1 of 2 failed (2 iterations)
+VERIFICATION FAILED
+
+
+================================================================================
+ARQUIVO: benchmark_sem_assertions_alinhamento_natural_v4/B_uint64_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 0.0486s
+================================================================================
+CBMC version 6.6.0 (cbmc-6.6.0) 64-bit x86_64 linux
+Type-checking B_uint64_t_aligned
+Generating GOTO Program
+Adding CPROVER library (x86_64)
+Removal of function pointers and virtual functions
+Generic Property Instrumentation
+Starting Bounded Model Checking
+
+** Results:
+/home/wesley/tucuman/benchmark/benchmark_sem_assertions_alinhamento_natural_v4/B_uint64_t_aligned.c function main
+[main.pointer_dereference.1] line 7 dereference failure: dead object in *p: SUCCESS
+[main.pointer_dereference.2] line 7 dereference failure: pointer outside object bounds in *p: SUCCESS
+
+** 0 of 2 failed (1 iterations)
+VERIFICATION SUCCESSFUL
+
+
+================================================================================
+ARQUIVO: benchmark_sem_assertions_alinhamento_natural_v4/B_uint64_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 0.0537s
+================================================================================
+CBMC version 6.6.0 (cbmc-6.6.0) 64-bit x86_64 linux
+Type-checking B_uint64_t_misaligned
+Generating GOTO Program
+Adding CPROVER library (x86_64)
+Removal of function pointers and virtual functions
+Generic Property Instrumentation
+Starting Bounded Model Checking
+Passing problem to propositional reduction
+converting SSA
+Running propositional reduction
+SAT checker: instance is SATISFIABLE
+
+** Results:
+/home/wesley/tucuman/benchmark/benchmark_sem_assertions_alinhamento_natural_v4/B_uint64_t_misaligned.c function main
+[main.pointer_dereference.1] line 7 dereference failure: dead object in *p: SUCCESS
+[main.pointer_dereference.2] line 7 dereference failure: pointer outside object bounds in *p: FAILURE
+
+** 1 of 2 failed (2 iterations)
+VERIFICATION FAILED
+
+
+================================================================================
+ARQUIVO: benchmark_sem_assertions_alinhamento_natural_v4/C_uint16_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 0.0622s
+================================================================================
+CBMC version 6.6.0 (cbmc-6.6.0) 64-bit x86_64 linux
+Type-checking C_uint16_t_aligned
+Generating GOTO Program
+Adding CPROVER library (x86_64)
+Removal of function pointers and virtual functions
+Generic Property Instrumentation
+Starting Bounded Model Checking
+
+** Results:
+/home/wesley/tucuman/benchmark/benchmark_sem_assertions_alinhamento_natural_v4/C_uint16_t_aligned.c function main
+[main.pointer_dereference.1] line 7 dereference failure: dead object in *p: SUCCESS
+[main.pointer_dereference.2] line 7 dereference failure: pointer outside object bounds in *p: SUCCESS
+
+** 0 of 2 failed (1 iterations)
+VERIFICATION SUCCESSFUL
+
+
+================================================================================
+ARQUIVO: benchmark_sem_assertions_alinhamento_natural_v4/C_uint16_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 0.0366s
+================================================================================
+CBMC version 6.6.0 (cbmc-6.6.0) 64-bit x86_64 linux
+Type-checking C_uint16_t_misaligned
+Generating GOTO Program
+Adding CPROVER library (x86_64)
+Removal of function pointers and virtual functions
+Generic Property Instrumentation
+Starting Bounded Model Checking
+
+** Results:
+/home/wesley/tucuman/benchmark/benchmark_sem_assertions_alinhamento_natural_v4/C_uint16_t_misaligned.c function main
+[main.pointer_dereference.1] line 7 dereference failure: dead object in *p: SUCCESS
+[main.pointer_dereference.2] line 7 dereference failure: pointer outside object bounds in *p: SUCCESS
+
+** 0 of 2 failed (1 iterations)
+VERIFICATION SUCCESSFUL
+
+
+================================================================================
+ARQUIVO: benchmark_sem_assertions_alinhamento_natural_v4/C_uint32_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 0.0366s
+================================================================================
+CBMC version 6.6.0 (cbmc-6.6.0) 64-bit x86_64 linux
+Type-checking C_uint32_t_aligned
+Generating GOTO Program
+Adding CPROVER library (x86_64)
+Removal of function pointers and virtual functions
+Generic Property Instrumentation
+Starting Bounded Model Checking
+
+** Results:
+/home/wesley/tucuman/benchmark/benchmark_sem_assertions_alinhamento_natural_v4/C_uint32_t_aligned.c function main
+[main.pointer_dereference.1] line 7 dereference failure: dead object in *p: SUCCESS
+[main.pointer_dereference.2] line 7 dereference failure: pointer outside object bounds in *p: SUCCESS
+
+** 0 of 2 failed (1 iterations)
+VERIFICATION SUCCESSFUL
+
+
+================================================================================
+ARQUIVO: benchmark_sem_assertions_alinhamento_natural_v4/C_uint32_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 0.0337s
+================================================================================
+CBMC version 6.6.0 (cbmc-6.6.0) 64-bit x86_64 linux
+Type-checking C_uint32_t_misaligned
+Generating GOTO Program
+Adding CPROVER library (x86_64)
+Removal of function pointers and virtual functions
+Generic Property Instrumentation
+Starting Bounded Model Checking
+
+** Results:
+/home/wesley/tucuman/benchmark/benchmark_sem_assertions_alinhamento_natural_v4/C_uint32_t_misaligned.c function main
+[main.pointer_dereference.1] line 7 dereference failure: dead object in *p: SUCCESS
+[main.pointer_dereference.2] line 7 dereference failure: pointer outside object bounds in *p: SUCCESS
+
+** 0 of 2 failed (1 iterations)
+VERIFICATION SUCCESSFUL
+
+
+================================================================================
+ARQUIVO: benchmark_sem_assertions_alinhamento_natural_v4/C_uint64_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 0.0352s
+================================================================================
+CBMC version 6.6.0 (cbmc-6.6.0) 64-bit x86_64 linux
+Type-checking C_uint64_t_aligned
+Generating GOTO Program
+Adding CPROVER library (x86_64)
+Removal of function pointers and virtual functions
+Generic Property Instrumentation
+Starting Bounded Model Checking
+
+** Results:
+/home/wesley/tucuman/benchmark/benchmark_sem_assertions_alinhamento_natural_v4/C_uint64_t_aligned.c function main
+[main.pointer_dereference.1] line 7 dereference failure: dead object in *p: SUCCESS
+[main.pointer_dereference.2] line 7 dereference failure: pointer outside object bounds in *p: SUCCESS
+
+** 0 of 2 failed (1 iterations)
+VERIFICATION SUCCESSFUL
+
+
+================================================================================
+ARQUIVO: benchmark_sem_assertions_alinhamento_natural_v4/C_uint64_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 0.0342s
+================================================================================
+CBMC version 6.6.0 (cbmc-6.6.0) 64-bit x86_64 linux
+Type-checking C_uint64_t_misaligned
+Generating GOTO Program
+Adding CPROVER library (x86_64)
+Removal of function pointers and virtual functions
+Generic Property Instrumentation
+Starting Bounded Model Checking
+
+** Results:
+/home/wesley/tucuman/benchmark/benchmark_sem_assertions_alinhamento_natural_v4/C_uint64_t_misaligned.c function main
+[main.pointer_dereference.1] line 7 dereference failure: dead object in *p: SUCCESS
+[main.pointer_dereference.2] line 7 dereference failure: pointer outside object bounds in *p: SUCCESS
+
+** 0 of 2 failed (1 iterations)
+VERIFICATION SUCCESSFUL
+
+
+================================================================================
+ARQUIVO: benchmark_sem_assertions_alinhamento_natural_v4/D_uint16_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 0.0367s
+================================================================================
+CBMC version 6.6.0 (cbmc-6.6.0) 64-bit x86_64 linux
+Type-checking D_uint16_t_aligned
+Generating GOTO Program
+Adding CPROVER library (x86_64)
+Removal of function pointers and virtual functions
+Generic Property Instrumentation
+Starting Bounded Model Checking
+
+** Results:
+/home/wesley/tucuman/benchmark/benchmark_sem_assertions_alinhamento_natural_v4/D_uint16_t_aligned.c function main
+[main.pointer_dereference.1] line 9 dereference failure: dead object in *p: SUCCESS
+[main.pointer_dereference.2] line 9 dereference failure: pointer outside object bounds in *p: SUCCESS
+
+** 0 of 2 failed (1 iterations)
+VERIFICATION SUCCESSFUL
+
+
+================================================================================
+ARQUIVO: benchmark_sem_assertions_alinhamento_natural_v4/D_uint16_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 0.0369s
+================================================================================
+CBMC version 6.6.0 (cbmc-6.6.0) 64-bit x86_64 linux
+Type-checking D_uint16_t_misaligned
+Generating GOTO Program
+Adding CPROVER library (x86_64)
+Removal of function pointers and virtual functions
+Generic Property Instrumentation
+Starting Bounded Model Checking
+
+** Results:
+/home/wesley/tucuman/benchmark/benchmark_sem_assertions_alinhamento_natural_v4/D_uint16_t_misaligned.c function main
+[main.pointer_dereference.1] line 13 dereference failure: dead object in *p: SUCCESS
+[main.pointer_dereference.2] line 13 dereference failure: pointer outside object bounds in *p: SUCCESS
+
+** 0 of 2 failed (1 iterations)
+VERIFICATION SUCCESSFUL
+
+
+================================================================================
+ARQUIVO: benchmark_sem_assertions_alinhamento_natural_v4/D_uint32_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 0.0475s
+================================================================================
+CBMC version 6.6.0 (cbmc-6.6.0) 64-bit x86_64 linux
+Type-checking D_uint32_t_aligned
+Generating GOTO Program
+Adding CPROVER library (x86_64)
+Removal of function pointers and virtual functions
+Generic Property Instrumentation
+Starting Bounded Model Checking
+
+** Results:
+/home/wesley/tucuman/benchmark/benchmark_sem_assertions_alinhamento_natural_v4/D_uint32_t_aligned.c function main
+[main.pointer_dereference.1] line 9 dereference failure: dead object in *p: SUCCESS
+[main.pointer_dereference.2] line 9 dereference failure: pointer outside object bounds in *p: SUCCESS
+
+** 0 of 2 failed (1 iterations)
+VERIFICATION SUCCESSFUL
+
+
+================================================================================
+ARQUIVO: benchmark_sem_assertions_alinhamento_natural_v4/D_uint32_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 0.0374s
+================================================================================
+CBMC version 6.6.0 (cbmc-6.6.0) 64-bit x86_64 linux
+Type-checking D_uint32_t_misaligned
+Generating GOTO Program
+Adding CPROVER library (x86_64)
+Removal of function pointers and virtual functions
+Generic Property Instrumentation
+Starting Bounded Model Checking
+
+** Results:
+/home/wesley/tucuman/benchmark/benchmark_sem_assertions_alinhamento_natural_v4/D_uint32_t_misaligned.c function main
+[main.pointer_dereference.1] line 13 dereference failure: dead object in *p: SUCCESS
+[main.pointer_dereference.2] line 13 dereference failure: pointer outside object bounds in *p: SUCCESS
+
+** 0 of 2 failed (1 iterations)
+VERIFICATION SUCCESSFUL
+
+
+================================================================================
+ARQUIVO: benchmark_sem_assertions_alinhamento_natural_v4/D_uint64_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 0.0474s
+================================================================================
+CBMC version 6.6.0 (cbmc-6.6.0) 64-bit x86_64 linux
+Type-checking D_uint64_t_aligned
+Generating GOTO Program
+Adding CPROVER library (x86_64)
+Removal of function pointers and virtual functions
+Generic Property Instrumentation
+Starting Bounded Model Checking
+
+** Results:
+/home/wesley/tucuman/benchmark/benchmark_sem_assertions_alinhamento_natural_v4/D_uint64_t_aligned.c function main
+[main.pointer_dereference.1] line 9 dereference failure: dead object in *p: SUCCESS
+[main.pointer_dereference.2] line 9 dereference failure: pointer outside object bounds in *p: SUCCESS
+
+** 0 of 2 failed (1 iterations)
+VERIFICATION SUCCESSFUL
+
+
+================================================================================
+ARQUIVO: benchmark_sem_assertions_alinhamento_natural_v4/D_uint64_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 0.0345s
+================================================================================
+CBMC version 6.6.0 (cbmc-6.6.0) 64-bit x86_64 linux
+Type-checking D_uint64_t_misaligned
+Generating GOTO Program
+Adding CPROVER library (x86_64)
+Removal of function pointers and virtual functions
+Generic Property Instrumentation
+Starting Bounded Model Checking
+
+** Results:
+/home/wesley/tucuman/benchmark/benchmark_sem_assertions_alinhamento_natural_v4/D_uint64_t_misaligned.c function main
+[main.pointer_dereference.1] line 13 dereference failure: dead object in *p: SUCCESS
+[main.pointer_dereference.2] line 13 dereference failure: pointer outside object bounds in *p: SUCCESS
+
+** 0 of 2 failed (1 iterations)
+VERIFICATION SUCCESSFUL
+
+
+================================================================================
+ARQUIVO: benchmark_sem_assertions_alinhamento_natural_v4/E_uint16_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 0.0409s
+================================================================================
+CBMC version 6.6.0 (cbmc-6.6.0) 64-bit x86_64 linux
+Type-checking E_uint16_t_aligned
+Generating GOTO Program
+Adding CPROVER library (x86_64)
+Removal of function pointers and virtual functions
+Generic Property Instrumentation
+Starting Bounded Model Checking
+Passing problem to propositional reduction
+converting SSA
+Running propositional reduction
+SAT checker inconsistent: instance is UNSATISFIABLE
+
+** Results:
+/home/wesley/tucuman/benchmark/benchmark_sem_assertions_alinhamento_natural_v4/E_uint16_t_aligned.c function main
+[main.pointer_dereference.1] line 10 dereference failure: dead object in *p: SUCCESS
+[main.pointer_dereference.2] line 10 dereference failure: pointer outside object bounds in *p: SUCCESS
+
+** 0 of 2 failed (1 iterations)
+VERIFICATION SUCCESSFUL
+
+
+================================================================================
+ARQUIVO: benchmark_sem_assertions_alinhamento_natural_v4/E_uint16_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 0.0372s
+================================================================================
+CBMC version 6.6.0 (cbmc-6.6.0) 64-bit x86_64 linux
+Type-checking E_uint16_t_misaligned
+Generating GOTO Program
+Adding CPROVER library (x86_64)
+Removal of function pointers and virtual functions
+Generic Property Instrumentation
+Starting Bounded Model Checking
+Passing problem to propositional reduction
+converting SSA
+Running propositional reduction
+SAT checker inconsistent: instance is UNSATISFIABLE
+
+** Results:
+/home/wesley/tucuman/benchmark/benchmark_sem_assertions_alinhamento_natural_v4/E_uint16_t_misaligned.c function main
+[main.pointer_dereference.1] line 10 dereference failure: dead object in *p: SUCCESS
+[main.pointer_dereference.2] line 10 dereference failure: pointer outside object bounds in *p: SUCCESS
+
+** 0 of 2 failed (1 iterations)
+VERIFICATION SUCCESSFUL
+
+
+================================================================================
+ARQUIVO: benchmark_sem_assertions_alinhamento_natural_v4/E_uint32_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 0.0381s
+================================================================================
+CBMC version 6.6.0 (cbmc-6.6.0) 64-bit x86_64 linux
+Type-checking E_uint32_t_aligned
+Generating GOTO Program
+Adding CPROVER library (x86_64)
+Removal of function pointers and virtual functions
+Generic Property Instrumentation
+Starting Bounded Model Checking
+Passing problem to propositional reduction
+converting SSA
+Running propositional reduction
+SAT checker inconsistent: instance is UNSATISFIABLE
+
+** Results:
+/home/wesley/tucuman/benchmark/benchmark_sem_assertions_alinhamento_natural_v4/E_uint32_t_aligned.c function main
+[main.pointer_dereference.1] line 10 dereference failure: dead object in *p: SUCCESS
+[main.pointer_dereference.2] line 10 dereference failure: pointer outside object bounds in *p: SUCCESS
+
+** 0 of 2 failed (1 iterations)
+VERIFICATION SUCCESSFUL
+
+
+================================================================================
+ARQUIVO: benchmark_sem_assertions_alinhamento_natural_v4/E_uint32_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 0.0456s
+================================================================================
+CBMC version 6.6.0 (cbmc-6.6.0) 64-bit x86_64 linux
+Type-checking E_uint32_t_misaligned
+Generating GOTO Program
+Adding CPROVER library (x86_64)
+Removal of function pointers and virtual functions
+Generic Property Instrumentation
+Starting Bounded Model Checking
+Passing problem to propositional reduction
+converting SSA
+Running propositional reduction
+SAT checker inconsistent: instance is UNSATISFIABLE
+
+** Results:
+/home/wesley/tucuman/benchmark/benchmark_sem_assertions_alinhamento_natural_v4/E_uint32_t_misaligned.c function main
+[main.pointer_dereference.1] line 10 dereference failure: dead object in *p: SUCCESS
+[main.pointer_dereference.2] line 10 dereference failure: pointer outside object bounds in *p: SUCCESS
+
+** 0 of 2 failed (1 iterations)
+VERIFICATION SUCCESSFUL
+
+
+================================================================================
+ARQUIVO: benchmark_sem_assertions_alinhamento_natural_v4/E_uint64_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 0.0593s
+================================================================================
+CBMC version 6.6.0 (cbmc-6.6.0) 64-bit x86_64 linux
+Type-checking E_uint64_t_aligned
+Generating GOTO Program
+Adding CPROVER library (x86_64)
+Removal of function pointers and virtual functions
+Generic Property Instrumentation
+Starting Bounded Model Checking
+Passing problem to propositional reduction
+converting SSA
+Running propositional reduction
+SAT checker inconsistent: instance is UNSATISFIABLE
+
+** Results:
+/home/wesley/tucuman/benchmark/benchmark_sem_assertions_alinhamento_natural_v4/E_uint64_t_aligned.c function main
+[main.pointer_dereference.1] line 10 dereference failure: dead object in *p: SUCCESS
+[main.pointer_dereference.2] line 10 dereference failure: pointer outside object bounds in *p: SUCCESS
+
+** 0 of 2 failed (1 iterations)
+VERIFICATION SUCCESSFUL
+
+
+================================================================================
+ARQUIVO: benchmark_sem_assertions_alinhamento_natural_v4/E_uint64_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 0.0569s
+================================================================================
+CBMC version 6.6.0 (cbmc-6.6.0) 64-bit x86_64 linux
+Type-checking E_uint64_t_misaligned
+Generating GOTO Program
+Adding CPROVER library (x86_64)
+Removal of function pointers and virtual functions
+Generic Property Instrumentation
+Starting Bounded Model Checking
+Passing problem to propositional reduction
+converting SSA
+Running propositional reduction
+SAT checker inconsistent: instance is UNSATISFIABLE
+
+** Results:
+/home/wesley/tucuman/benchmark/benchmark_sem_assertions_alinhamento_natural_v4/E_uint64_t_misaligned.c function main
+[main.pointer_dereference.1] line 10 dereference failure: dead object in *p: SUCCESS
+[main.pointer_dereference.2] line 10 dereference failure: pointer outside object bounds in *p: SUCCESS
+
+** 0 of 2 failed (1 iterations)
+VERIFICATION SUCCESSFUL
+
+
+================================================================================
+ARQUIVO: benchmark_sem_assertions_alinhamento_natural_v4/F_uint16_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 0.0494s
+================================================================================
+CBMC version 6.6.0 (cbmc-6.6.0) 64-bit x86_64 linux
+Type-checking F_uint16_t_aligned
+Generating GOTO Program
+Adding CPROVER library (x86_64)
+Removal of function pointers and virtual functions
+Generic Property Instrumentation
+Starting Bounded Model Checking
+
+** Results:
+/home/wesley/tucuman/benchmark/benchmark_sem_assertions_alinhamento_natural_v4/F_uint16_t_aligned.c function main
+[main.pointer_dereference.1] line 7 dereference failure: dead object in *p: SUCCESS
+[main.pointer_dereference.2] line 7 dereference failure: pointer outside object bounds in *p: SUCCESS
+
+** 0 of 2 failed (1 iterations)
+VERIFICATION SUCCESSFUL
+
+
+================================================================================
+ARQUIVO: benchmark_sem_assertions_alinhamento_natural_v4/F_uint16_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 0.0536s
+================================================================================
+CBMC version 6.6.0 (cbmc-6.6.0) 64-bit x86_64 linux
+Type-checking F_uint16_t_misaligned
+Generating GOTO Program
+Adding CPROVER library (x86_64)
+Removal of function pointers and virtual functions
+Generic Property Instrumentation
+Starting Bounded Model Checking
+
+** Results:
+/home/wesley/tucuman/benchmark/benchmark_sem_assertions_alinhamento_natural_v4/F_uint16_t_misaligned.c function main
+[main.pointer_dereference.1] line 7 dereference failure: dead object in *p: SUCCESS
+[main.pointer_dereference.2] line 7 dereference failure: pointer outside object bounds in *p: SUCCESS
+
+** 0 of 2 failed (1 iterations)
+VERIFICATION SUCCESSFUL
+
+
+================================================================================
+ARQUIVO: benchmark_sem_assertions_alinhamento_natural_v4/F_uint32_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 0.0518s
+================================================================================
+CBMC version 6.6.0 (cbmc-6.6.0) 64-bit x86_64 linux
+Type-checking F_uint32_t_aligned
+Generating GOTO Program
+Adding CPROVER library (x86_64)
+Removal of function pointers and virtual functions
+Generic Property Instrumentation
+Starting Bounded Model Checking
+
+** Results:
+/home/wesley/tucuman/benchmark/benchmark_sem_assertions_alinhamento_natural_v4/F_uint32_t_aligned.c function main
+[main.pointer_dereference.1] line 7 dereference failure: dead object in *p: SUCCESS
+[main.pointer_dereference.2] line 7 dereference failure: pointer outside object bounds in *p: SUCCESS
+
+** 0 of 2 failed (1 iterations)
+VERIFICATION SUCCESSFUL
+
+
+================================================================================
+ARQUIVO: benchmark_sem_assertions_alinhamento_natural_v4/F_uint32_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 0.05s
+================================================================================
+CBMC version 6.6.0 (cbmc-6.6.0) 64-bit x86_64 linux
+Type-checking F_uint32_t_misaligned
+Generating GOTO Program
+Adding CPROVER library (x86_64)
+Removal of function pointers and virtual functions
+Generic Property Instrumentation
+Starting Bounded Model Checking
+
+** Results:
+/home/wesley/tucuman/benchmark/benchmark_sem_assertions_alinhamento_natural_v4/F_uint32_t_misaligned.c function main
+[main.pointer_dereference.1] line 7 dereference failure: dead object in *p: SUCCESS
+[main.pointer_dereference.2] line 7 dereference failure: pointer outside object bounds in *p: SUCCESS
+
+** 0 of 2 failed (1 iterations)
+VERIFICATION SUCCESSFUL
+
+
+================================================================================
+ARQUIVO: benchmark_sem_assertions_alinhamento_natural_v4/F_uint64_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 0.0496s
+================================================================================
+CBMC version 6.6.0 (cbmc-6.6.0) 64-bit x86_64 linux
+Type-checking F_uint64_t_aligned
+Generating GOTO Program
+Adding CPROVER library (x86_64)
+Removal of function pointers and virtual functions
+Generic Property Instrumentation
+Starting Bounded Model Checking
+
+** Results:
+/home/wesley/tucuman/benchmark/benchmark_sem_assertions_alinhamento_natural_v4/F_uint64_t_aligned.c function main
+[main.pointer_dereference.1] line 7 dereference failure: dead object in *p: SUCCESS
+[main.pointer_dereference.2] line 7 dereference failure: pointer outside object bounds in *p: SUCCESS
+
+** 0 of 2 failed (1 iterations)
+VERIFICATION SUCCESSFUL
+
+
+================================================================================
+ARQUIVO: benchmark_sem_assertions_alinhamento_natural_v4/F_uint64_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 0.0519s
+================================================================================
+CBMC version 6.6.0 (cbmc-6.6.0) 64-bit x86_64 linux
+Type-checking F_uint64_t_misaligned
+Generating GOTO Program
+Adding CPROVER library (x86_64)
+Removal of function pointers and virtual functions
+Generic Property Instrumentation
+Starting Bounded Model Checking
+
+** Results:
+/home/wesley/tucuman/benchmark/benchmark_sem_assertions_alinhamento_natural_v4/F_uint64_t_misaligned.c function main
+[main.pointer_dereference.1] line 7 dereference failure: dead object in *p: SUCCESS
+[main.pointer_dereference.2] line 7 dereference failure: pointer outside object bounds in *p: SUCCESS
+
+** 0 of 2 failed (1 iterations)
+VERIFICATION SUCCESSFUL
+
+
+================================================================================
+ARQUIVO: benchmark_sem_assertions_alinhamento_natural_v4/G_uint16_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 0.0497s
+================================================================================
+CBMC version 6.6.0 (cbmc-6.6.0) 64-bit x86_64 linux
+Type-checking G_uint16_t_aligned
+Generating GOTO Program
+Adding CPROVER library (x86_64)
+Removal of function pointers and virtual functions
+Generic Property Instrumentation
+Starting Bounded Model Checking
+
+** Results:
+/home/wesley/tucuman/benchmark/benchmark_sem_assertions_alinhamento_natural_v4/G_uint16_t_aligned.c function main
+[main.pointer_dereference.1] line 8 dereference failure: dead object in *p: SUCCESS
+[main.pointer_dereference.2] line 8 dereference failure: pointer outside object bounds in *p: SUCCESS
+
+** 0 of 2 failed (1 iterations)
+VERIFICATION SUCCESSFUL
+
+
+================================================================================
+ARQUIVO: benchmark_sem_assertions_alinhamento_natural_v4/G_uint16_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 0.0503s
+================================================================================
+CBMC version 6.6.0 (cbmc-6.6.0) 64-bit x86_64 linux
+Type-checking G_uint16_t_misaligned
+Generating GOTO Program
+Adding CPROVER library (x86_64)
+Removal of function pointers and virtual functions
+Generic Property Instrumentation
+Starting Bounded Model Checking
+
+** Results:
+/home/wesley/tucuman/benchmark/benchmark_sem_assertions_alinhamento_natural_v4/G_uint16_t_misaligned.c function main
+[main.pointer_dereference.1] line 8 dereference failure: dead object in *p: SUCCESS
+[main.pointer_dereference.2] line 8 dereference failure: pointer outside object bounds in *p: SUCCESS
+
+** 0 of 2 failed (1 iterations)
+VERIFICATION SUCCESSFUL
+
+
+================================================================================
+ARQUIVO: benchmark_sem_assertions_alinhamento_natural_v4/G_uint32_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 0.0531s
+================================================================================
+CBMC version 6.6.0 (cbmc-6.6.0) 64-bit x86_64 linux
+Type-checking G_uint32_t_aligned
+Generating GOTO Program
+Adding CPROVER library (x86_64)
+Removal of function pointers and virtual functions
+Generic Property Instrumentation
+Starting Bounded Model Checking
+
+** Results:
+/home/wesley/tucuman/benchmark/benchmark_sem_assertions_alinhamento_natural_v4/G_uint32_t_aligned.c function main
+[main.pointer_dereference.1] line 9 dereference failure: dead object in *p: SUCCESS
+[main.pointer_dereference.2] line 9 dereference failure: pointer outside object bounds in *p: SUCCESS
+
+** 0 of 2 failed (1 iterations)
+VERIFICATION SUCCESSFUL
+
+
+================================================================================
+ARQUIVO: benchmark_sem_assertions_alinhamento_natural_v4/G_uint32_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 0.054s
+================================================================================
+CBMC version 6.6.0 (cbmc-6.6.0) 64-bit x86_64 linux
+Type-checking G_uint32_t_misaligned
+Generating GOTO Program
+Adding CPROVER library (x86_64)
+Removal of function pointers and virtual functions
+Generic Property Instrumentation
+Starting Bounded Model Checking
+
+** Results:
+/home/wesley/tucuman/benchmark/benchmark_sem_assertions_alinhamento_natural_v4/G_uint32_t_misaligned.c function main
+[main.pointer_dereference.1] line 8 dereference failure: dead object in *p: SUCCESS
+[main.pointer_dereference.2] line 8 dereference failure: pointer outside object bounds in *p: SUCCESS
+
+** 0 of 2 failed (1 iterations)
+VERIFICATION SUCCESSFUL
+
+
+================================================================================
+ARQUIVO: benchmark_sem_assertions_alinhamento_natural_v4/G_uint64_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 0.0516s
+================================================================================
+CBMC version 6.6.0 (cbmc-6.6.0) 64-bit x86_64 linux
+Type-checking G_uint64_t_aligned
+Generating GOTO Program
+Adding CPROVER library (x86_64)
+Removal of function pointers and virtual functions
+Generic Property Instrumentation
+Starting Bounded Model Checking
+
+** Results:
+/home/wesley/tucuman/benchmark/benchmark_sem_assertions_alinhamento_natural_v4/G_uint64_t_aligned.c function main
+[main.pointer_dereference.1] line 8 dereference failure: dead object in *p: SUCCESS
+[main.pointer_dereference.2] line 8 dereference failure: pointer outside object bounds in *p: SUCCESS
+
+** 0 of 2 failed (1 iterations)
+VERIFICATION SUCCESSFUL
+
+
+================================================================================
+ARQUIVO: benchmark_sem_assertions_alinhamento_natural_v4/G_uint64_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 0.0532s
+================================================================================
+CBMC version 6.6.0 (cbmc-6.6.0) 64-bit x86_64 linux
+Type-checking G_uint64_t_misaligned
+Generating GOTO Program
+Adding CPROVER library (x86_64)
+Removal of function pointers and virtual functions
+Generic Property Instrumentation
+Starting Bounded Model Checking
+
+** Results:
+/home/wesley/tucuman/benchmark/benchmark_sem_assertions_alinhamento_natural_v4/G_uint64_t_misaligned.c function main
+[main.pointer_dereference.1] line 8 dereference failure: dead object in *p: SUCCESS
+[main.pointer_dereference.2] line 8 dereference failure: pointer outside object bounds in *p: SUCCESS
+
+** 0 of 2 failed (1 iterations)
+VERIFICATION SUCCESSFUL
+
+
+================================================================================
+ARQUIVO: benchmark_sem_assertions_alinhamento_natural_v4/H_uint16_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 0.0525s
+================================================================================
+CBMC version 6.6.0 (cbmc-6.6.0) 64-bit x86_64 linux
+Type-checking H_uint16_t_aligned
+Generating GOTO Program
+Adding CPROVER library (x86_64)
+Removal of function pointers and virtual functions
+Generic Property Instrumentation
+Starting Bounded Model Checking
+
+** Results:
+/home/wesley/tucuman/benchmark/benchmark_sem_assertions_alinhamento_natural_v4/H_uint16_t_aligned.c function main
+[main.pointer_dereference.1] line 14 dereference failure: pointer NULL in *p: SUCCESS
+[main.pointer_dereference.2] line 14 dereference failure: pointer invalid in *p: SUCCESS
+[main.pointer_dereference.3] line 14 dereference failure: deallocated dynamic object in *p: SUCCESS
+[main.pointer_dereference.4] line 14 dereference failure: dead object in *p: SUCCESS
+[main.pointer_dereference.5] line 14 dereference failure: pointer outside object bounds in *p: SUCCESS
+[main.pointer_dereference.6] line 14 dereference failure: invalid integer address in *p: SUCCESS
+
+** 0 of 6 failed (1 iterations)
+VERIFICATION SUCCESSFUL
+
+
+================================================================================
+ARQUIVO: benchmark_sem_assertions_alinhamento_natural_v4/H_uint16_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 0.0378s
+================================================================================
+CBMC version 6.6.0 (cbmc-6.6.0) 64-bit x86_64 linux
+Type-checking H_uint16_t_misaligned
+Generating GOTO Program
+Adding CPROVER library (x86_64)
+Removal of function pointers and virtual functions
+Generic Property Instrumentation
+Starting Bounded Model Checking
+
+** Results:
+/home/wesley/tucuman/benchmark/benchmark_sem_assertions_alinhamento_natural_v4/H_uint16_t_misaligned.c function main
+[main.pointer_dereference.1] line 8 dereference failure: pointer NULL in *p: SUCCESS
+[main.pointer_dereference.2] line 8 dereference failure: pointer invalid in *p: SUCCESS
+[main.pointer_dereference.3] line 8 dereference failure: deallocated dynamic object in *p: SUCCESS
+[main.pointer_dereference.4] line 8 dereference failure: dead object in *p: SUCCESS
+[main.pointer_dereference.5] line 8 dereference failure: pointer outside object bounds in *p: SUCCESS
+[main.pointer_dereference.6] line 8 dereference failure: invalid integer address in *p: SUCCESS
+
+** 0 of 6 failed (1 iterations)
+VERIFICATION SUCCESSFUL
+
+
+================================================================================
+ARQUIVO: benchmark_sem_assertions_alinhamento_natural_v4/H_uint32_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 0.0363s
+================================================================================
+CBMC version 6.6.0 (cbmc-6.6.0) 64-bit x86_64 linux
+Type-checking H_uint32_t_aligned
+Generating GOTO Program
+Adding CPROVER library (x86_64)
+Removal of function pointers and virtual functions
+Generic Property Instrumentation
+Starting Bounded Model Checking
+
+** Results:
+/home/wesley/tucuman/benchmark/benchmark_sem_assertions_alinhamento_natural_v4/H_uint32_t_aligned.c function main
+[main.pointer_dereference.1] line 14 dereference failure: pointer NULL in *p: SUCCESS
+[main.pointer_dereference.2] line 14 dereference failure: pointer invalid in *p: SUCCESS
+[main.pointer_dereference.3] line 14 dereference failure: deallocated dynamic object in *p: SUCCESS
+[main.pointer_dereference.4] line 14 dereference failure: dead object in *p: SUCCESS
+[main.pointer_dereference.5] line 14 dereference failure: pointer outside object bounds in *p: SUCCESS
+[main.pointer_dereference.6] line 14 dereference failure: invalid integer address in *p: SUCCESS
+
+** 0 of 6 failed (1 iterations)
+VERIFICATION SUCCESSFUL
+
+
+================================================================================
+ARQUIVO: benchmark_sem_assertions_alinhamento_natural_v4/H_uint32_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 0.0472s
+================================================================================
+CBMC version 6.6.0 (cbmc-6.6.0) 64-bit x86_64 linux
+Type-checking H_uint32_t_misaligned
+Generating GOTO Program
+Adding CPROVER library (x86_64)
+Removal of function pointers and virtual functions
+Generic Property Instrumentation
+Starting Bounded Model Checking
+
+** Results:
+/home/wesley/tucuman/benchmark/benchmark_sem_assertions_alinhamento_natural_v4/H_uint32_t_misaligned.c function main
+[main.pointer_dereference.1] line 8 dereference failure: pointer NULL in *p: SUCCESS
+[main.pointer_dereference.2] line 8 dereference failure: pointer invalid in *p: SUCCESS
+[main.pointer_dereference.3] line 8 dereference failure: deallocated dynamic object in *p: SUCCESS
+[main.pointer_dereference.4] line 8 dereference failure: dead object in *p: SUCCESS
+[main.pointer_dereference.5] line 8 dereference failure: pointer outside object bounds in *p: SUCCESS
+[main.pointer_dereference.6] line 8 dereference failure: invalid integer address in *p: SUCCESS
+
+** 0 of 6 failed (1 iterations)
+VERIFICATION SUCCESSFUL
+
+
+================================================================================
+ARQUIVO: benchmark_sem_assertions_alinhamento_natural_v4/H_uint64_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 0.0536s
+================================================================================
+CBMC version 6.6.0 (cbmc-6.6.0) 64-bit x86_64 linux
+Type-checking H_uint64_t_aligned
+Generating GOTO Program
+Adding CPROVER library (x86_64)
+Removal of function pointers and virtual functions
+Generic Property Instrumentation
+Starting Bounded Model Checking
+
+** Results:
+/home/wesley/tucuman/benchmark/benchmark_sem_assertions_alinhamento_natural_v4/H_uint64_t_aligned.c function main
+[main.pointer_dereference.1] line 14 dereference failure: pointer NULL in *p: SUCCESS
+[main.pointer_dereference.2] line 14 dereference failure: pointer invalid in *p: SUCCESS
+[main.pointer_dereference.3] line 14 dereference failure: deallocated dynamic object in *p: SUCCESS
+[main.pointer_dereference.4] line 14 dereference failure: dead object in *p: SUCCESS
+[main.pointer_dereference.5] line 14 dereference failure: pointer outside object bounds in *p: SUCCESS
+[main.pointer_dereference.6] line 14 dereference failure: invalid integer address in *p: SUCCESS
+
+** 0 of 6 failed (1 iterations)
+VERIFICATION SUCCESSFUL
+
+
+================================================================================
+ARQUIVO: benchmark_sem_assertions_alinhamento_natural_v4/H_uint64_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 0.0371s
+================================================================================
+CBMC version 6.6.0 (cbmc-6.6.0) 64-bit x86_64 linux
+Type-checking H_uint64_t_misaligned
+Generating GOTO Program
+Adding CPROVER library (x86_64)
+Removal of function pointers and virtual functions
+Generic Property Instrumentation
+Starting Bounded Model Checking
+
+** Results:
+/home/wesley/tucuman/benchmark/benchmark_sem_assertions_alinhamento_natural_v4/H_uint64_t_misaligned.c function main
+[main.pointer_dereference.1] line 8 dereference failure: pointer NULL in *p: SUCCESS
+[main.pointer_dereference.2] line 8 dereference failure: pointer invalid in *p: SUCCESS
+[main.pointer_dereference.3] line 8 dereference failure: deallocated dynamic object in *p: SUCCESS
+[main.pointer_dereference.4] line 8 dereference failure: dead object in *p: SUCCESS
+[main.pointer_dereference.5] line 8 dereference failure: pointer outside object bounds in *p: SUCCESS
+[main.pointer_dereference.6] line 8 dereference failure: invalid integer address in *p: SUCCESS
+
+** 0 of 6 failed (1 iterations)
+VERIFICATION SUCCESSFUL
+
+
+================================================================================
+ARQUIVO: benchmark_sem_assertions_alinhamento_natural_v4/I_uint16_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 0.0435s
+================================================================================
+CBMC version 6.6.0 (cbmc-6.6.0) 64-bit x86_64 linux
+Type-checking I_uint16_t_aligned
+Generating GOTO Program
+Adding CPROVER library (x86_64)
+Removal of function pointers and virtual functions
+Generic Property Instrumentation
+Starting Bounded Model Checking
+
+** Results:
+/home/wesley/tucuman/benchmark/benchmark_sem_assertions_alinhamento_natural_v4/I_uint16_t_aligned.c function main
+[main.pointer_dereference.1] line 7 dereference failure: dead object in *p: SUCCESS
+[main.pointer_dereference.2] line 7 dereference failure: pointer outside object bounds in *p: SUCCESS
+
+** 0 of 2 failed (1 iterations)
+VERIFICATION SUCCESSFUL
+
+
+================================================================================
+ARQUIVO: benchmark_sem_assertions_alinhamento_natural_v4/I_uint16_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 0.0385s
+================================================================================
+CBMC version 6.6.0 (cbmc-6.6.0) 64-bit x86_64 linux
+Type-checking I_uint16_t_misaligned
+Generating GOTO Program
+Adding CPROVER library (x86_64)
+Removal of function pointers and virtual functions
+Generic Property Instrumentation
+Starting Bounded Model Checking
+
+** Results:
+/home/wesley/tucuman/benchmark/benchmark_sem_assertions_alinhamento_natural_v4/I_uint16_t_misaligned.c function main
+[main.pointer_dereference.1] line 7 dereference failure: dead object in *p: SUCCESS
+[main.pointer_dereference.2] line 7 dereference failure: pointer outside object bounds in *p: SUCCESS
+
+** 0 of 2 failed (1 iterations)
+VERIFICATION SUCCESSFUL
+
+
+================================================================================
+ARQUIVO: benchmark_sem_assertions_alinhamento_natural_v4/I_uint32_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 0.0517s
+================================================================================
+CBMC version 6.6.0 (cbmc-6.6.0) 64-bit x86_64 linux
+Type-checking I_uint32_t_aligned
+Generating GOTO Program
+Adding CPROVER library (x86_64)
+Removal of function pointers and virtual functions
+Generic Property Instrumentation
+Starting Bounded Model Checking
+
+** Results:
+/home/wesley/tucuman/benchmark/benchmark_sem_assertions_alinhamento_natural_v4/I_uint32_t_aligned.c function main
+[main.pointer_dereference.1] line 7 dereference failure: dead object in *p: SUCCESS
+[main.pointer_dereference.2] line 7 dereference failure: pointer outside object bounds in *p: SUCCESS
+
+** 0 of 2 failed (1 iterations)
+VERIFICATION SUCCESSFUL
+
+
+================================================================================
+ARQUIVO: benchmark_sem_assertions_alinhamento_natural_v4/I_uint32_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 0.0529s
+================================================================================
+CBMC version 6.6.0 (cbmc-6.6.0) 64-bit x86_64 linux
+Type-checking I_uint32_t_misaligned
+Generating GOTO Program
+Adding CPROVER library (x86_64)
+Removal of function pointers and virtual functions
+Generic Property Instrumentation
+Starting Bounded Model Checking
+
+** Results:
+/home/wesley/tucuman/benchmark/benchmark_sem_assertions_alinhamento_natural_v4/I_uint32_t_misaligned.c function main
+[main.pointer_dereference.1] line 7 dereference failure: dead object in *p: SUCCESS
+[main.pointer_dereference.2] line 7 dereference failure: pointer outside object bounds in *p: SUCCESS
+
+** 0 of 2 failed (1 iterations)
+VERIFICATION SUCCESSFUL
+
+
+================================================================================
+ARQUIVO: benchmark_sem_assertions_alinhamento_natural_v4/I_uint64_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 0.0529s
+================================================================================
+CBMC version 6.6.0 (cbmc-6.6.0) 64-bit x86_64 linux
+Type-checking I_uint64_t_aligned
+Generating GOTO Program
+Adding CPROVER library (x86_64)
+Removal of function pointers and virtual functions
+Generic Property Instrumentation
+Starting Bounded Model Checking
+
+** Results:
+/home/wesley/tucuman/benchmark/benchmark_sem_assertions_alinhamento_natural_v4/I_uint64_t_aligned.c function main
+[main.pointer_dereference.1] line 7 dereference failure: dead object in *p: SUCCESS
+[main.pointer_dereference.2] line 7 dereference failure: pointer outside object bounds in *p: SUCCESS
+
+** 0 of 2 failed (1 iterations)
+VERIFICATION SUCCESSFUL
+
+
+================================================================================
+ARQUIVO: benchmark_sem_assertions_alinhamento_natural_v4/I_uint64_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 0.0484s
+================================================================================
+CBMC version 6.6.0 (cbmc-6.6.0) 64-bit x86_64 linux
+Type-checking I_uint64_t_misaligned
+Generating GOTO Program
+Adding CPROVER library (x86_64)
+Removal of function pointers and virtual functions
+Generic Property Instrumentation
+Starting Bounded Model Checking
+
+** Results:
+/home/wesley/tucuman/benchmark/benchmark_sem_assertions_alinhamento_natural_v4/I_uint64_t_misaligned.c function main
+[main.pointer_dereference.1] line 7 dereference failure: dead object in *p: SUCCESS
+[main.pointer_dereference.2] line 7 dereference failure: pointer outside object bounds in *p: SUCCESS
+
+** 0 of 2 failed (1 iterations)
+VERIFICATION SUCCESSFUL
+
+
+================================================================================
+ARQUIVO: benchmark_sem_assertions_alinhamento_natural_v4/J_uint16_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 0.0459s
+================================================================================
+CBMC version 6.6.0 (cbmc-6.6.0) 64-bit x86_64 linux
+Type-checking J_uint16_t_aligned
+Generating GOTO Program
+Adding CPROVER library (x86_64)
+Removal of function pointers and virtual functions
+Generic Property Instrumentation
+Starting Bounded Model Checking
+
+** Results:
+/home/wesley/tucuman/benchmark/benchmark_sem_assertions_alinhamento_natural_v4/J_uint16_t_aligned.c function main
+[main.pointer_dereference.1] line 9 dereference failure: pointer NULL in *q: SUCCESS
+[main.pointer_dereference.2] line 9 dereference failure: pointer invalid in *q: SUCCESS
+[main.pointer_dereference.3] line 9 dereference failure: deallocated dynamic object in *q: SUCCESS
+[main.pointer_dereference.4] line 9 dereference failure: dead object in *q: SUCCESS
+[main.pointer_dereference.5] line 9 dereference failure: pointer outside object bounds in *q: SUCCESS
+[main.pointer_dereference.6] line 9 dereference failure: invalid integer address in *q: SUCCESS
+
+** 0 of 6 failed (1 iterations)
+VERIFICATION SUCCESSFUL
+
+
+================================================================================
+ARQUIVO: benchmark_sem_assertions_alinhamento_natural_v4/J_uint16_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 0.0372s
+================================================================================
+CBMC version 6.6.0 (cbmc-6.6.0) 64-bit x86_64 linux
+Type-checking J_uint16_t_misaligned
+Generating GOTO Program
+Adding CPROVER library (x86_64)
+Removal of function pointers and virtual functions
+Generic Property Instrumentation
+Starting Bounded Model Checking
+
+** Results:
+/home/wesley/tucuman/benchmark/benchmark_sem_assertions_alinhamento_natural_v4/J_uint16_t_misaligned.c function main
+[main.pointer_dereference.1] line 11 dereference failure: pointer NULL in *q: SUCCESS
+[main.pointer_dereference.2] line 11 dereference failure: pointer invalid in *q: SUCCESS
+[main.pointer_dereference.3] line 11 dereference failure: deallocated dynamic object in *q: SUCCESS
+[main.pointer_dereference.4] line 11 dereference failure: dead object in *q: SUCCESS
+[main.pointer_dereference.5] line 11 dereference failure: pointer outside object bounds in *q: SUCCESS
+[main.pointer_dereference.6] line 11 dereference failure: invalid integer address in *q: SUCCESS
+
+** 0 of 6 failed (1 iterations)
+VERIFICATION SUCCESSFUL
+
+
+================================================================================
+ARQUIVO: benchmark_sem_assertions_alinhamento_natural_v4/J_uint32_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 0.0508s
+================================================================================
+CBMC version 6.6.0 (cbmc-6.6.0) 64-bit x86_64 linux
+Type-checking J_uint32_t_aligned
+Generating GOTO Program
+Adding CPROVER library (x86_64)
+Removal of function pointers and virtual functions
+Generic Property Instrumentation
+Starting Bounded Model Checking
+
+** Results:
+/home/wesley/tucuman/benchmark/benchmark_sem_assertions_alinhamento_natural_v4/J_uint32_t_aligned.c function main
+[main.pointer_dereference.1] line 10 dereference failure: pointer NULL in *q: SUCCESS
+[main.pointer_dereference.2] line 10 dereference failure: pointer invalid in *q: SUCCESS
+[main.pointer_dereference.3] line 10 dereference failure: deallocated dynamic object in *q: SUCCESS
+[main.pointer_dereference.4] line 10 dereference failure: dead object in *q: SUCCESS
+[main.pointer_dereference.5] line 10 dereference failure: pointer outside object bounds in *q: SUCCESS
+[main.pointer_dereference.6] line 10 dereference failure: invalid integer address in *q: SUCCESS
+
+** 0 of 6 failed (1 iterations)
+VERIFICATION SUCCESSFUL
+
+
+================================================================================
+ARQUIVO: benchmark_sem_assertions_alinhamento_natural_v4/J_uint32_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 0.0516s
+================================================================================
+CBMC version 6.6.0 (cbmc-6.6.0) 64-bit x86_64 linux
+Type-checking J_uint32_t_misaligned
+Generating GOTO Program
+Adding CPROVER library (x86_64)
+Removal of function pointers and virtual functions
+Generic Property Instrumentation
+Starting Bounded Model Checking
+
+** Results:
+/home/wesley/tucuman/benchmark/benchmark_sem_assertions_alinhamento_natural_v4/J_uint32_t_misaligned.c function main
+[main.pointer_dereference.1] line 12 dereference failure: pointer NULL in *q: SUCCESS
+[main.pointer_dereference.2] line 12 dereference failure: pointer invalid in *q: SUCCESS
+[main.pointer_dereference.3] line 12 dereference failure: deallocated dynamic object in *q: SUCCESS
+[main.pointer_dereference.4] line 12 dereference failure: dead object in *q: SUCCESS
+[main.pointer_dereference.5] line 12 dereference failure: pointer outside object bounds in *q: SUCCESS
+[main.pointer_dereference.6] line 12 dereference failure: invalid integer address in *q: SUCCESS
+
+** 0 of 6 failed (1 iterations)
+VERIFICATION SUCCESSFUL
+
+
+================================================================================
+ARQUIVO: benchmark_sem_assertions_alinhamento_natural_v4/J_uint64_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 0.0512s
+================================================================================
+CBMC version 6.6.0 (cbmc-6.6.0) 64-bit x86_64 linux
+Type-checking J_uint64_t_aligned
+Generating GOTO Program
+Adding CPROVER library (x86_64)
+Removal of function pointers and virtual functions
+Generic Property Instrumentation
+Starting Bounded Model Checking
+
+** Results:
+/home/wesley/tucuman/benchmark/benchmark_sem_assertions_alinhamento_natural_v4/J_uint64_t_aligned.c function main
+[main.pointer_dereference.1] line 10 dereference failure: pointer NULL in *q: SUCCESS
+[main.pointer_dereference.2] line 10 dereference failure: pointer invalid in *q: SUCCESS
+[main.pointer_dereference.3] line 10 dereference failure: deallocated dynamic object in *q: SUCCESS
+[main.pointer_dereference.4] line 10 dereference failure: dead object in *q: SUCCESS
+[main.pointer_dereference.5] line 10 dereference failure: pointer outside object bounds in *q: SUCCESS
+[main.pointer_dereference.6] line 10 dereference failure: invalid integer address in *q: SUCCESS
+
+** 0 of 6 failed (1 iterations)
+VERIFICATION SUCCESSFUL
+
+
+================================================================================
+ARQUIVO: benchmark_sem_assertions_alinhamento_natural_v4/J_uint64_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 0.0532s
+================================================================================
+CBMC version 6.6.0 (cbmc-6.6.0) 64-bit x86_64 linux
+Type-checking J_uint64_t_misaligned
+Generating GOTO Program
+Adding CPROVER library (x86_64)
+Removal of function pointers and virtual functions
+Generic Property Instrumentation
+Starting Bounded Model Checking
+
+** Results:
+/home/wesley/tucuman/benchmark/benchmark_sem_assertions_alinhamento_natural_v4/J_uint64_t_misaligned.c function main
+[main.pointer_dereference.1] line 12 dereference failure: pointer NULL in *q: SUCCESS
+[main.pointer_dereference.2] line 12 dereference failure: pointer invalid in *q: SUCCESS
+[main.pointer_dereference.3] line 12 dereference failure: deallocated dynamic object in *q: SUCCESS
+[main.pointer_dereference.4] line 12 dereference failure: dead object in *q: SUCCESS
+[main.pointer_dereference.5] line 12 dereference failure: pointer outside object bounds in *q: SUCCESS
+[main.pointer_dereference.6] line 12 dereference failure: invalid integer address in *q: SUCCESS
+
+** 0 of 6 failed (1 iterations)
+VERIFICATION SUCCESSFUL
+
+

@@ -1,0 +1,1368 @@
+================================================================================
+ARQUIVO: benchmark_com_assertions_com_alinhamento_explicito_v4/A_uint16_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 0.7942s
+================================================================================
+
+==================================================
+A_uint16_t_aligned.c
+==================================================
+
+Tipo: uint16_t
+Alinhamento: 2
+Caso: offset
+Offset: 0
+
+SMT(alinhado): sat
+SMT(desalinhado): unsat
+
+RESULTADO: ALINHADO
+
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_com_alinhamento_explicito_v4/A_uint16_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 0.7281s
+================================================================================
+
+==================================================
+A_uint16_t_misaligned.c
+==================================================
+
+Tipo: uint16_t
+Alinhamento: 2
+Caso: offset
+Offset: 1
+
+SMT(alinhado): unsat
+SMT(desalinhado): sat
+
+RESULTADO: VIOLACAO
+Contraexemplo: {'addr': 1}
+
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_com_alinhamento_explicito_v4/A_uint32_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 0.9976s
+================================================================================
+
+==================================================
+A_uint32_t_aligned.c
+==================================================
+
+Tipo: uint32_t
+Alinhamento: 4
+Caso: offset
+Offset: 0
+
+SMT(alinhado): sat
+SMT(desalinhado): unsat
+
+RESULTADO: ALINHADO
+
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_com_alinhamento_explicito_v4/A_uint32_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 0.9462s
+================================================================================
+
+==================================================
+A_uint32_t_misaligned.c
+==================================================
+
+Tipo: uint32_t
+Alinhamento: 4
+Caso: offset
+Offset: 1
+
+SMT(alinhado): unsat
+SMT(desalinhado): sat
+
+RESULTADO: VIOLACAO
+Contraexemplo: {'addr': 1}
+
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_com_alinhamento_explicito_v4/A_uint64_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 0.6762s
+================================================================================
+
+==================================================
+A_uint64_t_aligned.c
+==================================================
+
+Tipo: uint64_t
+Alinhamento: 8
+Caso: offset
+Offset: 0
+
+SMT(alinhado): sat
+SMT(desalinhado): unsat
+
+RESULTADO: ALINHADO
+
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_com_alinhamento_explicito_v4/A_uint64_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 1.1941s
+================================================================================
+
+==================================================
+A_uint64_t_misaligned.c
+==================================================
+
+Tipo: uint64_t
+Alinhamento: 8
+Caso: offset
+Offset: 1
+
+SMT(alinhado): unsat
+SMT(desalinhado): sat
+
+RESULTADO: VIOLACAO
+Contraexemplo: {'addr': 1}
+
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_com_alinhamento_explicito_v4/B_uint16_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 1.1431s
+================================================================================
+
+==================================================
+B_uint16_t_aligned.c
+==================================================
+
+Tipo: uint16_t
+Alinhamento: 2
+Caso: offset
+Offset: 0
+
+SMT(alinhado): sat
+SMT(desalinhado): unsat
+
+RESULTADO: ALINHADO
+
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_com_alinhamento_explicito_v4/B_uint16_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 0.5166s
+================================================================================
+
+==================================================
+B_uint16_t_misaligned.c
+==================================================
+
+Tipo: uint16_t
+Alinhamento: 2
+Caso: offset
+Offset: 1
+
+SMT(alinhado): unsat
+SMT(desalinhado): sat
+
+RESULTADO: VIOLACAO
+Contraexemplo: {'addr': 1}
+
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_com_alinhamento_explicito_v4/B_uint32_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 0.4891s
+================================================================================
+
+==================================================
+B_uint32_t_aligned.c
+==================================================
+
+Tipo: uint32_t
+Alinhamento: 4
+Caso: offset
+Offset: 0
+
+SMT(alinhado): sat
+SMT(desalinhado): unsat
+
+RESULTADO: ALINHADO
+
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_com_alinhamento_explicito_v4/B_uint32_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 0.9317s
+================================================================================
+
+==================================================
+B_uint32_t_misaligned.c
+==================================================
+
+Tipo: uint32_t
+Alinhamento: 4
+Caso: offset
+Offset: 1
+
+SMT(alinhado): unsat
+SMT(desalinhado): sat
+
+RESULTADO: VIOLACAO
+Contraexemplo: {'addr': 1}
+
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_com_alinhamento_explicito_v4/B_uint64_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 0.7006s
+================================================================================
+
+==================================================
+B_uint64_t_aligned.c
+==================================================
+
+Tipo: uint64_t
+Alinhamento: 8
+Caso: offset
+Offset: 0
+
+SMT(alinhado): sat
+SMT(desalinhado): unsat
+
+RESULTADO: ALINHADO
+
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_com_alinhamento_explicito_v4/B_uint64_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 0.8096s
+================================================================================
+
+==================================================
+B_uint64_t_misaligned.c
+==================================================
+
+Tipo: uint64_t
+Alinhamento: 8
+Caso: offset
+Offset: 1
+
+SMT(alinhado): unsat
+SMT(desalinhado): sat
+
+RESULTADO: VIOLACAO
+Contraexemplo: {'addr': 1}
+
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_com_alinhamento_explicito_v4/C_uint16_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 1.4176s
+================================================================================
+
+==================================================
+C_uint16_t_aligned.c
+==================================================
+
+Tipo: uint16_t
+Alinhamento: 2
+Caso: array
+Offset: 0
+
+SMT(alinhado): sat
+SMT(desalinhado): unsat
+
+RESULTADO: ALINHADO
+
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_com_alinhamento_explicito_v4/C_uint16_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 1.4093s
+================================================================================
+
+==================================================
+C_uint16_t_misaligned.c
+==================================================
+
+Tipo: uint16_t
+Alinhamento: 2
+Caso: offset
+Offset: 1
+
+SMT(alinhado): unsat
+SMT(desalinhado): sat
+
+RESULTADO: VIOLACAO
+Contraexemplo: {'addr': 1}
+
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_com_alinhamento_explicito_v4/C_uint32_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 1.1635s
+================================================================================
+
+==================================================
+C_uint32_t_aligned.c
+==================================================
+
+Tipo: uint32_t
+Alinhamento: 4
+Caso: array
+Offset: 0
+
+SMT(alinhado): sat
+SMT(desalinhado): unsat
+
+RESULTADO: ALINHADO
+
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_com_alinhamento_explicito_v4/C_uint32_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 0.7438s
+================================================================================
+
+==================================================
+C_uint32_t_misaligned.c
+==================================================
+
+Tipo: uint32_t
+Alinhamento: 4
+Caso: offset
+Offset: 1
+
+SMT(alinhado): unsat
+SMT(desalinhado): sat
+
+RESULTADO: VIOLACAO
+Contraexemplo: {'addr': 1}
+
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_com_alinhamento_explicito_v4/C_uint64_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 0.5661s
+================================================================================
+
+==================================================
+C_uint64_t_aligned.c
+==================================================
+
+Tipo: uint64_t
+Alinhamento: 8
+Caso: array
+Offset: 0
+
+SMT(alinhado): sat
+SMT(desalinhado): unsat
+
+RESULTADO: ALINHADO
+
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_com_alinhamento_explicito_v4/C_uint64_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 0.9072s
+================================================================================
+
+==================================================
+C_uint64_t_misaligned.c
+==================================================
+
+Tipo: uint64_t
+Alinhamento: 8
+Caso: offset
+Offset: 1
+
+SMT(alinhado): unsat
+SMT(desalinhado): sat
+
+RESULTADO: VIOLACAO
+Contraexemplo: {'addr': 1}
+
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_com_alinhamento_explicito_v4/D_uint16_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 0.5832s
+================================================================================
+
+==================================================
+D_uint16_t_aligned.c
+==================================================
+
+Tipo: uint16_t
+Alinhamento: 2
+Caso: offsetof
+Offset: 2
+Struct: S (nao-packed) campo: b
+
+SMT(alinhado): sat
+SMT(desalinhado): unsat
+
+RESULTADO: ALINHADO
+
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_com_alinhamento_explicito_v4/D_uint16_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 1.3168s
+================================================================================
+
+==================================================
+D_uint16_t_misaligned.c
+==================================================
+
+Tipo: uint16_t
+Alinhamento: 2
+Caso: offset
+Offset: 1
+
+SMT(alinhado): unsat
+SMT(desalinhado): sat
+
+RESULTADO: VIOLACAO
+Contraexemplo: {'addr': 1}
+
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_com_alinhamento_explicito_v4/D_uint32_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 1.4051s
+================================================================================
+
+==================================================
+D_uint32_t_aligned.c
+==================================================
+
+Tipo: uint32_t
+Alinhamento: 4
+Caso: offsetof
+Offset: 4
+Struct: S (nao-packed) campo: b
+
+SMT(alinhado): sat
+SMT(desalinhado): unsat
+
+RESULTADO: ALINHADO
+
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_com_alinhamento_explicito_v4/D_uint32_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 0.7058s
+================================================================================
+
+==================================================
+D_uint32_t_misaligned.c
+==================================================
+
+Tipo: uint32_t
+Alinhamento: 4
+Caso: offset
+Offset: 1
+
+SMT(alinhado): unsat
+SMT(desalinhado): sat
+
+RESULTADO: VIOLACAO
+Contraexemplo: {'addr': 1}
+
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_com_alinhamento_explicito_v4/D_uint64_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 1.209s
+================================================================================
+
+==================================================
+D_uint64_t_aligned.c
+==================================================
+
+Tipo: uint64_t
+Alinhamento: 8
+Caso: offsetof
+Offset: 8
+Struct: S (nao-packed) campo: b
+
+SMT(alinhado): sat
+SMT(desalinhado): unsat
+
+RESULTADO: ALINHADO
+
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_com_alinhamento_explicito_v4/D_uint64_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 0.7605s
+================================================================================
+
+==================================================
+D_uint64_t_misaligned.c
+==================================================
+
+Tipo: uint64_t
+Alinhamento: 8
+Caso: offset
+Offset: 1
+
+SMT(alinhado): unsat
+SMT(desalinhado): sat
+
+RESULTADO: VIOLACAO
+Contraexemplo: {'addr': 1}
+
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_com_alinhamento_explicito_v4/E_uint16_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 0.7814s
+================================================================================
+
+==================================================
+E_uint16_t_aligned.c
+==================================================
+
+Tipo: uint16_t
+Alinhamento: 2
+Caso: symbolic
+Offset simbolico: i, com 0 <= i < 6
+
+SMT(alinhado): sat
+SMT(desalinhado): sat
+
+RESULTADO: PARCIALMENTE ALINHADO (depende de valor simbolico)
+Contraexemplo de violacao possivel: {'i': 1, 'addr': 1}
+
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_com_alinhamento_explicito_v4/E_uint16_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 1.3181s
+================================================================================
+
+==================================================
+E_uint16_t_misaligned.c
+==================================================
+
+Tipo: uint16_t
+Alinhamento: 2
+Caso: symbolic
+Offset simbolico: i, com 0 <= i < 6
+
+SMT(alinhado): sat
+SMT(desalinhado): sat
+
+RESULTADO: PARCIALMENTE ALINHADO (depende de valor simbolico)
+Contraexemplo de violacao possivel: {'i': 1, 'addr': 1}
+
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_com_alinhamento_explicito_v4/E_uint32_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 0.9891s
+================================================================================
+
+==================================================
+E_uint32_t_aligned.c
+==================================================
+
+Tipo: uint32_t
+Alinhamento: 4
+Caso: symbolic
+Offset simbolico: i, com 0 <= i < 6
+
+SMT(alinhado): sat
+SMT(desalinhado): sat
+
+RESULTADO: PARCIALMENTE ALINHADO (depende de valor simbolico)
+Contraexemplo de violacao possivel: {'i': 2, 'addr': 2}
+
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_com_alinhamento_explicito_v4/E_uint32_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 1.4242s
+================================================================================
+
+==================================================
+E_uint32_t_misaligned.c
+==================================================
+
+Tipo: uint32_t
+Alinhamento: 4
+Caso: symbolic
+Offset simbolico: i, com 0 <= i < 6
+
+SMT(alinhado): sat
+SMT(desalinhado): sat
+
+RESULTADO: PARCIALMENTE ALINHADO (depende de valor simbolico)
+Contraexemplo de violacao possivel: {'i': 2, 'addr': 2}
+
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_com_alinhamento_explicito_v4/E_uint64_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 1.473s
+================================================================================
+
+==================================================
+E_uint64_t_aligned.c
+==================================================
+
+Tipo: uint64_t
+Alinhamento: 8
+Caso: symbolic
+Offset simbolico: i, com 0 <= i < 6
+
+SMT(alinhado): sat
+SMT(desalinhado): sat
+
+RESULTADO: PARCIALMENTE ALINHADO (depende de valor simbolico)
+Contraexemplo de violacao possivel: {'i': 4, 'addr': 4}
+
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_com_alinhamento_explicito_v4/E_uint64_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 0.8978s
+================================================================================
+
+==================================================
+E_uint64_t_misaligned.c
+==================================================
+
+Tipo: uint64_t
+Alinhamento: 8
+Caso: symbolic
+Offset simbolico: i, com 0 <= i < 6
+
+SMT(alinhado): sat
+SMT(desalinhado): sat
+
+RESULTADO: PARCIALMENTE ALINHADO (depende de valor simbolico)
+Contraexemplo de violacao possivel: {'i': 4, 'addr': 4}
+
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_com_alinhamento_explicito_v4/F_uint16_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 1.0026s
+================================================================================
+
+==================================================
+F_uint16_t_aligned.c
+==================================================
+
+Tipo: uint16_t
+Alinhamento: 2
+Caso: offset
+Offset: 0
+
+SMT(alinhado): sat
+SMT(desalinhado): unsat
+
+RESULTADO: ALINHADO
+
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_com_alinhamento_explicito_v4/F_uint16_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 1.2501s
+================================================================================
+
+==================================================
+F_uint16_t_misaligned.c
+==================================================
+
+Tipo: uint16_t
+Alinhamento: 2
+Caso: offset
+Offset: 1
+
+SMT(alinhado): unsat
+SMT(desalinhado): sat
+
+RESULTADO: VIOLACAO
+Contraexemplo: {'addr': 1}
+
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_com_alinhamento_explicito_v4/F_uint32_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 0.9675s
+================================================================================
+
+==================================================
+F_uint32_t_aligned.c
+==================================================
+
+Tipo: uint32_t
+Alinhamento: 4
+Caso: offset
+Offset: 0
+
+SMT(alinhado): sat
+SMT(desalinhado): unsat
+
+RESULTADO: ALINHADO
+
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_com_alinhamento_explicito_v4/F_uint32_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 0.972s
+================================================================================
+
+==================================================
+F_uint32_t_misaligned.c
+==================================================
+
+Tipo: uint32_t
+Alinhamento: 4
+Caso: offset
+Offset: 1
+
+SMT(alinhado): unsat
+SMT(desalinhado): sat
+
+RESULTADO: VIOLACAO
+Contraexemplo: {'addr': 1}
+
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_com_alinhamento_explicito_v4/F_uint64_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 0.5782s
+================================================================================
+
+==================================================
+F_uint64_t_aligned.c
+==================================================
+
+Tipo: uint64_t
+Alinhamento: 8
+Caso: offset
+Offset: 0
+
+SMT(alinhado): sat
+SMT(desalinhado): unsat
+
+RESULTADO: ALINHADO
+
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_com_alinhamento_explicito_v4/F_uint64_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 0.9428s
+================================================================================
+
+==================================================
+F_uint64_t_misaligned.c
+==================================================
+
+Tipo: uint64_t
+Alinhamento: 8
+Caso: offset
+Offset: 1
+
+SMT(alinhado): unsat
+SMT(desalinhado): sat
+
+RESULTADO: VIOLACAO
+Contraexemplo: {'addr': 1}
+
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_com_alinhamento_explicito_v4/G_uint16_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 0.8755s
+================================================================================
+
+==================================================
+G_uint16_t_aligned.c
+==================================================
+
+Tipo: uint16_t
+Alinhamento: 2
+Caso: offset
+Offset: 2
+
+SMT(alinhado): sat
+SMT(desalinhado): unsat
+
+RESULTADO: ALINHADO
+
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_com_alinhamento_explicito_v4/G_uint16_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 1.045s
+================================================================================
+
+==================================================
+G_uint16_t_misaligned.c
+==================================================
+
+Tipo: uint16_t
+Alinhamento: 2
+Caso: offset
+Offset: 49
+
+SMT(alinhado): unsat
+SMT(desalinhado): sat
+
+RESULTADO: VIOLACAO
+Contraexemplo: {'addr': 49}
+
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_com_alinhamento_explicito_v4/G_uint32_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 1.1954s
+================================================================================
+
+==================================================
+G_uint32_t_aligned.c
+==================================================
+
+Tipo: uint32_t
+Alinhamento: 4
+Caso: offset
+Offset: 48
+
+SMT(alinhado): sat
+SMT(desalinhado): unsat
+
+RESULTADO: ALINHADO
+
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_com_alinhamento_explicito_v4/G_uint32_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 0.6442s
+================================================================================
+
+==================================================
+G_uint32_t_misaligned.c
+==================================================
+
+Tipo: uint32_t
+Alinhamento: 4
+Caso: offset
+Offset: 49
+
+SMT(alinhado): unsat
+SMT(desalinhado): sat
+
+RESULTADO: VIOLACAO
+Contraexemplo: {'addr': 49}
+
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_com_alinhamento_explicito_v4/G_uint64_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 1.0662s
+================================================================================
+
+==================================================
+G_uint64_t_aligned.c
+==================================================
+
+Tipo: uint64_t
+Alinhamento: 8
+Caso: offset
+Offset: 48
+
+SMT(alinhado): sat
+SMT(desalinhado): unsat
+
+RESULTADO: ALINHADO
+
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_com_alinhamento_explicito_v4/G_uint64_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 0.6936s
+================================================================================
+
+==================================================
+G_uint64_t_misaligned.c
+==================================================
+
+Tipo: uint64_t
+Alinhamento: 8
+Caso: offset
+Offset: 49
+
+SMT(alinhado): unsat
+SMT(desalinhado): sat
+
+RESULTADO: VIOLACAO
+Contraexemplo: {'addr': 49}
+
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_com_alinhamento_explicito_v4/H_uint16_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 1.2s
+================================================================================
+
+==================================================
+H_uint16_t_aligned.c
+==================================================
+
+Tipo: uint16_t
+Alinhamento: 2
+Caso: packed_field
+Offset: 2
+Struct: S (packed) campo: b
+
+SMT(alinhado): sat
+SMT(desalinhado): unsat
+
+RESULTADO: ALINHADO
+
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_com_alinhamento_explicito_v4/H_uint16_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 0.99s
+================================================================================
+
+==================================================
+H_uint16_t_misaligned.c
+==================================================
+
+Tipo: uint16_t
+Alinhamento: 2
+Caso: packed_field
+Offset: 1
+Struct: S (packed) campo: b
+
+SMT(alinhado): unsat
+SMT(desalinhado): sat
+
+RESULTADO: VIOLACAO
+Contraexemplo: {'addr': 1}
+
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_com_alinhamento_explicito_v4/H_uint32_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 0.8089s
+================================================================================
+
+==================================================
+H_uint32_t_aligned.c
+==================================================
+
+Tipo: uint32_t
+Alinhamento: 4
+Caso: packed_field
+Offset: 4
+Struct: S (packed) campo: b
+
+SMT(alinhado): sat
+SMT(desalinhado): unsat
+
+RESULTADO: ALINHADO
+
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_com_alinhamento_explicito_v4/H_uint32_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 0.5392s
+================================================================================
+
+==================================================
+H_uint32_t_misaligned.c
+==================================================
+
+Tipo: uint32_t
+Alinhamento: 4
+Caso: packed_field
+Offset: 1
+Struct: S (packed) campo: b
+
+SMT(alinhado): unsat
+SMT(desalinhado): sat
+
+RESULTADO: VIOLACAO
+Contraexemplo: {'addr': 1}
+
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_com_alinhamento_explicito_v4/H_uint64_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 0.5323s
+================================================================================
+
+==================================================
+H_uint64_t_aligned.c
+==================================================
+
+Tipo: uint64_t
+Alinhamento: 8
+Caso: packed_field
+Offset: 8
+Struct: S (packed) campo: b
+
+SMT(alinhado): sat
+SMT(desalinhado): unsat
+
+RESULTADO: ALINHADO
+
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_com_alinhamento_explicito_v4/H_uint64_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 1.0242s
+================================================================================
+
+==================================================
+H_uint64_t_misaligned.c
+==================================================
+
+Tipo: uint64_t
+Alinhamento: 8
+Caso: packed_field
+Offset: 1
+Struct: S (packed) campo: b
+
+SMT(alinhado): unsat
+SMT(desalinhado): sat
+
+RESULTADO: VIOLACAO
+Contraexemplo: {'addr': 1}
+
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_com_alinhamento_explicito_v4/I_uint16_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 0.8387s
+================================================================================
+
+==================================================
+I_uint16_t_aligned.c
+==================================================
+
+Tipo: uint16_t
+Alinhamento: 2
+Caso: offset
+Offset: 0
+
+SMT(alinhado): sat
+SMT(desalinhado): unsat
+
+RESULTADO: ALINHADO
+
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_com_alinhamento_explicito_v4/I_uint16_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 0.6475s
+================================================================================
+
+==================================================
+I_uint16_t_misaligned.c
+==================================================
+
+Tipo: uint16_t
+Alinhamento: 2
+Caso: offset
+Offset: 1
+
+SMT(alinhado): unsat
+SMT(desalinhado): sat
+
+RESULTADO: VIOLACAO
+Contraexemplo: {'addr': 1}
+
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_com_alinhamento_explicito_v4/I_uint32_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 0.7295s
+================================================================================
+
+==================================================
+I_uint32_t_aligned.c
+==================================================
+
+Tipo: uint32_t
+Alinhamento: 4
+Caso: offset
+Offset: 0
+
+SMT(alinhado): sat
+SMT(desalinhado): unsat
+
+RESULTADO: ALINHADO
+
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_com_alinhamento_explicito_v4/I_uint32_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 0.9624s
+================================================================================
+
+==================================================
+I_uint32_t_misaligned.c
+==================================================
+
+Tipo: uint32_t
+Alinhamento: 4
+Caso: offset
+Offset: 1
+
+SMT(alinhado): unsat
+SMT(desalinhado): sat
+
+RESULTADO: VIOLACAO
+Contraexemplo: {'addr': 1}
+
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_com_alinhamento_explicito_v4/I_uint64_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 1.4117s
+================================================================================
+
+==================================================
+I_uint64_t_aligned.c
+==================================================
+
+Tipo: uint64_t
+Alinhamento: 8
+Caso: offset
+Offset: 0
+
+SMT(alinhado): sat
+SMT(desalinhado): unsat
+
+RESULTADO: ALINHADO
+
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_com_alinhamento_explicito_v4/I_uint64_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 0.7735s
+================================================================================
+
+==================================================
+I_uint64_t_misaligned.c
+==================================================
+
+Tipo: uint64_t
+Alinhamento: 8
+Caso: offset
+Offset: 1
+
+SMT(alinhado): unsat
+SMT(desalinhado): sat
+
+RESULTADO: VIOLACAO
+Contraexemplo: {'addr': 1}
+
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_com_alinhamento_explicito_v4/J_uint16_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 0.8749s
+================================================================================
+
+==================================================
+J_uint16_t_aligned.c
+==================================================
+
+Tipo: uint16_t
+Alinhamento: 2
+Caso: field
+Offset: 2
+Struct: packed_s (nao-packed) campo: b
+
+SMT(alinhado): sat
+SMT(desalinhado): unsat
+
+RESULTADO: ALINHADO
+
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_com_alinhamento_explicito_v4/J_uint16_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 0.9089s
+================================================================================
+
+==================================================
+J_uint16_t_misaligned.c
+==================================================
+
+Tipo: uint16_t
+Alinhamento: 2
+Caso: packed_field
+Offset: 1
+Struct: packed_s (packed) campo: b
+
+SMT(alinhado): unsat
+SMT(desalinhado): sat
+
+RESULTADO: VIOLACAO
+Contraexemplo: {'addr': 1}
+
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_com_alinhamento_explicito_v4/J_uint32_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 0.8623s
+================================================================================
+
+==================================================
+J_uint32_t_aligned.c
+==================================================
+
+Tipo: uint32_t
+Alinhamento: 4
+Caso: field
+Offset: 4
+Struct: packed_s (nao-packed) campo: b
+
+SMT(alinhado): sat
+SMT(desalinhado): unsat
+
+RESULTADO: ALINHADO
+
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_com_alinhamento_explicito_v4/J_uint32_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 1.0158s
+================================================================================
+
+==================================================
+J_uint32_t_misaligned.c
+==================================================
+
+Tipo: uint32_t
+Alinhamento: 4
+Caso: packed_field
+Offset: 1
+Struct: packed_s (packed) campo: b
+
+SMT(alinhado): unsat
+SMT(desalinhado): sat
+
+RESULTADO: VIOLACAO
+Contraexemplo: {'addr': 1}
+
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_com_alinhamento_explicito_v4/J_uint64_t_aligned.c
+REPETICAO: 1/1
+TEMPO: 1.3097s
+================================================================================
+
+==================================================
+J_uint64_t_aligned.c
+==================================================
+
+Tipo: uint64_t
+Alinhamento: 8
+Caso: field
+Offset: 8
+Struct: packed_s (nao-packed) campo: b
+
+SMT(alinhado): sat
+SMT(desalinhado): unsat
+
+RESULTADO: ALINHADO
+
+
+
+================================================================================
+ARQUIVO: benchmark_com_assertions_com_alinhamento_explicito_v4/J_uint64_t_misaligned.c
+REPETICAO: 1/1
+TEMPO: 0.8311s
+================================================================================
+
+==================================================
+J_uint64_t_misaligned.c
+==================================================
+
+Tipo: uint64_t
+Alinhamento: 8
+Caso: packed_field
+Offset: 1
+Struct: packed_s (packed) campo: b
+
+SMT(alinhado): unsat
+SMT(desalinhado): sat
+
+RESULTADO: VIOLACAO
+Contraexemplo: {'addr': 1}
+
+
+
