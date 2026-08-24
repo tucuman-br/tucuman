@@ -1,6 +1,9 @@
-tucuman — Verificação Formal de Alinhamento de Memória em Programas C
+#tucuman — Verificação Formal de Alinhamento de Memória em Programas C
+
 Repositório do experimento comparativo entre verificadores formais para detecção de violações de alinhamento de memória em programas C, desenvolvido no âmbito do PPGEE/UFAM.
+
 ---
+
 Estrutura do repositório
 ```
 .
@@ -136,10 +139,12 @@ KLEE (via Docker)
 docker pull klee/klee
 ```
 ESBMC (Windows)
+
 Baixe em: https://github.com/esbmc/esbmc/releases (testado com 8.2.0)
 Execute via `scripts_execucao/benchmark_esbmc_runner.py`.
 ---
 Configuração via variáveis de ambiente
+
 O script infere automaticamente a raiz do repositório a partir de sua própria localização. Nenhuma variável precisa ser definida para o tucuman se o repositório for clonado sem mover arquivos.
 Variável        Descrição       Padrão
 `TUCUMAN_DIR`   Diretório do `tucuman_py/`      `<repo>/tucuman_py`
@@ -149,6 +154,7 @@ Variável        Descrição       Padrão
 ---
 
 Grupos do benchmark
+
 Grupo   Padrão  Tipos   Casos
 A       `(T*)(buf + 1)` u16, u32, u64   6
 B       `(T*)((char*)&x + 1)`   u16, u32, u64   6
@@ -163,16 +169,21 @@ J       `(T*)&((struct packed_s*)p)->b` u16, u32, u64   6
 Cada grupo contém um caso alinhado (esperado: OK) e um desalinhado (esperado: VIOLATION) para cada um dos tipos.
 ---
 
-Resumo de compatibilidade das ferramentas
-Baseada nos resultados consolidados das rodadas v3 a v4.3.
-Ferramenta      Sem asserções   Com asserções   Detecta alinhamento
-Tucuman ✅ 90% (estável)        ✅ 90% (idêntico)       ⚠️ todos os grupos, exceto Grupo E (sempre UNKNOWN)
-CBMC    ⚠️ maioria UNKNOWN (10% acc.)   ✅ 95%  ⚠️ todos, exceto Grupo E (falso negativo recorrente)
-ESBMC   ✅ 93–95%       ⚠️ instável* — baixo desempenho com alinhamento natural (50%, 100% FP), recupera com explícito (83%)    ✅ mas sensível à forma (natural × explícito)
-CPAchecker      ❌ não detecta nenhuma violação (FN=30) ⚠️ parcial (65%), FP concentrado em A/E/F/G/I   ⚠️ instável entre rodadas (chegou a 100% UNKNOWN em versões anteriores)
-KLEE    ❌ não detecta nenhuma violação (FN=30) ✅ 93–95%       ✅ com asserções, exceto Grupo B
-SeaHorn ❌ não detecta nenhuma violação (FN=30) ⚠️ só falso positivo, nunca falso negativo (67–83%)     ⚠️ melhora bastante com alinhamento explícito
-Legenda: ✅ funciona bem · ⚠️ funciona com ressalvas · ❌ não funciona
+### Resumo de Compatibilidade das Ferramentas
+*Resultados consolidados das rodadas v3 a v4.3.*
+
+| Ferramenta | Sem Asserções | Com Asserções | Detecta Alinhamento |
+| :--- | :--- | :--- | :--- |
+| **Tucuman** | ✅ 90% (estável) | ✅ 90% (idêntico) | ⚠️ Todos os grupos, exceto Grupo E (sempre UNKNOWN) |
+| **CBMC** | ⚠️ Maioria UNKNOWN (10% acc.) | ✅ 95% | ⚠️ Todos, exceto Grupo E (falso negativo recorrente) |
+| **ESBMC** | ✅ 93–95% | ⚠️ Instável* — baixo desempenho com alinhamento natural (50%, 100% FP), recupera com explícito (83%) | ✅ Mas sensível à forma (natural × explícito) |
+| **CPAchecker** | ❌ Não detecta nenhuma violação (FN=30) | ⚠️ Parcial (65%), FP concentrado em A/E/F/G/I | ⚠️ Instável entre rodadas (chegou a 100% UNKNOWN em versões anteriores) |
+| **KLEE** | ❌ Não detecta nenhuma violação (FN=30) | ✅ 93–95% | ✅ Com asserções, exceto Grupo B |
+| **SeaHorn** | ❌ Não detecta nenhuma violação (FN=30) | ⚠️ Só falso positivo, nunca falso negativo (67–83%) | ⚠️ Melhora bastante com alinhamento explícito |
+
+> **Legenda:**  
+> ✅ Funciona bem &nbsp;|&nbsp; ⚠️ Funciona com ressalvas &nbsp;|&nbsp; ❌ Não funciona
+
 ---
 Esta matriz está ancorada principalmente na rodada mais recente e estável (v4.3).
 ---

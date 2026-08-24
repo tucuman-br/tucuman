@@ -278,6 +278,7 @@ Você pode colaborar de diversas formas:
 
 Este projeto foi desenvolvido no âmbito do **Programa de Pós-Graduação em Engenharia Elétrica (PPGEE)** da **Universidade Federal do Amazonas (UFAM)**, como parte da pesquisa em Verificação Formal de Programas C utilizando SMT.
 Os autores agradecem ao Prof. Lucas Carvalho Cordeiro pela orientação no âmbito da disciplina PGENE549 — Verificação de Software e Sistemas do **Programa de Pós-Graduação em Engenharia Elétrica (PPGEE)** da **Universidade Federal do Amazonas (UFAM)**.
+
 ---
 
 ## Contato
