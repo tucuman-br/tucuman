@@ -138,35 +138,48 @@ KLEE (via Docker)
 ```bash
 docker pull klee/klee
 ```
+---
 ESBMC (Windows)
 
 Baixe em: https://github.com/esbmc/esbmc/releases (testado com 8.2.0)
 Execute via `scripts_execucao/benchmark_esbmc_runner.py`.
+
 ---
+
 Configuração via variáveis de ambiente
 
-O script infere automaticamente a raiz do repositório a partir de sua própria localização. Nenhuma variável precisa ser definida para o tucuman se o repositório for clonado sem mover arquivos.
-Variável        Descrição       Padrão
-`TUCUMAN_DIR`   Diretório do `tucuman_py/`      `<repo>/tucuman_py`
-`CPACHECKER_DIR`        Diretório raiz do CPAchecker    `/opt/cpachecker`
-`SEA_IMAGE`     Nome da imagem Docker do SeaHorn        `seahorn-builder`
-`KLEE_IMAGE`    Nome da imagem Docker do KLEE   `klee/klee`
+O script infere automaticamente a raiz do repositório a partir de sua própria localização. 
+Nenhuma variável precisa ser definida para o tucuman se o repositório for clonado sem mover arquivos.
+
+### Variáveis de Ambiente e Configuração
+
+| Variável | Descrição | Padrão |
+| :--- | :--- | :--- |
+| `TUCUMAN_DIR` | Diretório do `tucuman_py/` | `<repo>/tucuman_py` |
+| `CPACHECKER_DIR` | Diretório raiz do CPAchecker | `/opt/cpachecker` |
+| `SEA_IMAGE` | Nome da imagem Docker do SeaHorn | `seahorn-builder` |
+| `KLEE_IMAGE` | Nome da imagem Docker do KLEE | `klee/klee` |
+
 ---
 
-Grupos do benchmark
 
-Grupo   Padrão  Tipos   Casos
-A       `(T*)(buf + 1)` u16, u32, u64   6
-B       `(T*)((char*)&x + 1)`   u16, u32, u64   6
-C       `(T*)&vec[1]`   u16, u32, u64   6
-D       `(T*)(base + offsetof(...))`    u16, u32, u64   6
-E       `(T*)(base + i)` simbólico      u16, u32, u64   6
-F       `(T*)((char*)p + sizeof(char))` u16, u32, u64   6
-G       `(T*)(buf + N)` ímpar   u16, u32, u64   6
-H       `(T*)&s.b` acesso bruto u16, u32, u64   6
-I       `(T*)((void*)buf + 1)`  u16, u32, u64   6
-J       `(T*)&((struct packed_s*)p)->b` u16, u32, u64   6
-Cada grupo contém um caso alinhado (esperado: OK) e um desalinhado (esperado: VIOLATION) para cada um dos tipos.
+### Grupos de Benchmark e Padrões de Teste
+
+| Grupo | Padrão | Tipos | Casos |
+| :---: | :--- | :---: | :---: |
+| **A** | `(T*)(buf + 1)` | `u16`, `u32`, `u64` | 6 |
+| **B** | `(T*)((char*)&x + 1)` | `u16`, `u32`, `u64` | 6 |
+| **C** | `(T*)&vec[1]` | `u16`, `u32`, `u64` | 6 |
+| **D** | `(T*)(base + offsetof(...))` | `u16`, `u32`, `u64` | 6 |
+| **E** | `(T*)(base + i)` simbólico | `u16`, `u32`, `u64` | 6 |
+| **F** | `(T*)((char*)p + sizeof(char))` | `u16`, `u32`, `u64` | 6 |
+| **G** | `(T*)(buf + N)` ímpar | `u16`, `u32`, `u64` | 6 |
+| **H** | `(T*)&s.b` acesso bruto | `u16`, `u32`, `u64` | 6 |
+| **I** | `(T*)((void*)buf + 1)` | `u16`, `u32`, `u64` | 6 |
+| **J** | `(T*)&((struct packed_s*)p)->b` | `u16`, `u32`, `u64` | 6 |
+
+> **Nota:** Cada grupo contém um caso alinhado (esperado: `OK`) e um desalinhado (esperado: `VIOLATION`) para cada um dos 3 tipos de dados.
+
 ---
 
 ### Resumo de Compatibilidade das Ferramentas
